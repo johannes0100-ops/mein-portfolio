@@ -101,6 +101,10 @@ def main():
         "quotes": out_quotes,
         "news": out_news,
     }
+    # Unveraenderte Daten: alten Zeitstempel behalten, damit kein leerer Commit entsteht
+    old = load(a.out, None)
+    if isinstance(old, dict) and old.get("quotes") == feed["quotes"] and old.get("news") == feed["news"] and old.get("generated_at"):
+        feed["generated_at"] = old["generated_at"]
     # Sicherheitsnetz: nichts Privates veroeffentlichen
     text = json.dumps(feed, ensure_ascii=False, indent=1)
     for banned in ('"qty"', '"cost_eur"', '"value_eur"', '"prev_value_eur"', '"pnl_1d_eur"', '"cost_note"'):
