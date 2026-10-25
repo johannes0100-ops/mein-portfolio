@@ -188,16 +188,16 @@ nav.tabs button:focus-visible { outline: 2px solid var(--accent); outline-offset
 
   <section id="view-depot" class="view">
     <div class="panel">
-      <div class="ph"><h2>Positionen</h2><div class="actions"><button class="btn" id="btn-add" type="button">+ Position</button></div></div>
+      <div class="ph"><h2>Positionen</h2><div class="actions"><button class="btn" id="btn-claude-quotes" type="button">Selbst mit Claude suchen</button><button class="btn" id="btn-add" type="button">+ Position</button></div></div>
       <ul class="pos" id="pos-list"></ul>
       <div id="pos-total"></div>
     </div>
-    <p class="note" id="depot-note">Werte in Euro zum Kurs an einem deutschen Börsenplatz, wie im Depot. Tippe auf eine Position, um Stück oder Kaufpreis zu ändern.</p>
+    <p class="note" id="depot-note">Kurse und News kommen automatisch vom Claude-Dashboard (werktags 12:45, 17:45 und 22:45 Uhr, News um 7:20 Uhr), immer wenn du die App öffnest. „Selbst mit Claude suchen“ holt sofort neue Kurse über deinen API-Schlüssel. Tippe auf eine Position, um Stück oder Kaufpreis zu ändern.</p>
   </section>
 
   <section id="view-news" class="view" hidden>
     <div class="panel">
-      <div class="ph"><h2>News und Analysten</h2><button class="btn primary" id="btn-news" type="button">News holen</button></div>
+      <div class="ph"><h2>News und Analysten</h2><button class="btn" id="btn-news" type="button">Selbst mit Claude suchen</button></div>
       <div class="pb" id="news-body"></div>
     </div>
   </section>

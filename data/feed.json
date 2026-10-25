@@ -1,0 +1,500 @@
+{
+ "app": "mein-portfolio-feed",
+ "version": 1,
+ "generated_at": "2026-10-25T16:33:16+00:00",
+ "quotes_at": "2026-10-25T14:39:24+00:00",
+ "quotes": {
+  "amzn": {
+   "name": "Amazon.com Inc.",
+   "isin": "US0231351067",
+   "wkn": "906866",
+   "eur_price": 221.55,
+   "prev_eur": 223.6762,
+   "change_pct": -0.95,
+   "d5": -0.8,
+   "m1": -0.51,
+   "ytd": 7.44,
+   "local_price": 248.0,
+   "local_ccy": "USD",
+   "venue": "Depotbewertung",
+   "as_of": "2026-10-25T14:39:24+00:00",
+   "trading_day": "2026-10-23",
+   "source": "stockanalysis.com (Nasdaq)",
+   "url": "https://stockanalysis.com/stocks/amzn/history/"
+  },
+  "babcock": {
+   "name": "Babcock International Group PLC",
+   "isin": "GB0009697037",
+   "wkn": "877431",
+   "eur_price": 11.36,
+   "prev_eur": 11.4302,
+   "change_pct": -0.61,
+   "d5": -2.35,
+   "m1": -5.68,
+   "ytd": -24.44,
+   "local_price": 939.2,
+   "local_ccy": "GBX",
+   "venue": "Depotbewertung",
+   "as_of": "2026-10-25T14:39:24+00:00",
+   "trading_day": "2026-10-23",
+   "source": "marketscreener.com (London)",
+   "url": "https://www.marketscreener.com/quote/stock/BABCOCK-INTERNATIONAL-GRO-9583549/"
+  },
+  "bmw": {
+   "name": "Bayerische Motoren Werke AG",
+   "isin": "DE0005190003",
+   "wkn": "519000",
+   "eur_price": 58.0,
+   "prev_eur": 58.0606,
+   "change_pct": -0.1,
+   "d5": 0.63,
+   "m1": 1.7,
+   "ytd": -38.47,
+   "local_price": 57.42,
+   "local_ccy": "EUR",
+   "venue": "Depotbewertung",
+   "as_of": "2026-10-25T14:39:24+00:00",
+   "trading_day": "2026-10-23",
+   "source": "ariva.de (Xetra)",
+   "url": "https://www.ariva.de/bmw_st-aktie/kurse/historische-kurse"
+  },
+  "nokia": {
+   "name": "Nokia Oyj",
+   "isin": "FI0009000681",
+   "wkn": "870737",
+   "eur_price": 7.354,
+   "prev_eur": 7.1239,
+   "change_pct": 3.23,
+   "d5": -14.34,
+   "m1": -18.74,
+   "ytd": 31.48,
+   "local_price": 7.35,
+   "local_ccy": "EUR",
+   "venue": "Depotbewertung",
+   "as_of": "2026-10-25T14:39:24+00:00",
+   "trading_day": "2026-10-23",
+   "source": "boerse.de (Xetra)",
+   "url": "https://www.boerse.de/historische-kurse/Nokia-Aktie/FI0009000681"
+  },
+  "rezoom": {
+   "name": "rezooM WORLD S",
+   "isin": "DE000A3D19W2",
+   "wkn": "A3D19W",
+   "eur_price": 128.312,
+   "prev_eur": 128.2921,
+   "change_pct": 0.02,
+   "d5": null,
+   "m1": 0.8,
+   "ytd": 8.11,
+   "local_price": 129.06,
+   "local_ccy": "EUR",
+   "venue": "Depotbewertung",
+   "as_of": "2026-10-25T14:39:24+00:00",
+   "trading_day": "2026-10-23",
+   "source": "finanzen.net (Baader Bank)",
+   "url": "https://finanzen.net/fonds/historisch/rezoom-world-s-de000a3d19w2"
+  },
+  "spacex": {
+   "name": "Space Exploration Technologies Corp.",
+   "isin": "US84615Q1031",
+   "wkn": "A42D4F",
+   "eur_price": 131.72,
+   "prev_eur": 129.273,
+   "change_pct": 1.89,
+   "d5": 1,
+   "m1": -0.8,
+   "ytd": -13.68,
+   "local_price": 147.49,
+   "local_ccy": "USD",
+   "venue": "Depotbewertung",
+   "as_of": "2026-10-25T14:39:24+00:00",
+   "trading_day": "2026-10-23",
+   "source": "investing.com (Nasdaq)",
+   "url": "https://uk.investing.com/equities/spacex-historical-data"
+  },
+  "vanguard": {
+   "name": "Vanguard FTSE Developed World UCITS ETF Dist",
+   "isin": "IE00BKX55T58",
+   "wkn": "A12CX1",
+   "eur_price": 127.12,
+   "prev_eur": 127.1599,
+   "change_pct": -0.03,
+   "d5": -1.34,
+   "m1": -0.22,
+   "ytd": 16.91,
+   "local_price": 127.38,
+   "local_ccy": "EUR",
+   "venue": "Depotbewertung",
+   "as_of": "2026-10-25T14:39:24+00:00",
+   "trading_day": "2026-10-23",
+   "source": "finanzen.net (Xetra)",
+   "url": "https://www.finanzen.net/etf/vanguard-ftse-developed-world-etf-ie00bkx55t58/xetra"
+  }
+ },
+ "news": {
+  "generated_at": "2026-10-25T10:38:27+01:00",
+  "market": [
+   {
+    "headline": "BMW-Aktie höher: Abfindungsprogramm vorzeitig geschlossen",
+    "summary": "BMW hat das Ziel seines freiwilligen Abfindungsprogramms nach nur rund drei Wochen erreicht und nimmt keine neuen Anträge mehr an. Die Aktie stieg im Xetra-Handel zeitweise um gut ein Prozent auf 57,60 Euro.",
+    "source": "dpa-AFX via finanzen.net",
+    "url": "https://www.finanzen.net/nachricht/aktien/jobabbau-bmw-aktie-hoeher-abfindungsprogramm-fuer-mitarbeiter-fruehzeitig-geschlossen-15995282",
+    "published_at": "2026-10-20T16:22:00+02:00",
+    "kind": "news"
+   },
+   {
+    "headline": "SpaceX-Aktie nach Zahlen fester: Raumfahrtriese schreibt schwarze Zahlen",
+    "summary": "SpaceX übertraf im dritten Quartal mit 14,6 Milliarden Dollar Umsatz und 0,35 Dollar Gewinn je Aktie die Erwartungen deutlich, vor allem dank des KI-Geschäfts. JPMorgan hob das Kursziel von 240 auf 500 Dollar an, die Aktie legte kräftig zu.",
+    "source": "finanzen.net mit dpa-AFX",
+    "url": "https://finanzen.net/nachricht/aktien/zweite-bilanz-nach-ipo-spacex-aktie-freundlich-raumfahrtriese-schreibt-schwarze-zahlen-15994856",
+    "published_at": "2026-10-21T20:00:00+02:00",
+    "kind": "news"
+   },
+   {
+    "headline": "Dax auf Vierwochenhoch, Zuversicht via SpaceX",
+    "summary": "Der Dax stieg um 1,35 Prozent auf 25.645 Punkte und erreichte den höchsten Stand seit einem Monat. Rückenwind kam von den starken SpaceX-Zahlen, die die Stimmung bei KI- und Chipwerten aufhellten.",
+    "source": "dpa-AFX via ARIVA.DE",
+    "url": "https://www.ariva.de/news/roundup-aktien-frankfurt-schluss-dax-auf-vierwochenhoch-12176917",
+    "published_at": "2026-10-21T18:07:00+02:00",
+    "kind": "news"
+   },
+   {
+    "headline": "Wall Street im Plus, SpaceX mildert KI-Bedenken",
+    "summary": "Der Nasdaq 100 gewann 1,1 Prozent, der S&P 500 0,6 Prozent und der Dow 0,7 Prozent. SpaceX sprang nach dem Milliardengewinn und Musks Bestätigung möglicher Fusionspläne mit Tesla um 7,8 Prozent.",
+    "source": "dpa-AFX via Yahoo Finanzen",
+    "url": "https://de.finance.yahoo.com/nachrichten/roundup-aktien-new-york-schluss-202916735.html",
+    "published_at": "2026-10-21T22:29:00+02:00",
+    "kind": "news"
+   },
+   {
+    "headline": "Nokia steigert Umsatz und Marge im dritten Quartal",
+    "summary": "Nokia meldete für das dritte Quartal einen Umsatzanstieg um 10 Prozent auf 5,15 Milliarden Euro und eine vergleichbare operative Marge von 11,7 Prozent. Die Jahresprognose für den operativen Gewinn bleibt unverändert, die Aktie reagierte dennoch mit Abschlägen.",
+    "source": "Yahoo Finance (GlobeNewswire)",
+    "url": "https://finance.yahoo.com/technology/ai/articles/nokia-corporation-interim-report-q3-050000325.html",
+    "published_at": "2026-10-22T07:00:00+02:00",
+    "kind": "news"
+   },
+   {
+    "headline": "Ölpreise steigen deutlich nach Angriff auf Ölfeld in Saudi-Arabien",
+    "summary": "Brent verteuerte sich um mehr als drei Prozent auf rund 112 Dollar je Barrel, nachdem die Huthi-Miliz das Aramco-Ölfeld Shaybah mit einer Drohne angegriffen hatte. Seit Jahresbeginn liegt der Ölpreis damit über 80 Prozent im Plus.",
+    "source": "dpa-AFX via ARIVA.DE",
+    "url": "https://www.ariva.de/news/oelpreise-bauen-gewinne-aus-angriff-auf-oelfeld-in-saudi-12178536",
+    "published_at": "2026-10-22T15:54:00+02:00",
+    "kind": "news"
+   },
+   {
+    "headline": "US-Tech-Branche versetzt Dax neuen Dämpfer",
+    "summary": "Der Dax fiel um 1,07 Prozent auf 25.372 Punkte, belastet von enttäuschenden Tech-Zahlen aus den USA und steigenden Ölpreisen. Chipwerte wie Infineon verloren deutlich, SAP stieg dagegen nach starken Quartalszahlen.",
+    "source": "dpa-AFX via ARIVA.DE",
+    "url": "https://www.ariva.de/news/roundup-aktien-frankfurt-schluss-us-tech-branche-versetzt-12178825",
+    "published_at": "2026-10-22T18:14:00+02:00",
+    "kind": "news"
+   },
+   {
+    "headline": "KI-Sorgen und Ölpreise lassen Nasdaq abrutschen",
+    "summary": "Der Nasdaq 100 brach um 2,9 Prozent auf das tiefste Niveau seit Mitte September ein, der S&P 500 verlor 1,2 Prozent. Meta fiel nach seinen Investitionsplänen um rund 7 Prozent, steigende Ölpreise schürten Zinssorgen.",
+    "source": "dpa-AFX via Investing.com",
+    "url": "https://de.investing.com/news/economy-news/aktien-new-york-schluss-kisorgen-und-olpreise-lassen-nasdaq-abrutschen-3718997",
+    "published_at": "2026-10-22T22:17:00+02:00",
+    "kind": "news"
+   },
+   {
+    "headline": "Eurozone: Schwache französische Wirtschaft belastet Unternehmensstimmung",
+    "summary": "Der Einkaufsmanagerindex für die Eurozone fiel im Oktober überraschend deutlich auf 51,9 Punkte. In Frankreich rutschten Industrie und Dienstleister unter die Wachstumsschwelle von 50 Punkten, Deutschlands Industrie zeigte sich dagegen robust.",
+    "source": "dpa-AFX via ARIVA.DE",
+    "url": "https://www.ariva.de/news/roundup-eurozone-schwache-franzoesische-wirtschaft-belastet-12179628",
+    "published_at": "2026-10-23T11:48:00+02:00",
+    "kind": "news"
+   },
+   {
+    "headline": "Wochenausblick: Dax von vielen Sorgen belastet, Fokus auf Zinsentscheidungen",
+    "summary": "In der neuen Woche stehen die Zinsentscheide von Fed am Mittwoch und EZB am Donnerstag an, Experten erwarten jeweils noch keine Erhöhung. Zudem berichten Alphabet, Microsoft und Amazon ihre Quartalszahlen.",
+    "source": "dpa-AFX via ARIVA.DE",
+    "url": "https://www.ariva.de/news/wochenausblick-dax-von-vielen-sorgen-belastet-fokus-auf-12179939",
+    "published_at": "2026-10-23T15:11:00+02:00",
+    "kind": "news"
+   },
+   {
+    "headline": "Frankreich-Sorgen lassen Dax weiter absacken, Wochenminus 1,7 Prozent",
+    "summary": "Der Dax schloss 0,75 Prozent tiefer bei 25.182 Punkten und verlor auf Wochensicht 1,7 Prozent. Deutsche Telekom gab wegen befürchteter US-Konkurrenz durch SpaceX um 3,2 Prozent nach.",
+    "source": "dpa-AFX via ARIVA.DE",
+    "url": "https://www.ariva.de/news/roundup-aktien-frankfurt-schluss-frankreich-sorgen-lassen-12180188",
+    "published_at": "2026-10-23T18:03:00+02:00",
+    "kind": "news"
+   },
+   {
+    "headline": "Wall Street: Nasdaq-Erholung bleibt aus, Dow sinkt",
+    "summary": "Der Dow fiel um 1,2 Prozent, der S&P 500 um 0,5 Prozent, der Nasdaq 100 trat auf der Stelle. Berichte über SpaceX-Gespräche zum Kauf von 80.000 Funkmasten trieben Turmbetreiber an und drückten AT&T und T-Mobile US kräftig ins Minus.",
+    "source": "dpa-AFX via onvista",
+    "url": "https://www.onvista.de/news/2026/10-23-roundup-aktien-new-york-schluss-nasdaq-erholung-bleibt-aus-dow-sinkt-0-10-26567842",
+    "published_at": "2026-10-23T22:27:00+02:00",
+    "kind": "news"
+   }
+  ],
+  "positions": [
+   {
+    "id": "amzn",
+    "items": [
+     {
+      "headline": "AWS-Kapazitäten für 2027 nahezu ausverkauft",
+      "summary": "Amazon-Chef Andy Jassy sagte in einem Podcast, die Cloud-Kapazität von AWS für 2027 sei weitgehend vergeben und auch ein großer Teil von 2028 sei schon gebucht. Grund ist die starke Nachfrage nach KI-Infrastruktur, die Investitionen für 2026 liegen bei rund 220 Milliarden Dollar.",
+      "source": "Reuters via Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/articles/amazon-cloud-capacity-sold-2027-230625002.html",
+      "published_at": "2026-10-24T01:06:00+02:00",
+      "kind": "news"
+     },
+     {
+      "headline": "Amazon legt am 29. Oktober Zahlen zum dritten Quartal vor",
+      "summary": "Amazon veröffentlicht die Zahlen zum dritten Quartal am Donnerstag, 29. Oktober, nach US-Börsenschluss. Im Fokus stehen das AWS-Wachstum und die hohen KI-Investitionen.",
+      "source": "Barchart via Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/dear-amazon-stock-fans-mark-152556112.html",
+      "published_at": null,
+      "kind": "news"
+     },
+     {
+      "headline": "Optionsmarkt rechnet bei Amazon-Zahlen mit Kursausschlag von 6,6 Prozent",
+      "summary": "Optionsdaten deuten auf eine Kursbewegung von etwa 6,6 Prozent nach den Quartalszahlen am 29. Oktober hin. In sechs der letzten acht Berichte fiel die tatsächliche Bewegung stärker aus als erwartet.",
+      "source": "Investing.com",
+      "url": "https://investing.com/news/stock-market-news/amazon-shares-may-move-66-on-upcoming-earnings-report-93CH-4966640",
+      "published_at": "2026-10-22T16:09:00+02:00",
+      "kind": "news"
+     },
+     {
+      "headline": "Jefferies: bestätigt",
+      "summary": "Brent Thill sieht in der Automatisierung den entscheidenden langfristigen Vorteil und erwartet, dass Effizienzgewinne in Logistik und AWS den Druck im Handel ausgleichen.",
+      "source": "dpa-AFX Analyser via finanznachrichten.de",
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69893306-jefferies-stuft-amazon-com-inc-auf-buy-322.htm",
+      "published_at": "2026-10-21T11:18:00+02:00",
+      "kind": "analyst",
+      "rating": "Buy",
+      "target": "330 USD"
+     }
+    ]
+   },
+   {
+    "id": "babcock",
+    "items": [
+     {
+      "headline": "Babcock-Aktie springt über 38-Tage-Linie",
+      "summary": "Die Aktie stieg am Freitag in Deutschland auf 11,14 Euro und überwand damit ihre 38-Tage-Linie. Seit Mitte August liegt das Papier aber noch fast 20 Prozent im Minus und klar unter der 200-Tage-Linie.",
+      "source": "boerse.de",
+      "url": "https://www.boerse.de/nachrichten/Babcock-International-Group-Aktie-ueber-38-Tage-Linie/38685542",
+      "published_at": "2026-10-24T08:54:00+02:00",
+      "kind": "news"
+     }
+    ]
+   },
+   {
+    "id": "bmw",
+    "items": [
+     {
+      "headline": "BMW beendet Abfindungsprogramm vorzeitig",
+      "summary": "BMW schließt sein freiwilliges Abfindungsprogramm früher als geplant, weil sich tausende Beschäftigte aus Verwaltung und Entwicklung gemeldet haben. Das Ziel des Stellenabbaus von weltweit rund 8.000 Jobs sei damit vorzeitig erreicht, die Rückstellungen liegen bei gut einer Milliarde Euro.",
+      "source": "dpa-AFX via onvista",
+      "url": "https://www.onvista.de/news/2026/10-20-jobabbau-bmw-schliesst-abfindungsprogramm-fuer-mitarbeiter-0-10-26566149",
+      "published_at": "2026-10-20T14:36:00+02:00",
+      "kind": "news"
+     },
+     {
+      "headline": "Autowerte erholen sich nach Volvo-Schock",
+      "summary": "Nach dem Kurssturz von Volvo Cars gerieten deutsche Autowerte am Freitag zunächst unter Druck. BMW, Mercedes-Benz und Volkswagen machten ihre Verluste bis zum Mittag aber weitgehend wieder wett.",
+      "source": "dpa-AFX via finanznachrichten.de",
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69919176-aktien-frankfurt-dax-schwaechelt-weiter-wochenbilanz-negativ-016.htm",
+      "published_at": "2026-10-23T12:16:00+02:00",
+      "kind": "news"
+     },
+     {
+      "headline": "BMW legt am 4. November Zahlen zum dritten Quartal vor",
+      "summary": "Die Quartalsmitteilung wird am 4. November mit Reden des Vorstands ab 8:30 Uhr vorgestellt. Danach folgt eine Fragerunde für Analysten.",
+      "source": "BMW Group Investor Relations",
+      "url": "https://www.bmwgroup.com/de/investor-relations/telefonkonferenzen-quartalsmitteilungen.html",
+      "published_at": null,
+      "kind": "news"
+     },
+     {
+      "headline": "EU-Automarkt wächst weiter, BMW mit Zulassungsplus",
+      "summary": "Im September stiegen die Neuzulassungen in der EU um 9,3 Prozent. BMW steigerte seine Zulassungen in den ersten neun Monaten um 4,6 Prozent.",
+      "source": "dpa-AFX via finanzen.net",
+      "url": "https://www.finanzen.net/nachricht/aktien/eu-automarkt-waechst-weiter-hohe-e-auto-nachfrage-15999833",
+      "published_at": "2026-10-22T06:04:00+02:00",
+      "kind": "news"
+     },
+     {
+      "headline": "Jefferies: bestätigt",
+      "summary": "Analyst Philippe Houchois hat nach den Vorab-Aussagen von BMW zum dritten Quartal seine Schätzungen angepasst und rechnet im Autogeschäft mit rund 7 Prozent weniger Umsatz.",
+      "source": "dpa-AFX Analyser via boerse.de",
+      "url": "https://www.boerse.de/nachrichten/Jefferies-belaesst-BMW-auf-Hold-Ziel-60-Euro/38677794",
+      "published_at": "2026-10-20T07:27:00+02:00",
+      "kind": "analyst",
+      "rating": "Hold",
+      "target": "60 EUR"
+     }
+    ]
+   },
+   {
+    "id": "nokia",
+    "items": [
+     {
+      "headline": "Nokia übertrifft Erwartungen, Aktie fällt trotzdem fast zehn Prozent",
+      "summary": "Nokia steigerte im dritten Quartal den Umsatz um zehn Prozent auf 5,15 Milliarden Euro und den bereinigten operativen Gewinn um 35 Prozent auf 605 Millionen Euro. Höhere Kosten für das Sparprogramm von nun 1,1 Milliarden Euro und eine schwächere Cashflow-Prognose drückten die Aktie in Helsinki um 9,7 Prozent.",
+      "source": "dpa-AFX via finanzen.net",
+      "url": "https://www.finanzen.net/nachricht/aktien/zahlen-praesentiert-nokia-aktie-faellt-dennoch-umsatz-und-gewinn-steigen-staerker-als-erwartet-teures-sparprogramm-16000438",
+      "published_at": "2026-10-22T17:54:00+02:00",
+      "kind": "news"
+     },
+     {
+      "headline": "Nokia zahlt am 5. November Quartalsdividende",
+      "summary": "Nokia schüttet eine Dividende von 0,03 Euro je Aktie aus. Stichtag ist der 27. Oktober, ausgezahlt wird am 5. November.",
+      "source": "Investing.com",
+      "url": "https://www.investing.com/news/company-news/nokia-reports-9-q3-sales-growth-raises-restructuring-costs-93CH-4964614",
+      "published_at": null,
+      "kind": "news"
+     },
+     {
+      "headline": "Nokia und ICEYE wollen Ukraine bei eigener Satellitenkommunikation helfen",
+      "summary": "Nokia und der Satellitenhersteller ICEYE haben mit dem ukrainischen Verteidigungsministerium eine Absichtserklärung zur Zusammenarbeit bei souveräner Satellitenkommunikation unterzeichnet. Die Systeme sollen den Regierungen die volle Kontrolle über Satelliten, Bodeninfrastruktur und Endgeräte lassen.",
+      "source": "Investing.com",
+      "url": "https://de.investing.com/news/stock-market-news/iceye-und-nokia-vereinbaren-kooperation-mit-verteidigungsministerium-der-ukraine-93CH-3718802",
+      "published_at": "2026-10-22T19:58:00+02:00",
+      "kind": "news"
+     },
+     {
+      "headline": "Nokia-Aktie erholt sich nach Kursrutsch",
+      "summary": "Einen Tag nach dem Einbruch legten die Nokia-ADR im US-Handel um rund 4 Prozent zu, obwohl der Gesamtmarkt schwächer war. Mehrere Häuser hielten die Reaktion auf die Quartalszahlen für übertrieben.",
+      "source": "Investing.com",
+      "url": "https://de.investing.com/news/stock-market-news/nokiaaktie-im-rebound-analysten-stufen-kursrutsch-als-ubertrieben-ein-93CH-3720936",
+      "published_at": "2026-10-23T15:47:00+02:00",
+      "kind": "news"
+     },
+     {
+      "headline": "Bernstein Research: bestätigt",
+      "summary": "Ulrich Rathe wertet die Quartalszahlen als stark und lobt die zuversichtlichen Signale für das Optik- und IP-Geschäft 2027.",
+      "source": "dpa-AFX Analyser via boerse.de",
+      "url": "https://www.boerse.de/nachrichten/Bernstein-belaesst-Nokia-auf-Market-Perform-Ziel-9-53-Euro/38682623",
+      "published_at": "2026-10-22T12:47:00+02:00",
+      "kind": "analyst",
+      "rating": "Market-Perform",
+      "target": "9,53 EUR"
+     },
+     {
+      "headline": "Rosenblatt: Ziel gesenkt",
+      "summary": "Rosenblatt senkt das Ziel für die US-Aktie wegen niedrigerer Bewertungen der Vergleichsfirmen von 15 auf 14 Dollar, hält den Kursrutsch aber für übertrieben.",
+      "source": "Investing.com",
+      "url": "https://www.investing.com/news/analyst-ratings/rosenblatt-cuts-nokia-stock-price-target-to-14-on-lower-peer-multiples-93CH-4969393",
+      "published_at": "2026-10-23T08:46:00+02:00",
+      "kind": "analyst",
+      "rating": "Buy",
+      "target": "14 USD"
+     },
+     {
+      "headline": "Jefferies: bestätigt",
+      "summary": "Janardan Menon sieht eine Beschleunigung des Geschäfts und eine attraktive Bewertung und unterstellt kräftiges zweistelliges Gewinnwachstum in den kommenden zwei Jahren.",
+      "source": "dpa-AFX Analyser via boerse.de",
+      "url": "https://www.boerse.de/nachrichten/Jefferies-belaesst-Nokia-auf-Buy-Ziel-13-80-Euro/38684590",
+      "published_at": "2026-10-23T14:31:00+02:00",
+      "kind": "analyst",
+      "rating": "Buy",
+      "target": "13,80 EUR"
+     },
+     {
+      "headline": "JPMorgan: bestätigt",
+      "summary": "Sandeep Deshpande hält eine weitere Anhebung des Ausblicks für 2027 für möglich, die starken Umsätze mit KI und Cloud seien bereits erwartet worden.",
+      "source": "dpa-AFX Analyser via boerse.de",
+      "url": "https://www.boerse.de/nachrichten/JPMorgan-belaesst-Nokia-auf-Overweight-Ziel-18-Euro/38684664",
+      "published_at": "2026-10-23T14:53:00+02:00",
+      "kind": "analyst",
+      "rating": "Overweight",
+      "target": "18 EUR"
+     }
+    ]
+   },
+   {
+    "id": "spacex",
+    "items": [
+     {
+      "headline": "SpaceX mit Milliardengewinn und kräftigem Umsatzsprung",
+      "summary": "SpaceX verdiente im dritten Quartal netto 4,4 Milliarden Dollar nach einem Verlust im Vorjahr, der Umsatz stieg auf 14,58 Milliarden Dollar und lag klar über den Erwartungen. Treiber waren das KI-Geschäft und Starlink mit nun 13,6 Millionen Kunden.",
+      "source": "dpa-AFX via onvista",
+      "url": "https://www.onvista.de/news/2026/10-20-musks-spacex-mit-milliarden-quartalsgewinn-0-10-26566326",
+      "published_at": "2026-10-20T23:06:00+02:00",
+      "kind": "news"
+     },
+     {
+      "headline": "Musk bestätigt Fusionsprüfung von Tesla und SpaceX, Aktie springt",
+      "summary": "Tesla und SpaceX haben Sonderausschüsse gebildet, die einen Zusammenschluss prüfen, Musk selbst hält eine Fusion für sinnvoll, aber nicht für sicher. Die SpaceX-Aktie stieg im frühen Handel um rund zehn Prozent auf 162,50 Dollar.",
+      "source": "dpa-AFX via onvista",
+      "url": "https://www.onvista.de/news/2026/10-21-roundup-3-musk-bestaetigt-tesla-und-spacex-pruefen-zusammenschluss-0-10-26566848",
+      "published_at": "2026-10-21T16:08:00+02:00",
+      "kind": "news"
+     },
+     {
+      "headline": "Musk wirft Ukraine Starlink-Nutzung für Angriffe vor",
+      "summary": "Musk erklärte auf X, das ukrainische Militär habe Starlink für offensive Drohnenangriffe genutzt und damit gegen die Nutzungsbedingungen verstoßen, Belege nannte er nicht. Zuvor hatte Kiew über eine tagelange Drosselung des Dienstes geklagt, inzwischen laufe Starlink wieder normal.",
+      "source": "dpa-AFX via onvista",
+      "url": "https://www.onvista.de/news/2026/10-25-musk-ukraine-hat-starlink-fuer-offensivangriffe-genutzt-0-10-26568120",
+      "published_at": "2026-10-25T07:57:00+01:00",
+      "kind": "news"
+     },
+     {
+      "headline": "SpaceX verhandelt über Zugang zu 80.000 US-Mobilfunkstandorten",
+      "summary": "Laut einem Bloomberg-Bericht spricht SpaceX mit Funkturmbetreibern wie Crown Castle über mindestens 80.000 Standorte für ein eigenes Mobilfunknetz. Die Aktien von AT&T, Verizon und T-Mobile gaben nachbörslich deutlich nach.",
+      "source": "Reuters via Investing.com",
+      "url": "https://www.investing.com/news/stock-market-news/spacex-seeks-access-to-80000-us-cell-sites-for-wireless-network-bloomberg-news-reports-4967805",
+      "published_at": "2026-10-23T01:01:00+02:00",
+      "kind": "news"
+     },
+     {
+      "headline": "Goldman Sachs: Ziel angehoben",
+      "summary": "Goldman hebt das Kursziel von 230 auf 245 Dollar an. Grund ist die Stellung von SpaceX bei Raumfahrt, Konnektivität und KI sowie die vertikale Integration.",
+      "source": "Investing.com",
+      "url": "https://www.investing.com/news/analyst-ratings/goldman-sachs-raises-spacex-stock-price-target-to-245-on-growth-outlook-93CH-4962792",
+      "published_at": "2026-10-21T14:00:00+02:00",
+      "kind": "analyst",
+      "rating": "Buy",
+      "target": "245 USD"
+     },
+     {
+      "headline": "JPMorgan: Ziel angehoben",
+      "summary": "Doug Anmuth hat das Ziel nach den starken Q3-Zahlen von 240 auf 500 Dollar mehr als verdoppelt und sieht SpaceX für einen riesigen adressierbaren Markt bestens aufgestellt.",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-bulls-rejoice-jpmorgan-sees-132829958.html",
+      "published_at": "2026-10-21T15:28:00+02:00",
+      "kind": "analyst",
+      "rating": "Overweight",
+      "target": "500 USD"
+     },
+     {
+      "headline": "Pivotal Research: Ziel angehoben",
+      "summary": "Pivotal hebt das Ziel von 230 auf 260 Dollar, weil SpaceX die Erwartungen übertraf und für das erste Quartal 2027 deutlich mehr Umsatz in Aussicht stellt.",
+      "source": "Investing.com",
+      "url": "https://de.investing.com/news/analyst-ratings/starke-quartalszahlen-pivotal-research-hebt-kursziel-fur-spacex-an-93CH-3715536",
+      "published_at": "2026-10-21T16:14:00+02:00",
+      "kind": "analyst",
+      "rating": "Buy",
+      "target": "260 USD"
+     },
+     {
+      "headline": "Bank of America: Ziel angehoben",
+      "summary": "Die Bank zieht ihre Umsatzschätzungen nach vorn, weil die Wachstumsziele des Managements erreichbarer erscheinen, und hebt das Ziel von 235 auf 275 Dollar.",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-wins-higher-price-target-175700361.html",
+      "published_at": "2026-10-22T19:57:00+02:00",
+      "kind": "analyst",
+      "rating": "Buy",
+      "target": "275 USD"
+     },
+     {
+      "headline": "Phillip Securities: Hochstufung",
+      "summary": "Phillip Securities stuft SpaceX direkt von Sell auf Buy hoch und hebt das Ziel von 75 auf 250 Dollar an. Die Quelle nennt an anderer Stelle abweichend 275 Dollar.",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-23-212035721.html",
+      "published_at": "2026-10-23T23:20:00+02:00",
+      "kind": "analyst",
+      "rating": "Buy",
+      "target": "250 USD"
+     }
+    ]
+   }
+  ]
+ }
+}

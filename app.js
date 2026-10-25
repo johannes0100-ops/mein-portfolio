@@ -1,7 +1,8 @@
 /* Mein Portfolio: Depot-App mit Claude. Daten bleiben auf dem Gerät (localStorage). */
 (function () {
   'use strict';
-  const APP_VERSION = '1.0.0';
+  const APP_VERSION = '1.1.0';
+  const FEED_URL = 'data/feed.json'; // vom Claude-Dashboard veröffentlicht
   const API_URL = 'https://api.anthropic.com/v1/messages';
   const MODELS = {
     'claude-sonnet-5-5': { label: 'Claude Sonnet 5.5 (empfohlen)', inp: 2, out: 10 },
@@ -33,7 +34,7 @@
     set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch (_) { return false; } },
     del(k) { try { localStorage.removeItem(k); } catch (_) {} },
   };
-  const emptyData = () => ({ version: 1, positions: [], quotes: {}, quotes_at: null, news: null, chat: [], last_cost: null });
+  const emptyData = () => ({ version: 1, positions: [], quotes: {}, quotes_at: null, news: null, chat: [], last_cost: null, feed_at: null });
   let data = Object.assign(emptyData(), store.get(K_DATA, {}));
   let ui = Object.assign({ hide: false, view: 'depot', model: 'claude-sonnet-5-5' }, store.get(K_UI, {}));
   if (!MODELS[ui.model]) ui.model = 'claude-sonnet-5-5';
@@ -76,7 +77,8 @@
     const c = calc();
     const hb = $('btn-hide'); hb.setAttribute('aria-pressed', ui.hide ? 'true' : 'false');
     hb.innerHTML = (ui.hide ? ICON_EYE_OFF : ICON_EYE) + '<span>' + (ui.hide ? 'Werte anzeigen' : 'Werte ausblenden') + '</span>';
-    const rb = $('btn-refresh'); rb.disabled = !!busy; rb.innerHTML = ICON_REFRESH + '<span>' + (busy === 'quotes' ? 'Läuft' : 'Kurse holen') + '</span>';
+    const rb = $('btn-refresh'); rb.disabled = !!busy; rb.innerHTML = ICON_REFRESH + '<span>' + (busy === 'feed' || busy === 'quotes' ? 'Lädt' : 'Aktualisieren') + '</span>';
+    const cb = $('btn-claude-quotes'); if (cb) { cb.disabled = !!busy; cb.textContent = busy === 'quotes' ? 'Claude sucht …' : 'Selbst mit Claude suchen'; }
     $('k-val').textContent = c.priced.length ? money(c.total) : '–';
     $('k-val-sub').textContent = c.priced.length ? c.priced.length + ' Positionen' + (c.missingPrice.length ? ', ' + c.missingPrice.length + ' ohne Kurs' : '') : 'noch keine Kurse';
     const kp = $('k-pl'); kp.textContent = c.plp != null ? pct(c.plp) : '–'; kp.className = 'val ' + tone(c.plp);
@@ -91,7 +93,8 @@
   }
   function idleStatus() {
     const parts = [];
-    parts.push(data.quotes_at ? 'Kurse ' + fmtTime(data.quotes_at) : 'Noch keine Kurse geholt');
+    parts.push(data.quotes_at ? 'Kurse ' + fmtTime(data.quotes_at) : 'Noch keine Kurse');
+    if (data.feed_at) parts.push('Dashboard ' + fmtTime(data.feed_at));
     if (data.news?.generated_at) parts.push('News ' + fmtTime(data.news.generated_at));
     if (data.last_cost != null) parts.push('zuletzt ca. ' + data.last_cost.toFixed(2).replace('.', ',') + ' $');
     setStatus(parts.join(' · '), data.quotes_at ? 'live' : '');
@@ -132,9 +135,9 @@
 
   function renderNews() {
     const box = $('news-body'); box.replaceChildren();
-    const btn = $('btn-news'); btn.disabled = !!busy; btn.textContent = busy === 'news' ? 'Läuft' : 'News holen';
+    const btn = $('btn-news'); btn.disabled = !!busy; btn.textContent = busy === 'news' ? 'Claude sucht …' : 'Selbst mit Claude suchen';
     const n = data.news;
-    if (!n) { const e = el('div', 'empty'); e.append(el('b', '', 'Noch keine News'), el('span', '', 'Claude sucht News und Analystenstimmen der letzten 5 Tage zu deinen Werten. Das kostet etwa 0,20 bis 0,50 $ API-Guthaben.')); box.append(e); return; }
+    if (!n) { const e = el('div', 'empty'); e.append(el('b', '', 'Noch keine News'), el('span', '', 'Die News kommen automatisch vom Claude-Dashboard, meist werktags ab 7:30 Uhr. Mit „Selbst mit Claude suchen“ holst du sie sofort, das kostet etwa 0,20 bis 0,50 $ API-Guthaben.')); box.append(e); return; }
     const sec = (title, items) => {
       if (!items || !items.length) return;
       const g = el('div', 'group'); g.append(el('h3', '', title));
@@ -151,7 +154,7 @@
       });
       g.append(ul); box.append(g);
     };
-    box.append(el('p', 'note', 'Stand ' + fmtTime(n.generated_at) + '. Zusammenfassungen von Claude, Links zu den Quellen.'));
+    box.append(el('p', 'note', 'Stand ' + fmtTime(n.generated_at) + (n.by === 'feed' ? ', vom Claude-Dashboard' : '') + '. Zusammenfassungen von Claude, Links zu den Quellen.'));
     sec('Markt', n.market);
     const byId = Object.fromEntries(data.positions.map((p) => [p.id, p.name]));
     (n.positions || []).forEach((g) => sec(byId[g.id] || g.name || g.id, g.items));
@@ -215,7 +218,7 @@
     const sel = $('set-model'); if (!sel.options.length) Object.entries(MODELS).forEach(([k, m]) => { const o = el('option', '', m.label); o.value = k; sel.append(o); });
     sel.value = ui.model;
     const m = MODELS[ui.model]; $('model-hint').textContent = 'Preis je 1 Mio. Token: ' + nf2.format(m.inp) + ' $ Eingabe, ' + nf2.format(m.out) + ' $ Ausgabe, dazu 0,01 $ je Websuche.';
-    const k = getKey(); $('key-state').textContent = k ? 'Schlüssel gespeichert (endet auf …' + k.slice(-4) + ').' : 'Noch kein Schlüssel gespeichert. Ohne Schlüssel funktionieren Kurse holen, News und Chat nicht.';
+    const k = getKey(); $('key-state').textContent = k ? 'Schlüssel gespeichert (endet auf …' + k.slice(-4) + ').' : 'Noch kein Schlüssel gespeichert. Kurse und News kommen trotzdem automatisch vom Claude-Dashboard. Den Schlüssel brauchst du nur für den Chat und für „Selbst mit Claude suchen“.';
     $('app-version').textContent = 'Version ' + APP_VERSION + '. Deine Daten liegen nur auf diesem Gerät.';
   }
 
@@ -285,6 +288,45 @@
   }
   const nowText = () => new Date().toLocaleString('de-DE', { ...TZ, weekday: 'long', day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' });
   const posList = () => data.positions.map((p) => ({ id: p.id, name: p.name, isin: p.isin || null, wkn: p.wkn || null, art: p.type || 'aktie' }));
+
+  // ---------- Daten vom Claude-Dashboard (kostenlos, data/feed.json im selben Repository) ----------
+  const tms = (s) => { const t = Date.parse(s || ''); return isNaN(t) ? 0 : t; };
+  let lastFeedCheck = 0;
+  async function loadFeed(manual) {
+    if (busy) return;
+    lastFeedCheck = Date.now();
+    if (manual) { busy = 'feed'; renderHeader(); setStatus('Lade Daten vom Dashboard …', 'run'); }
+    try {
+      let res;
+      try { res = await fetch(FEED_URL + '?t=' + Date.now(), { cache: 'no-store' }); } catch (_) { throw new Error('offline'); }
+      if (!res.ok) throw new Error('nofeed');
+      const f = await res.json();
+      if (!f || typeof f.quotes !== 'object') throw new Error('nofeed');
+      const byIsin = {}; Object.entries(f.quotes).forEach(([k, q]) => { if (q && q.isin) byIsin[q.isin] = k; });
+      let n = 0;
+      data.positions.forEach((p) => {
+        const key = f.quotes[p.id] ? p.id : byIsin[p.isin]; const q = key && f.quotes[key];
+        if (!q || !(num(q.eur_price) > 0)) return;
+        const old = data.quotes[p.id];
+        if (old && old.by !== 'feed' && tms(old.as_of) > tms(q.as_of)) return; // eigener, neuerer Kurs bleibt
+        if (old && old.by === 'feed' && tms(old.as_of) >= tms(q.as_of) && num(old.eur_price) === num(q.eur_price)) return;
+        data.quotes[p.id] = { eur_price: num(q.eur_price), prev_eur: num(q.prev_eur), change_pct: num(q.change_pct), venue: q.venue || 'Dashboard',
+          as_of: q.as_of || f.quotes_at, source: q.source || null, url: safeUrl(q.url), warn: false, by: 'feed' };
+        n++;
+      });
+      if (n) data.quotes_at = f.quotes_at || f.generated_at;
+      if (f.news && tms(f.news.generated_at) > tms(data.news?.generated_at)) {
+        const idMap = {}; data.positions.forEach((p) => { idMap[p.id] = p.id; if (p.isin) Object.entries(f.quotes).forEach(([k, q]) => { if (q.isin === p.isin) idMap[k] = p.id; }); });
+        const clean = (arr) => (Array.isArray(arr) ? arr : []).filter((x) => x && x.headline).map((x) => ({ ...x, url: safeUrl(x.url) }));
+        data.news = { generated_at: f.news.generated_at, by: 'feed', market: clean(f.news.market),
+          positions: (f.news.positions || []).filter((g) => idMap[g.id]).map((g) => ({ id: idMap[g.id], items: clean(g.items) })) };
+      }
+      data.feed_at = f.generated_at || null; save();
+      if (manual) toast(n ? n + ' Kurse vom Dashboard übernommen' : 'Schon aktuell. Das Dashboard aktualisiert werktags um 12:45, 17:45 und 22:45 Uhr.');
+    } catch (e) {
+      if (manual) toast(e.message === 'offline' ? 'Keine Verbindung. Es bleibt der letzte Stand.' : 'Noch keine Daten vom Dashboard gefunden.');
+    } finally { if (busy === 'feed') busy = null; render(); }
+  }
 
   async function refreshQuotes() {
     if (busy) return;
@@ -413,6 +455,7 @@
     const quotes = {};
     Object.entries(o.quotes || {}).forEach(([k, q]) => { const price = num(q?.eur_price); if (price > 0) quotes[slug(k)] = { ...q, eur_price: price, url: safeUrl(q.url) }; });
     data = Object.assign(emptyData(), { positions, quotes, quotes_at: o.quotes_at || null, news: o.news || null });
+    setTimeout(() => loadFeed(false), 50);
     save(); render(); toast(positions.length + ' Positionen importiert'); show('depot');
   }
   $('imp-file').addEventListener('change', async (ev) => {
@@ -459,7 +502,8 @@
 
   // ---------- Bedienung ----------
   $('btn-hide').onclick = () => { ui.hide = !ui.hide; saveUi(); render(); };
-  $('btn-refresh').onclick = refreshQuotes;
+  $('btn-refresh').onclick = () => loadFeed(true);
+  $('btn-claude-quotes').onclick = refreshQuotes;
   $('btn-news').onclick = refreshNews;
   $('btn-add').onclick = () => openPos(null);
   document.querySelectorAll('nav.tabs button').forEach((b) => { b.onclick = () => show(b.dataset.view); });
@@ -468,6 +512,7 @@
   $('chat-input').addEventListener('keydown', (ev) => { if (ev.key === 'Enter' && !ev.shiftKey && !ev.isComposing && window.matchMedia('(pointer: fine)').matches) { ev.preventDefault(); sendChat(); } });
   $('chat-form').addEventListener('submit', (ev) => { ev.preventDefault(); sendChat(); });
 
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible' && Date.now() - lastFeedCheck > 10 * 60e3) loadFeed(false); });
   if ('serviceWorker' in navigator && location.protocol === 'https:') navigator.serviceWorker.register('sw.js').catch(() => {});
-  render(); show(ui.view);
+  render(); show(ui.view); loadFeed(false);
 })();
