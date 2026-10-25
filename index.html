@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mein Portfolio</title>
+<meta name="description" content="Depot-App mit Kursen, News und Fragen an Claude">
+<meta name="theme-color" content="#121820">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Portfolio">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: App-Kopf mit Kennzahlen, darunter eine Ansicht je Reiter (Depot, News, Claude, Einstellungen), Reiterleiste unten */
+:root {
+  --bg: #eef1f4; --panel: #ffffff; --sub: #f6f8fa; --ink: #121820; --muted: #5f6b78; --faint: #8a95a1; --line: #dfe4e9;
+  --accent: #2457a6; --accent-soft: #e5edf8; --up: #0e7a4e; --down: #bf2b3b; --warn: #a06400; --chip: #edf0f3;
+  --f-text: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  --f-num: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --nav-h: 58px;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0b0f14; --panel: #121820; --sub: #18202a; --ink: #e4e9ee; --muted: #9aa6b2; --faint: #6f7b87; --line: #232d38;
+  --accent: #6f9fff; --accent-soft: #1a2740; --up: #3cc489; --down: #ff6f7d; --warn: #e3b04f; --chip: #1d2631; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #0b0f14; --panel: #121820; --sub: #18202a; --ink: #e4e9ee; --muted: #9aa6b2; --faint: #6f7b87; --line: #232d38;
+  --accent: #6f9fff; --accent-soft: #1a2740; --up: #3cc489; --down: #ff6f7d; --warn: #e3b04f; --chip: #1d2631; color-scheme: dark; }
+
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-text); font-size: 14px; line-height: 1.45;
+  -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); background: var(--panel); z-index: 30; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.num { font-family: var(--f-num); font-variant-numeric: tabular-nums; }
+.up { color: var(--up); } .down { color: var(--down); } .mut { color: var(--muted); }
+[hidden] { display: none !important; }
+
+/* Kopf */
+.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--panel); border-bottom: 1px solid var(--line); }
+.top-in { max-width: 820px; margin-inline: auto; padding-block: 10px 12px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: grid; gap: 10px; }
+.bar { display: flex; align-items: center; gap: 8px 10px; flex-wrap: wrap; }
+@media (max-width: 460px) { .bar h1 { flex-basis: 100%; } .bar .btn { flex: 1 1 0; justify-content: center; } }
+.bar h1 { margin: 0; font-size: 17px; font-weight: 600; flex: 1; min-width: 0; }
+.btn { border: 1px solid var(--line); background: var(--chip); border-radius: 8px; padding: 7px 12px; font-weight: 600; font-size: 13px;
+  display: inline-flex; align-items: center; gap: 6px; min-height: 36px; }
+.btn svg { width: 16px; height: 16px; flex: none; }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--panel); }
+.btn.blue { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+.btn.blue[aria-pressed="true"] { background: var(--accent); color: var(--panel); }
+.btn:disabled { opacity: .55; cursor: default; }
+.btn.icon { padding: 7px 9px; }
+.btn.danger { color: var(--down); }
+.btn.danger.armed { background: var(--down); border-color: var(--down); color: var(--panel); }
+.kpis { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.kpi { min-width: 0; }
+.kpi .lab { font-size: 10.5px; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); }
+.kpi .val { font-family: var(--f-num); font-size: clamp(15px, 4.4vw, 22px); font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-variant-numeric: tabular-nums; }
+.kpi .sub { font-size: 11.5px; color: var(--faint); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.status { font-size: 12px; color: var(--muted); display: flex; gap: 6px; align-items: center; min-width: 0; }
+.status span { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.dot { width: 7px; height: 7px; border-radius: 50%; background: var(--faint); flex: none; }
+.dot.live { background: var(--up); } .dot.run { background: var(--warn); animation: pulse 1.2s infinite; } .dot.err { background: var(--down); }
+@keyframes pulse { 50% { opacity: .3; } }
+@media (prefers-reduced-motion: reduce) { .dot.run { animation: none; } }
+
+/* Inhalt */
+main { max-width: 820px; margin-inline: auto; padding-block: 12px calc(var(--nav-h) + 24px + env(safe-area-inset-bottom, 0px));
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: grid; gap: 12px; }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; min-width: 0; }
+.ph { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 12px 14px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+.ph h2 { margin: 0; font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+.ph .meta { font-size: 11.5px; color: var(--faint); }
+.pb { padding: 12px 14px; }
+.empty { padding: 22px 14px; color: var(--muted); text-align: center; display: grid; gap: 10px; justify-items: center; }
+.empty b { color: var(--ink); font-size: 15px; }
+.note { font-size: 12px; color: var(--faint); margin: 0; }
+.banner { border-radius: 10px; padding: 10px 12px; font-size: 13px; background: var(--accent-soft); color: var(--ink); border: 1px solid var(--accent); }
+.banner.err { background: transparent; border-color: var(--down); color: var(--down); }
+
+/* Positionen */
+.pos { list-style: none; margin: 0; padding: 0; }
+.pos li { border-bottom: 1px solid var(--line); }
+.pos li:last-child { border-bottom: 0; }
+.pos button.row { all: unset; box-sizing: border-box; width: 100%; cursor: pointer; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 12px; padding: 12px 14px; }
+.pos button.row:hover { background: var(--sub); }
+.pos button.row:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.pos .nm { font-weight: 600; font-size: 14.5px; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pos .val { font-family: var(--f-num); font-size: 15px; font-weight: 500; text-align: right; font-variant-numeric: tabular-nums; }
+.pos .l2 { font-size: 12px; color: var(--muted); font-family: var(--f-num); min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pos .r2 { font-size: 12px; font-family: var(--f-num); text-align: right; white-space: nowrap; }
+.pos .l3 { grid-column: 1 / -1; display: flex; gap: 6px; flex-wrap: wrap; align-items: center; font-size: 11.5px; color: var(--faint); }
+.chip { background: var(--chip); border-radius: 4px; padding: 1px 6px; font-size: 10.5px; font-weight: 600; letter-spacing: .03em; color: var(--muted); }
+.chip.up { color: var(--up); } .chip.down { color: var(--down); } .chip.warn { color: var(--warn); }
+.total { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 12px; padding: 12px 14px; background: var(--sub); border-top: 1px solid var(--line); border-radius: 0 0 12px 12px; }
+.total .nm { font-weight: 600; }
+.total .val { font-family: var(--f-num); font-weight: 600; text-align: right; }
+.total .l2, .total .r2 { font-size: 12px; font-family: var(--f-num); }
+.total .r2 { text-align: right; }
+.actions { display: flex; gap: 8px; flex-wrap: wrap; }
+
+/* News */
+.news { list-style: none; margin: 0; padding: 0; }
+.news li { padding: 10px 0; border-bottom: 1px solid var(--line); display: grid; gap: 3px; }
+.news li:last-child { border-bottom: 0; }
+.news .when { font-family: var(--f-num); font-size: 11px; color: var(--faint); display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.news a.h { color: var(--ink); font-weight: 600; text-decoration: none; line-height: 1.35; }
+.news a.h:hover { color: var(--accent); }
+.news p { margin: 0; color: var(--muted); font-size: 13px; }
+.group + .group { margin-top: 6px; }
+.group h3 { margin: 10px 0 0; font-size: 13px; }
+
+/* Chat */
+.chat { display: grid; gap: 10px; }
+.msg { max-width: 92%; padding: 10px 12px; border-radius: 12px; font-size: 14px; line-height: 1.5; overflow-wrap: anywhere; }
+.msg.me { justify-self: end; background: var(--accent); color: var(--panel); border-bottom-right-radius: 4px; }
+.msg.ai { justify-self: start; background: var(--panel); border: 1px solid var(--line); border-bottom-left-radius: 4px; }
+.msg.ai p { margin: 0 0 8px; } .msg.ai p:last-child { margin-bottom: 0; }
+.msg.ai ul { margin: 0 0 8px; padding-left: 18px; }
+.msg.ai a { color: var(--accent); }
+.msg .src { margin-top: 8px; font-size: 11.5px; color: var(--faint); display: grid; gap: 2px; }
+.msg .cost { margin-top: 6px; font-size: 11px; color: var(--faint); font-family: var(--f-num); }
+.composer { position: sticky; bottom: calc(var(--nav-h) + 10px + env(safe-area-inset-bottom, 0px)); display: flex; gap: 8px; align-items: flex-end;
+  background: var(--bg); padding-top: 6px; }
+.composer textarea { flex: 1; min-width: 0; resize: none; min-height: 44px; max-height: 140px; border: 1px solid var(--line); background: var(--panel);
+  border-radius: 12px; padding: 10px 12px; font-size: 16px; }
+.suggest { display: flex; gap: 6px; flex-wrap: wrap; }
+.suggest button { border: 1px solid var(--line); background: var(--panel); border-radius: 999px; padding: 6px 11px; font-size: 12.5px; color: var(--accent); }
+
+/* Formulare */
+.field { display: grid; gap: 4px; }
+.field label { font-size: 12px; color: var(--muted); font-weight: 500; }
+.field input, .field select, .field textarea { border: 1px solid var(--line); background: var(--sub); border-radius: 8px; padding: 9px 10px; font-size: 16px; min-width: 0; width: 100%; }
+.field .hint { font-size: 11.5px; color: var(--faint); }
+.form { display: grid; gap: 12px; }
+.row2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.steps { margin: 0; padding-left: 18px; font-size: 13px; color: var(--muted); display: grid; gap: 4px; }
+
+/* Dialog */
+dialog { border: 1px solid var(--line); border-radius: 14px; padding: 0; background: var(--panel); color: var(--ink); width: min(520px, calc(100vw - 24px)); max-height: calc(100dvh - 40px); }
+dialog::backdrop { background: rgba(0, 0, 0, .45); }
+dialog .dh { display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; border-bottom: 1px solid var(--line); }
+dialog .dh h2 { margin: 0; font-size: 15px; }
+dialog .db { padding: 14px; overflow: auto; }
+dialog .df { display: flex; gap: 8px; justify-content: space-between; padding: 12px 14px; border-top: 1px solid var(--line); flex-wrap: wrap; }
+
+/* Reiterleiste */
+nav.tabs { position: fixed; left: 0; right: 0; bottom: 0; z-index: 25; background: var(--panel); border-top: 1px solid var(--line);
+  padding-bottom: env(safe-area-inset-bottom, 0px); padding-left: env(safe-area-inset-left, 0px); padding-right: env(safe-area-inset-right, 0px); }
+nav.tabs .in { max-width: 820px; margin-inline: auto; display: grid; grid-template-columns: repeat(4, 1fr); height: var(--nav-h); }
+nav.tabs button { all: unset; cursor: pointer; display: grid; justify-items: center; align-content: center; gap: 2px; font-size: 11px; color: var(--muted); }
+nav.tabs button svg { width: 22px; height: 22px; }
+nav.tabs button[aria-selected="true"] { color: var(--accent); font-weight: 600; }
+nav.tabs button:focus-visible { outline: 2px solid var(--accent); outline-offset: -4px; border-radius: 8px; }
+
+.toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(var(--nav-h) + 14px + env(safe-area-inset-bottom, 0px)); z-index: 40;
+  background: var(--ink); color: var(--panel); padding: 9px 14px; border-radius: 10px; font-size: 13px; max-width: calc(100vw - 32px); }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <div class="bar">
+      <h1>Mein Portfolio</h1>
+      <button class="btn blue" id="btn-hide" type="button" aria-pressed="false"></button>
+      <button class="btn primary" id="btn-refresh" type="button"></button>
+    </div>
+    <div class="kpis">
+      <div class="kpi"><div class="lab">Depotwert</div><div class="val" id="k-val">–</div><div class="sub" id="k-val-sub">&nbsp;</div></div>
+      <div class="kpi"><div class="lab">Seit Kauf</div><div class="val" id="k-pl">–</div><div class="sub" id="k-pl-sub">&nbsp;</div></div>
+      <div class="kpi"><div class="lab">Heute</div><div class="val" id="k-d1">–</div><div class="sub" id="k-d1-sub">&nbsp;</div></div>
+    </div>
+    <div class="status"><i class="dot" id="st-dot"></i><span id="st-text">Lädt</span></div>
+  </div>
+</header>
+
+<main>
+  <div id="banner" hidden></div>
+
+  <section id="view-depot" class="view">
+    <div class="panel">
+      <div class="ph"><h2>Positionen</h2><div class="actions"><button class="btn" id="btn-add" type="button">+ Position</button></div></div>
+      <ul class="pos" id="pos-list"></ul>
+      <div id="pos-total"></div>
+    </div>
+    <p class="note" id="depot-note">Werte in Euro zum Kurs an einem deutschen Börsenplatz, wie im Depot. Tippe auf eine Position, um Stück oder Kaufpreis zu ändern.</p>
+  </section>
+
+  <section id="view-news" class="view" hidden>
+    <div class="panel">
+      <div class="ph"><h2>News und Analysten</h2><button class="btn primary" id="btn-news" type="button">News holen</button></div>
+      <div class="pb" id="news-body"></div>
+    </div>
+  </section>
+
+  <section id="view-chat" class="view" hidden>
+    <div class="chat" id="chat-list"></div>
+    <div class="suggest" id="chat-suggest"></div>
+    <form class="composer" id="chat-form" autocomplete="off">
+      <textarea id="chat-input" rows="1" placeholder="Frag Claude zu deinem Depot" aria-label="Frage an Claude"></textarea>
+      <button class="btn primary" id="chat-send" type="submit">Senden</button>
+    </form>
+  </section>
+
+  <section id="view-settings" class="view" hidden>
+    <div class="panel">
+      <div class="ph"><h2>Claude verbinden</h2></div>
+      <div class="pb form">
+        <div class="field">
+          <label for="set-key">API-Schlüssel</label>
+          <input id="set-key" type="password" autocomplete="off" spellcheck="false" placeholder="sk-ant-...">
+          <span class="hint">Erstellen in der Claude Console unter API Keys. Der Schlüssel bleibt nur auf diesem Gerät gespeichert.</span>
+        </div>
+        <div class="field">
+          <label for="set-model">Modell</label>
+          <select id="set-model"></select>
+          <span class="hint" id="model-hint"></span>
+        </div>
+        <div class="actions"><button class="btn primary" id="btn-save-key" type="button">Speichern</button><button class="btn" id="btn-test-key" type="button">Verbindung testen</button></div>
+        <p class="note" id="key-state"></p>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="ph"><h2>Daten</h2></div>
+      <div class="pb form">
+        <p class="note">Jedes Gerät speichert seine Daten selbst. Um sie auf ein anderes Gerät zu bringen, exportiere hier eine Datei und importiere sie dort.</p>
+        <div class="field">
+          <label for="imp-file">Datei importieren (portfolio.json)</label>
+          <input id="imp-file" type="file" accept="application/json,.json">
+        </div>
+        <div class="field">
+          <label for="exp-text">Export</label>
+          <textarea id="exp-text" rows="3" readonly></textarea>
+          <span class="hint">Kopiere den Text in eine Datei oder Notiz und importiere ihn auf dem anderen Gerät über „Text importieren“.</span>
+        </div>
+        <div class="actions">
+          <button class="btn" id="btn-export" type="button">Export erstellen</button>
+          <button class="btn" id="btn-copy" type="button">Export kopieren</button>
+          <button class="btn" id="btn-import-text" type="button">Text importieren</button>
+          <button class="btn danger" id="btn-wipe" type="button">Alle Daten löschen</button>
+        </div>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="ph"><h2>Als App installieren</h2></div>
+      <div class="pb form">
+        <div><b>iPhone</b><ol class="steps"><li>Diese Seite in Safari öffnen.</li><li>Unten auf das Teilen-Symbol tippen.</li><li>„Zum Home-Bildschirm“ wählen.</li></ol></div>
+        <div><b>Surface</b><ol class="steps"><li>Diese Seite in Microsoft Edge öffnen.</li><li>Oben rechts auf „…“, dann „Apps“.</li><li>„Diese Website als App installieren“ wählen.</li></ol></div>
+        <p class="note" id="app-version"></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<nav class="tabs" aria-label="Bereiche">
+  <div class="in" role="tablist">
+    <button type="button" role="tab" data-view="depot" aria-selected="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg>Depot</button>
+    <button type="button" role="tab" data-view="news" aria-selected="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h13a2 2 0 0 1 2 2v12H6a2 2 0 0 1-2-2z"/><path d="M19 9h1a1 1 0 0 1 1 1v8a1 1 0 0 1-2 0"/><path d="M8 9h7M8 13h7M8 17h4"/></svg>News</button>
+    <button type="button" role="tab" data-view="chat" aria-selected="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>Claude</button>
+    <button type="button" role="tab" data-view="settings" aria-selected="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>Einstellungen</button>
+  </div>
+</nav>
+
+<dialog id="dlg-pos" aria-labelledby="dlg-pos-title">
+  <form id="pos-form" class="form" autocomplete="off">
+    <div class="dh"><h2 id="dlg-pos-title">Position</h2><button class="btn icon" type="button" id="pos-close" aria-label="Schließen">✕</button></div>
+    <div class="db form">
+      <div class="field"><label for="pf-name">Name</label><input id="pf-name" required placeholder="z. B. SAP"></div>
+      <div class="row2">
+        <div class="field"><label for="pf-isin">ISIN</label><input id="pf-isin" placeholder="DE0007164600" spellcheck="false"></div>
+        <div class="field"><label for="pf-wkn">WKN</label><input id="pf-wkn" placeholder="716460" spellcheck="false"></div>
+      </div>
+      <div class="row2">
+        <div class="field"><label for="pf-qty">Stück</label><input id="pf-qty" type="number" step="any" min="0" inputmode="decimal" required></div>
+        <div class="field"><label for="pf-cost">Kaufpreis gesamt €</label><input id="pf-cost" type="number" step="any" min="0" inputmode="decimal"></div>
+      </div>
+      <div class="row2">
+        <div class="field"><label for="pf-type">Art</label><select id="pf-type"><option value="aktie">Aktie</option><option value="etf">ETF</option><option value="fonds">Fonds</option></select></div>
+        <div class="field"><label for="pf-price">Kurs € (optional)</label><input id="pf-price" type="number" step="any" min="0" inputmode="decimal"><span class="hint">Wird bei „Kurse holen“ ersetzt.</span></div>
+      </div>
+    </div>
+    <div class="df">
+      <button class="btn danger" type="button" id="pos-del">Löschen</button>
+      <button class="btn primary" type="submit">Speichern</button>
+    </div>
+  </form>
+</dialog>
+
+<div class="toast" id="toast" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>
