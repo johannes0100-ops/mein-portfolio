@@ -1,0 +1,43 @@
+name: Live-Kurse
+
+# Alle 15 Minuten waehrend der Tradegate-Handelszeit (8 bis 22 Uhr deutscher Zeit), Zeiten in UTC.
+# 6 bis 21 Uhr UTC deckt Winter- und Sommerzeit ab.
+on:
+  schedule:
+    - cron: '*/15 6-21 * * 1-5'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/live_quotes.py'
+      - '.github/workflows/live-kurse.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: live-kurse
+  cancel-in-progress: false
+
+jobs:
+  kurse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Kurse holen
+        run: python3 tools/live_quotes.py --feed data/feed.json --out data/live.json
+      - name: Speichern
+        run: |
+          if git diff --quiet -- data/live.json && git ls-files --error-unmatch data/live.json >/dev/null 2>&1; then
+            echo "Keine Änderung"; exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/live.json
+          git commit -q -m "Live-Kurse aktualisiert"
+          for i in 1 2 3; do
+            git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0
+            sleep 5
+          done
+          echo "Push fehlgeschlagen"
