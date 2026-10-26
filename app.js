@@ -1,7 +1,7 @@
 /* Mein Portfolio: Depot-App mit Claude. Daten bleiben auf dem Gerät (localStorage). */
 (function () {
   'use strict';
-  const APP_VERSION = '1.2.1';
+  const APP_VERSION = '1.2.2';
   const FEED_URL = 'data/feed.json'; // vom Claude-Dashboard veröffentlicht
   const API_URL = 'https://api.anthropic.com/v1/messages';
   const MODELS = {
