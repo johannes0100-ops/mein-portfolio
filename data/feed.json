@@ -1,8 +1,8 @@
 {
  "app": "mein-portfolio-feed",
  "version": 1,
- "generated_at": "2026-10-26T21:54:11+00:00",
- "quotes_at": "2026-10-26T21:52:56+00:00",
+ "generated_at": "2026-10-26T22:08:23+00:00",
+ "quotes_at": "2026-10-26T21:54:05+00:00",
  "quotes": {
   "amzn": {
    "name": "Amazon.com Inc.",
@@ -17,7 +17,7 @@
    "local_price": 249.09,
    "local_ccy": "USD",
    "venue": "umgerechnet aus USD",
-   "as_of": "2026-10-26T21:52:56+00:00",
+   "as_of": "2026-10-26T21:54:05+00:00",
    "trading_day": "2026-10-26",
    "source": "benzinga.com (Nasdaq)",
    "url": "https://www.Benzinga.com/quote/amzn"
@@ -35,7 +35,7 @@
    "local_price": 994.8,
    "local_ccy": "GBX",
    "venue": "Stuttgart",
-   "as_of": "2026-10-26T21:52:56+00:00",
+   "as_of": "2026-10-26T21:54:05+00:00",
    "trading_day": "2026-10-26",
    "source": "etoro.com / boerse.de",
    "url": "https://www.etoro.com/markets/bab.l"
@@ -53,7 +53,7 @@
    "local_price": 57.7,
    "local_ccy": "EUR",
    "venue": "Tradegate",
-   "as_of": "2026-10-26T21:52:56+00:00",
+   "as_of": "2026-10-26T21:54:05+00:00",
    "trading_day": "2026-10-26",
    "source": "comdirect.de",
    "url": "https://www.comdirect.de/inf/aktien/DE0005190003"
@@ -71,7 +71,7 @@
    "local_price": 7.77,
    "local_ccy": "EUR",
    "venue": "umgerechnet aus EUR",
-   "as_of": "2026-10-26T21:52:56+00:00",
+   "as_of": "2026-10-26T21:54:05+00:00",
    "trading_day": "2026-10-26",
    "source": "marketscreener.com (Helsinki)",
    "url": "https://uk.marketscreener.com/quote/stock/NOKIA-OYJ-56358470/quotes/"
@@ -89,7 +89,7 @@
    "local_price": 130.23,
    "local_ccy": "EUR",
    "venue": "umgerechnet aus EUR",
-   "as_of": "2026-10-26T21:52:56+00:00",
+   "as_of": "2026-10-26T21:54:05+00:00",
    "trading_day": "2026-10-26",
    "source": "finanzen.net (Baader Bank)",
    "url": "https://www.finanzen.net/fonds/historisch/rezoom-world-s-de000a3d19w2"
@@ -98,8 +98,8 @@
    "name": "Space Exploration Technologies Corp.",
    "isin": "US84615Q1031",
    "wkn": "A42D4F",
-   "eur_price": 131.1523,
-   "prev_eur": 131.6791,
+   "eur_price": 130.932,
+   "prev_eur": 131.4578,
    "change_pct": -0.4,
    "d5": -0.72,
    "m1": -1.2,
@@ -107,10 +107,10 @@
    "local_price": 146.9,
    "local_ccy": "USD",
    "venue": "umgerechnet aus USD",
-   "as_of": "2026-10-26T21:52:56+00:00",
+   "as_of": "2026-10-26T21:54:05+00:00",
    "trading_day": "2026-10-26",
-   "source": "finance.yahoo.com",
-   "url": "https://finance.yahoo.com/quote/SPCX/"
+   "source": "stockanalysis.com (Nasdaq)",
+   "url": "https://stockanalysis.com/stocks/spcx/"
   },
   "vanguard": {
    "name": "Vanguard FTSE Developed World UCITS ETF Dist",
@@ -125,7 +125,7 @@
    "local_price": 128.1,
    "local_ccy": "EUR",
    "venue": "umgerechnet aus EUR",
-   "as_of": "2026-10-26T21:52:56+00:00",
+   "as_of": "2026-10-26T21:54:05+00:00",
    "trading_day": "2026-10-26",
    "source": "finanzen.net",
    "url": "https://www.finanzen.net/etf/vanguard-ftse-developed-world-etf-ie00bkx55t58/xetra"
