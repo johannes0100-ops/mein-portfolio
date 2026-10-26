@@ -3,7 +3,7 @@
  "version": 1,
  "source": "Tradegate",
  "price_field": "bid",
- "updated_at": "2026-10-26T22:27:51+00:00",
+ "updated_at": "2026-10-26T22:30:49+00:00",
  "quotes": {
   "amzn": {
    "bid": 222.7,
@@ -17,7 +17,7 @@
    "isin": "US0231351067",
    "eur": 222.7,
    "eur_field": "bid",
-   "d1": 0.52
+   "d1": 0.59
   },
   "babcock": {
    "bid": 11.89,
@@ -31,7 +31,7 @@
    "isin": "GB0009697037",
    "eur": 11.89,
    "eur_field": "bid",
-   "d1": 5.22
+   "d1": 6.81
   },
   "bmw": {
    "bid": 57.58,
@@ -45,7 +45,7 @@
    "isin": "DE0005190003",
    "eur": 57.58,
    "eur_field": "bid",
-   "d1": -0.96
+   "d1": -0.93
   },
   "nokia": {
    "bid": 7.702,
@@ -59,7 +59,7 @@
    "isin": "FI0009000681",
    "eur": 7.702,
    "eur_field": "bid",
-   "d1": 4.53
+   "d1": 5.32
   },
   "spacex": {
    "bid": 131.74,
@@ -73,7 +73,7 @@
    "isin": "US84615Q1031",
    "eur": 131.74,
    "eur_field": "bid",
-   "d1": -0.03
+   "d1": 0.27
   },
   "vanguard": {
    "bid": 127.94,
