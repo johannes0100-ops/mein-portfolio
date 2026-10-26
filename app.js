@@ -1,7 +1,7 @@
 /* Mein Portfolio: Depot-App mit Claude. Daten bleiben auf dem Gerät (localStorage). */
 (function () {
   'use strict';
-  const APP_VERSION = '1.2.2';
+  const APP_VERSION = '1.2.3';
   const FEED_URL = 'data/feed.json'; // vom Claude-Dashboard veröffentlicht
   const API_URL = 'https://api.anthropic.com/v1/messages';
   const MODELS = {
@@ -368,7 +368,7 @@
       }
       if (f.calendar && Array.isArray(f.calendar.events)) data.calendar = { generated_at: f.calendar.generated_at || f.generated_at, events: f.calendar.events.map((e) => ({ ...e, url: safeUrl(e.url) })) };
       data.feed_at = f.generated_at || null; save();
-      if (manual) toast(n ? n + ' Kurse vom Dashboard übernommen' : 'Schon aktuell. Das Dashboard aktualisiert werktags um 12:45, 17:45 und 22:45 Uhr.');
+      if (manual) toast(n ? n + ' Kurse vom Dashboard übernommen' : 'Schon aktuell. Das Dashboard aktualisiert werktags sechsmal zwischen 9:45 und 22:45 Uhr.');
     } catch (e) {
       if (manual) toast(e.message === 'offline' ? 'Keine Verbindung. Es bleibt der letzte Stand.' : 'Noch keine Daten vom Dashboard gefunden.');
     } finally { if (busy === 'feed') busy = null; render(); }
