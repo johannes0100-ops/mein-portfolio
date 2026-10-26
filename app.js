@@ -1,7 +1,7 @@
 /* Mein Portfolio: Depot-App mit Claude. Daten bleiben auf dem Gerät (localStorage). */
 (function () {
   'use strict';
-  const APP_VERSION = '1.2.0';
+  const APP_VERSION = '1.2.1';
   const FEED_URL = 'data/feed.json'; // vom Claude-Dashboard veröffentlicht
   const API_URL = 'https://api.anthropic.com/v1/messages';
   const MODELS = {
@@ -560,6 +560,13 @@
   $('chat-form').addEventListener('submit', (ev) => { ev.preventDefault(); sendChat(); });
 
   document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible' && Date.now() - lastFeedCheck > 10 * 60e3) loadFeed(false); });
-  if ('serviceWorker' in navigator && location.protocol === 'https:') navigator.serviceWorker.register('sw.js').catch(() => {});
+  if ('serviceWorker' in navigator && location.protocol === 'https:') {
+    // Neue App-Version: einmal neu laden, sobald sie aktiv ist. Beim Zurückkehren in die App nach Updates suchen.
+    const hadController = !!navigator.serviceWorker.controller; let reloaded = false;
+    navigator.serviceWorker.addEventListener('controllerchange', () => { if (hadController && !reloaded) { reloaded = true; location.reload(); } });
+    navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' }).then((reg) => {
+      document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') reg.update().catch(() => {}); });
+    }).catch(() => {});
+  }
   render(); show(ui.view); loadFeed(false);
 })();
