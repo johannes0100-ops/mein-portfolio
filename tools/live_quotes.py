@@ -85,8 +85,11 @@ def main():
             q = fetch(isin)
             p, used = pick(q)
             q.update({"isin": isin, "eur": round(p, 4), "eur_field": used})
-            if q.get("prev_close"):
-                q["d1"] = round((p / q["prev_close"] - 1) * 100, 2)
+            # Tagesveraenderung wie in der Bank-App: letzter Kurs gegen Schluss des Vortags (Tradegate-Angabe)
+            if q.get("delta_pct") is not None:
+                q["d1"] = round(q["delta_pct"], 2)
+            elif q.get("prev_close") and q.get("last"):
+                q["d1"] = round((q["last"] / q["prev_close"] - 1) * 100, 2)
             quotes[hid] = q
         except Exception as e:  # nicht gefunden (z. B. Fonds ohne Boersenhandel) oder Netzfehler: alten Kurs behalten
             errors.append({"id": hid, "isin": isin, "error": str(e)[:160]})

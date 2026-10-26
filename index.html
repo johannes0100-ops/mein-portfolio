@@ -199,7 +199,7 @@ nav.tabs button:focus-visible { outline: 2px solid var(--accent); outline-offset
       <ul class="pos" id="pos-list"></ul>
       <div id="pos-total"></div>
     </div>
-    <p class="note" id="depot-note">Kurse und News kommen automatisch vom Claude-Dashboard (werktags um 9:45, 11:45, 13:45, 15:45, 17:45 und 22:45 Uhr, News um 7:20 Uhr). Die App holt sie sich etwa 20 Minuten später, immer wenn du sie öffnest. „Selbst mit Claude suchen“ holt sofort neue Kurse über deinen API-Schlüssel. Tippe auf eine Position, um Stück oder Kaufpreis zu ändern.</p>
+    <p class="note" id="depot-note">Kurse kommen werktags alle 15 Minuten automatisch (Tradegate-Geldkurs, wie im Depot, 8 bis 22 Uhr). News, Termine und 5-Tage-Werte kommen vom Claude-Dashboard. Die App lädt neu, wenn du sie öffnest, und alle 5 Minuten, solange sie offen ist. „Selbst mit Claude suchen“ holt sofort neue Kurse über deinen API-Schlüssel. Tippe auf eine Position, um Stück oder Kaufpreis zu ändern.</p>
   </section>
 
   <section id="view-news" class="view" hidden>
@@ -303,6 +303,6 @@ nav.tabs button:focus-visible { outline: 2px solid var(--accent); outline-offset
 </dialog>
 
 <div class="toast" id="toast" hidden></div>
-<script src="app.js?v=1.2.3"></script>
+<script src="app.js?v=1.3.0"></script>
 </body>
 </html>

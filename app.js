@@ -1,8 +1,10 @@
 /* Mein Portfolio: Depot-App mit Claude. Daten bleiben auf dem Gerät (localStorage). */
 (function () {
   'use strict';
-  const APP_VERSION = '1.2.3';
+  const APP_VERSION = '1.3.0';
   const FEED_URL = 'data/feed.json'; // vom Claude-Dashboard veröffentlicht
+  // Live-Kurse (Tradegate-Geldkurs), alle 15 Minuten per GitHub Action. Direkt aus dem Repository, damit sie nicht auf den Seiten-Neubau warten.
+  const LIVE_URLS = ['https://raw.githubusercontent.com/johannes0100-ops/mein-portfolio/main/data/live.json', 'data/live.json'];
   const API_URL = 'https://api.anthropic.com/v1/messages';
   const MODELS = {
     'claude-sonnet-5-5': { label: 'Claude Sonnet 5.5 (empfohlen)', inp: 2, out: 10 },
@@ -348,18 +350,33 @@
       const f = await res.json();
       if (!f || typeof f.quotes !== 'object') throw new Error('nofeed');
       const byIsin = {}; Object.entries(f.quotes).forEach(([k, q]) => { if (q && q.isin) byIsin[q.isin] = k; });
-      let n = 0;
+      const before = {}; data.positions.forEach((p) => { before[p.id] = num(data.quotes[p.id]?.eur_price); });
+      let fromFeed = 0;
       data.positions.forEach((p) => {
         const key = f.quotes[p.id] ? p.id : byIsin[p.isin]; const q = key && f.quotes[key];
         if (!q || !(num(q.eur_price) > 0)) return;
         const old = data.quotes[p.id];
-        if (old && old.by !== 'feed' && tms(old.as_of) > tms(q.as_of)) return; // eigener, neuerer Kurs bleibt
-        const same = old && old.by === 'feed' && tms(old.as_of) >= tms(q.as_of) && num(old.eur_price) === num(q.eur_price);
+        if (old && old.by !== 'feed' && old.by !== 'live' && tms(old.as_of) > tms(q.as_of)) return; // eigener, neuerer Kurs bleibt
         data.quotes[p.id] = { eur_price: num(q.eur_price), prev_eur: num(q.prev_eur), change_pct: num(q.change_pct), d5: num(q.d5), venue: q.venue || 'Dashboard',
           as_of: q.as_of || f.quotes_at, source: q.source || null, url: safeUrl(q.url), warn: false, by: 'feed' };
-        if (!same) n++;
+        fromFeed++;
       });
-      if (n) data.quotes_at = f.quotes_at || f.generated_at;
+      if (fromFeed) data.quotes_at = f.quotes_at || f.generated_at;
+      const live = await loadLive();
+      if (live) {
+        let m = 0;
+        data.positions.forEach((p) => {
+          const L = live.quotes[p.id] || Object.values(live.quotes).find((x) => x && p.isin && x.isin === p.isin);
+          if (!L || L.stale || !(num(L.eur) > 0)) return;
+          const old = data.quotes[p.id] || {};
+          if (old.by && old.by !== 'feed' && old.by !== 'live' && tms(old.as_of) > tms(live.updated_at)) return; // eigener, neuerer Kurs bleibt
+          data.quotes[p.id] = { ...old, eur_price: num(L.eur), prev_eur: null, change_pct: num(L.d1), venue: 'Tradegate (Geldkurs)',
+            as_of: live.updated_at, source: 'Tradegate', url: 'https://www.tradegate.de/orderbuch.php?isin=' + encodeURIComponent(L.isin || p.isin || ''), warn: false, by: 'live' };
+          m++;
+        });
+        if (m && (!fromFeed || tms(live.updated_at) > tms(data.quotes_at))) data.quotes_at = live.updated_at;
+      }
+      const n = data.positions.filter((p) => num(data.quotes[p.id]?.eur_price) !== before[p.id]).length;
       if (f.news && tms(f.news.generated_at) > tms(data.news?.generated_at)) {
         const idMap = {}; data.positions.forEach((p) => { idMap[p.id] = p.id; if (p.isin) Object.entries(f.quotes).forEach(([k, q]) => { if (q.isin === p.isin) idMap[k] = p.id; }); });
         const clean = (arr) => (Array.isArray(arr) ? arr : []).filter((x) => x && x.headline).map((x) => ({ ...x, url: safeUrl(x.url) }));
@@ -368,10 +385,22 @@
       }
       if (f.calendar && Array.isArray(f.calendar.events)) data.calendar = { generated_at: f.calendar.generated_at || f.generated_at, events: f.calendar.events.map((e) => ({ ...e, url: safeUrl(e.url) })) };
       data.feed_at = f.generated_at || null; save();
-      if (manual) toast(n ? n + ' Kurse vom Dashboard übernommen' : 'Schon aktuell. Das Dashboard aktualisiert werktags sechsmal zwischen 9:45 und 22:45 Uhr.');
+      if (manual) toast(n ? n + ' Kurse aktualisiert' : 'Schon aktuell. Neue Kurse kommen werktags alle 15 Minuten (8 bis 22 Uhr).');
     } catch (e) {
       if (manual) toast(e.message === 'offline' ? 'Keine Verbindung. Es bleibt der letzte Stand.' : 'Noch keine Daten vom Dashboard gefunden.');
     } finally { if (busy === 'feed') busy = null; render(); }
+  }
+
+  async function loadLive() {
+    for (const u of LIVE_URLS) {
+      try {
+        const res = await fetch(u + '?t=' + Math.floor(Date.now() / 60e3), { cache: 'no-store' });
+        if (!res.ok) continue;
+        const j = await res.json();
+        if (j && j.quotes && typeof j.quotes === 'object' && j.updated_at) return j;
+      } catch (_) { /* naechste Quelle */ }
+    }
+    return null;
   }
 
   async function refreshQuotes() {
@@ -383,7 +412,7 @@
     try {
       const system = 'Du holst aktuelle Kurse für ein privates Depot bei einer deutschen Bank und antwortest am Ende nur mit einem JSON-Block.\n' +
         'Regeln:\n- Nutze die Websuche. Übernimm nur Zahlen, die auf gefundenen Seiten stehen. Nichts schätzen, nichts aus dem Gedächtnis. Fehlt ein Wert, setze null.\n' +
-        '- eur_price: letzter Kurs in Euro an einem deutschen Börsenplatz, so wie die Bank das Depot bewertet. Bevorzugt Tradegate, sonst Lang & Schwarz, gettex oder Stuttgart. Bei Fonds der Kurs in München oder gettex, sonst der Rücknahmepreis.\n' +
+        '- eur_price: aktueller Geldkurs (Bid) in Euro an Tradegate, so bewertet die Bank das Depot. Gibt es keinen, der Geldkurs bei Lang & Schwarz, gettex oder Stuttgart. Bei Fonds ohne Börsenhandel der Rücknahmepreis (NAV) der Fondsgesellschaft.\n' +
         '- prev_eur: Schlusskurs des vorherigen Handelstags am selben Börsenplatz. change_pct: Tagesveränderung in Prozent am selben Platz. d5: Veränderung in Prozent über 1 Woche bzw. 5 Handelstage, nur wenn auf der Seite angegeben.\n' +
         '- venue: Börsenplatz. as_of: Zeitpunkt des Kurses als ISO 8601 mit Offset in deutscher Zeit. source und url: die Seite, auf der der Kurs steht.\n' +
         '- Halte dich kurz, keine Erklärungen außerhalb des JSON.\n' +
@@ -559,7 +588,8 @@
   $('chat-input').addEventListener('keydown', (ev) => { if (ev.key === 'Enter' && !ev.shiftKey && !ev.isComposing && window.matchMedia('(pointer: fine)').matches) { ev.preventDefault(); sendChat(); } });
   $('chat-form').addEventListener('submit', (ev) => { ev.preventDefault(); sendChat(); });
 
-  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible' && Date.now() - lastFeedCheck > 10 * 60e3) loadFeed(false); });
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible' && Date.now() - lastFeedCheck > 2 * 60e3) loadFeed(false); });
+  setInterval(() => { if (document.visibilityState === 'visible' && !busy && Date.now() - lastFeedCheck > 4 * 60e3) loadFeed(false); }, 60e3); // offen: alle 5 Minuten
   if ('serviceWorker' in navigator && location.protocol === 'https:') {
     // Neue App-Version: einmal neu laden, sobald sie aktiv ist. Beim Zurückkehren in die App nach Updates suchen.
     const hadController = !!navigator.serviceWorker.controller; let reloaded = false;
