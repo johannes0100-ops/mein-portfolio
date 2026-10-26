@@ -1,7 +1,7 @@
 """Baut data/feed.json fuer die Web-App aus den Daten des Claude-Dashboards "Mein Portfolio".
 
 Aufruf:
-  python3 tools/build_feed.py --holdings DIR --quotes quotes.json --news news.json --out data/feed.json
+  python3 tools/build_feed.py --holdings DIR --quotes quotes.json --news news.json --calendar calendar.json --out data/feed.json
 
 Eingaben sind die Dateien, die ArtifactData mit out_dir ablegt (holdings/<id>.json, quotes/latest.json, news/latest.json).
 Die Ausgabe ist oeffentlich. Sie enthaelt deshalb nur Namen, ISIN, Kurse und News, niemals Stueckzahlen oder Kaufpreise.
@@ -44,6 +44,7 @@ def main():
     ap.add_argument("--holdings", required=True)
     ap.add_argument("--quotes", required=True)
     ap.add_argument("--news")
+    ap.add_argument("--calendar")
     ap.add_argument("--out", required=True)
     a = ap.parse_args()
 
@@ -54,6 +55,7 @@ def main():
             holdings[fn[:-5]] = h
     quotes = load(a.quotes, {}) or {}
     news = load(a.news, None)
+    cal = load(a.calendar, None)
 
     out_quotes = {}
     for r in quotes.get("rows", []):
@@ -94,16 +96,29 @@ def main():
             "positions": [{"id": k, "items": v} for k, v in groups.items() if k],
         }
 
+    out_cal = None
+    if isinstance(cal, dict):
+        today = dt.datetime.now(dt.timezone(dt.timedelta(hours=1))).date().isoformat()
+        evs = []
+        for e in cal.get("events", []) or []:
+            if not isinstance(e, dict) or not e.get("date") or not e.get("title") or str(e["date"]) < today:
+                continue
+            evs.append({k: e.get(k) for k in ("date", "time", "title", "type", "region", "holding", "note", "confirmed")})
+            evs[-1]["url"] = https(e.get("url"))
+        evs.sort(key=lambda e: (e["date"], e.get("time") or "99"))
+        out_cal = {"events": evs[:40]}
+
     feed = {
         "app": "mein-portfolio-feed", "version": 1,
         "generated_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
         "quotes_at": quotes.get("fetched_at"),
         "quotes": out_quotes,
         "news": out_news,
+        "calendar": out_cal,
     }
     # Unveraenderte Daten: alten Zeitstempel behalten, damit kein leerer Commit entsteht
     old = load(a.out, None)
-    if isinstance(old, dict) and old.get("quotes") == feed["quotes"] and old.get("news") == feed["news"] and old.get("generated_at"):
+    if isinstance(old, dict) and old.get("quotes") == feed["quotes"] and old.get("news") == feed["news"] and old.get("calendar") == feed["calendar"] and old.get("generated_at"):
         feed["generated_at"] = old["generated_at"]
     # Sicherheitsnetz: nichts Privates veroeffentlichen
     text = json.dumps(feed, ensure_ascii=False, indent=1)
@@ -113,7 +128,7 @@ def main():
     os.makedirs(os.path.dirname(a.out) or ".", exist_ok=True)
     with open(a.out, "w", encoding="utf-8") as f:
         f.write(text + "\n")
-    print(json.dumps({"quotes": len(out_quotes), "news": bool(out_news), "quotes_at": feed["quotes_at"]}))
+    print(json.dumps({"quotes": len(out_quotes), "news": bool(out_news), "events": len((out_cal or {}).get("events", [])), "quotes_at": feed["quotes_at"]}))
 
 
 if __name__ == "__main__":

@@ -1,7 +1,7 @@
 /* Mein Portfolio: Depot-App mit Claude. Daten bleiben auf dem Gerät (localStorage). */
 (function () {
   'use strict';
-  const APP_VERSION = '1.1.0';
+  const APP_VERSION = '1.2.0';
   const FEED_URL = 'data/feed.json'; // vom Claude-Dashboard veröffentlicht
   const API_URL = 'https://api.anthropic.com/v1/messages';
   const MODELS = {
@@ -34,7 +34,7 @@
     set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch (_) { return false; } },
     del(k) { try { localStorage.removeItem(k); } catch (_) {} },
   };
-  const emptyData = () => ({ version: 1, positions: [], quotes: {}, quotes_at: null, news: null, chat: [], last_cost: null, feed_at: null });
+  const emptyData = () => ({ version: 1, positions: [], quotes: {}, quotes_at: null, news: null, calendar: null, chat: [], last_cost: null, feed_at: null });
   let data = Object.assign(emptyData(), store.get(K_DATA, {}));
   let ui = Object.assign({ hide: false, view: 'depot', model: 'claude-sonnet-5-5' }, store.get(K_UI, {}));
   if (!MODELS[ui.model]) ui.model = 'claude-sonnet-5-5';
@@ -54,7 +54,8 @@
       const prev = value != null && d1 != null ? value / (1 + d1 / 100) : null;
       const cost = num(p.cost_eur);
       const pl = value != null && cost > 0 ? value - cost : null;
-      return { p, q, qty, price, value, d1, prev, cost, pl, plp: pl != null ? pl / cost * 100 : null };
+      const d5 = num(q.d5);
+      return { p, q, qty, price, value, d1, d5, prev, cost, pl, plp: pl != null ? pl / cost * 100 : null };
     }).sort((a, b) => (b.value || 0) - (a.value || 0));
     const priced = rows.filter((r) => r.value != null);
     const total = priced.reduce((s, r) => s + r.value, 0);
@@ -62,7 +63,10 @@
     const tNow = withPrev.reduce((s, r) => s + r.value, 0), tPrev = withPrev.reduce((s, r) => s + r.prev, 0);
     const withCost = priced.filter((r) => r.cost > 0);
     const cost = withCost.reduce((s, r) => s + r.cost, 0), vC = withCost.reduce((s, r) => s + r.value, 0);
+    const with5 = priced.filter((r) => r.d5 != null);
+    const n5 = with5.reduce((s, r) => s + r.value, 0), b5 = with5.reduce((s, r) => s + r.value / (1 + r.d5 / 100), 0);
     return { rows, priced, total, d1: tPrev ? (tNow / tPrev - 1) * 100 : null, dayEur: tNow - tPrev, cost, pl: withCost.length ? vC - cost : null,
+      d5: b5 ? (n5 / b5 - 1) * 100 : null, d5Eur: n5 - b5, miss5: priced.filter((r) => r.d5 == null).map((r) => r.p.name),
       plp: withCost.length && cost ? (vC - cost) / cost * 100 : null, missingPrice: rows.filter((r) => r.value == null) };
   }
   const money = (v, signed) => (ui.hide ? '• • • •' : v == null ? 'k. A.' : (signed && v > 0 ? '+' : '') + nf2.format(v) + ' €');
@@ -85,6 +89,30 @@
     $('k-pl-sub').textContent = c.pl != null ? money(c.pl, true) : 'Kaufpreise fehlen';
     const kd = $('k-d1'); kd.textContent = c.d1 != null ? pct(c.d1) : '–'; kd.className = 'val ' + tone(c.d1);
     $('k-d1-sub').textContent = c.d1 != null ? money(c.dayEur, true) : ' ';
+    const k5 = $('k-d5'); k5.textContent = c.d5 != null ? pct(c.d5) : '–'; k5.className = 'val ' + tone(c.d5);
+    $('k-d5-sub').textContent = c.d5 == null ? 'kommt mit nächster Aktualisierung' : c.miss5.length ? 'ohne ' + c.miss5.map(shortName).join(', ') : money(c.d5Eur, true);
+    const ev = upcoming()[0];
+    $('k-next').textContent = ev ? eventTitle(ev) : '–';
+    $('k-next-sub').textContent = ev ? eventWhen(ev) : (data.calendar ? 'keine Termine in den nächsten Wochen' : 'kommt mit nächster Aktualisierung');
+  }
+
+  // ---------- Termine ----------
+  const shortName = (n) => String(n || '').replace(/^Vanguard FTSE /, 'Vanguard ').replace(/ (UCITS|ETF|Inc\.|Oyj|AG|PLC|Group|International|Corp\.).*$/, '');
+  const berlinToday = () => new Date().toLocaleDateString('sv-SE', TZ);
+  function upcoming() {
+    const today = berlinToday();
+    const nowHM = new Date().toLocaleTimeString('de-DE', { ...TZ, hour: '2-digit', minute: '2-digit', hour12: false });
+    return [...(data.calendar?.events || [])].filter((e) => e && (e.date > today || (e.date === today && !(e.time && e.time < nowHM))))
+      .sort((a, b) => (a.date + (a.time || '99')).localeCompare(b.date + (b.time || '99')));
+  }
+  function eventTitle(e) {
+    const p = e.holding && data.positions.find((x) => x.id === e.holding);
+    const t = e.title || 'Termin', n = p ? shortName(p.name) : '';
+    return (n && !t.toLowerCase().startsWith(n.toLowerCase()) ? n + ': ' : '') + t + (e.confirmed === false ? ' *' : '');
+  }
+  function eventWhen(e) {
+    const d = new Date(e.date + 'T12:00:00');
+    return d.toLocaleDateString('de-DE', { weekday: 'short', day: '2-digit', month: '2-digit' }) + (e.time ? ', ' + e.time + ' Uhr' : '');
   }
 
   function setStatus(text, state) {
@@ -136,6 +164,23 @@
   function renderNews() {
     const box = $('news-body'); box.replaceChildren();
     const btn = $('btn-news'); btn.disabled = !!busy; btn.textContent = busy === 'news' ? 'Claude sucht …' : 'Selbst mit Claude suchen';
+    const evs = upcoming();
+    if (evs.length) {
+      const g = el('div', 'group'); g.id = 'termine'; g.append(el('h3', '', 'Nächste Termine'));
+      const ul = el('ul', 'news');
+      evs.slice(0, 8).forEach((e) => {
+        const li = el('li'); const w = el('div', 'when');
+        w.append(el('span', '', eventWhen(e)));
+        const kind = { zins: 'Zins', makro: 'Makro', earnings: 'Zahlen', ir: 'IR' }[e.type];
+        if (kind) w.append(el('span', 'chip' + (e.type === 'earnings' ? ' up' : ''), kind));
+        li.append(w, link(e.url, eventTitle(e), 'h'));
+        if (e.note) li.append(el('p', '', e.note));
+        ul.append(li);
+      });
+      g.append(ul);
+      if (evs.some((e) => e.confirmed === false)) g.append(el('p', 'note', '* vorläufig oder Uhrzeit offen'));
+      box.append(g);
+    }
     const n = data.news;
     if (!n) { const e = el('div', 'empty'); e.append(el('b', '', 'Noch keine News'), el('span', '', 'Die News kommen automatisch vom Claude-Dashboard, meist werktags ab 7:30 Uhr. Mit „Selbst mit Claude suchen“ holst du sie sofort, das kostet etwa 0,20 bis 0,50 $ API-Guthaben.')); box.append(e); return; }
     const sec = (title, items) => {
@@ -309,10 +354,10 @@
         if (!q || !(num(q.eur_price) > 0)) return;
         const old = data.quotes[p.id];
         if (old && old.by !== 'feed' && tms(old.as_of) > tms(q.as_of)) return; // eigener, neuerer Kurs bleibt
-        if (old && old.by === 'feed' && tms(old.as_of) >= tms(q.as_of) && num(old.eur_price) === num(q.eur_price)) return;
-        data.quotes[p.id] = { eur_price: num(q.eur_price), prev_eur: num(q.prev_eur), change_pct: num(q.change_pct), venue: q.venue || 'Dashboard',
+        const same = old && old.by === 'feed' && tms(old.as_of) >= tms(q.as_of) && num(old.eur_price) === num(q.eur_price);
+        data.quotes[p.id] = { eur_price: num(q.eur_price), prev_eur: num(q.prev_eur), change_pct: num(q.change_pct), d5: num(q.d5), venue: q.venue || 'Dashboard',
           as_of: q.as_of || f.quotes_at, source: q.source || null, url: safeUrl(q.url), warn: false, by: 'feed' };
-        n++;
+        if (!same) n++;
       });
       if (n) data.quotes_at = f.quotes_at || f.generated_at;
       if (f.news && tms(f.news.generated_at) > tms(data.news?.generated_at)) {
@@ -321,6 +366,7 @@
         data.news = { generated_at: f.news.generated_at, by: 'feed', market: clean(f.news.market),
           positions: (f.news.positions || []).filter((g) => idMap[g.id]).map((g) => ({ id: idMap[g.id], items: clean(g.items) })) };
       }
+      if (f.calendar && Array.isArray(f.calendar.events)) data.calendar = { generated_at: f.calendar.generated_at || f.generated_at, events: f.calendar.events.map((e) => ({ ...e, url: safeUrl(e.url) })) };
       data.feed_at = f.generated_at || null; save();
       if (manual) toast(n ? n + ' Kurse vom Dashboard übernommen' : 'Schon aktuell. Das Dashboard aktualisiert werktags um 12:45, 17:45 und 22:45 Uhr.');
     } catch (e) {
@@ -338,10 +384,10 @@
       const system = 'Du holst aktuelle Kurse für ein privates Depot bei einer deutschen Bank und antwortest am Ende nur mit einem JSON-Block.\n' +
         'Regeln:\n- Nutze die Websuche. Übernimm nur Zahlen, die auf gefundenen Seiten stehen. Nichts schätzen, nichts aus dem Gedächtnis. Fehlt ein Wert, setze null.\n' +
         '- eur_price: letzter Kurs in Euro an einem deutschen Börsenplatz, so wie die Bank das Depot bewertet. Bevorzugt Tradegate, sonst Lang & Schwarz, gettex oder Stuttgart. Bei Fonds der Kurs in München oder gettex, sonst der Rücknahmepreis.\n' +
-        '- prev_eur: Schlusskurs des vorherigen Handelstags am selben Börsenplatz. change_pct: Tagesveränderung in Prozent am selben Platz.\n' +
+        '- prev_eur: Schlusskurs des vorherigen Handelstags am selben Börsenplatz. change_pct: Tagesveränderung in Prozent am selben Platz. d5: Veränderung in Prozent über 1 Woche bzw. 5 Handelstage, nur wenn auf der Seite angegeben.\n' +
         '- venue: Börsenplatz. as_of: Zeitpunkt des Kurses als ISO 8601 mit Offset in deutscher Zeit. source und url: die Seite, auf der der Kurs steht.\n' +
         '- Halte dich kurz, keine Erklärungen außerhalb des JSON.\n' +
-        'Format: ```json {"quotes":[{"id":"...","eur_price":0,"prev_eur":0,"change_pct":0,"venue":"","as_of":"","source":"","url":""}],"hinweis":""} ```';
+        'Format: ```json {"quotes":[{"id":"...","eur_price":0,"prev_eur":0,"change_pct":0,"d5":0,"venue":"","as_of":"","source":"","url":""}],"hinweis":""} ```';
       const prompt = 'Jetzt ist ' + nowText() + ' (deutsche Zeit). Hole die Kurse für diese Positionen:\n' + JSON.stringify(posList());
       const r = await callClaude({ system, prompt, maxSearch: Math.min(4 + data.positions.length * 2, 20), maxTokens: 4000 });
       const j = extractJson(r.text);
@@ -351,7 +397,7 @@
         if (!p || !(price > 0)) return;
         const old = data.quotes[p.id]; const oldPrice = num(old?.eur_price);
         const warn = oldPrice ? Math.abs(price / oldPrice - 1) > 0.25 : false;
-        data.quotes[p.id] = { eur_price: price, prev_eur: num(q.prev_eur), change_pct: num(q.change_pct), venue: q.venue || null, as_of: q.as_of || new Date().toISOString(),
+        data.quotes[p.id] = { eur_price: price, prev_eur: num(q.prev_eur), change_pct: num(q.change_pct), d5: num(q.d5), venue: q.venue || null, as_of: q.as_of || new Date().toISOString(),
           source: q.source || null, url: safeUrl(q.url), warn, by: 'claude' };
         n++;
       });
@@ -506,6 +552,7 @@
   $('btn-claude-quotes').onclick = refreshQuotes;
   $('btn-news').onclick = refreshNews;
   $('btn-add').onclick = () => openPos(null);
+  $('k-next-btn').onclick = () => { show('news'); requestAnimationFrame(() => { const t = $('termine'); if (t && t.scrollIntoView) t.scrollIntoView({ block: 'start' }); }); };
   document.querySelectorAll('nav.tabs button').forEach((b) => { b.onclick = () => show(b.dataset.view); });
   const autoGrow = () => { const t = $('chat-input'); t.style.height = 'auto'; t.style.height = Math.min(t.scrollHeight, 140) + 'px'; };
   $('chat-input').addEventListener('input', autoGrow);

@@ -1,5 +1,5 @@
 /* Service Worker: App offline startbar machen. Eigene Dateien zuerst aus dem Netz, sonst aus dem Speicher. */
-const CACHE = 'mein-portfolio-v2';
+const CACHE = 'mein-portfolio-v3';
 const ASSETS = ['./', './index.html', './app.js', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png'];
 
 self.addEventListener('install', (e) => {
