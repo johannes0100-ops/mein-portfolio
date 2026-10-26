@@ -36,7 +36,11 @@ def public_venue(r):
     v = r.get("eur_venue")
     if v and ("ING" in v or "Depot" in v):  # keine Hinweise auf die eigene Bank veroeffentlichen
         v = "Depotbewertung"
-    return v or ("umgerechnet aus " + str(r.get("ccy")))
+    if v:
+        return v
+    if str(r.get("ccy") or "EUR").upper() == "EUR":
+        return r.get("src") or "Kurs in EUR"
+    return "umgerechnet aus " + str(r.get("ccy"))
 
 
 def main():
