@@ -3,7 +3,7 @@
  "version": 1,
  "source": "Tradegate",
  "price_field": "bid",
- "updated_at": "2026-10-28T21:19:01+00:00",
+ "updated_at": "2026-10-28T22:08:14+00:00",
  "quotes": {
   "amzn": {
    "bid": 227.8,
@@ -76,8 +76,8 @@
    "d1": -3.77
   },
   "vanguard": {
-   "bid": 129.06,
-   "ask": 129.46,
+   "bid": 129.08,
+   "ask": 129.48,
    "last": 129.64,
    "prev_close": 129.38,
    "high": 129.64,
@@ -85,7 +85,7 @@
    "delta_pct": 0.2,
    "trades": 56.0,
    "isin": "IE00BKX55T58",
-   "eur": 129.06,
+   "eur": 129.08,
    "eur_field": "bid",
    "d1": 0.2
   }
