@@ -8,7 +8,7 @@ Die Ausgabe ist oeffentlich. Sie enthaelt deshalb nur Namen, ISIN, Kurse und New
 """
 import argparse, datetime as dt, json, os, sys
 
-PUBLIC_HOLDING_FIELDS = ("name", "isin", "wkn")
+PUBLIC_HOLDING_FIELDS = ("name", "isin", "wkn", "exchange", "gics", "gics_sector")
 
 
 def load(path, default):
@@ -26,6 +26,13 @@ def load(path, default):
 
 def r4(v):
     return round(float(v), 4) if isinstance(v, (int, float)) else None
+
+
+def nums(arr, limit=400):
+    """Kursreihe fuer die Verlaufslinien, nur Zahlen."""
+    if not isinstance(arr, list):
+        return []
+    return [round(float(x), 4) for x in arr[-limit:] if isinstance(x, (int, float))]
 
 
 def https(u):
@@ -73,7 +80,11 @@ def main():
             "eur_price": r4(price * fx),
             "prev_eur": r4(r["prev_close"] * fx) if isinstance(r.get("prev_close"), (int, float)) else None,
             "change_pct": r.get("d1"), "d5": r.get("d5"), "m1": r.get("m1"), "ytd": r.get("ytd"),
-            "local_price": r4(price), "local_ccy": r.get("ccy"),
+            "local_price": r4(price), "local_ccy": r.get("ccy"), "ticker": r.get("ticker") or h.get("ticker"),
+            "gics_verified": h.get("gics_verified") if isinstance(h.get("gics_verified"), bool) else None,
+            "fund": h.get("news") is False,
+            "ytd_basis": r.get("ytd_basis"), "y1": r.get("y1"), "y1_basis": r.get("y1_basis"),
+            "spark": nums(r.get("spark"), 30), "spark_1y": nums(r.get("spark_1y")), "spark_1y_start": r.get("spark_1y_start"),
             "venue": public_venue(r),
             "as_of": quotes.get("fetched_at"), "trading_day": r.get("as_of"),
             "source": r.get("src"), "url": https(r.get("src_url")),
@@ -94,10 +105,21 @@ def main():
                 "headline": (broker + ": " + action).strip(": "), "summary": s.get("summary"), "source": s.get("source"),
                 "url": https(s.get("url")), "published_at": s.get("published_at"), "kind": "analyst",
                 "rating": s.get("rating"), "target": s.get("target")})
+        def rail(x):
+            d = item(x)
+            d.update({"tickers": [t for t in (x.get("tickers") or []) if isinstance(t, str)][:6],
+                      "peer": x.get("peer"), "popularity": x.get("popularity"), "label": x.get("label")})
+            return d
+        def ss(s):
+            return dict({k: s.get(k) for k in ("stock", "broker", "action", "rating", "target", "summary", "source", "published_at")}, url=https(s.get("url")))
         out_news = {
             "generated_at": news.get("generated_at"),
-            "market": [item(x) for x in news.get("market", []) or [] if x.get("headline")],
+            "market": [rail(x) for x in news.get("market", []) or [] if x.get("headline")],
             "positions": [{"id": k, "items": v} for k, v in groups.items() if k],
+            "sell_side": [ss(s) for s in news.get("sell_side", []) or [] if isinstance(s, dict) and s.get("broker")],
+            "popular": [rail(x) for x in news.get("popular", []) or [] if x.get("headline")],
+            "sector": [rail(x) for x in news.get("sector", []) or [] if x.get("headline")],
+            "peers": [rail(x) for x in news.get("peers", []) or [] if x.get("headline")],
         }
 
     out_cal = None
@@ -116,13 +138,17 @@ def main():
         "app": "mein-portfolio-feed", "version": 1,
         "generated_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
         "quotes_at": quotes.get("fetched_at"),
+        "web_at": quotes.get("web_at"), "live_at": quotes.get("live_at"),
+        "notes": quotes.get("source_note"),
+        "errors": [{"id": e.get("id"), "input": e.get("input"), "error": e.get("error")} for e in quotes.get("errors", []) or [] if isinstance(e, dict)],
         "quotes": out_quotes,
         "news": out_news,
         "calendar": out_cal,
     }
     # Unveraenderte Daten: alten Zeitstempel behalten, damit kein leerer Commit entsteht
     old = load(a.out, None)
-    if isinstance(old, dict) and old.get("quotes") == feed["quotes"] and old.get("news") == feed["news"] and old.get("calendar") == feed["calendar"] and old.get("generated_at"):
+    same = all(old.get(k) == feed[k] for k in ("quotes", "news", "calendar", "notes", "errors")) if isinstance(old, dict) else False
+    if same and old.get("generated_at"):
         feed["generated_at"] = old["generated_at"]
     # Sicherheitsnetz: nichts Privates veroeffentlichen
     text = json.dumps(feed, ensure_ascii=False, indent=1)
