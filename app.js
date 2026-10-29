@@ -1,10 +1,13 @@
 /* Mein Portfolio: Depot-App mit Claude. Daten bleiben auf dem Gerät (localStorage). */
 (function () {
   'use strict';
-  const APP_VERSION = '1.3.0';
+  const APP_VERSION = '1.3.1';
   const FEED_URL = 'data/feed.json'; // vom Claude-Dashboard veröffentlicht
   // Live-Kurse (Tradegate-Geldkurs), alle 15 Minuten per GitHub Action. Direkt aus dem Repository, damit sie nicht auf den Seiten-Neubau warten.
   const LIVE_URLS = ['https://raw.githubusercontent.com/johannes0100-ops/mein-portfolio/main/data/live.json', 'data/live.json'];
+  // Beim Tippen auf Aktualisieren direkt über die GitHub-API: immer der neueste Stand, ohne die bis zu 10 Minuten Zwischenspeicher der Seite.
+  // Nur dann, weil die API ohne Anmeldung etwa 60 Abrufe pro Stunde erlaubt.
+  const GH_API = 'https://api.github.com/repos/johannes0100-ops/mein-portfolio/contents/';
   const API_URL = 'https://api.anthropic.com/v1/messages';
   const MODELS = {
     'claude-sonnet-5-5': { label: 'Claude Sonnet 5.5 (empfohlen)', inp: 2, out: 10 },
@@ -184,7 +187,7 @@
       box.append(g);
     }
     const n = data.news;
-    if (!n) { const e = el('div', 'empty'); e.append(el('b', '', 'Noch keine News'), el('span', '', 'Die News kommen automatisch vom Claude-Dashboard, meist werktags ab 7:30 Uhr. Mit „Selbst mit Claude suchen“ holst du sie sofort, das kostet etwa 0,20 bis 0,50 $ API-Guthaben.')); box.append(e); return; }
+    if (!n) { const e = el('div', 'empty'); e.append(el('b', '', 'Noch keine News'), el('span', '', 'Die News kommen automatisch vom Claude-Dashboard, werktags morgens und mittags. Mit „Selbst mit Claude suchen“ holst du sie sofort, das kostet etwa 0,20 bis 0,50 $ API-Guthaben.')); box.append(e); return; }
     const sec = (title, items) => {
       if (!items || !items.length) return;
       const g = el('div', 'group'); g.append(el('h3', '', title));
@@ -344,10 +347,13 @@
     lastFeedCheck = Date.now();
     if (manual) { busy = 'feed'; renderHeader(); setStatus('Lade Daten vom Dashboard …', 'run'); }
     try {
-      let res;
-      try { res = await fetch(FEED_URL + '?t=' + Date.now(), { cache: 'no-store' }); } catch (_) { throw new Error('offline'); }
-      if (!res.ok) throw new Error('nofeed');
-      const f = await res.json();
+      let f = manual ? await fetchFresh(FEED_URL) : null;
+      if (!f || typeof f.quotes !== 'object') {
+        let res;
+        try { res = await fetch(FEED_URL + '?t=' + Date.now(), { cache: 'no-store' }); } catch (_) { throw new Error('offline'); }
+        if (!res.ok) throw new Error('nofeed');
+        f = await res.json();
+      }
       if (!f || typeof f.quotes !== 'object') throw new Error('nofeed');
       const byIsin = {}; Object.entries(f.quotes).forEach(([k, q]) => { if (q && q.isin) byIsin[q.isin] = k; });
       const before = {}; data.positions.forEach((p) => { before[p.id] = num(data.quotes[p.id]?.eur_price); });
@@ -362,7 +368,7 @@
         fromFeed++;
       });
       if (fromFeed) data.quotes_at = f.quotes_at || f.generated_at;
-      const live = await loadLive();
+      const live = await loadLive(manual);
       if (live) {
         let m = 0;
         data.positions.forEach((p) => {
@@ -377,7 +383,9 @@
         if (m && (!fromFeed || tms(live.updated_at) > tms(data.quotes_at))) data.quotes_at = live.updated_at;
       }
       const n = data.positions.filter((p) => num(data.quotes[p.id]?.eur_price) !== before[p.id]).length;
+      let newsNew = false;
       if (f.news && tms(f.news.generated_at) > tms(data.news?.generated_at)) {
+        newsNew = true;
         const idMap = {}; data.positions.forEach((p) => { idMap[p.id] = p.id; if (p.isin) Object.entries(f.quotes).forEach(([k, q]) => { if (q.isin === p.isin) idMap[k] = p.id; }); });
         const clean = (arr) => (Array.isArray(arr) ? arr : []).filter((x) => x && x.headline).map((x) => ({ ...x, url: safeUrl(x.url) }));
         data.news = { generated_at: f.news.generated_at, by: 'feed', market: clean(f.news.market),
@@ -385,13 +393,31 @@
       }
       if (f.calendar && Array.isArray(f.calendar.events)) data.calendar = { generated_at: f.calendar.generated_at || f.generated_at, events: f.calendar.events.map((e) => ({ ...e, url: safeUrl(e.url) })) };
       data.feed_at = f.generated_at || null; save();
-      if (manual) toast(n ? n + ' Kurse aktualisiert' : 'Schon aktuell. Neue Kurse kommen werktags alle 15 Minuten (8 bis 22 Uhr).');
+      if (manual) {
+        const parts = [];
+        if (n) parts.push(n + ' Kurse aktualisiert');
+        if (newsNew) parts.push('neue News vom ' + fmtTime(data.news.generated_at));
+        const t = parts.join(', ');
+        toast(t ? t.charAt(0).toUpperCase() + t.slice(1) : 'Schon aktuell. Kurse kommen werktags alle 15 Minuten, News morgens und mittags.');
+      }
     } catch (e) {
       if (manual) toast(e.message === 'offline' ? 'Keine Verbindung. Es bleibt der letzte Stand.' : 'Noch keine Daten vom Dashboard gefunden.');
     } finally { if (busy === 'feed') busy = null; render(); }
   }
 
-  async function loadLive() {
+  async function fetchFresh(path) {
+    try {
+      const r = await fetch(GH_API + path + '?ref=main&t=' + Date.now(), { cache: 'no-store', headers: { Accept: 'application/vnd.github.raw+json' } });
+      if (r.ok) return await r.json();
+    } catch (_) { /* dann über die Seite */ }
+    return null;
+  }
+
+  async function loadLive(fresh) {
+    if (fresh) {
+      const j = await fetchFresh('data/live.json');
+      if (j && j.quotes && typeof j.quotes === 'object' && j.updated_at) return j;
+    }
     for (const u of LIVE_URLS) {
       try {
         const res = await fetch(u + '?t=' + Math.floor(Date.now() / 60e3), { cache: 'no-store' });
