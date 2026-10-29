@@ -1,7 +1,8 @@
 name: Live-Kurse
 
-# Alle 15 Minuten waehrend der Tradegate-Handelszeit (8 bis 22 Uhr deutscher Zeit), Zeiten in UTC.
-# 6 bis 21 Uhr UTC deckt Winter- und Sommerzeit ab.
+# GitHub startet geplante Abläufe oft nur alle 45 bis 60 Minuten statt wie eingestellt.
+# Deshalb holt jeder Start die Kurse dreimal im Abstand von etwa 15 Minuten.
+# Zeiten in UTC: 6 bis 21 Uhr UTC deckt die Tradegate-Handelszeit (8 bis 22 Uhr deutscher Zeit) in Winter- und Sommerzeit ab.
 on:
   schedule:
     - cron: '*/15 6-21 * * 1-5'
@@ -15,29 +16,27 @@ on:
 permissions:
   contents: write
 
-concurrency:
-  group: live-kurse
-  cancel-in-progress: false
-
 jobs:
   kurse:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
-      - name: Kurse holen
-        run: python3 tools/live_quotes.py --feed data/feed.json --out data/live.json
-      - name: Speichern
+      - name: Kurse holen und speichern
         run: |
-          if git diff --quiet -- data/live.json && git ls-files --error-unmatch data/live.json >/dev/null 2>&1; then
-            echo "Keine Änderung"; exit 0
-          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/live.json
-          git commit -q -m "Live-Kurse aktualisiert"
+          hole() {
+            git fetch -q origin main && git reset -q --hard origin/main
+            python3 tools/live_quotes.py --feed data/feed.json --out data/live.json
+            if git diff --quiet -- data/live.json; then echo "Keine Änderung"; return 0; fi
+            git add data/live.json
+            git commit -q -m "Live-Kurse aktualisiert"
+            git push -q origin HEAD:main
+          }
           for i in 1 2 3; do
-            git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0
-            sleep 5
+            jetzt=$(TZ=Europe/Berlin date +%H%M)
+            if (( 10#$jetzt < 745 || 10#$jetzt > 2215 )); then echo "Außerhalb der Handelszeit ($jetzt)"; break; fi
+            hole || { sleep 5; hole || echo "Speichern fehlgeschlagen"; }
+            if [ "$i" -lt 3 ]; then sleep 840; fi
           done
-          echo "Push fehlgeschlagen"
