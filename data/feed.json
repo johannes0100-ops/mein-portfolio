@@ -1,8 +1,8 @@
 {
  "app": "mein-portfolio-feed",
  "version": 1,
- "generated_at": "2026-10-29T22:26:25+00:00",
- "quotes_at": "2026-10-29T22:26:16+00:00",
+ "generated_at": "2026-10-30T07:29:16+00:00",
+ "quotes_at": "2026-10-30T07:29:09+00:00",
  "web_at": "2026-10-29T21:42:57+00:00",
  "live_at": "2026-10-29T21:09:58+00:00",
  "notes": "Depotwert und Tagesveränderung zum Tradegate-Geldkurs wie im Depot (alle 15 Minuten). Fehlende 5T- und 1M-Werte entstehen, sobald genug Tageskurse gesammelt sind.",
@@ -319,7 +319,7 @@
    ],
    "spark_1y_start": "2025-10-29",
    "venue": "Tradegate (Geldkurs)",
-   "as_of": "2026-10-29T22:26:16+00:00",
+   "as_of": "2026-10-30T07:29:09+00:00",
    "trading_day": "2026-10-29",
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/AMZN"
@@ -635,7 +635,7 @@
    ],
    "spark_1y_start": "2025-10-29",
    "venue": "Tradegate (Geldkurs)",
-   "as_of": "2026-10-29T22:26:16+00:00",
+   "as_of": "2026-10-30T07:29:09+00:00",
    "trading_day": "2026-10-29",
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/BAB.L"
@@ -951,7 +951,7 @@
    ],
    "spark_1y_start": "2025-10-29",
    "venue": "Tradegate (Geldkurs)",
-   "as_of": "2026-10-29T22:26:16+00:00",
+   "as_of": "2026-10-30T07:29:09+00:00",
    "trading_day": "2026-10-29",
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/BMW.DE"
@@ -1267,7 +1267,7 @@
    ],
    "spark_1y_start": "2025-10-29",
    "venue": "Tradegate (Geldkurs)",
-   "as_of": "2026-10-29T22:26:16+00:00",
+   "as_of": "2026-10-30T07:29:09+00:00",
    "trading_day": "2026-10-29",
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/NOKIA.HE"
@@ -1302,7 +1302,7 @@
    ],
    "spark_1y_start": "2026-10-22",
    "venue": "Yahoo Finance",
-   "as_of": "2026-10-29T22:26:16+00:00",
+   "as_of": "2026-10-30T07:29:09+00:00",
    "trading_day": "2026-10-29",
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/C9DR.MU"
@@ -1456,7 +1456,7 @@
    ],
    "spark_1y_start": "2026-06-12",
    "venue": "Tradegate (Geldkurs)",
-   "as_of": "2026-10-29T22:26:16+00:00",
+   "as_of": "2026-10-30T07:29:09+00:00",
    "trading_day": "2026-10-29",
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/SPCX"
@@ -1770,15 +1770,41 @@
    ],
    "spark_1y_start": "2025-10-29",
    "venue": "Tradegate (Geldkurs)",
-   "as_of": "2026-10-29T22:26:16+00:00",
+   "as_of": "2026-10-30T07:29:09+00:00",
    "trading_day": "2026-10-29",
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/VGVE.DE"
   }
  },
  "news": {
-  "generated_at": "2026-10-29T14:53:00+01:00",
+  "generated_at": "2026-10-30T07:50:00+01:00",
   "market": [
+   {
+    "headline": "Dax nach starker Woche zum Start etwas schwächer erwartet",
+    "summary": "Enttäuschende Zahlen von Amazon und Intel sowie steigende Ölpreise dürften den Dax am Freitag leicht bremsen, er wurde vorbörslich knapp unter 26.000 Punkten taxiert. Auf Wochensicht zeichnet sich dennoch ein Plus von gut drei Prozent ab.",
+    "source": "dpa-AFX via ARIVA.DE",
+    "url": "https://www.ariva.de/news/dax-flash-dax-zum-ende-einer-starken-woche-wohl-etwas-12188013",
+    "published_at": "2026-10-30T07:06:00+01:00",
+    "kind": "news",
+    "tickers": [
+     "Amazon"
+    ],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Dax schließt über 26.000 Punkten, EZB lässt Zinsen unverändert",
+    "summary": "Der Dax gewann 1,31 Prozent auf 26.039,68 Punkte und erreichte das Niveau von Anfang September. Die EZB hielt die Leitzinsen wie erwartet stabil, Adidas führte die Gewinnerliste an.",
+    "source": "dpa-AFX via ARIVA.DE",
+    "url": "https://www.ariva.de/news/roundup-aktien-frankfurt-schluss-dax-ueber-26-000-punkte-12187543",
+    "published_at": "2026-10-29T18:01:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
    {
     "headline": "Dax springt erstmals seit sieben Wochen über 26.000 Punkte",
     "summary": "Nach der Zinspause der Fed und gemischten Zahlen von Microsoft und Alphabet legte der Dax am Mittag knapp ein Prozent zu. Die EZB teilte zudem mit, dass Christine Lagarde ihr Amt vorzeitig im Februar 2027 abgibt.",
@@ -1787,6 +1813,20 @@
     "published_at": "2026-10-29T12:01:00+01:00",
     "kind": "news",
     "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Wall Street schließt im Minus, Alphabet bricht ein",
+    "summary": "Der Nasdaq Composite verlor rund 1,4 Prozent, S&P 500 und Dow gaben je etwa 0,3 Prozent nach. Alphabet fiel nach verfehlten Erwartungen um mehr als zwölf Prozent, Amazon verlor vor den eigenen Zahlen über vier Prozent.",
+    "source": "Investopedia via Yahoo Finance",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nasdaq-futures-104943461.html",
+    "published_at": "2026-10-29T11:49:00+01:00",
+    "kind": "news",
+    "tickers": [
+     "Amazon"
+    ],
     "peer": null,
     "popularity": null,
     "label": null
@@ -1901,6 +1941,22 @@
     "id": "amzn",
     "items": [
      {
+      "headline": "Amazon fällt nach Q3-Zahlen und hohen Investitionsplänen",
+      "summary": "Der Umsatz von 201,9 Milliarden Dollar und der Gewinn je Aktie von 1,89 Dollar lagen leicht unter den Erwartungen. AWS wuchs um 39 Prozent, Sorgen bereiten Investitionen von rund 220 Milliarden Dollar in diesem Jahr.",
+      "source": "Motley Fool via Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-29-211602513.html",
+      "published_at": "2026-10-29T22:16:00+01:00",
+      "kind": "news"
+     },
+     {
+      "headline": "Amazon verfehlt Prognosen bei Umsatz und Gewinn",
+      "summary": "Nachbörslich gab die Aktie zeitweise rund sechs Prozent nach. Der Ausblick für das Weihnachtsquartal blieb unter den Markterwartungen, während AWS den operativen Gewinn um 55 Prozent steigerte.",
+      "source": "finanzen.net",
+      "url": "https://www.finanzen.net/nachricht/aktien/zahlen-praesentiert-amazon-aktie-tiefer-online-riese-verfehlt-prognosen-bei-umsatz-und-gewinn-16013767",
+      "published_at": "2026-10-29T22:05:00+01:00",
+      "kind": "news"
+     },
+     {
       "headline": "Amazon legt am 29. Oktober nach Börsenschluss Zahlen vor",
       "summary": "Im Fokus steht, wie die hohen KI-Investitionen Gewinn und Cashflow belasten. Analysten erwarten einen Gewinn je Aktie von rund 2,01 Dollar.",
       "source": "Barchart via Yahoo Finance",
@@ -1923,6 +1979,16 @@
       "url": "https://www.investing.com/news/analyst-ratings/evercore-previews-amazon-stock-ahead-of-q3-earnings-report-93CH-4972848",
       "published_at": "2026-10-26T14:18:00+01:00",
       "kind": "news"
+     },
+     {
+      "headline": "RBC: bestätigt",
+      "summary": "Analyst Brad Erickson sieht den Umsatz im Rahmen und das operative Ergebnis über den Erwartungen, der Ausblick für das vierte Quartal enttäuscht aber vor allem beim Gewinn.",
+      "source": "dpa-AFX via finanznachrichten.de",
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69981547-analyse-flash-rbc-belaesst-amazon-auf-outperform-ziel-330-dollar-016.htm",
+      "published_at": "2026-10-29T23:05:00+01:00",
+      "kind": "analyst",
+      "rating": "Outperform",
+      "target": "330 USD"
      },
      {
       "headline": "Mizuho: bestätigt",
@@ -1984,6 +2050,14 @@
       "kind": "news"
      },
      {
+      "headline": "Nokia steigt nach Hochstufung durch Inderes",
+      "summary": "Inderes hob die Aktie von Sell auf Reduce und das Ziel auf 7 Euro an. Zudem testen laut Nokia und Nvidia fast 20 Netzbetreiber ihre gemeinsame KI-Funknetztechnik.",
+      "source": "Investing.com",
+      "url": "https://www.investing.com/news/stock-market-news/why-is-nokia-stock-up-over-2-today-93CH-4971916",
+      "published_at": "2026-10-26T11:14:00+01:00",
+      "kind": "news"
+     },
+     {
       "headline": "Deutsche Bank Research: Ziel gesenkt",
       "summary": "Trotz starker Zahlen sieht der Analyst kaum Änderungen an den Gewinnschätzungen und verweist auf Sorgen um Margenverwässerung im KI-Netzwerkgeschäft.",
       "source": "dpa-AFX Analyser via wallstreet-online",
@@ -2012,22 +2086,28 @@
       "kind": "analyst",
       "rating": "Reduce",
       "target": "7 EUR"
-     },
-     {
-      "headline": "JPMorgan: bestätigt",
-      "summary": "Analyst Sandeep Deshpande hält eine noch deutlichere Anhebung des Ausblicks für 2027 für möglich, obwohl hohe Umsätze mit KI und Cloud bereits eingeplant waren.",
-      "source": "dpa-AFX Analyser via finanznachrichten.de",
-      "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69926888-jpmorgan-stuft-nokia-auf-overweight-322.htm",
-      "published_at": "2026-10-24T19:06:00+02:00",
-      "kind": "analyst",
-      "rating": "Overweight",
-      "target": "18 EUR"
      }
     ]
    },
    {
     "id": "spacex",
     "items": [
+     {
+      "headline": "Freigabe von Insider-Aktien belastet SpaceX bislang kaum",
+      "summary": "Seit dem Börsengang wurden rund 3,9 Milliarden Aktien aus Haltefristen frei. Der Zeitplan war bekannt, die Analysten bleiben mit einem mittleren Kursziel von etwa 257 Dollar überwiegend positiv.",
+      "source": "24/7 Wall St. via Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-insiders-could-sell-nearly-150749899.html",
+      "published_at": "2026-10-29T16:07:00+01:00",
+      "kind": "news"
+     },
+     {
+      "headline": "SpaceX-Aktie nähert sich wieder der Marke von 140 Dollar",
+      "summary": "Nach der großen Aktienfreigabe am 22. Oktober hinkt SpaceX kleineren Raumfahrtwerten hinterher. Charttechnisch gilt 140 Dollar als Unterstützung, darunter droht laut Yahoo ein Rückfall Richtung 108 Dollar.",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/article/spacex-stock-slides-back-toward-140-as-smaller-space-names-leave-it-behind-171331237.html",
+      "published_at": "2026-10-29T10:15:00+01:00",
+      "kind": "news"
+     },
      {
       "headline": "SpaceX-Aktie fällt vor dem Fed-Entscheid um rund drei Prozent",
       "summary": "Im insgesamt ruhigen US-Handel gehörte SpaceX am Mittwochvormittag zu den schwächeren Werten.",
@@ -2048,6 +2128,17 @@
    }
   ],
   "sell_side": [
+   {
+    "stock": "amzn",
+    "broker": "RBC",
+    "action": "bestätigt",
+    "rating": "Outperform",
+    "target": "330 USD",
+    "summary": "Analyst Brad Erickson sieht den Umsatz im Rahmen und das operative Ergebnis über den Erwartungen, der Ausblick für das vierte Quartal enttäuscht aber vor allem beim Gewinn.",
+    "source": "dpa-AFX via finanznachrichten.de",
+    "published_at": "2026-10-29T23:05:00+01:00",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69981547-analyse-flash-rbc-belaesst-amazon-auf-outperform-ziel-330-dollar-016.htm"
+   },
    {
     "stock": "nokia",
     "broker": "Deutsche Bank Research",
@@ -2102,17 +2193,6 @@
     "source": "Investing.com",
     "published_at": "2026-10-26T00:20:00+01:00",
     "url": "https://www.investing.com/news/analyst-ratings/nokia-stock-rating-upgraded-to-reduce-by-inderes-on-strong-q3-results-93CH-4971302"
-   },
-   {
-    "stock": "nokia",
-    "broker": "JPMorgan",
-    "action": "bestätigt",
-    "rating": "Overweight",
-    "target": "18 EUR",
-    "summary": "Analyst Sandeep Deshpande hält eine noch deutlichere Anhebung des Ausblicks für 2027 für möglich, obwohl hohe Umsätze mit KI und Cloud bereits eingeplant waren.",
-    "source": "dpa-AFX Analyser via finanznachrichten.de",
-    "published_at": "2026-10-24T19:06:00+02:00",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69926888-jpmorgan-stuft-nokia-auf-overweight-322.htm"
    }
   ],
   "popular": [
@@ -2126,20 +2206,6 @@
     "tickers": [],
     "peer": null,
     "popularity": "unter Meistgelesene News auf finanznachrichten.de",
-    "label": null
-   },
-   {
-    "headline": "JPMorgan bestätigt Nokia mit Overweight",
-    "summary": "JPMorgan hält nach den Quartalszahlen an der Kaufempfehlung für Nokia mit einem Kursziel von 18 Euro fest. Analyst Sandeep Deshpande hält eine weitere Anhebung des Ausblicks für 2027 für möglich.",
-    "source": "dpa-AFX via finanznachrichten.de",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69926888-jpmorgan-stuft-nokia-auf-overweight-322.htm",
-    "published_at": "2026-10-24T19:06:00+02:00",
-    "kind": "news",
-    "tickers": [
-     "Nokia"
-    ],
-    "peer": null,
-    "popularity": "unter Meistgelesene Aktien-Empfehlungen auf finanznachrichten.de",
     "label": null
    }
   ],
@@ -2161,6 +2227,34 @@
   ],
   "peers": [
    {
+    "headline": "Volkswagen mit Milliardenverlust im dritten Quartal, Aktie dreht ins Plus",
+    "summary": "VW verbuchte vor allem wegen einer Abschreibung auf Porsche rund 5,8 Milliarden Euro Verlust. Schwache Geschäfte in China und geringere Margen bei Elektroautos belasten, die Aktie stieg dennoch.",
+    "source": "dpa-AFX via ARIVA.DE",
+    "url": "https://www.ariva.de/news/roundup-3-die-gruende-fuer-den-milliardenverlust-bei-12187204",
+    "published_at": "2026-10-29T15:01:00+01:00",
+    "kind": "news",
+    "tickers": [
+     "BMW"
+    ],
+    "peer": "Volkswagen",
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Alphabet-Zahlen schicken Nasdaq-Futures auf Talfahrt",
+    "summary": "Alphabet fiel vorbörslich um rund zehn Prozent nach schwachem Suchgeschäft und hohen KI-Ausgaben. Microsoft legte dank starkem Cloud-Ausblick zu, Amazon berichtete erst nach Handelsschluss.",
+    "source": "Reuters via Yahoo Finance",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-futures-slide-mixed-big-083556706.html",
+    "published_at": "2026-10-29T10:54:00+01:00",
+    "kind": "news",
+    "tickers": [
+     "Amazon"
+    ],
+    "peer": "Alphabet",
+    "popularity": null,
+    "label": null
+   },
+   {
     "headline": "BAE Systems stellt neue Abwehrsysteme gegen Drohnenschwärme vor",
     "summary": "BAE präsentierte ein Artilleriesystem für mehrere Einsatzbereiche und eine Hochleistungsmikrowelle gegen Drohnen. Zudem sicherte sich der Konzern einen mehrjährigen US-Rahmenvertrag für Lenkbausätze und einen Auftrag der Space Force.",
     "source": "Simply Wall St via Yahoo Finance",
@@ -2178,50 +2272,6 @@
  },
  "calendar": {
   "events": [
-   {
-    "date": "2026-10-29",
-    "time": "13:30",
-    "title": "US BIP Q3 Vorabschätzung",
-    "type": "makro",
-    "region": "US",
-    "holding": null,
-    "note": "Veröffentlichung 8:30 Uhr ET.",
-    "confirmed": true,
-    "url": "https://www.bea.gov/index.php/news/schedule/full"
-   },
-   {
-    "date": "2026-10-29",
-    "time": "13:30",
-    "title": "US Einkommen, Konsumausgaben und PCE-Preise September",
-    "type": "makro",
-    "region": "US",
-    "holding": null,
-    "note": "Veröffentlichung 8:30 Uhr ET gemeinsam mit dem BIP.",
-    "confirmed": true,
-    "url": "https://www.bea.gov/index.php/news/schedule/full"
-   },
-   {
-    "date": "2026-10-29",
-    "time": "14:15",
-    "title": "EZB Zinsentscheid",
-    "type": "zins",
-    "region": "EU",
-    "holding": null,
-    "note": "Sitzung am 28. und 29.10., Pressekonferenz üblicherweise um 14:45 Uhr.",
-    "confirmed": true,
-    "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
-   },
-   {
-    "date": "2026-10-29",
-    "time": "22:00",
-    "title": "Amazon Quartalszahlen Q3 und Telefonkonferenz",
-    "type": "earnings",
-    "region": "US",
-    "holding": "amzn",
-    "note": "Telefonkonferenz 14:00 Uhr PT, Zahlen nach US-Börsenschluss.",
-    "confirmed": true,
-    "url": "https://ir.aboutamazon.com/events/event-details/2026/Q3-2026-Amazoncom-Inc-Earnings-Conference-Call/default.aspx"
-   },
    {
     "date": "2026-10-30",
     "time": "11:00",
@@ -2243,6 +2293,17 @@
     "note": "Employment Cost Index, 8:30 Uhr ET.",
     "confirmed": true,
     "url": "https://www.bls.gov/schedule/2026/10_sched_list.htm"
+   },
+   {
+    "date": "2026-10-30",
+    "time": null,
+    "title": "Deutschland Verbraucherpreise Oktober vorläufig",
+    "type": "makro",
+    "region": "DE",
+    "holding": null,
+    "note": "Laut dpa-AFX am Freitag erwartet.",
+    "confirmed": true,
+    "url": "https://www.ariva.de/news/dax-flash-dax-zum-ende-einer-starken-woche-wohl-etwas-12188013"
    },
    {
     "date": "2026-11-03",
