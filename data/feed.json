@@ -1,10 +1,10 @@
 {
  "app": "mein-portfolio-feed",
  "version": 1,
- "generated_at": "2026-10-30T09:26:40+00:00",
- "quotes_at": "2026-10-30T09:26:28+00:00",
+ "generated_at": "2026-10-30T12:32:25+00:00",
+ "quotes_at": "2026-10-30T12:32:16+00:00",
  "web_at": "2026-10-30T07:42:14+00:00",
- "live_at": "2026-10-30T09:01:15+00:00",
+ "live_at": "2026-10-30T12:22:08+00:00",
  "notes": "Depotwert und Tagesveränderung zum Tradegate-Geldkurs wie im Depot (alle 15 Minuten). Fehlende 5T- und 1M-Werte entstehen, sobald genug Tageskurse gesammelt sind.",
  "errors": [],
  "quotes": {
@@ -15,9 +15,9 @@
    "exchange": "Nasdaq",
    "gics": "Broadline Retail",
    "gics_sector": "Consumer Discretionary",
-   "eur_price": 203.55,
-   "prev_eur": 203.6926,
-   "change_pct": -0.07,
+   "eur_price": 202.8,
+   "prev_eur": 203.8396,
+   "change_pct": -0.51,
    "d5": -2.63,
    "m1": -1.17,
    "ytd": 5.62,
@@ -319,7 +319,7 @@
    ],
    "spark_1y_start": "2025-10-29",
    "venue": "Tradegate (Geldkurs)",
-   "as_of": "2026-10-30T09:26:28+00:00",
+   "as_of": "2026-10-30T12:32:16+00:00",
    "trading_day": "2026-10-30",
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/AMZN"
@@ -331,8 +331,8 @@
    "exchange": "London",
    "gics": "Aerospace & Defense",
    "gics_sector": "Industrials",
-   "eur_price": 12.24,
-   "prev_eur": 12.2107,
+   "eur_price": 12.14,
+   "prev_eur": 12.1109,
    "change_pct": 0.24,
    "d5": 8.62,
    "m1": 2.75,
@@ -635,7 +635,7 @@
    ],
    "spark_1y_start": "2025-10-29",
    "venue": "Tradegate (Geldkurs)",
-   "as_of": "2026-10-30T09:26:28+00:00",
+   "as_of": "2026-10-30T12:32:16+00:00",
    "trading_day": "2026-10-30",
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/BAB.L"
@@ -647,9 +647,9 @@
    "exchange": "Xetra",
    "gics": "Automobiles",
    "gics_sector": "Consumer Discretionary",
-   "eur_price": 58.18,
-   "prev_eur": 57.7584,
-   "change_pct": 0.73,
+   "eur_price": 57.76,
+   "prev_eur": 57.76,
+   "change_pct": 0.0,
    "d5": 0.35,
    "m1": 5.83,
    "ytd": -34.5,
@@ -951,7 +951,7 @@
    ],
    "spark_1y_start": "2025-10-29",
    "venue": "Tradegate (Geldkurs)",
-   "as_of": "2026-10-30T09:26:28+00:00",
+   "as_of": "2026-10-30T12:32:16+00:00",
    "trading_day": "2026-10-30",
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/BMW.DE"
@@ -963,9 +963,9 @@
    "exchange": "Helsinki",
    "gics": "Communications Equipment",
    "gics_sector": "Information Technology",
-   "eur_price": 7.944,
-   "prev_eur": 8.1402,
-   "change_pct": -2.41,
+   "eur_price": 7.802,
+   "prev_eur": 8.1483,
+   "change_pct": -4.25,
    "d5": 12.97,
    "m1": -8.36,
    "ytd": 52.95,
@@ -1267,7 +1267,7 @@
    ],
    "spark_1y_start": "2025-10-29",
    "venue": "Tradegate (Geldkurs)",
-   "as_of": "2026-10-30T09:26:28+00:00",
+   "as_of": "2026-10-30T12:32:16+00:00",
    "trading_day": "2026-10-30",
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/NOKIA.HE"
@@ -1302,7 +1302,7 @@
    ],
    "spark_1y_start": "2026-10-22",
    "venue": "Yahoo Finance",
-   "as_of": "2026-10-30T09:26:28+00:00",
+   "as_of": "2026-10-30T12:32:16+00:00",
    "trading_day": "2026-10-29",
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/C9DR.MU"
@@ -1314,9 +1314,9 @@
    "exchange": "Nasdaq",
    "gics": "Aerospace & Defense",
    "gics_sector": "Industrials",
-   "eur_price": 125.04,
-   "prev_eur": 127.0216,
-   "change_pct": -1.56,
+   "eur_price": 123.14,
+   "prev_eur": 127.0008,
+   "change_pct": -3.04,
    "d5": -0.59,
    "m1": -3.58,
    "ytd": -10.6,
@@ -1456,7 +1456,7 @@
    ],
    "spark_1y_start": "2026-06-12",
    "venue": "Tradegate (Geldkurs)",
-   "as_of": "2026-10-30T09:26:28+00:00",
+   "as_of": "2026-10-30T12:32:16+00:00",
    "trading_day": "2026-10-30",
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/SPCX"
@@ -1466,9 +1466,9 @@
    "isin": "IE00BKX55T58",
    "wkn": "A12CX1",
    "exchange": "Xetra",
-   "eur_price": 127.98,
-   "prev_eur": 128.3651,
-   "change_pct": -0.3,
+   "eur_price": 127.48,
+   "prev_eur": 128.3011,
+   "change_pct": -0.64,
    "d5": 1.4,
    "m1": 1.72,
    "ytd": 18.75,
@@ -1770,15 +1770,43 @@
    ],
    "spark_1y_start": "2025-10-29",
    "venue": "Tradegate (Geldkurs)",
-   "as_of": "2026-10-30T09:26:28+00:00",
+   "as_of": "2026-10-30T12:32:16+00:00",
    "trading_day": "2026-10-30",
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/VGVE.DE"
   }
  },
  "news": {
-  "generated_at": "2026-10-30T07:50:00+01:00",
+  "generated_at": "2026-10-30T13:40:00+01:00",
   "market": [
+   {
+    "headline": "Dax am Mittag schwächer, Chipwerte nach Intel-Zahlen unter Druck",
+    "summary": "Der Dax verlor bis zum Mittag 0,6 Prozent auf 25.892 Punkte, steuert aber auf ein Wochenplus von fast drei Prozent zu. Halbleiterwerte litten unter schwachen Intel-Zahlen, Bayer stieg nach einem Glyphosat-Urteil.",
+    "source": "dpa-AFX via finanznachrichten.de",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69988492-aktien-frankfurt-schwaecheres-ende-einer-starken-boersenwoche-016.htm",
+    "published_at": "2026-10-30T12:02:00+01:00",
+    "kind": "news",
+    "tickers": [
+     "Amazon"
+    ],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Dax startet mit moderaten Verlusten",
+    "summary": "Zum Handelsstart fiel der Dax um 0,4 Prozent auf 25.935 Punkte, belastet von höheren Ölpreisen und enttäuschenden Zahlen von Amazon und Intel. Am Nachmittag stehen deutsche Inflationsdaten an.",
+    "source": "dpa-AFX via finanznachrichten.de",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69985482-aktien-frankfurt-eroeffnung-moderate-verluste-positive-wochenbilanz-winkt-016.htm",
+    "published_at": "2026-10-30T09:14:00+01:00",
+    "kind": "news",
+    "tickers": [
+     "Amazon"
+    ],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
    {
     "headline": "Dax nach starker Woche zum Start etwas schwächer erwartet",
     "summary": "Enttäuschende Zahlen von Amazon und Intel sowie steigende Ölpreise dürften den Dax am Freitag leicht bremsen, er wurde vorbörslich knapp unter 26.000 Punkten taxiert. Auf Wochensicht zeichnet sich dennoch ein Plus von gut drei Prozent ab.",
@@ -1799,18 +1827,6 @@
     "source": "dpa-AFX via ARIVA.DE",
     "url": "https://www.ariva.de/news/roundup-aktien-frankfurt-schluss-dax-ueber-26-000-punkte-12187543",
     "published_at": "2026-10-29T18:01:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Dax springt erstmals seit sieben Wochen über 26.000 Punkte",
-    "summary": "Nach der Zinspause der Fed und gemischten Zahlen von Microsoft und Alphabet legte der Dax am Mittag knapp ein Prozent zu. Die EZB teilte zudem mit, dass Christine Lagarde ihr Amt vorzeitig im Februar 2027 abgibt.",
-    "source": "dpa-AFX via ARIVA.DE",
-    "url": "https://www.ariva.de/news/aktien-frankfurt-dax-steigt-ueber-26-000-punkte-hoch-seit-12186749",
-    "published_at": "2026-10-29T12:01:00+01:00",
     "kind": "news",
     "tickers": [],
     "peer": null,
@@ -1863,20 +1879,6 @@
     "published_at": "2026-10-28T18:05:00+01:00",
     "kind": "news",
     "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Wall Street vor Fed-Entscheid kaum verändert, SpaceX gibt nach",
-    "summary": "Vor dem Zinsentscheid bewegten sich die US-Indizes am Vormittag kaum, Händler rechnen mittelfristig mit weiteren Zinserhöhungen. SpaceX verlor rund drei Prozent, Vertiv sprang nach höherer Prognose an.",
-    "source": "Reuters via Yahoo Finance",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/wall-st-choppy-megacap-losses-143539739.html",
-    "published_at": "2026-10-28T15:35:00+01:00",
-    "kind": "news",
-    "tickers": [
-     "SpaceX"
-    ],
     "peer": null,
     "popularity": null,
     "label": null
@@ -1941,6 +1943,14 @@
     "id": "amzn",
     "items": [
      {
+      "headline": "Amazon wächst mit der Cloud, hohe KI-Ausgaben belasten",
+      "summary": "AWS steigerte den Umsatz um 39 Prozent auf 46 Milliarden Dollar, die Investitionen lagen mit 77,3 Milliarden Dollar aber deutlich über den Erwartungen. Die Aktie gab auf Tradegate zeitweise rund sieben Prozent nach.",
+      "source": "dpa-AFX via finanznachrichten.de",
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69985301-roundup-amazon-waechst-mit-cloud-hohe-ki-ausgaben-lasten-auf-der-aktie-016.htm",
+      "published_at": "2026-10-30T09:04:00+01:00",
+      "kind": "news"
+     },
+     {
       "headline": "Amazon fällt nach Q3-Zahlen und hohen Investitionsplänen",
       "summary": "Der Umsatz von 201,9 Milliarden Dollar und der Gewinn je Aktie von 1,89 Dollar lagen leicht unter den Erwartungen. AWS wuchs um 39 Prozent, Sorgen bereiten Investitionen von rund 220 Milliarden Dollar in diesem Jahr.",
       "source": "Motley Fool via Yahoo Finance",
@@ -1973,12 +1983,14 @@
       "kind": "news"
      },
      {
-      "headline": "Evercore erwartet Wachstum durch AWS und Werbung",
-      "summary": "Die Analysten sehen AWS und das Werbegeschäft als Treiber im dritten Quartal. Frische Lebensmittel gelten als neue Wachstumschance.",
-      "source": "Investing.com",
-      "url": "https://www.investing.com/news/analyst-ratings/evercore-previews-amazon-stock-ahead-of-q3-earnings-report-93CH-4972848",
-      "published_at": "2026-10-26T14:18:00+01:00",
-      "kind": "news"
+      "headline": "Goldman Sachs: Ziel gesenkt",
+      "summary": "Analyst Eric Sheridan passt seine Schätzungen nach den Quartalszahlen leicht nach unten an, sieht bei Amazon aber weiter das beste Chance-Risiko-Verhältnis seiner Branche.",
+      "source": "dpa-AFX via finanznachrichten.de",
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69985131-analyse-flash-goldman-senkt-ziel-fuer-amazon-auf-370-dollar-buy-016.htm",
+      "published_at": "2026-10-30T08:50:00+01:00",
+      "kind": "analyst",
+      "rating": "Buy",
+      "target": "370 USD"
      },
      {
       "headline": "RBC: bestätigt",
@@ -2093,6 +2105,22 @@
     "id": "spacex",
     "items": [
      {
+      "headline": "SpaceX rund 25 Prozent unter dem Rekordhoch",
+      "summary": "Trotz eines Quartalsumsatzes von 14,6 Milliarden Dollar und 4,4 Milliarden Dollar Gewinn notiert die Aktie deutlich unter ihrem Hoch nach dem Börsengang. Als Risiko gilt das Ende einer weiteren Haltefrist im Dezember.",
+      "source": "Motley Fool via Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-stock-25-below-time-090402167.html",
+      "published_at": "2026-10-30T10:04:00+01:00",
+      "kind": "news"
+     },
+     {
+      "headline": "SpaceX hält sich im Oktober besser als kleinere Raumfahrtwerte",
+      "summary": "Die Aktie verlor im Monatsverlauf rund fünf Prozent und damit weniger als AST SpaceMobile, Rocket Lab und Planet Labs. Seit Jahresbeginn liegt sie elf Prozent im Minus, die Stimmung der Privatanleger drehte ins Negative.",
+      "source": "Stocktwits via Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stocktwits-space-race-monthly-spcx-053953296.html",
+      "published_at": "2026-10-30T06:39:00+01:00",
+      "kind": "news"
+     },
+     {
       "headline": "Freigabe von Insider-Aktien belastet SpaceX bislang kaum",
       "summary": "Seit dem Börsengang wurden rund 3,9 Milliarden Aktien aus Haltefristen frei. Der Zeitplan war bekannt, die Analysten bleiben mit einem mittleren Kursziel von etwa 257 Dollar überwiegend positiv.",
       "source": "24/7 Wall St. via Yahoo Finance",
@@ -2109,14 +2137,6 @@
       "kind": "news"
      },
      {
-      "headline": "SpaceX-Aktie fällt vor dem Fed-Entscheid um rund drei Prozent",
-      "summary": "Im insgesamt ruhigen US-Handel gehörte SpaceX am Mittwochvormittag zu den schwächeren Werten.",
-      "source": "Reuters via Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/wall-st-choppy-megacap-losses-143539739.html",
-      "published_at": "2026-10-28T15:35:00+01:00",
-      "kind": "news"
-     },
-     {
       "headline": "Musk stellt bis zu einer Billion Dollar Jahresumsatz in Aussicht",
       "summary": "Musk sprach von 500 Milliarden bis einer Billion Dollar wiederkehrendem Jahresumsatz bis Ende 2027. Analysten erhöhten ihre Schätzungen zwar, bleiben aber weit darunter.",
       "source": "Motley Fool via Yahoo Finance",
@@ -2128,6 +2148,17 @@
    }
   ],
   "sell_side": [
+   {
+    "stock": "amzn",
+    "broker": "Goldman Sachs",
+    "action": "Ziel gesenkt",
+    "rating": "Buy",
+    "target": "370 USD",
+    "summary": "Analyst Eric Sheridan passt seine Schätzungen nach den Quartalszahlen leicht nach unten an, sieht bei Amazon aber weiter das beste Chance-Risiko-Verhältnis seiner Branche.",
+    "source": "dpa-AFX via finanznachrichten.de",
+    "published_at": "2026-10-30T08:50:00+01:00",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69985131-analyse-flash-goldman-senkt-ziel-fuer-amazon-auf-370-dollar-buy-016.htm"
+   },
    {
     "stock": "amzn",
     "broker": "RBC",
@@ -2209,22 +2240,7 @@
     "label": null
    }
   ],
-  "sector": [
-   {
-    "headline": "Elektroautos werden wegen starker Nachfrage teurer",
-    "summary": "Laut CAR-Institut gewähren Hersteller und Händler auf Elektroautos geringere Rabatte als auf Verbrenner, die Preislücke wuchs im Oktober auf über 2.900 Euro. Hohe Spritpreise schaffen laut Ferdinand Dudenhöffer Spielraum für höhere E-Auto-Preise.",
-    "source": "dpa-AFX via MarketScreener",
-    "url": "https://uk.marketscreener.com/news/due-to-strong-demand-electric-cars-are-becoming-more-expensive-ce785cdfd188f320",
-    "published_at": "2026-10-25T08:12:00+01:00",
-    "kind": "news",
-    "tickers": [
-     "BMW"
-    ],
-    "peer": "Autobranche",
-    "popularity": null,
-    "label": null
-   }
-  ],
+  "sector": [],
   "peers": [
    {
     "headline": "Volkswagen mit Milliardenverlust im dritten Quartal, Aktie dreht ins Plus",
@@ -2251,20 +2267,6 @@
      "Amazon"
     ],
     "peer": "Alphabet",
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "BAE Systems stellt neue Abwehrsysteme gegen Drohnenschwärme vor",
-    "summary": "BAE präsentierte ein Artilleriesystem für mehrere Einsatzbereiche und eine Hochleistungsmikrowelle gegen Drohnen. Zudem sicherte sich der Konzern einen mehrjährigen US-Rahmenvertrag für Lenkbausätze und einen Auftrag der Space Force.",
-    "source": "Simply Wall St via Yahoo Finance",
-    "url": "https://finance.yahoo.com/technology/articles/bae-systems-lse-ba-unveils-071247937.html",
-    "published_at": "2026-10-25T08:12:00+01:00",
-    "kind": "news",
-    "tickers": [
-     "Babcock"
-    ],
-    "peer": "BAE Systems",
     "popularity": null,
     "label": null
    }
