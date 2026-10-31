@@ -1,7 +1,7 @@
 {
  "app": "mein-portfolio-feed",
  "version": 1,
- "generated_at": "2026-10-30T22:26:28+00:00",
+ "generated_at": "2026-10-31T14:02:26+00:00",
  "quotes_at": "2026-10-30T22:26:15+00:00",
  "web_at": "2026-10-30T21:41:58+00:00",
  "live_at": "2026-10-30T21:04:59+00:00",
@@ -1785,8 +1785,50 @@
   }
  },
  "news": {
-  "generated_at": "2026-10-30T13:40:00+01:00",
+  "generated_at": "2026-10-31T14:59:00+01:00",
   "market": [
+   {
+    "headline": "Nasdaq 100 mit größtem Tagesverlust seit Juni, Tech-Ausverkauf wegen Amazon und Intel",
+    "summary": "Der Nasdaq 100 fiel um 3,46 Prozent auf 28.384,85 Punkte, der S&P 500 um 1,82 Prozent und der Dow um 1,09 Prozent. Intel brach nach schwachem Ausblick um fast 29 Prozent ein, Nvidia fiel unter fünf Billionen Dollar Börsenwert, während steigende Ölpreise auf Iran-Sorgen zurückgingen.",
+    "source": "dpa-AFX via onvista",
+    "url": "https://www.onvista.de/news/2026/10-30-roundup-aktien-new-york-schluss-tech-ausverkauf-wegen-amazon-und-intel-0-10-26570604",
+    "published_at": "2026-10-30T20:27:00+01:00",
+    "kind": "news",
+    "tickers": [
+     "Amazon"
+    ],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Dax schließt schwächer, Wochen- und Monatsplus von 2,5 Prozent",
+    "summary": "Der Dax fiel am Freitag um 0,85 Prozent auf 25.818 Punkte, beendete Woche und Oktober aber jeweils mit 2,5 Prozent Plus. Belastend wirkten der höchste Ölpreis seit April wegen Sorgen um einen neuen US-Angriff auf den Iran und der Tech-Ausverkauf nach Zahlen von Amazon und Intel.",
+    "source": "dpa-AFX via finanznachrichten.de",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69992965-aktien-frankfurt-schluss-schwaecheres-ende-einer-starken-boersenwoche-016.htm",
+    "published_at": "2026-10-30T17:50:00+01:00",
+    "kind": "news",
+    "tickers": [
+     "Amazon"
+    ],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Wochenausblick: US-Zwischenwahlen und Jobdaten entscheiden über weiteren Dax-Anstieg",
+    "summary": "Am Dienstag wählen die USA, am Freitag folgt der Arbeitsmarktbericht, zudem drücken Iran-Sorgen auf Ölpreis und Inflationserwartungen. In der Berichtssaison legen unter anderem BMW, Continental, Telekom und Commerzbank Zahlen vor.",
+    "source": "dpa-AFX via ARIVA.DE",
+    "url": "https://www.ariva.de/news/wochenausblick-weiterer-dax-anstieg-haengt-an-12189011",
+    "published_at": "2026-10-30T15:36:00+01:00",
+    "kind": "news",
+    "tickers": [
+     "BMW"
+    ],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
    {
     "headline": "Dax am Mittag schwächer, Chipwerte nach Intel-Zahlen unter Druck",
     "summary": "Der Dax verlor bis zum Mittag 0,6 Prozent auf 25.892 Punkte, steuert aber auf ein Wochenplus von fast drei Prozent zu. Halbleiterwerte litten unter schwachen Intel-Zahlen, Bayer stieg nach einem Glyphosat-Urteil.",
@@ -1904,52 +1946,20 @@
     "peer": null,
     "popularity": null,
     "label": null
-   },
-   {
-    "headline": "Dax steigt vor Tech-Zahlen und Zinsentscheiden",
-    "summary": "Der Dax legte um 0,71 Prozent auf 25.591 Punkte zu, Anleger positionierten sich vor den Zahlen von Alphabet, Microsoft und Amazon. Mercedes-Benz fiel nach gesenkter Prognose um fast vier Prozent.",
-    "source": "dpa-AFX via ARIVA.DE",
-    "url": "https://www.ariva.de/news/roundup-aktien-frankfurt-schluss-dax-steigt-vor-tech-zahlen-12183820",
-    "published_at": "2026-10-27T18:03:00+01:00",
-    "kind": "news",
-    "tickers": [
-     "Amazon"
-    ],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Ifo-Index stimmt optimistisch, Dax erholt sich",
-    "summary": "Das ifo-Geschäftsklima stieg überraschend den sechsten Monat in Folge auf den höchsten Stand seit Frühjahr 2023. Der Dax gewann 0,91 Prozent auf 25.411 Punkte, Bayer führte mit Studiendaten die Gewinnerliste an.",
-    "source": "dpa-AFX via ARIVA.DE",
-    "url": "https://www.ariva.de/news/roundup-aktien-frankfurt-schluss-dax-steigt-ifo-index-12182236",
-    "published_at": "2026-10-26T18:01:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Wochenausblick: Dax unter Druck, Zinsentscheide im Fokus",
-    "summary": "In der neuen Woche entscheiden am Mittwoch die Fed und am Donnerstag die EZB, Experten erwarten vorerst keine Zinsänderung. Zudem legen unter anderem Amazon, Alphabet und Microsoft Zahlen vor, belastend bleiben Ölpreise und die Lage in Frankreich.",
-    "source": "dpa-AFX via ARIVA.DE",
-    "url": "https://www.ariva.de/news/wochenausblick-dax-von-vielen-sorgen-belastet-fokus-auf-12181102",
-    "published_at": "2026-10-26T05:50:00+01:00",
-    "kind": "news",
-    "tickers": [
-     "Amazon"
-    ],
-    "peer": null,
-    "popularity": null,
-    "label": null
    }
   ],
   "positions": [
    {
     "id": "amzn",
     "items": [
+     {
+      "headline": "Amazon dämmt Tagesverlust ein, Aktie schließt rund 1,4 Prozent tiefer",
+      "summary": "Die Aktie fiel nach den Zahlen zeitweise um sechs Prozent auf den tiefsten Stand seit Ende Juli, erholte sich dann aber deutlich. UBS nannte enttäuschende Umsätze bei AWS als Grund, zudem belasten die hohen KI-Ausgaben.",
+      "source": "dpa-AFX via onvista",
+      "url": "https://www.onvista.de/news/2026/10-30-roundup-aktien-new-york-schluss-tech-ausverkauf-wegen-amazon-und-intel-0-10-26570604",
+      "published_at": "2026-10-30T20:27:00+01:00",
+      "kind": "news"
+     },
      {
       "headline": "Amazon wächst mit der Cloud, hohe KI-Ausgaben belasten",
       "summary": "AWS steigerte den Umsatz um 39 Prozent auf 46 Milliarden Dollar, die Investitionen lagen mit 77,3 Milliarden Dollar aber deutlich über den Erwartungen. Die Aktie gab auf Tradegate zeitweise rund sieben Prozent nach.",
@@ -1983,12 +1993,14 @@
       "kind": "news"
      },
      {
-      "headline": "Ausblick: Analysten erwarten über 200 Milliarden Dollar Umsatz",
-      "summary": "Laut Konsens von 50 Analysten soll der Quartalsumsatz um gut zwölf Prozent auf 202,2 Milliarden Dollar steigen. Beim Gewinn je Aktie werden 1,97 Dollar erwartet.",
-      "source": "finanzen.at",
-      "url": "https://www.finanzen.at/nachrichten/aktien/ausblick-amazon-stellt-das-zahlenwerk-zum-vergangenen-quartal-vor-1036674640",
-      "published_at": "2026-10-28T07:01:00+01:00",
-      "kind": "news"
+      "headline": "TD Cowen: Ziel gesenkt",
+      "summary": "TD Cowen senkt das Kursziel für Amazon nach den Quartalszahlen von 350 auf 340 Dollar.",
+      "source": "rallies.ai",
+      "url": "https://rallies.ai/news/amazon-td-cowen-cuts-target-price-to-340-from-350-f7baf87adc98f269",
+      "published_at": "2026-10-30T12:00:00+01:00",
+      "kind": "analyst",
+      "rating": null,
+      "target": "340 USD"
      },
      {
       "headline": "Goldman Sachs: Ziel gesenkt",
@@ -2049,6 +2061,14 @@
     "id": "bmw",
     "items": [
      {
+      "headline": "BMW-Aktie am Freitagnachmittag im Plus",
+      "summary": "Die BMW-Aktie notierte am Freitagnachmittag fester, wenige Tage vor den Quartalszahlen am 4. November.",
+      "source": "finanzen.net",
+      "url": "https://www.finanzen.net/nachricht/aktien/bmw-aktie-kursbewegung-30-10-2026-11202081",
+      "published_at": "2026-10-30T12:00:00+01:00",
+      "kind": "news"
+     },
+     {
       "headline": "BMW-Aktie am Mittwochnachmittag fester",
       "summary": "Im Xetra-Handel stieg die Aktie um rund 0,8 Prozent auf 57,20 Euro.",
       "source": "finanzen.net",
@@ -2061,6 +2081,14 @@
    {
     "id": "nokia",
     "items": [
+     {
+      "headline": "Nokia baut Gewinnserie auf vier Tage aus",
+      "summary": "Nokia stieg um 3,41 Prozent, während Cisco und Ericsson leicht nachgaben. Einen klaren Auslöser gab es nicht, Deutsche Bank Research senkte das Kursziel bei bestätigter Kaufempfehlung auf 10 Euro.",
+      "source": "wallstreet-online",
+      "url": "https://www.wallstreet-online.de/nachricht/21597942-bewegt-anleger-nokia-kursplus-verlaengert-gewinnserie-tage",
+      "published_at": "2026-10-28T21:21:00+01:00",
+      "kind": "news"
+     },
      {
       "headline": "Bank of America sieht Starlink-Ausbau positiv für Nokia",
       "summary": "Die Bank of America bestätigt ihre Kaufempfehlung für Nokia nach Berichten, dass SpaceX mehr als 80.000 Mobilfunkstandorte in den USA sichern will. Ein neuer Netzbetreiber dürfte die Ausgaben der etablierten Anbieter für Funknetze kaum bremsen, so die Bank.",
@@ -2113,6 +2141,14 @@
     "id": "spacex",
     "items": [
      {
+      "headline": "SpaceX eröffnet Freitag gut vier Prozent tiefer",
+      "summary": "Die SpaceX-Aktie startete am Freitag mit einem Minus von 4,16 Prozent in den Handel, mitten im breiten Tech-Ausverkauf.",
+      "source": "TradingKey",
+      "url": "https://www.tradingkey.com/news/market-movers/262260900-market-movers-spcx-20261030",
+      "published_at": "2026-10-30T12:00:00+01:00",
+      "kind": "news"
+     },
+     {
       "headline": "SpaceX rund 25 Prozent unter dem Rekordhoch",
       "summary": "Trotz eines Quartalsumsatzes von 14,6 Milliarden Dollar und 4,4 Milliarden Dollar Gewinn notiert die Aktie deutlich unter ihrem Hoch nach dem Börsengang. Als Risiko gilt das Ende einer weiteren Haltefrist im Dezember.",
       "source": "Motley Fool via Yahoo Finance",
@@ -2143,19 +2179,22 @@
       "url": "https://finance.yahoo.com/markets/article/spacex-stock-slides-back-toward-140-as-smaller-space-names-leave-it-behind-171331237.html",
       "published_at": "2026-10-29T10:15:00+01:00",
       "kind": "news"
-     },
-     {
-      "headline": "Musk stellt bis zu einer Billion Dollar Jahresumsatz in Aussicht",
-      "summary": "Musk sprach von 500 Milliarden bis einer Billion Dollar wiederkehrendem Jahresumsatz bis Ende 2027. Analysten erhöhten ihre Schätzungen zwar, bleiben aber weit darunter.",
-      "source": "Motley Fool via Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/10-000-investment-spacex-could-200300967.html",
-      "published_at": "2026-10-27T21:03:00+01:00",
-      "kind": "news"
      }
     ]
    }
   ],
   "sell_side": [
+   {
+    "stock": "amzn",
+    "broker": "TD Cowen",
+    "action": "Ziel gesenkt",
+    "rating": null,
+    "target": "340 USD",
+    "summary": "TD Cowen senkt das Kursziel für Amazon nach den Quartalszahlen von 350 auf 340 Dollar.",
+    "source": "rallies.ai",
+    "published_at": "2026-10-30T12:00:00+01:00",
+    "url": "https://rallies.ai/news/amazon-td-cowen-cuts-target-price-to-340-from-350-f7baf87adc98f269"
+   },
    {
     "stock": "amzn",
     "broker": "Goldman Sachs",
@@ -2283,37 +2322,15 @@
  "calendar": {
   "events": [
    {
-    "date": "2026-10-30",
-    "time": "11:00",
-    "title": "Eurozone BIP Q3 Schnellschätzung",
-    "type": "makro",
-    "region": "EU",
-    "holding": null,
-    "note": "Termin laut Eurostat Kalender vorläufig, Uhrzeit ist die übliche Eurostat Zeit.",
-    "confirmed": true,
-    "url": "https://ec.europa.eu/eurostat/documents/24987/6642470/QNA_release_calendar.pdf"
-   },
-   {
-    "date": "2026-10-30",
-    "time": "13:30",
-    "title": "US Arbeitskostenindex Q3",
+    "date": "2026-11-02",
+    "time": null,
+    "title": "US Einkaufsmanagerindex Industrie Oktober",
     "type": "makro",
     "region": "US",
     "holding": null,
-    "note": "Employment Cost Index, 8:30 Uhr ET.",
+    "note": "Einkaufsmanagerindizes der Industrie für China und die USA laut dpa-AFX Wochenausblick.",
     "confirmed": true,
-    "url": "https://www.bls.gov/schedule/2026/10_sched_list.htm"
-   },
-   {
-    "date": "2026-10-30",
-    "time": null,
-    "title": "Deutschland Verbraucherpreise Oktober vorläufig",
-    "type": "makro",
-    "region": "DE",
-    "holding": null,
-    "note": "Laut dpa-AFX am Freitag erwartet.",
-    "confirmed": true,
-    "url": "https://www.ariva.de/news/dax-flash-dax-zum-ende-einer-starken-woche-wohl-etwas-12188013"
+    "url": "https://www.ariva.de/news/wochenausblick-weiterer-dax-anstieg-haengt-an-12189011"
    },
    {
     "date": "2026-11-03",
@@ -2325,6 +2342,17 @@
     "note": "Veröffentlichung 10:00 Uhr ET.",
     "confirmed": true,
     "url": "https://www.bls.gov/schedule/2026/11_sched_list.htm"
+   },
+   {
+    "date": "2026-11-03",
+    "time": null,
+    "title": "US-Zwischenwahlen (Midterms)",
+    "type": "makro",
+    "region": "US",
+    "holding": null,
+    "note": "Erste Ergebnisse wegen der Zeitverschiebung erst am Mittwochmorgen erwartet.",
+    "confirmed": true,
+    "url": "https://www.ariva.de/news/wochenausblick-weiterer-dax-anstieg-haengt-an-12189011"
    },
    {
     "date": "2026-11-04",
@@ -2435,6 +2463,28 @@
     "note": "Producer Price Index, 8:30 Uhr ET.",
     "confirmed": true,
     "url": "https://www.bls.gov/schedule/2026/11_sched_list.htm"
+   },
+   {
+    "date": "2026-11-17",
+    "time": "11:05",
+    "title": "ZEW Konjunkturerwartungen November",
+    "type": "makro",
+    "region": "DE",
+    "holding": null,
+    "note": "Veröffentlichung laut ZEW Terminliste um 11:05 Uhr.",
+    "confirmed": true,
+    "url": "https://www.zew.de/fileadmin/FTP/div/ZEW-Konjunkturerwartungen_Termine2026_2027.pdf"
+   },
+   {
+    "date": "2026-11-19",
+    "time": null,
+    "title": "Babcock Halbjahreszahlen",
+    "type": "earnings",
+    "region": "UK",
+    "holding": "babcock",
+    "note": "Babcock hat den Termin für die Halbjahreszahlen festgelegt, Uhrzeit nicht genannt.",
+    "confirmed": true,
+    "url": "https://www.ad-hoc-news.de/boerse/news/nebenwerte/babcock-sets-november-19-results-date-for-babcock-stock/70331781"
    }
   ]
  }
