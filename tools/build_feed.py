@@ -2,6 +2,8 @@
 
 Aufruf:
   python3 tools/build_feed.py --holdings DIR --quotes quotes.json --news news.json --calendar calendar.json --out data/feed.json
+  python3 tools/build_feed.py --news-only --news news.json --calendar calendar.json --out data/feed.json
+    (News-Lauf: Kurse aus der vorhandenen App-Datei behalten, nur News und Termine erneuern)
 
 Eingaben sind die Dateien, die ArtifactData mit out_dir ablegt (holdings/<id>.json, quotes/latest.json, news/latest.json).
 Die Ausgabe ist oeffentlich. Sie enthaelt deshalb nur Namen, ISIN, Kurse und News, niemals Stueckzahlen oder Kaufpreise.
@@ -52,19 +54,27 @@ def public_venue(r):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--holdings", required=True)
-    ap.add_argument("--quotes", required=True)
+    ap.add_argument("--holdings")
+    ap.add_argument("--quotes")
     ap.add_argument("--news")
     ap.add_argument("--calendar")
+    ap.add_argument("--news-only", action="store_true",
+                    help="Kurse aus der vorhandenen App-Datei (--out) behalten, nur News und Termine erneuern")
     ap.add_argument("--out", required=True)
     a = ap.parse_args()
+    if not a.news_only and not (a.holdings and a.quotes):
+        ap.error("--holdings und --quotes fehlen (oder --news-only nutzen)")
 
+    old = load(a.out, None)
+    if a.news_only and not (isinstance(old, dict) and isinstance(old.get("quotes"), dict)):
+        sys.exit("Abbruch: --news-only braucht die vorhandene App-Datei " + a.out)
     holdings = {}
-    for fn in sorted(os.listdir(a.holdings)):
-        if fn.endswith(".json"):
-            h = load(os.path.join(a.holdings, fn), {})
-            holdings[fn[:-5]] = h
-    quotes = load(a.quotes, {}) or {}
+    if a.holdings and os.path.isdir(a.holdings):
+        for fn in sorted(os.listdir(a.holdings)):
+            if fn.endswith(".json"):
+                h = load(os.path.join(a.holdings, fn), {})
+                holdings[fn[:-5]] = h
+    quotes = {} if a.news_only else (load(a.quotes, {}) or {})
     news = load(a.news, None)
     cal = load(a.calendar, None)
 
@@ -124,7 +134,11 @@ def main():
 
     out_cal = None
     if isinstance(cal, dict):
-        today = dt.datetime.now(dt.timezone(dt.timedelta(hours=1))).date().isoformat()
+        try:
+            from zoneinfo import ZoneInfo
+            today = dt.datetime.now(ZoneInfo("Europe/Berlin")).date().isoformat()
+        except Exception:
+            today = dt.datetime.now(dt.timezone(dt.timedelta(hours=1))).date().isoformat()
         evs = []
         for e in cal.get("events", []) or []:
             if not isinstance(e, dict) or not e.get("date") or not e.get("title") or str(e["date"]) < today:
@@ -145,8 +159,14 @@ def main():
         "news": out_news,
         "calendar": out_cal,
     }
+    if a.news_only:  # Kurse bleiben, wie sie der letzte Kurs-Lauf hochgeladen hat
+        for k in ("quotes_at", "web_at", "live_at", "notes", "errors", "quotes"):
+            feed[k] = old.get(k)
+        if out_news is None:
+            feed["news"] = old.get("news")
+        if out_cal is None:
+            feed["calendar"] = old.get("calendar")
     # Unveraenderte Daten: alten Zeitstempel behalten, damit kein leerer Commit entsteht
-    old = load(a.out, None)
     same = all(old.get(k) == feed[k] for k in ("quotes", "news", "calendar", "notes", "errors")) if isinstance(old, dict) else False
     if same and old.get("generated_at"):
         feed["generated_at"] = old["generated_at"]
@@ -158,7 +178,7 @@ def main():
     os.makedirs(os.path.dirname(a.out) or ".", exist_ok=True)
     with open(a.out, "w", encoding="utf-8") as f:
         f.write(text + "\n")
-    print(json.dumps({"quotes": len(out_quotes), "news": bool(out_news), "events": len((out_cal or {}).get("events", [])), "quotes_at": feed["quotes_at"]}))
+    print(json.dumps({"quotes": len(feed["quotes"] or {}), "news": bool(feed["news"]), "events": len((feed["calendar"] or {}).get("events", [])), "quotes_at": feed["quotes_at"]}))
 
 
 if __name__ == "__main__":
