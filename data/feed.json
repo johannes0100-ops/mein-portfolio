@@ -1,7 +1,7 @@
 {
  "app": "mein-portfolio-feed",
  "version": 1,
- "generated_at": "2026-10-31T14:02:26+00:00",
+ "generated_at": "2026-11-01T06:22:58+00:00",
  "quotes_at": "2026-10-30T22:26:15+00:00",
  "web_at": "2026-10-30T21:41:58+00:00",
  "live_at": "2026-10-30T21:04:59+00:00",
@@ -1785,7 +1785,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-10-31T14:59:00+01:00",
+  "generated_at": "2026-11-01T07:35:00+01:00",
   "market": [
    {
     "headline": "Nasdaq 100 mit größtem Tagesverlust seit Juni, Tech-Ausverkauf wegen Amazon und Intel",
@@ -1825,6 +1825,18 @@
     "tickers": [
      "BMW"
     ],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Dax geht optimistisch in die Woche der US-Zwischenwahlen",
+    "summary": "Der Dax notiert dank solider Quartalszahlen nahe seinem Rekordhoch und blieb von der Tech-Korrektur weitgehend verschont. Die Märkte preisen für Dezember mehrheitlich Zinserhöhungen von Fed und EZB ein, als Risiken gelten ein umstrittener Wahlausgang in den USA und steigende Energiepreise.",
+    "source": "Dow Jones Newswires via finanzen.net",
+    "url": "https://finanzen.net/nachricht/aktien/markt-ausblick-dax-geht-optimistisch-in-us-zwischenwahlen-16022782",
+    "published_at": "2026-10-30T12:50:00+01:00",
+    "kind": "news",
+    "tickers": [],
     "peer": null,
     "popularity": null,
     "label": null
@@ -1929,20 +1941,6 @@
     "published_at": "2026-10-28T18:05:00+01:00",
     "kind": "news",
     "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Nasdaq setzt Erholung fort, Fusionsfantasie bei Tesla",
-    "summary": "Der Nasdaq 100 gewann 1,3 Prozent, der Dow trat auf der Stelle. Hoffnungen auf einen Börsengang von Anthropic und Spekulationen über eine Fusion von Tesla und SpaceX trieben Techwerte.",
-    "source": "dpa-AFX via onvista",
-    "url": "https://www.onvista.de/news/2026/10-27-roundup-aktien-new-york-schluss-nasdaq-setzt-erholung-fort-dow-hinkt-nach-0-10-26569075",
-    "published_at": "2026-10-27T21:34:00+01:00",
-    "kind": "news",
-    "tickers": [
-     "SpaceX"
-    ],
     "peer": null,
     "popularity": null,
     "label": null
@@ -2116,6 +2114,16 @@
       "target": "10,00 EUR"
      },
      {
+      "headline": "Goldman Sachs: Ziel angehoben",
+      "summary": "Goldman hebt das Ziel von 8,50 auf 8,80 Euro, verweist auf anhaltenden Schwung im KI-Geschäft, aber verhaltene Auftragseingänge im Quartal.",
+      "source": "ad-hoc-news.de",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/nokia-aktie-goldman-sachs-hebt-ziel-fuer-die-nokia-aktie-von-8-50-auf-8-80-euro-an/70421485",
+      "published_at": "2026-10-27T16:30:00+01:00",
+      "kind": "analyst",
+      "rating": "Neutral",
+      "target": "8,80 EUR"
+     },
+     {
       "headline": "Bank of America: bestätigt",
       "summary": "Der Starlink-Ausbau dürfte die Ausgaben der US-Netzbetreiber für Funktechnik kaum schmälern.",
       "source": "Investing.com",
@@ -2140,6 +2148,14 @@
    {
     "id": "spacex",
     "items": [
+     {
+      "headline": "Analysten sehen bei SpaceX deutliches Kurspotenzial",
+      "summary": "Von 26 Analysten im letzten Monat raten 24 zum Kauf und zwei zum Halten. Das mittlere Kursziel von rund 270 Dollar liegt etwa doppelt so hoch wie der Nasdaq-Schlusskurs von 134,72 Dollar.",
+      "source": "finanzen.net",
+      "url": "https://www.finanzen.net/nachricht/aktien/experten-sehen-bei-spacex-aktie-potenzial-16026159",
+      "published_at": "2026-10-31T22:30:00+01:00",
+      "kind": "news"
+     },
      {
       "headline": "SpaceX eröffnet Freitag gut vier Prozent tiefer",
       "summary": "Die SpaceX-Aktie startete am Freitag mit einem Minus von 4,16 Prozent in den Handel, mitten im breiten Tech-Ausverkauf.",
@@ -2170,14 +2186,6 @@
       "source": "24/7 Wall St. via Yahoo Finance",
       "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-insiders-could-sell-nearly-150749899.html",
       "published_at": "2026-10-29T16:07:00+01:00",
-      "kind": "news"
-     },
-     {
-      "headline": "SpaceX-Aktie nähert sich wieder der Marke von 140 Dollar",
-      "summary": "Nach der großen Aktienfreigabe am 22. Oktober hinkt SpaceX kleineren Raumfahrtwerten hinterher. Charttechnisch gilt 140 Dollar als Unterstützung, darunter droht laut Yahoo ein Rückfall Richtung 108 Dollar.",
-      "source": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/article/spacex-stock-slides-back-toward-140-as-smaller-space-names-leave-it-behind-171331237.html",
-      "published_at": "2026-10-29T10:15:00+01:00",
       "kind": "news"
      }
     ]
@@ -2227,6 +2235,17 @@
     "source": "dpa-AFX Analyser via wallstreet-online",
     "published_at": "2026-10-28T11:05:00+01:00",
     "url": "https://www.wallstreet-online.de/nachricht/21594288-deutsche-bank-research-stuft-nokia-buy"
+   },
+   {
+    "stock": "nokia",
+    "broker": "Goldman Sachs",
+    "action": "Ziel angehoben",
+    "rating": "Neutral",
+    "target": "8,80 EUR",
+    "summary": "Goldman hebt das Ziel von 8,50 auf 8,80 Euro, verweist auf anhaltenden Schwung im KI-Geschäft, aber verhaltene Auftragseingänge im Quartal.",
+    "source": "ad-hoc-news.de",
+    "published_at": "2026-10-27T16:30:00+01:00",
+    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/nokia-aktie-goldman-sachs-hebt-ziel-fuer-die-nokia-aktie-von-8-50-auf-8-80-euro-an/70421485"
    },
    {
     "stock": "amzn",
@@ -2287,7 +2306,22 @@
     "label": null
    }
   ],
-  "sector": [],
+  "sector": [
+   {
+    "headline": "Rüstungswerte geben vor Friedensgesprächen nach",
+    "summary": "Rheinmetall, Renk, Hensoldt und TKMS verloren am Freitag zwischen 0,3 und 2,3 Prozent. Belastend wirkten geplante Friedensgespräche zwischen Russland, der Ukraine und den USA im November sowie die anstehenden Quartalszahlen.",
+    "source": "finanzen.net",
+    "url": "https://www.finanzen.net/nachricht/aktien/ruestungswerte-unter-druck-aktien-von-rheinmetall-renk-hensoldt-tkms-geben-nach-was-anlegern-aktuell-sorgen-bereitet-16022706",
+    "published_at": "2026-10-30T19:26:00+01:00",
+    "kind": "news",
+    "tickers": [
+     "Babcock"
+    ],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   }
+  ],
   "peers": [
    {
     "headline": "Volkswagen mit Milliardenverlust im dritten Quartal, Aktie dreht ins Plus",
@@ -2314,6 +2348,20 @@
      "Amazon"
     ],
     "peer": "Alphabet",
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Mercedes-Benz steigert Quartalsgewinn, senkt aber Ausblick",
+    "summary": "Bei einem Umsatzrückgang um 4,5 Prozent auf 30,7 Milliarden Euro stieg das EBIT auf 1,77 Milliarden Euro und der Gewinn um rund 28 Prozent. Die Aktie schloss trotz gesenkter Prognose knapp im Plus.",
+    "source": "finanzen.net",
+    "url": "https://www.finanzen.net/nachricht/aktien/zahlen-praesentiert-mercedes-benz-aktie-im-plus-mehr-gewinn-nach-schwachem-vorjahresquartal-16013642",
+    "published_at": "2026-10-28T20:47:00+01:00",
+    "kind": "news",
+    "tickers": [
+     "BMW"
+    ],
+    "peer": "Mercedes-Benz",
     "popularity": null,
     "label": null
    }
