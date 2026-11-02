@@ -1,7 +1,7 @@
 {
  "app": "mein-portfolio-feed",
  "version": 1,
- "generated_at": "2026-11-02T06:33:10+00:00",
+ "generated_at": "2026-11-02T12:31:20+00:00",
  "quotes_at": "2026-10-30T22:26:15+00:00",
  "web_at": "2026-10-30T21:41:58+00:00",
  "live_at": "2026-10-30T21:04:59+00:00",
@@ -1785,8 +1785,20 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T07:45:00+01:00",
+  "generated_at": "2026-11-02T13:40:00+01:00",
   "market": [
+   {
+    "headline": "Dax legt zum Monatsanfang leicht zu, Ölpreise geben nach",
+    "summary": "Der Dax stand am Mittag rund 0,4 Prozent höher bei gut 25.900 Punkten; sinkende Ölpreise nach Berichten über diplomatische Bemühungen im US-Iran-Konflikt stützten. Vor den US-Zwischenwahlen und den Apple-Zahlen bleiben Anleger vorsichtig.",
+    "source": "dpa-AFX via finanznachrichten.de",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70004948-aktien-frankfurt-dax-legt-zum-monatsanfang-im-unsicheren-umfeld-etwas-zu-016.htm",
+    "published_at": "2026-11-02T11:43:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
    {
     "headline": "Wochenausblick: US-Zwischenwahlen und Jobdaten entscheiden über weiteren Dax-Anstieg",
     "summary": "Die Midterms am Dienstag könnten über Ölpreis- und Inflationssorgen die Erholung belasten. Dazu kommen Quartalszahlen u. a. von BMW am Mittwoch und der US-Arbeitsmarktbericht am Freitag.",
@@ -1927,18 +1939,6 @@
     "source": "dpa-AFX via ARIVA.DE",
     "url": "https://www.ariva.de/news/roundup-nach-fed-zinspause-wie-entscheidet-die-ezb-12186006",
     "published_at": "2026-10-29T06:35:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Wall Street schließt nach Fed-Entscheid leicht im Plus",
-    "summary": "S&P 500, Nasdaq und Dow legten nach der erwarteten Zinspause jeweils rund 0,2 bis 0,3 Prozent zu. Alphabet fiel nachbörslich nach enttäuschenden Umsätzen.",
-    "source": "Motley Fool via Yahoo Finance",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-28-220317072.html",
-    "published_at": "2026-10-28T23:03:00+01:00",
     "kind": "news",
     "tickers": [],
     "peer": null,
@@ -2199,6 +2199,22 @@
     "id": "spacex",
     "items": [
      {
+      "headline": "SpaceX vorbörslich fester nach Berichten über Boost-Mobile-Gespräche",
+      "summary": "Laut Berichten verhandelt Musk über einen Kauf von EchoStars Boost Mobile oder Zugang zu dessen Mobilfunknetz, um Starlink Mobile in den USA auszubauen. Ein Deal bräuchte womöglich Zustimmung von AT&T und T-Mobile und hohe Investitionen.",
+      "source": "TipRanks",
+      "url": "https://www.tipranks.com/news/spacex-stock-spcx-rises-as-musk-gets-ready-to-conquer-new-market-with-boost-mobile-buy",
+      "published_at": "2026-11-02T13:07:00+01:00",
+      "kind": "news"
+     },
+     {
+      "headline": "SpaceX schließt knapp unter dem Ausgabepreis",
+      "summary": "Die Aktie beendete den Freitag bei 134,72 Dollar und damit knapp unter dem IPO-Preis von 135 Dollar, rund 36 Prozent unter dem Rekordhoch. Als Gründe gelten das Ende der Haltefrist für viele Insider-Aktien und die Tech-Schwäche.",
+      "source": "FourWeekMBA",
+      "url": "https://fourweekmba.com/ai-spacex-shares-close-below-135-ipo-price-36-off-peak",
+      "published_at": "2026-11-02T12:00:00+01:00",
+      "kind": "news"
+     },
+     {
       "headline": "Analysten sehen bei SpaceX deutliches Kurspotenzial",
       "summary": "Von 26 Analysten im letzten Monat raten 24 zum Kauf und zwei zum Halten. Das mittlere Kursziel von rund 270 Dollar liegt etwa doppelt so hoch wie der Nasdaq-Schlusskurs von 134,72 Dollar.",
       "source": "finanzen.net",
@@ -2223,20 +2239,14 @@
       "kind": "news"
      },
      {
-      "headline": "SpaceX hält sich im Oktober besser als kleinere Raumfahrtwerte",
-      "summary": "Die Aktie verlor im Monatsverlauf rund fünf Prozent und damit weniger als AST SpaceMobile, Rocket Lab und Planet Labs. Seit Jahresbeginn liegt sie elf Prozent im Minus, die Stimmung der Privatanleger drehte ins Negative.",
-      "source": "Stocktwits via Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/stocktwits-space-race-monthly-spcx-053953296.html",
-      "published_at": "2026-10-30T06:39:00+01:00",
-      "kind": "news"
-     },
-     {
-      "headline": "Freigabe von Insider-Aktien belastet SpaceX bislang kaum",
-      "summary": "Seit dem Börsengang wurden rund 3,9 Milliarden Aktien aus Haltefristen frei. Der Zeitplan war bekannt, die Analysten bleiben mit einem mittleren Kursziel von etwa 257 Dollar überwiegend positiv.",
-      "source": "24/7 Wall St. via Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-insiders-could-sell-nearly-150749899.html",
-      "published_at": "2026-10-29T16:07:00+01:00",
-      "kind": "news"
+      "headline": "Bank of America: Ziel angehoben",
+      "summary": "Bank of America hebt das Kursziel von 235 auf 275 Dollar und nimmt SpaceX in die US-1-Liste auf.",
+      "source": "Der Aktionär",
+      "url": "https://www.deraktionaer.de/artikel/medien-ittk-technologie/spacex-aktie-bank-of-america-sieht-jetzt-85-prozent-kurschance-20426578.html",
+      "published_at": "2026-10-28T09:42:00+01:00",
+      "kind": "analyst",
+      "rating": "Buy",
+      "target": "275 USD"
      }
     ]
    }
@@ -2285,6 +2295,17 @@
     "source": "dpa-AFX Analyser via wallstreet-online",
     "published_at": "2026-10-28T11:05:00+01:00",
     "url": "https://www.wallstreet-online.de/nachricht/21594288-deutsche-bank-research-stuft-nokia-buy"
+   },
+   {
+    "stock": "spacex",
+    "broker": "Bank of America",
+    "action": "Ziel angehoben",
+    "rating": "Buy",
+    "target": "275 USD",
+    "summary": "Bank of America hebt das Kursziel von 235 auf 275 Dollar und nimmt SpaceX in die US-1-Liste auf.",
+    "source": "Der Aktionär",
+    "published_at": "2026-10-28T09:42:00+01:00",
+    "url": "https://www.deraktionaer.de/artikel/medien-ittk-technologie/spacex-aktie-bank-of-america-sieht-jetzt-85-prozent-kurschance-20426578.html"
    },
    {
     "stock": "babcock",
@@ -2468,28 +2489,6 @@
   "events": [
    {
     "date": "2026-11-02",
-    "time": "08:00",
-    "title": "DE Einzelhandelsumsatz September",
-    "type": "makro",
-    "region": "DE",
-    "holding": null,
-    "note": "saisonbereinigt, real",
-    "confirmed": true,
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70000762-tagesvorschau-montag-2-november-015.htm"
-   },
-   {
-    "date": "2026-11-02",
-    "time": "10:00",
-    "title": "Eurozone Einkaufsmanagerindex Industrie Oktober (2. Veröff.)",
-    "type": "makro",
-    "region": "EU",
-    "holding": null,
-    "note": "DE-Wert um 09:55, UK um 10:30",
-    "confirmed": true,
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70000762-tagesvorschau-montag-2-november-015.htm"
-   },
-   {
-    "date": "2026-11-02",
     "time": "16:00",
     "title": "US ISM-Index Industrie Oktober",
     "type": "makro",
@@ -2523,14 +2522,14 @@
    },
    {
     "date": "2026-11-04",
-    "time": "08:30",
+    "time": "07:30",
     "title": "BMW Quartalsmitteilung Q3",
     "type": "earnings",
     "region": "DE",
     "holding": "bmw",
-    "note": "Reden des Vorstands ab 08:30 Uhr, Fragerunde für Analysten ab 10:15 Uhr.",
+    "note": "Veröffentlichung 7:30 Uhr, Telefonkonferenz 8:30 Uhr",
     "confirmed": true,
-    "url": "https://www.bmwgroup.com/de/investor-relations/telefonkonferenzen-quartalsmitteilungen.html"
+    "url": "https://www.ariva.de/news/wochenvorschau-termine-bis-13-november-2026-12190165"
    },
    {
     "date": "2026-11-04",
@@ -2545,6 +2544,17 @@
    },
    {
     "date": "2026-11-04",
+    "time": "14:15",
+    "title": "US ADP-Arbeitsmarktbericht Oktober",
+    "type": "makro",
+    "region": "US",
+    "holding": null,
+    "note": "",
+    "confirmed": true,
+    "url": "https://www.ariva.de/news/wochenvorschau-termine-bis-13-november-2026-12190165"
+   },
+   {
+    "date": "2026-11-04",
     "time": "14:30",
     "title": "US Handelsbilanz September",
     "type": "makro",
@@ -2556,14 +2566,47 @@
    },
    {
     "date": "2026-11-05",
+    "time": "08:00",
+    "title": "DE Auftragseingang Industrie September",
+    "type": "makro",
+    "region": "DE",
+    "holding": null,
+    "note": "",
+    "confirmed": true,
+    "url": "https://www.ariva.de/news/wochenvorschau-termine-bis-13-november-2026-12190165"
+   },
+   {
+    "date": "2026-11-05",
     "time": "13:00",
     "title": "Bank of England Zinsentscheid",
     "type": "zins",
     "region": "UK",
     "holding": null,
     "note": "Mit neuem Monetary Policy Report, die Bank of England führt den Termin als vorläufig.",
-    "confirmed": false,
-    "url": "https://www.bankofengland.co.uk/news/2024/december/mpc-dates-for-2026"
+    "confirmed": true,
+    "url": "https://www.ariva.de/news/wochenvorschau-termine-bis-13-november-2026-12190165"
+   },
+   {
+    "date": "2026-11-05",
+    "time": "14:30",
+    "title": "US BIP Q3 erste Schätzung",
+    "type": "makro",
+    "region": "US",
+    "holding": null,
+    "note": "",
+    "confirmed": true,
+    "url": "https://www.ariva.de/news/wochenvorschau-termine-bis-13-november-2026-12190165"
+   },
+   {
+    "date": "2026-11-05",
+    "time": "16:00",
+    "title": "US ISM-Index Dienstleistungen Oktober",
+    "type": "makro",
+    "region": "US",
+    "holding": null,
+    "note": "",
+    "confirmed": true,
+    "url": "https://www.ariva.de/news/wochenvorschau-termine-bis-13-november-2026-12190165"
    },
    {
     "date": "2026-11-05",
@@ -2578,6 +2621,17 @@
    },
    {
     "date": "2026-11-06",
+    "time": "08:00",
+    "title": "DE Industrieproduktion September",
+    "type": "makro",
+    "region": "DE",
+    "holding": null,
+    "note": "",
+    "confirmed": true,
+    "url": "https://www.ariva.de/news/wochenvorschau-termine-bis-13-november-2026-12190165"
+   },
+   {
+    "date": "2026-11-06",
     "time": "14:30",
     "title": "US Arbeitsmarktbericht Oktober",
     "type": "makro",
@@ -2586,6 +2640,17 @@
     "note": "Employment Situation, 8:30 Uhr ET.",
     "confirmed": true,
     "url": "https://www.bls.gov/schedule/2026/11_sched_list.htm"
+   },
+   {
+    "date": "2026-11-09",
+    "time": "10:30",
+    "title": "Eurozone Sentix-Konjunkturindex November",
+    "type": "makro",
+    "region": "EU",
+    "holding": null,
+    "note": "",
+    "confirmed": true,
+    "url": "https://www.ariva.de/news/wochenvorschau-termine-bis-13-november-2026-12190165"
    },
    {
     "date": "2026-11-10",
@@ -2597,6 +2662,17 @@
     "note": "CPI und Real Earnings, 8:30 Uhr ET.",
     "confirmed": true,
     "url": "https://www.bls.gov/schedule/2026/11_sched_list.htm"
+   },
+   {
+    "date": "2026-11-11",
+    "time": "08:00",
+    "title": "DE Verbraucherpreise Oktober (endgültig)",
+    "type": "makro",
+    "region": "DE",
+    "holding": null,
+    "note": "",
+    "confirmed": true,
+    "url": "https://www.ariva.de/news/wochenvorschau-termine-bis-13-november-2026-12190165"
    },
    {
     "date": "2026-11-12",
