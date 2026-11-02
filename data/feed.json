@@ -1,7 +1,7 @@
 {
  "app": "mein-portfolio-feed",
  "version": 1,
- "generated_at": "2026-11-01T06:22:58+00:00",
+ "generated_at": "2026-11-02T06:33:10+00:00",
  "quotes_at": "2026-10-30T22:26:15+00:00",
  "web_at": "2026-10-30T21:41:58+00:00",
  "live_at": "2026-10-30T21:04:59+00:00",
@@ -1785,8 +1785,34 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-01T07:35:00+01:00",
+  "generated_at": "2026-11-02T07:45:00+01:00",
   "market": [
+   {
+    "headline": "Wochenausblick: US-Zwischenwahlen und Jobdaten entscheiden über weiteren Dax-Anstieg",
+    "summary": "Die Midterms am Dienstag könnten über Ölpreis- und Inflationssorgen die Erholung belasten. Dazu kommen Quartalszahlen u. a. von BMW am Mittwoch und der US-Arbeitsmarktbericht am Freitag.",
+    "source": "dpa-AFX via finanznachrichten.de",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70000530-wochenausblick-weiterer-dax-anstieg-haengt-an-us-zwischenwahlen-und-jobdaten-016.htm",
+    "published_at": "2026-11-02T05:51:00+01:00",
+    "kind": "news",
+    "tickers": [
+     "BMW"
+    ],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Dax zum Wochenstart leicht im Plus erwartet",
+    "summary": "IG taxiert den Dax vor Xetra-Start rund 0,2 Prozent höher bei etwa 25.865 Punkten. Technologiewerte in Japan und Südkorea hielten sich trotz des Nasdaq-Ausverkaufs vom Freitag gut.",
+    "source": "dpa-AFX via onvista",
+    "url": "https://www.onvista.de/news/2026/11-02-dax-flash-leichtes-plus-erwartet-asien-haelt-sich-gut-nach-nasdaq-schwaeche-0-10-26571009",
+    "published_at": "2026-11-02T05:46:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
    {
     "headline": "Nasdaq 100 mit größtem Tagesverlust seit Juni, Tech-Ausverkauf wegen Amazon und Intel",
     "summary": "Der Nasdaq 100 fiel um 3,46 Prozent auf 28.384,85 Punkte, der S&P 500 um 1,82 Prozent und der Dow um 1,09 Prozent. Intel brach nach schwachem Ausblick um fast 29 Prozent ein, Nvidia fiel unter fünf Billionen Dollar Börsenwert, während steigende Ölpreise auf Iran-Sorgen zurückgingen.",
@@ -1810,20 +1836,6 @@
     "kind": "news",
     "tickers": [
      "Amazon"
-    ],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Wochenausblick: US-Zwischenwahlen und Jobdaten entscheiden über weiteren Dax-Anstieg",
-    "summary": "Am Dienstag wählen die USA, am Freitag folgt der Arbeitsmarktbericht, zudem drücken Iran-Sorgen auf Ölpreis und Inflationserwartungen. In der Berichtssaison legen unter anderem BMW, Continental, Telekom und Commerzbank Zahlen vor.",
-    "source": "dpa-AFX via ARIVA.DE",
-    "url": "https://www.ariva.de/news/wochenausblick-weiterer-dax-anstieg-haengt-an-12189011",
-    "published_at": "2026-10-30T15:36:00+01:00",
-    "kind": "news",
-    "tickers": [
-     "BMW"
     ],
     "peer": null,
     "popularity": null,
@@ -1932,18 +1944,6 @@
     "peer": null,
     "popularity": null,
     "label": null
-   },
-   {
-    "headline": "Dax setzt Erholung fort, KI-Optimismus kehrt zurück",
-    "summary": "Der Dax stieg um 0,44 Prozent auf 25.704 Punkte und erreichte zeitweise ein Fünfwochenhoch. Starke Zahlen von SK Hynix belebten Techwerte, Deutsche Bank gewann nach Rekordgewinn rund vier Prozent.",
-    "source": "dpa-AFX via ARIVA.DE",
-    "url": "https://www.ariva.de/news/roundup-aktien-frankfurt-schluss-dax-auf-erholungskurs-12185579",
-    "published_at": "2026-10-28T18:05:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
    }
   ],
   "positions": [
@@ -2046,18 +2046,44 @@
     "id": "babcock",
     "items": [
      {
+      "headline": "Goldman Sachs startet Babcock mit Neutral",
+      "summary": "Goldman nimmt Babcock mit Neutral und 1.000 Pence Kursziel auf, knapp über dem damaligen Kurs. Chancen sieht die Bank vor allem in der zivilen Kernkraft, Risiken in der Vertragsumsetzung.",
+      "source": "ad-hoc-news.de",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/goldman-sachs-sets-1-000-pence-target-for-babcock-stock/70422576",
+      "published_at": "2026-10-27T18:53:00+01:00",
+      "kind": "news"
+     },
+     {
       "headline": "Babcock steigt mit Rüstungswerten um 4,5 Prozent",
       "summary": "Babcock legte am Montag bis zum Mittag um 4,5 Prozent zu, als Rüstungswerte in London gefragt waren. Anleger setzten auf den britischen Haushalt, der einen Pfad zu Verteidigungsausgaben von 3 Prozent der Wirtschaftsleistung bis 2030 zeigen soll.",
       "source": "Alliance News via MarketScreener",
       "url": "https://www.marketscreener.com/news/defence-supports-ftse-100-but-oil-majors-fall-ce785cdcda88f024",
       "published_at": "2026-10-26T13:06:00+01:00",
       "kind": "news"
+     },
+     {
+      "headline": "Goldman Sachs: Erststudie",
+      "summary": "Goldman nimmt die Aktie mit Neutral und 1.000 Pence Kursziel in die Bewertung auf.",
+      "source": "ad-hoc-news.de",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/goldman-sachs-sets-1-000-pence-target-for-babcock-stock/70422576",
+      "published_at": "2026-10-27T18:53:00+01:00",
+      "kind": "analyst",
+      "rating": "Neutral",
+      "target": "1000 GBp"
      }
     ]
    },
    {
     "id": "bmw",
     "items": [
+     {
+      "headline": "Analysten sehen bei BMW Luft nach oben",
+      "summary": "Elf Analysten sehen das Kursziel im Schnitt bei 67,64 Euro, rund 9,84 Euro über dem Xetra-Kurs. Vier raten zum Kauf, sieben zum Halten.",
+      "source": "finanzen.net",
+      "url": "https://www.finanzen.net/nachricht/aktien/analysten-sehen-fuer-bmw-aktie-luft-nach-oben-16025937",
+      "published_at": "2026-10-31T18:00:00+01:00",
+      "kind": "news"
+     },
      {
       "headline": "BMW-Aktie am Freitagnachmittag im Plus",
       "summary": "Die BMW-Aktie notierte am Freitagnachmittag fester, wenige Tage vor den Quartalszahlen am 4. November.",
@@ -2073,12 +2099,36 @@
       "url": "https://www.finanzen.net/nachricht/aktien/bmw-aktie-kursbewegung-28-10-2026-11202081",
       "published_at": "2026-10-28T16:11:00+01:00",
       "kind": "news"
+     },
+     {
+      "headline": "BMW: Schichtausfälle in Regensburg vor Zahlen am 4. November",
+      "summary": "Fehlende Zulieferteile führten zu einzelnen Schichtausfällen im Werk Regensburg. Jefferies erwartet für das dritte Quartal rund 7 Prozent weniger Autoumsatz.",
+      "source": "boerse-express.com",
+      "url": "https://www.boerse-express.com/news/articles/bmw-aktie-quartalszahlen-am-4-november-2026-956578",
+      "published_at": "2026-10-27T07:10:00+01:00",
+      "kind": "news"
      }
     ]
    },
    {
     "id": "nokia",
     "items": [
+     {
+      "headline": "Nokia fällt mit Tech-Ausverkauf um gut 5 Prozent",
+      "summary": "Die Aktie verlor im breiten Technologie-Abverkauf 5,4 Prozent. Belastend wirkt weiter das gesenkte Ziel für die Cashflow-Umwandlung bei unveränderter Gewinnprognose.",
+      "source": "boerse-express.com",
+      "url": "https://boerse-express.com/news/articles/nokia-tech-ausverkauf-drueckt-aktie-um-5-prozent-958215",
+      "published_at": "2026-11-01T21:20:00+01:00",
+      "kind": "news"
+     },
+     {
+      "headline": "Nokia: Starkes KI-Wachstum, aber Cashflow-Sorgen",
+      "summary": "Im dritten Quartal stieg der Umsatz um 10 Prozent auf 5,15 Mrd. Euro, das KI- und Cloud-Geschäft wuchs um 123 Prozent. Schwächere Cashflow-Aussichten und Restrukturierungskosten drückten die Aktie nach den Zahlen deutlich.",
+      "source": "nokiamob.net",
+      "url": "https://nokiamob.net/2026/11/01/nokia-q3-2026-strong-ai-growth-but-shares-tumble/",
+      "published_at": "2026-11-01T18:29:00+01:00",
+      "kind": "news"
+     },
      {
       "headline": "Nokia baut Gewinnserie auf vier Tage aus",
       "summary": "Nokia stieg um 3,41 Prozent, während Cisco und Ericsson leicht nachgaben. Einen klaren Auslöser gab es nicht, Deutsche Bank Research senkte das Kursziel bei bestätigter Kaufempfehlung auf 10 Euro.",
@@ -2237,6 +2287,17 @@
     "url": "https://www.wallstreet-online.de/nachricht/21594288-deutsche-bank-research-stuft-nokia-buy"
    },
    {
+    "stock": "babcock",
+    "broker": "Goldman Sachs",
+    "action": "Erststudie",
+    "rating": "Neutral",
+    "target": "1000 GBp",
+    "summary": "Goldman nimmt die Aktie mit Neutral und 1.000 Pence Kursziel in die Bewertung auf.",
+    "source": "ad-hoc-news.de",
+    "published_at": "2026-10-27T18:53:00+01:00",
+    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/goldman-sachs-sets-1-000-pence-target-for-babcock-stock/70422576"
+   },
+   {
     "stock": "nokia",
     "broker": "Goldman Sachs",
     "action": "Ziel angehoben",
@@ -2294,15 +2355,51 @@
   ],
   "popular": [
    {
-    "headline": "Überblick Unternehmen: Die wichtigsten Meldungen vom Wochenende",
-    "summary": "Audi plant ein US Werk in Georgia für 4 Milliarden Dollar und Frasers übernimmt die Mehrheit an Hugo Boss. Bei VW beginnen bald die Gespräche über den geplanten Stellenabbau.",
-    "source": "dpa-AFX via finanznachrichten.de",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69928931-dpa-afx-ueberblick-unternehmen-die-wichtigsten-meldungen-vom-wochenende-016.htm",
-    "published_at": "2026-10-25T20:35:00+01:00",
+    "headline": "Midterms: Viele US-Bürger in Deutschland wollen abstimmen",
+    "summary": "Vor den US-Zwischenwahlen am Dienstag berichten Democrats Abroad von hoher Wahlbereitschaft unter in Deutschland lebenden Amerikanern.",
+    "source": "news aktuell via finanznachrichten.de",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70000004-midterms-hohe-bereitschaft-in-deutschland-lebender-us-buerger-zur-stimmabgabe-vizevorsitzender-von-democrats-abroad-die-demokratie-in-den-usa-lebt-007.htm",
+    "published_at": "2026-11-02T01:33:00+01:00",
     "kind": "news",
     "tickers": [],
     "peer": null,
-    "popularity": "unter Meistgelesene News auf finanznachrichten.de",
+    "popularity": "finanznachrichten.de Meistgelesen, Platz 7",
+    "label": null
+   },
+   {
+    "headline": "Regeneron-Aktie nach 13-Prozent-Sprung im Blick",
+    "summary": "Der Börsenbrief fragt, ob die Regeneron-Aktie nach dem kräftigen Kursplus weiter zulegen kann.",
+    "source": "sharedeals.de via finanznachrichten.de",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/69999719-regeneron-pharmaceuticals-aktie-13-kann-es-noch-besser-werden-486.htm",
+    "published_at": "2026-11-02T00:10:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": "finanznachrichten.de Meistgelesen, Platz 4",
+    "label": null
+   },
+   {
+    "headline": "Überblick: Die wichtigsten Unternehmensmeldungen vom Wochenende",
+    "summary": "dpa-AFX fasst die Firmennachrichten von Samstag und Sonntag zusammen.",
+    "source": "dpa-AFX via finanznachrichten.de",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/69999362-dpa-afx-ueberblick-unternehmen-die-wichtigsten-meldungen-vom-wochenende-016.htm",
+    "published_at": "2026-11-01T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": "finanznachrichten.de Meistgelesen, Platz 6",
+    "label": null
+   },
+   {
+    "headline": "Wochenrückblick: Industrie- und Raumfahrtwerte als Kurstreiber",
+    "summary": "Der Börsenbrief nennt unter anderem Quanta Services, GE Aerospace und Rocket Lab als Gewinner der Woche im eigenen Depot.",
+    "source": "iNTELLiGENT iNVESTiEREN via finanznachrichten.de",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/69999222-kissigs-wochenrueckblick-44-2026-die-kurstreiber-in-meinem-depot-waren-quanta-services-comfort-systems-ge-aerospace-rocket-lab-und-2g-energy-waehre-551.htm",
+    "published_at": "2026-11-01T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": "finanznachrichten.de Meistgelesen, Platz 8",
     "label": null
    }
   ],
@@ -2371,14 +2468,36 @@
   "events": [
    {
     "date": "2026-11-02",
-    "time": null,
-    "title": "US Einkaufsmanagerindex Industrie Oktober",
+    "time": "08:00",
+    "title": "DE Einzelhandelsumsatz September",
+    "type": "makro",
+    "region": "DE",
+    "holding": null,
+    "note": "saisonbereinigt, real",
+    "confirmed": true,
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70000762-tagesvorschau-montag-2-november-015.htm"
+   },
+   {
+    "date": "2026-11-02",
+    "time": "10:00",
+    "title": "Eurozone Einkaufsmanagerindex Industrie Oktober (2. Veröff.)",
+    "type": "makro",
+    "region": "EU",
+    "holding": null,
+    "note": "DE-Wert um 09:55, UK um 10:30",
+    "confirmed": true,
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70000762-tagesvorschau-montag-2-november-015.htm"
+   },
+   {
+    "date": "2026-11-02",
+    "time": "16:00",
+    "title": "US ISM-Index Industrie Oktober",
     "type": "makro",
     "region": "US",
     "holding": null,
     "note": "Einkaufsmanagerindizes der Industrie für China und die USA laut dpa-AFX Wochenausblick.",
     "confirmed": true,
-    "url": "https://www.ariva.de/news/wochenausblick-weiterer-dax-anstieg-haengt-an-12189011"
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70000762-tagesvorschau-montag-2-november-015.htm"
    },
    {
     "date": "2026-11-03",
