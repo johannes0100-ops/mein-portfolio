@@ -1,7 +1,7 @@
 {
  "app": "mein-portfolio-feed",
  "version": 1,
- "generated_at": "2026-11-03T06:23:57+00:00",
+ "generated_at": "2026-11-03T12:24:02+00:00",
  "quotes_at": "2026-10-30T22:26:15+00:00",
  "web_at": "2026-10-30T21:41:58+00:00",
  "live_at": "2026-10-30T21:04:59+00:00",
@@ -1785,8 +1785,32 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-03T07:35:00+01:00",
+  "generated_at": "2026-11-03T13:24:00+01:00",
   "market": [
+   {
+    "headline": "Europas Börsen leicht im Minus, Technologiewerte schwächeln",
+    "summary": "Der EuroStoxx 50 lag mittags rund 0,5 Prozent tiefer bei gut 6.140 Punkten. Apples enttäuschender Ausblick, steigende Ölpreise und Vorsicht vor den US-Zwischenwahlen bremsen.",
+    "source": "dpa-AFX via ARIVA.DE",
+    "url": "https://www.ariva.de/news/aktien-europa-leichte-verluste-technologiewerte-12192516",
+    "published_at": "2026-11-03T12:10:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Dax am Mittag 0,6 Prozent tiefer, Ölpreis und Tech-Schwäche belasten",
+    "summary": "Der Dax fiel auf rund 25.830 Punkte, nachdem Berichte über neue US-Angriffe auf Ziele im Iran die Ölpreise steigen ließen und Apples Ausblick Techwerte drückte. TeamViewer brach nach einer Prognosesenkung um etwa ein Viertel ein.",
+    "source": "dpa-AFX via finanznachrichten.de",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70017281-aktien-frankfurt-dax-etwas-schwaecher-oelpreis-tech-schwaeche-quartalszahlen-016.htm",
+    "published_at": "2026-11-03T11:41:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
    {
     "headline": "Dax vor Rückschlag nach erneuter Tech-Schwäche in USA und Asien",
     "summary": "Der Dax wird vorbörslich rund 0,8 Prozent tiefer bei etwa 25.780 Punkten erwartet. Halbleiterwerte belasten nach enttäuschenden KI-Signalen von Alphabet, Amazon und Intel, auch Japan und Südkorea geben nach.",
@@ -1916,38 +1940,20 @@
     "peer": null,
     "popularity": null,
     "label": null
-   },
-   {
-    "headline": "Wall Street schließt im Minus, Alphabet bricht ein",
-    "summary": "Der Nasdaq Composite verlor rund 1,4 Prozent, S&P 500 und Dow gaben je etwa 0,3 Prozent nach. Alphabet fiel nach verfehlten Erwartungen um mehr als zwölf Prozent, Amazon verlor vor den eigenen Zahlen über vier Prozent.",
-    "source": "Investopedia via Yahoo Finance",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nasdaq-futures-104943461.html",
-    "published_at": "2026-10-29T11:49:00+01:00",
-    "kind": "news",
-    "tickers": [
-     "Amazon"
-    ],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Fed hält Leitzins, zwei Mitglieder wollten erhöhen",
-    "summary": "Die US-Notenbank ließ den Leitzins bei 3,75 bis 4,00 Prozent, zwei der zwölf Stimmberechtigten votierten für eine Anhebung. Für die EZB erwarten Volkswirte trotz hoher Inflation einen unveränderten Einlagenzins von 2,5 Prozent.",
-    "source": "dpa-AFX via ARIVA.DE",
-    "url": "https://www.ariva.de/news/roundup-nach-fed-zinspause-wie-entscheidet-die-ezb-12186006",
-    "published_at": "2026-10-29T06:35:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
    }
   ],
   "positions": [
    {
     "id": "amzn",
     "items": [
+     {
+      "headline": "Amazon: Wird AWS wieder zum Kurstreiber?",
+      "summary": "Ein Börsenbeitrag geht der Frage nach, ob das Cloudgeschäft AWS die Amazon-Aktie wieder nach oben ziehen kann.",
+      "source": "finanznachrichten.de",
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70015061-amazon-aktie-wird-aws-wieder-zum-grossen-kurstreiber-486.htm",
+      "published_at": "2026-11-03T12:00:00+01:00",
+      "kind": "news"
+     },
      {
       "headline": "Amazon-Aktie steigt am Montagnachmittag",
       "summary": "Nach dem Kursrutsch infolge der Quartalszahlen erholte sich die Amazon-Aktie zum Wochenstart etwas.",
@@ -1978,14 +1984,6 @@
       "source": "dpa-AFX via finanznachrichten.de",
       "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69985301-roundup-amazon-waechst-mit-cloud-hohe-ki-ausgaben-lasten-auf-der-aktie-016.htm",
       "published_at": "2026-10-30T09:04:00+01:00",
-      "kind": "news"
-     },
-     {
-      "headline": "Amazon fällt nach Q3-Zahlen und hohen Investitionsplänen",
-      "summary": "Der Umsatz von 201,9 Milliarden Dollar und der Gewinn je Aktie von 1,89 Dollar lagen leicht unter den Erwartungen. AWS wuchs um 39 Prozent, Sorgen bereiten Investitionen von rund 220 Milliarden Dollar in diesem Jahr.",
-      "source": "Motley Fool via Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-29-211602513.html",
-      "published_at": "2026-10-29T22:16:00+01:00",
       "kind": "news"
      },
      {
@@ -2144,14 +2142,6 @@
       "kind": "news"
      },
      {
-      "headline": "Bank of America sieht Starlink-Ausbau positiv für Nokia",
-      "summary": "Die Bank of America bestätigt ihre Kaufempfehlung für Nokia nach Berichten, dass SpaceX mehr als 80.000 Mobilfunkstandorte in den USA sichern will. Ein neuer Netzbetreiber dürfte die Ausgaben der etablierten Anbieter für Funknetze kaum bremsen, so die Bank.",
-      "source": "Investing.com",
-      "url": "https://www.investing.com/news/analyst-ratings/bofa-sees-starlink-buildout-as-positive-for-nokia-and-ericsson-shares-93CH-4975007",
-      "published_at": "2026-10-27T12:04:00+01:00",
-      "kind": "news"
-     },
-     {
       "headline": "Jefferies: bestätigt",
       "summary": "Jefferies bleibt bei der Kaufempfehlung für Nokia.",
       "source": "finanzen.net",
@@ -2207,6 +2197,14 @@
     "id": "spacex",
     "items": [
      {
+      "headline": "Sharedeals hält Kursziel für 2027 für realistisch",
+      "summary": "Der Beitrag sieht im KI-Geschäft und im Satelliteninternet die wichtigsten Treiber für weiteres Kurspotenzial von SpaceX.",
+      "source": "sharedeals.de via finanznachrichten.de",
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70016682-spacex-aktie-dieses-kursziel-fuer-2027-ist-realistisch-486.htm",
+      "published_at": "2026-11-03T11:10:00+01:00",
+      "kind": "news"
+     },
+     {
       "headline": "SpaceX steigt um rund 4 Prozent nach Berichten über Boost-Mobile-Gespräche",
       "summary": "SpaceX soll mit EchoStar über einen Kauf von Boost Mobile oder Netzzugang verhandeln, um als Mobilfunkanbieter anzutreten. Die Aktie legte deutlich zu, während AST SpaceMobile nachgab.",
       "source": "24/7 Wall St.",
@@ -2236,14 +2234,6 @@
       "source": "TradingKey",
       "url": "https://www.tradingkey.com/news/market-movers/262260900-market-movers-spcx-20261030",
       "published_at": "2026-10-30T12:00:00+01:00",
-      "kind": "news"
-     },
-     {
-      "headline": "SpaceX rund 25 Prozent unter dem Rekordhoch",
-      "summary": "Trotz eines Quartalsumsatzes von 14,6 Milliarden Dollar und 4,4 Milliarden Dollar Gewinn notiert die Aktie deutlich unter ihrem Hoch nach dem Börsengang. Als Risiko gilt das Ende einer weiteren Haltefrist im Dezember.",
-      "source": "Motley Fool via Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-stock-25-below-time-090402167.html",
-      "published_at": "2026-10-30T10:04:00+01:00",
       "kind": "news"
      },
      {
@@ -2445,6 +2435,20 @@
   ],
   "sector": [
    {
+    "headline": "Handelsblatt: Deutsche Autobauer setzen auf den US-Markt",
+    "summary": "Laut Kommentar müssen BMW, Mercedes und VW ihre Modelle stärker auf US-Kunden zuschneiden, um verlorene Margen zurückzugewinnen; ein großer SUV sei ein guter Anfang.",
+    "source": "dpa-AFX via ARIVA.DE",
+    "url": "https://www.ariva.de/news/pressestimme-handelsblatt-zu-hoffnung-deutscher-12191798",
+    "published_at": "2026-11-03T05:35:00+01:00",
+    "kind": "news",
+    "tickers": [
+     "BMW"
+    ],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
     "headline": "Rheinmetall fällt nach Bericht über verzögerte Boxer-Bestellung",
     "summary": "Rheinmetall rutschte zeitweise unter 1.000 Euro, nachdem ein Medienbericht über eine verzögerte Großbestellung des Radpanzers Boxer die Runde machte.",
     "source": "dpa-AFX/finanznachrichten.de",
@@ -2472,6 +2476,18 @@
    }
   ],
   "peers": [
+   {
+    "headline": "Mercedes-Benz verkauft europäisches Schnellladenetz",
+    "summary": "Mercedes-Benz trennt sich von seinem Schnellladenetzwerk in Europa; finanzen.net nennt Electra als Käufer.",
+    "source": "dpa-AFX via ARIVA.DE",
+    "url": "https://ariva.de/news/mercedes-benz-verkauft-sein-schnellladenetzwerk-in-europa-12192079",
+    "published_at": "2026-11-03T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": "Mercedes-Benz",
+    "popularity": null,
+    "label": null
+   },
    {
     "headline": "Rocket Lab: Charttechniker warnen vor weiterem Rückgang",
     "summary": "Bei einem Fall unter 50 US-Dollar droht der Rocket-Lab-Aktie laut einer Chartanalyse ein weiteres Minus von rund 20 Prozent.",
