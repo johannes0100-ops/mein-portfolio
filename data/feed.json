@@ -1,7 +1,7 @@
 {
  "app": "mein-portfolio-feed",
  "version": 1,
- "generated_at": "2026-11-02T12:31:20+00:00",
+ "generated_at": "2026-11-03T06:23:57+00:00",
  "quotes_at": "2026-10-30T22:26:15+00:00",
  "web_at": "2026-10-30T21:41:58+00:00",
  "live_at": "2026-10-30T21:04:59+00:00",
@@ -1785,8 +1785,46 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T13:40:00+01:00",
+  "generated_at": "2026-11-03T07:35:00+01:00",
   "market": [
+   {
+    "headline": "Dax vor Rückschlag nach erneuter Tech-Schwäche in USA und Asien",
+    "summary": "Der Dax wird vorbörslich rund 0,8 Prozent tiefer bei etwa 25.780 Punkten erwartet. Halbleiterwerte belasten nach enttäuschenden KI-Signalen von Alphabet, Amazon und Intel, auch Japan und Südkorea geben nach.",
+    "source": "dpa-AFX/finanznachrichten.de",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70013506-dax-flash-rueckschlag-nach-neuerlicher-schwaeche-in-den-usa-und-asien-016.htm",
+    "published_at": "2026-11-03T06:52:00+01:00",
+    "kind": "news",
+    "tickers": [
+     "Amazon"
+    ],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Wall Street: Nasdaq-Erholung scheitert vor Apple-Zahlen und Wahlen",
+    "summary": "Der Nasdaq 100 fiel um 1,4 Prozent auf den tiefsten Stand seit Ende Juli, der Dow legte dagegen 0,4 Prozent zu. Oracle brach nach Plänen für eine große Kapitalerhöhung ein.",
+    "source": "dpa-AFX/ariva.de",
+    "url": "https://www.ariva.de/news/roundup-aktien-new-york-schluss-nasdaq-erholung-scheitert-12191682",
+    "published_at": "2026-11-02T22:43:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Dax schließt 0,6 Prozent fester vor Apple-Zahlen und US-Zwischenwahlen",
+    "summary": "Sinkende Ölpreise und Berichte über diplomatische Bemühungen im Iran-Konflikt stützten den Dax, der bei rund 25.981 Punkten schloss. Rheinmetall verlor nach einem Bericht über eine verzögerte Boxer-Bestellung 3,6 Prozent.",
+    "source": "dpa-AFX/finanznachrichten.de",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70010044-roundup-aktien-frankfurt-schluss-dax-legt-zu-vor-apple-und-zwischenwahlen-016.htm",
+    "published_at": "2026-11-02T18:03:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
    {
     "headline": "Dax legt zum Monatsanfang leicht zu, Ölpreise geben nach",
     "summary": "Der Dax stand am Mittag rund 0,4 Prozent höher bei gut 25.900 Punkten; sinkende Ölpreise nach Berichten über diplomatische Bemühungen im US-Iran-Konflikt stützten. Vor den US-Zwischenwahlen und den Apple-Zahlen bleiben Anleger vorsichtig.",
@@ -1809,18 +1847,6 @@
     "tickers": [
      "BMW"
     ],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Dax zum Wochenstart leicht im Plus erwartet",
-    "summary": "IG taxiert den Dax vor Xetra-Start rund 0,2 Prozent höher bei etwa 25.865 Punkten. Technologiewerte in Japan und Südkorea hielten sich trotz des Nasdaq-Ausverkaufs vom Freitag gut.",
-    "source": "dpa-AFX via onvista",
-    "url": "https://www.onvista.de/news/2026/11-02-dax-flash-leichtes-plus-erwartet-asien-haelt-sich-gut-nach-nasdaq-schwaeche-0-10-26571009",
-    "published_at": "2026-11-02T05:46:00+01:00",
-    "kind": "news",
-    "tickers": [],
     "peer": null,
     "popularity": null,
     "label": null
@@ -1880,34 +1906,6 @@
     "label": null
    },
    {
-    "headline": "Dax startet mit moderaten Verlusten",
-    "summary": "Zum Handelsstart fiel der Dax um 0,4 Prozent auf 25.935 Punkte, belastet von höheren Ölpreisen und enttäuschenden Zahlen von Amazon und Intel. Am Nachmittag stehen deutsche Inflationsdaten an.",
-    "source": "dpa-AFX via finanznachrichten.de",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69985482-aktien-frankfurt-eroeffnung-moderate-verluste-positive-wochenbilanz-winkt-016.htm",
-    "published_at": "2026-10-30T09:14:00+01:00",
-    "kind": "news",
-    "tickers": [
-     "Amazon"
-    ],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Dax nach starker Woche zum Start etwas schwächer erwartet",
-    "summary": "Enttäuschende Zahlen von Amazon und Intel sowie steigende Ölpreise dürften den Dax am Freitag leicht bremsen, er wurde vorbörslich knapp unter 26.000 Punkten taxiert. Auf Wochensicht zeichnet sich dennoch ein Plus von gut drei Prozent ab.",
-    "source": "dpa-AFX via ARIVA.DE",
-    "url": "https://www.ariva.de/news/dax-flash-dax-zum-ende-einer-starken-woche-wohl-etwas-12188013",
-    "published_at": "2026-10-30T07:06:00+01:00",
-    "kind": "news",
-    "tickers": [
-     "Amazon"
-    ],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
     "headline": "Dax schließt über 26.000 Punkten, EZB lässt Zinsen unverändert",
     "summary": "Der Dax gewann 1,31 Prozent auf 26.039,68 Punkte und erreichte das Niveau von Anfang September. Die EZB hielt die Leitzinsen wie erwartet stabil, Adidas führte die Gewinnerliste an.",
     "source": "dpa-AFX via ARIVA.DE",
@@ -1951,6 +1949,22 @@
     "id": "amzn",
     "items": [
      {
+      "headline": "Amazon-Aktie steigt am Montagnachmittag",
+      "summary": "Nach dem Kursrutsch infolge der Quartalszahlen erholte sich die Amazon-Aktie zum Wochenstart etwas.",
+      "source": "finanzen.net",
+      "url": "https://finanzen.net/nachricht/aktien/amazon-aktie-kursbewegung-02-11-2026-11202036",
+      "published_at": "2026-11-02T12:00:00+01:00",
+      "kind": "news"
+     },
+     {
+      "headline": "Analysten sehen Amazons Full-Stack-Ansatz bei KI als Vorteil",
+      "summary": "Analysten heben Amazons modellunabhängigen KI-Ansatz und die eigenen Kapazitäten über die ganze Technik-Kette als Wettbewerbsvorteil hervor.",
+      "source": "finanznachrichten.de",
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70008640-amazon-im-analysten-fokus-modellunabhaengiger-ansatz-und-full-stack-kapazitaeten-als-starker-wettbewerbsvorteil-046.htm",
+      "published_at": "2026-11-02T12:00:00+01:00",
+      "kind": "news"
+     },
+     {
       "headline": "Amazon dämmt Tagesverlust ein, Aktie schließt rund 1,4 Prozent tiefer",
       "summary": "Die Aktie fiel nach den Zahlen zeitweise um sechs Prozent auf den tiefsten Stand seit Ende Juli, erholte sich dann aber deutlich. UBS nannte enttäuschende Umsätze bei AWS als Grund, zudem belasten die hohen KI-Ausgaben.",
       "source": "dpa-AFX via onvista",
@@ -1972,22 +1986,6 @@
       "source": "Motley Fool via Yahoo Finance",
       "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-29-211602513.html",
       "published_at": "2026-10-29T22:16:00+01:00",
-      "kind": "news"
-     },
-     {
-      "headline": "Amazon verfehlt Prognosen bei Umsatz und Gewinn",
-      "summary": "Nachbörslich gab die Aktie zeitweise rund sechs Prozent nach. Der Ausblick für das Weihnachtsquartal blieb unter den Markterwartungen, während AWS den operativen Gewinn um 55 Prozent steigerte.",
-      "source": "finanzen.net",
-      "url": "https://www.finanzen.net/nachricht/aktien/zahlen-praesentiert-amazon-aktie-tiefer-online-riese-verfehlt-prognosen-bei-umsatz-und-gewinn-16013767",
-      "published_at": "2026-10-29T22:05:00+01:00",
-      "kind": "news"
-     },
-     {
-      "headline": "Amazon legt am 29. Oktober nach Börsenschluss Zahlen vor",
-      "summary": "Im Fokus steht, wie die hohen KI-Investitionen Gewinn und Cashflow belasten. Analysten erwarten einen Gewinn je Aktie von rund 2,01 Dollar.",
-      "source": "Barchart via Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/dear-amazon-stock-fans-mark-142710624.html",
-      "published_at": "2026-10-28T15:27:00+01:00",
       "kind": "news"
      },
      {
@@ -2054,14 +2052,6 @@
       "kind": "news"
      },
      {
-      "headline": "Babcock steigt mit Rüstungswerten um 4,5 Prozent",
-      "summary": "Babcock legte am Montag bis zum Mittag um 4,5 Prozent zu, als Rüstungswerte in London gefragt waren. Anleger setzten auf den britischen Haushalt, der einen Pfad zu Verteidigungsausgaben von 3 Prozent der Wirtschaftsleistung bis 2030 zeigen soll.",
-      "source": "Alliance News via MarketScreener",
-      "url": "https://www.marketscreener.com/news/defence-supports-ftse-100-but-oil-majors-fall-ce785cdcda88f024",
-      "published_at": "2026-10-26T13:06:00+01:00",
-      "kind": "news"
-     },
-     {
       "headline": "Goldman Sachs: Erststudie",
       "summary": "Goldman nimmt die Aktie mit Neutral und 1.000 Pence Kursziel in die Bewertung auf.",
       "source": "ad-hoc-news.de",
@@ -2076,6 +2066,22 @@
    {
     "id": "bmw",
     "items": [
+     {
+      "headline": "BMW-Aktie am Montagvormittag fester",
+      "summary": "Die BMW-Aktie legte zum Wochenstart vor den Quartalszahlen am Mittwoch zu.",
+      "source": "finanzen.net",
+      "url": "https://www.finanzen.net/nachricht/aktien/bmw-aktie-kursbewegung-02-11-2026-11210158",
+      "published_at": "2026-11-02T12:00:00+01:00",
+      "kind": "news"
+     },
+     {
+      "headline": "BMW: Worauf es bei den Quartalszahlen ankommt",
+      "summary": "Vor den Q3-Zahlen am 4. November richtet sich der Blick auf Margen und Ausblick des Autobauers.",
+      "source": "finanznachrichten.de",
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70004360-bmw-aktie-im-fokus-worauf-es-bei-den-quartalszahlen-ankommt-618.htm",
+      "published_at": "2026-11-02T12:00:00+01:00",
+      "kind": "news"
+     },
      {
       "headline": "Analysten sehen bei BMW Luft nach oben",
       "summary": "Elf Analysten sehen das Kursziel im Schnitt bei 67,64 Euro, rund 9,84 Euro über dem Xetra-Kurs. Vier raten zum Kauf, sieben zum Halten.",
@@ -2099,20 +2105,20 @@
       "url": "https://www.finanzen.net/nachricht/aktien/bmw-aktie-kursbewegung-28-10-2026-11202081",
       "published_at": "2026-10-28T16:11:00+01:00",
       "kind": "news"
-     },
-     {
-      "headline": "BMW: Schichtausfälle in Regensburg vor Zahlen am 4. November",
-      "summary": "Fehlende Zulieferteile führten zu einzelnen Schichtausfällen im Werk Regensburg. Jefferies erwartet für das dritte Quartal rund 7 Prozent weniger Autoumsatz.",
-      "source": "boerse-express.com",
-      "url": "https://www.boerse-express.com/news/articles/bmw-aktie-quartalszahlen-am-4-november-2026-956578",
-      "published_at": "2026-10-27T07:10:00+01:00",
-      "kind": "news"
      }
     ]
    },
    {
     "id": "nokia",
     "items": [
+     {
+      "headline": "Nokia: KI-Wachstum stark, Cashflow-Ziel gesenkt",
+      "summary": "Nokia hält am Gewinnziel für 2026 fest, erwartet aber eine geringere Umwandlung des Gewinns in freien Cashflow wegen Working Capital und Restrukturierung.",
+      "source": "ad-hoc-news.de",
+      "url": "https://ad-hoc-news.de/boerse/news/corporate-news/nokia-stock-balances-ai-growth-against-lower-cash-conversion/70444341",
+      "published_at": "2026-11-02T09:58:00+01:00",
+      "kind": "news"
+     },
      {
       "headline": "Nokia fällt mit Tech-Ausverkauf um gut 5 Prozent",
       "summary": "Die Aktie verlor im breiten Technologie-Abverkauf 5,4 Prozent. Belastend wirkt weiter das gesenkte Ziel für die Cashflow-Umwandlung bei unveränderter Gewinnprognose.",
@@ -2146,12 +2152,14 @@
       "kind": "news"
      },
      {
-      "headline": "Nokia steigt nach Hochstufung durch Inderes",
-      "summary": "Inderes hob die Aktie von Sell auf Reduce und das Ziel auf 7 Euro an. Zudem testen laut Nokia und Nvidia fast 20 Netzbetreiber ihre gemeinsame KI-Funknetztechnik.",
-      "source": "Investing.com",
-      "url": "https://www.investing.com/news/stock-market-news/why-is-nokia-stock-up-over-2-today-93CH-4971916",
-      "published_at": "2026-10-26T11:14:00+01:00",
-      "kind": "news"
+      "headline": "Jefferies: bestätigt",
+      "summary": "Jefferies bleibt bei der Kaufempfehlung für Nokia.",
+      "source": "finanzen.net",
+      "url": "https://www.finanzen.net/analyse/nokia_buy-jefferies__company_inc__1116483",
+      "published_at": "2026-11-02T12:00:00+01:00",
+      "kind": "analyst",
+      "rating": "Buy",
+      "target": null
      },
      {
       "headline": "Deutsche Bank Research: Ziel gesenkt",
@@ -2199,11 +2207,11 @@
     "id": "spacex",
     "items": [
      {
-      "headline": "SpaceX vorbörslich fester nach Berichten über Boost-Mobile-Gespräche",
-      "summary": "Laut Berichten verhandelt Musk über einen Kauf von EchoStars Boost Mobile oder Zugang zu dessen Mobilfunknetz, um Starlink Mobile in den USA auszubauen. Ein Deal bräuchte womöglich Zustimmung von AT&T und T-Mobile und hohe Investitionen.",
-      "source": "TipRanks",
-      "url": "https://www.tipranks.com/news/spacex-stock-spcx-rises-as-musk-gets-ready-to-conquer-new-market-with-boost-mobile-buy",
-      "published_at": "2026-11-02T13:07:00+01:00",
+      "headline": "SpaceX steigt um rund 4 Prozent nach Berichten über Boost-Mobile-Gespräche",
+      "summary": "SpaceX soll mit EchoStar über einen Kauf von Boost Mobile oder Netzzugang verhandeln, um als Mobilfunkanbieter anzutreten. Die Aktie legte deutlich zu, während AST SpaceMobile nachgab.",
+      "source": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/11/02/spacex-climbs-4-on-reported-boost-mobile-talks-ast-spacemobile-falls-4-rocket-lab-dips/",
+      "published_at": "2026-11-02T12:00:00+01:00",
       "kind": "news"
      },
      {
@@ -2252,6 +2260,17 @@
    }
   ],
   "sell_side": [
+   {
+    "stock": "nokia",
+    "broker": "Jefferies",
+    "action": "bestätigt",
+    "rating": "Buy",
+    "target": null,
+    "summary": "Jefferies bleibt bei der Kaufempfehlung für Nokia.",
+    "source": "finanzen.net",
+    "published_at": "2026-11-02T12:00:00+01:00",
+    "url": "https://www.finanzen.net/analyse/nokia_buy-jefferies__company_inc__1116483"
+   },
    {
     "stock": "amzn",
     "broker": "TD Cowen",
@@ -2426,6 +2445,18 @@
   ],
   "sector": [
    {
+    "headline": "Rheinmetall fällt nach Bericht über verzögerte Boxer-Bestellung",
+    "summary": "Rheinmetall rutschte zeitweise unter 1.000 Euro, nachdem ein Medienbericht über eine verzögerte Großbestellung des Radpanzers Boxer die Runde machte.",
+    "source": "dpa-AFX/finanznachrichten.de",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70010044-roundup-aktien-frankfurt-schluss-dax-legt-zu-vor-apple-und-zwischenwahlen-016.htm",
+    "published_at": "2026-11-02T18:03:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
     "headline": "Rüstungswerte geben vor Friedensgesprächen nach",
     "summary": "Rheinmetall, Renk, Hensoldt und TKMS verloren am Freitag zwischen 0,3 und 2,3 Prozent. Belastend wirkten geplante Friedensgespräche zwischen Russland, der Ukraine und den USA im November sowie die anstehenden Quartalszahlen.",
     "source": "finanzen.net",
@@ -2441,6 +2472,20 @@
    }
   ],
   "peers": [
+   {
+    "headline": "Rocket Lab: Charttechniker warnen vor weiterem Rückgang",
+    "summary": "Bei einem Fall unter 50 US-Dollar droht der Rocket-Lab-Aktie laut einer Chartanalyse ein weiteres Minus von rund 20 Prozent.",
+    "source": "finanznachrichten.de",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70010053-rocket-lab-aktie-weitere-20-drohen-unterhalb-von-50-us-dollar-486.htm",
+    "published_at": "2026-11-02T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [
+     "SpaceX"
+    ],
+    "peer": "Rocket Lab",
+    "popularity": null,
+    "label": null
+   },
    {
     "headline": "Volkswagen mit Milliardenverlust im dritten Quartal, Aktie dreht ins Plus",
     "summary": "VW verbuchte vor allem wegen einer Abschreibung auf Porsche rund 5,8 Milliarden Euro Verlust. Schwache Geschäfte in China und geringere Margen bei Elektroautos belasten, die Aktie stieg dennoch.",
@@ -2488,17 +2533,6 @@
  "calendar": {
   "events": [
    {
-    "date": "2026-11-02",
-    "time": "16:00",
-    "title": "US ISM-Index Industrie Oktober",
-    "type": "makro",
-    "region": "US",
-    "holding": null,
-    "note": "Einkaufsmanagerindizes der Industrie für China und die USA laut dpa-AFX Wochenausblick.",
-    "confirmed": true,
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70000762-tagesvorschau-montag-2-november-015.htm"
-   },
-   {
     "date": "2026-11-03",
     "time": "16:00",
     "title": "US JOLTS Stellenangebote September",
@@ -2508,6 +2542,17 @@
     "note": "Veröffentlichung 10:00 Uhr ET.",
     "confirmed": true,
     "url": "https://www.bls.gov/schedule/2026/11_sched_list.htm"
+   },
+   {
+    "date": "2026-11-03",
+    "time": "16:00",
+    "title": "US Auftragseingang Industrie September",
+    "type": "makro",
+    "region": "US",
+    "holding": null,
+    "note": "",
+    "confirmed": true,
+    "url": "https://ariva.de/news/wochenvorschau-termine-bis-16-november-2026-12191814"
    },
    {
     "date": "2026-11-03",
@@ -2527,9 +2572,9 @@
     "type": "earnings",
     "region": "DE",
     "holding": "bmw",
-    "note": "Veröffentlichung 7:30 Uhr, Telefonkonferenz 8:30 Uhr",
+    "note": "Presse- und Analystenkonferenz 08:30",
     "confirmed": true,
-    "url": "https://www.ariva.de/news/wochenvorschau-termine-bis-13-november-2026-12190165"
+    "url": "https://ariva.de/news/wochenvorschau-termine-bis-16-november-2026-12191814"
    },
    {
     "date": "2026-11-04",
@@ -2632,6 +2677,17 @@
    },
    {
     "date": "2026-11-06",
+    "time": "11:00",
+    "title": "Eurozone Einzelhandelsumsatz September",
+    "type": "makro",
+    "region": "EU",
+    "holding": null,
+    "note": "",
+    "confirmed": true,
+    "url": "https://ariva.de/news/wochenvorschau-termine-bis-16-november-2026-12191814"
+   },
+   {
+    "date": "2026-11-06",
     "time": "14:30",
     "title": "US Arbeitsmarktbericht Oktober",
     "type": "makro",
@@ -2640,6 +2696,28 @@
     "note": "Employment Situation, 8:30 Uhr ET.",
     "confirmed": true,
     "url": "https://www.bls.gov/schedule/2026/11_sched_list.htm"
+   },
+   {
+    "date": "2026-11-06",
+    "time": "16:00",
+    "title": "US Uni Michigan Verbrauchervertrauen November (vorläufig)",
+    "type": "makro",
+    "region": "US",
+    "holding": null,
+    "note": "",
+    "confirmed": true,
+    "url": "https://ariva.de/news/wochenvorschau-termine-bis-16-november-2026-12191814"
+   },
+   {
+    "date": "2026-11-09",
+    "time": "08:00",
+    "title": "DE Im- und Exporte September",
+    "type": "makro",
+    "region": "DE",
+    "holding": null,
+    "note": "",
+    "confirmed": true,
+    "url": "https://ariva.de/news/wochenvorschau-termine-bis-16-november-2026-12191814"
    },
    {
     "date": "2026-11-09",
@@ -2688,13 +2766,13 @@
    {
     "date": "2026-11-13",
     "time": "11:00",
-    "title": "Eurozone BIP und Beschäftigung Q3 Schnellschätzung",
+    "title": "Eurozone BIP Q3 (2. Veröffentlichung) und Beschäftigung",
     "type": "makro",
     "region": "EU",
     "holding": null,
     "note": "Zweite Schätzung, Termin laut Eurostat Kalender vorläufig.",
     "confirmed": true,
-    "url": "https://ec.europa.eu/eurostat/documents/24987/6642470/QNA_release_calendar.pdf"
+    "url": "https://ariva.de/news/wochenvorschau-termine-bis-16-november-2026-12191814"
    },
    {
     "date": "2026-11-13",
@@ -2706,6 +2784,28 @@
     "note": "Producer Price Index, 8:30 Uhr ET.",
     "confirmed": true,
     "url": "https://www.bls.gov/schedule/2026/11_sched_list.htm"
+   },
+   {
+    "date": "2026-11-16",
+    "time": "11:00",
+    "title": "Eurozone Industrieproduktion September",
+    "type": "makro",
+    "region": "EU",
+    "holding": null,
+    "note": "",
+    "confirmed": true,
+    "url": "https://ariva.de/news/wochenvorschau-termine-bis-16-november-2026-12191814"
+   },
+   {
+    "date": "2026-11-16",
+    "time": "14:30",
+    "title": "US Empire State Index November",
+    "type": "makro",
+    "region": "US",
+    "holding": null,
+    "note": "",
+    "confirmed": true,
+    "url": "https://ariva.de/news/wochenvorschau-termine-bis-16-november-2026-12191814"
    },
    {
     "date": "2026-11-17",
