@@ -1,7 +1,7 @@
 {
  "app": "mein-portfolio-feed",
  "version": 1,
- "generated_at": "2026-11-04T06:23:50+00:00",
+ "generated_at": "2026-11-04T12:23:48+00:00",
  "quotes_at": "2026-10-30T22:26:15+00:00",
  "web_at": "2026-10-30T21:41:58+00:00",
  "live_at": "2026-10-30T21:04:59+00:00",
@@ -1785,8 +1785,46 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T07:35:00+01:00",
+  "generated_at": "2026-11-04T13:30:00+01:00",
   "market": [
+   {
+    "headline": "Europas Börsen legen nach Quartalszahlen und Zwischenwahl zu",
+    "summary": "Die großen europäischen Märkte in Paris, London und Zürich gewannen deutlich, Bankaktien waren gefragt. Überzeugende Quartalszahlen gaben Anlegern laut CMC Markets neue Zuversicht.",
+    "source": "Moneycab via finanznachrichten.de",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70031702-europa-verlauf-gewinne-nach-quartalszahlen-und-zwischenwahl-bankaktien-gefragt-095.htm",
+    "published_at": "2026-11-04T13:09:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Dax springt nach US-Zwischenwahlen über 26.000 Punkte",
+    "summary": "Der Dax stieg bis zum Mittag um 1,45 Prozent auf rund 26.241 Punkte, die Unsicherheit vor den Wahlen ist verflogen. Heidelberg Materials und Continental führten nach Zahlen bzw. Prognoseanhebung die Gewinnerliste an, BMW legte trotz Gewinnwarnung leicht zu.",
+    "source": "dpa-AFX via finanznachrichten.de",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70031010-aktien-frankfurt-dax-mit-neuem-schwung-nach-us-zwischenwahlen-016.htm",
+    "published_at": "2026-11-04T12:17:00+01:00",
+    "kind": "news",
+    "tickers": [
+     "BMW"
+    ],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Goldpreis nach US-Zwischenwahlen wieder über 4.000 Dollar",
+    "summary": "Gold hat sich nach dem Ausgang der US-Zwischenwahlen kräftig erholt und die Marke von 4.000 US-Dollar je Feinunze zurückerobert.",
+    "source": "finanzen.net",
+    "url": "https://www.finanzen.net/nachricht/rohstoffe/goldpreis-und-oelpreis-goldpreis-starkes-comeback-ueber-4-000-dollar-nach-us-zwischenwahlen-16027388",
+    "published_at": "2026-11-04T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
    {
     "headline": "Dax vor Verlusten nach US-Zwischenwahlen",
     "summary": "Der Dax wird rund ein halbes Prozent tiefer bei etwa 25.730 Punkten erwartet; Hochrechnungen deuten auf einen von Demokraten dominierten Kongress und mögliche politische Blockade hin. Der Nikkei fiel zeitweise auf den tiefsten Stand seit Mai.",
@@ -1893,48 +1931,6 @@
     "published_at": "2026-11-02T11:43:00+01:00",
     "kind": "news",
     "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Wochenausblick: US-Zwischenwahlen und Jobdaten entscheiden über weiteren Dax-Anstieg",
-    "summary": "Die Midterms am Dienstag könnten über Ölpreis- und Inflationssorgen die Erholung belasten. Dazu kommen Quartalszahlen u. a. von BMW am Mittwoch und der US-Arbeitsmarktbericht am Freitag.",
-    "source": "dpa-AFX via finanznachrichten.de",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70000530-wochenausblick-weiterer-dax-anstieg-haengt-an-us-zwischenwahlen-und-jobdaten-016.htm",
-    "published_at": "2026-11-02T05:51:00+01:00",
-    "kind": "news",
-    "tickers": [
-     "BMW"
-    ],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Nasdaq 100 mit größtem Tagesverlust seit Juni, Tech-Ausverkauf wegen Amazon und Intel",
-    "summary": "Der Nasdaq 100 fiel um 3,46 Prozent auf 28.384,85 Punkte, der S&P 500 um 1,82 Prozent und der Dow um 1,09 Prozent. Intel brach nach schwachem Ausblick um fast 29 Prozent ein, Nvidia fiel unter fünf Billionen Dollar Börsenwert, während steigende Ölpreise auf Iran-Sorgen zurückgingen.",
-    "source": "dpa-AFX via onvista",
-    "url": "https://www.onvista.de/news/2026/10-30-roundup-aktien-new-york-schluss-tech-ausverkauf-wegen-amazon-und-intel-0-10-26570604",
-    "published_at": "2026-10-30T20:27:00+01:00",
-    "kind": "news",
-    "tickers": [
-     "Amazon"
-    ],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Dax schließt schwächer, Wochen- und Monatsplus von 2,5 Prozent",
-    "summary": "Der Dax fiel am Freitag um 0,85 Prozent auf 25.818 Punkte, beendete Woche und Oktober aber jeweils mit 2,5 Prozent Plus. Belastend wirkten der höchste Ölpreis seit April wegen Sorgen um einen neuen US-Angriff auf den Iran und der Tech-Ausverkauf nach Zahlen von Amazon und Intel.",
-    "source": "dpa-AFX via finanznachrichten.de",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69992965-aktien-frankfurt-schluss-schwaecheres-ende-einer-starken-boersenwoche-016.htm",
-    "published_at": "2026-10-30T17:50:00+01:00",
-    "kind": "news",
-    "tickers": [
-     "Amazon"
-    ],
     "peer": null,
     "popularity": null,
     "label": null
@@ -2055,6 +2051,14 @@
     "id": "bmw",
     "items": [
      {
+      "headline": "BMW: Gewinn bricht im dritten Quartal ein, Margenziel gesenkt",
+      "summary": "Der Umsatz fiel um 5,8 Prozent auf 30,45 Mrd. Euro, das EBIT um fast 30 Prozent auf 1,59 Mrd. Euro; die Automarge lag mit 3,4 Prozent über den Erwartungen. Für 2026 erwartet BMW nur noch eine Automarge von -0,5 bis +0,5 Prozent.",
+      "source": "finanzen.ch",
+      "url": "https://www.finanzen.ch/nachrichten/aktien/bmw-aktie-fallt-umsatz-und-gewinnrueckgang-im-dritten-quartal-margenziel-gesenkt-1036708718",
+      "published_at": "2026-11-04T07:54:00+01:00",
+      "kind": "news"
+     },
+     {
       "headline": "BMW senkt Jahresprognose erneut",
       "summary": "BMW erwartet im Autogeschäft nur noch eine operative Marge von -0,5 bis +0,5 Prozent statt 1 bis 3 Prozent und 5 bis 10 Prozent weniger Auslieferungen; Grund sind erweiterte Struktur- und Portfoliomaßnahmen. Die Free-Cashflow-Prognose bleibt, die Aktie gab nachbörslich weiter nach.",
       "source": "finanzen.net",
@@ -2087,12 +2091,14 @@
       "kind": "news"
      },
      {
-      "headline": "BMW-Aktie am Freitagnachmittag im Plus",
-      "summary": "Die BMW-Aktie notierte am Freitagnachmittag fester, wenige Tage vor den Quartalszahlen am 4. November.",
-      "source": "finanzen.net",
-      "url": "https://www.finanzen.net/nachricht/aktien/bmw-aktie-kursbewegung-30-10-2026-11202081",
-      "published_at": "2026-10-30T12:00:00+01:00",
-      "kind": "news"
+      "headline": "JPMorgan: Ziel gesenkt",
+      "summary": "JPMorgan senkt nach den Quartalszahlen das Kursziel für BMW auf 68 Euro und bleibt bei Overweight.",
+      "source": "dpa-AFX via finanzen.net",
+      "url": "https://www.finanzen.net/nachricht/aktien/analyse-flash-jpmorgan-senkt-ziel-fuer-bmw-auf-68-euro-overweight-16036089",
+      "published_at": "2026-11-04T12:00:00+01:00",
+      "kind": "analyst",
+      "rating": "Overweight",
+      "target": "68 EUR"
      },
      {
       "headline": "JPMorgan: bestätigt",
@@ -2197,6 +2203,14 @@
     "id": "spacex",
     "items": [
      {
+      "headline": "SpaceX und Raumfahrtwerte nach US-Zwischenwahlen schwächer",
+      "summary": "Nach Gewinnen der Demokraten fürchten Anleger stärkere politische Kontrolle von Musks Geschäften mit der Regierung; SpaceX, AST SpaceMobile und Rocket Lab gaben nach.",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/midterm-election-impact-spcx-asts-065043362.html",
+      "published_at": "2026-11-04T07:50:00+01:00",
+      "kind": "news"
+     },
+     {
       "headline": "SpaceX steigt nach Berichten über EchoStar-Gespräche",
       "summary": "Die SpaceX-Aktie legte am Dienstag um rund 3,6 Prozent zu, nachdem über Gespräche mit EchoStar berichtet wurde.",
       "source": "heygotrade",
@@ -2229,14 +2243,6 @@
       "kind": "news"
      },
      {
-      "headline": "Analysten sehen bei SpaceX deutliches Kurspotenzial",
-      "summary": "Von 26 Analysten im letzten Monat raten 24 zum Kauf und zwei zum Halten. Das mittlere Kursziel von rund 270 Dollar liegt etwa doppelt so hoch wie der Nasdaq-Schlusskurs von 134,72 Dollar.",
-      "source": "finanzen.net",
-      "url": "https://www.finanzen.net/nachricht/aktien/experten-sehen-bei-spacex-aktie-potenzial-16026159",
-      "published_at": "2026-10-31T22:30:00+01:00",
-      "kind": "news"
-     },
-     {
       "headline": "Bank of America: Ziel angehoben",
       "summary": "Bank of America hebt das Kursziel von 235 auf 275 Dollar und nimmt SpaceX in die US-1-Liste auf.",
       "source": "Der Aktionär",
@@ -2250,6 +2256,17 @@
    }
   ],
   "sell_side": [
+   {
+    "stock": "bmw",
+    "broker": "JPMorgan",
+    "action": "Ziel gesenkt",
+    "rating": "Overweight",
+    "target": "68 EUR",
+    "summary": "JPMorgan senkt nach den Quartalszahlen das Kursziel für BMW auf 68 Euro und bleibt bei Overweight.",
+    "source": "dpa-AFX via finanzen.net",
+    "published_at": "2026-11-04T12:00:00+01:00",
+    "url": "https://www.finanzen.net/nachricht/aktien/analyse-flash-jpmorgan-senkt-ziel-fuer-bmw-auf-68-euro-overweight-16036089"
+   },
    {
     "stock": "bmw",
     "broker": "JPMorgan",
@@ -2396,67 +2413,83 @@
   ],
   "popular": [
    {
-    "headline": "Booking Holdings unter Druck nach schwachem Ausblick",
-    "summary": "Rückläufiger Umsatz und ein enttäuschender Ausblick belasten die Zahlen des Reiseportals.",
-    "source": "finanznachrichten.de",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70025317-booking-holdings-unter-druck-ruecklaeufiger-umsatz-und-schwacher-ausblick-belasten-zahlen-046.htm",
-    "published_at": "2026-11-04T00:15:00+01:00",
+    "headline": "Dax überrascht nach Trumps Wahlschlappe mit deutlichem Plus",
+    "summary": "Nach dem klaren Votum gegen die Regierung Trump bei den Zwischenwahlen verpufften Crash-Sorgen, der Dax startete deutlich im Plus.",
+    "source": "wallstreet-online via finanznachrichten.de",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70028977-trump-verliert-krachend-dax-ueberrascht-mit-deutlichem-plus-crash-sorgen-verpuffen-049.htm",
+    "published_at": "2026-11-04T09:53:00+01:00",
     "kind": "news",
     "tickers": [],
     "peer": null,
-    "popularity": "Meistgelesen auf finanznachrichten.de (04.11.2026)",
+    "popularity": "Meistgelesen auf finanznachrichten.de (Platz 12, 04.11.)",
     "label": null
    },
    {
-    "headline": "Nagel: EZB-Zinserhöhung im Dezember wahrscheinlich nötig",
-    "summary": "Bundesbankpräsident Joachim Nagel hält eine Anhebung der Leitzinsen durch die EZB im Dezember für sehr wahrscheinlich notwendig.",
-    "source": "finanznachrichten.de",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70023256-nagel-ezb-zinserhoehung-im-dezember-sehr-wahrscheinlich-notwendig-015.htm",
-    "published_at": "2026-11-03T12:00:00+01:00",
+    "headline": "NTT: Halbjahresgewinn sinkt, Umsatz steigt, Ausblick angepasst",
+    "summary": "Der japanische Telekomkonzern NTT meldete einen geringeren Halbjahresgewinn bei höheren Erlösen und überarbeitete seine Jahresprognose.",
+    "source": "AFX News via finanznachrichten.de",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70026437-ntt-h1-profit-drops-revenues-rise-revises-fy-outlook-020.htm",
+    "published_at": "2026-11-04T06:30:00+01:00",
     "kind": "news",
     "tickers": [],
     "peer": null,
-    "popularity": "Meistgelesen auf finanznachrichten.de (04.11.2026)",
+    "popularity": "Meistgelesen auf finanznachrichten.de (Platz 2, 04.11.)",
     "label": null
    },
    {
-    "headline": "Warum US-Midterms für Aktionäre oft ein guter Termin sind",
-    "summary": "Der Beitrag beleuchtet, wie die Märkte historisch auf die US-Zwischenwahlen reagiert haben.",
-    "source": "finanznachrichten.de",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70023726-so-reagieren-die-maerkte-warum-die-us-midterms-fuer-aktionaere-ein-glueckstermin-sind-049.htm",
-    "published_at": "2026-11-03T12:00:00+01:00",
+    "headline": "Goldman Sachs sieht bei einigen Europa-Aktien bis zu 250 Prozent Potenzial",
+    "summary": "Ein Bericht stellt europäische Aktien vor, bei denen Goldman Sachs sehr hohes Kurspotenzial sieht.",
+    "source": "wallstreet-online via finanznachrichten.de",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70026403-3-verdoppler-gefaellig-bis-zu-250-kurspotenzial-goldman-sachs-setzt-auf-diese-europaeischen-aktien-049.htm",
+    "published_at": "2026-11-04T06:23:00+01:00",
     "kind": "news",
     "tickers": [],
     "peer": null,
-    "popularity": "Meistgelesen auf finanznachrichten.de (04.11.2026)",
+    "popularity": "Meistgelesen auf finanznachrichten.de (Platz 3, 04.11.)",
     "label": null
    },
    {
-    "headline": "AMD wächst kräftig dank Rechenzentren",
-    "summary": "AMD steigert Umsatz und Margen deutlich, angetrieben vom Data-Center-Geschäft, und gibt einen starken Ausblick für das vierte Quartal.",
-    "source": "finanznachrichten.de",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70025158-amd-zahlen-data-center-treibt-hohes-umsatzwachstum-und-steigende-margen-starker-q4-ausblick-046.htm",
-    "published_at": "2026-11-03T12:00:00+01:00",
+    "headline": "Termine des Tages: Zahlen von Uber, Novo Nordisk, Qualcomm, McDonald's und BMW",
+    "summary": "Überblick über die wichtigsten Unternehmenszahlen des Mittwochs, darunter die BMW-Quartalsmitteilung.",
+    "source": "wallstreet-online via finanznachrichten.de",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70026090-ihre-wichtigsten-termine-frische-zahlen-von-uber-novo-nordisk-qualcomm-allstate-mcdonald-s-und-bmw-049.htm",
+    "published_at": "2026-11-04T04:53:00+01:00",
     "kind": "news",
-    "tickers": [],
+    "tickers": [
+     "BMW"
+    ],
     "peer": null,
-    "popularity": "Meistgelesen auf finanznachrichten.de (04.11.2026)",
+    "popularity": "Meistgelesen auf finanznachrichten.de (Platz 8, 04.11.)",
     "label": null
    },
    {
-    "headline": "Amgen wird erneut etwas optimistischer",
-    "summary": "Der Biotechkonzern hebt dank gefragter Medikamente seine Erwartungen erneut leicht an.",
-    "source": "dpa-AFX (finanznachrichten.de)",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70024967-gefragte-kassenschlager-amgen-wird-erneut-etwas-optimistischer-016.htm",
-    "published_at": "2026-11-03T12:00:00+01:00",
+    "headline": "Block steigert Umsatz und Margen und hebt Jahresausblick an",
+    "summary": "Die Fintech-Plattform Block legte starke Quartalszahlen vor und erhöhte die Prognose für das Gesamtjahr.",
+    "source": "IT-Times via finanznachrichten.de",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70025642-block-zahlen-in-q1-fintech-plattform-steigert-umsatz-und-margen-jahresausblick-angehoben-046.htm",
+    "published_at": "2026-11-04T01:45:00+01:00",
     "kind": "news",
     "tickers": [],
     "peer": null,
-    "popularity": "Meistgelesen auf finanznachrichten.de (04.11.2026)",
+    "popularity": "Meistgelesen auf finanznachrichten.de (Platz 4, 04.11.)",
     "label": null
    }
   ],
   "sector": [
+   {
+    "headline": "Rüstungswert Hensoldt am Mittwoch schwächer",
+    "summary": "Die Aktie des Rüstungselektronik-Herstellers Hensoldt gab im Mittwochshandel nach.",
+    "source": "finanzen.ch",
+    "url": "https://www.finanzen.ch/nachrichten/aktien/hensoldt-aktie-kursbewegung-04-11-2026-1035060946",
+    "published_at": "2026-11-04T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [
+     "Babcock"
+    ],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
    {
     "headline": "Kommentar: Autobauer in der Krise brauchen Maßhalten",
     "summary": "Ein Pressekommentar fordert in der Autokrise auch von Beschäftigten Zurückhaltung und kritisiert hohe Boni und die 35-Stunden-Woche bei VW.",
@@ -2585,28 +2618,6 @@
  },
  "calendar": {
   "events": [
-   {
-    "date": "2026-11-04",
-    "time": "07:30",
-    "title": "BMW Quartalsmitteilung Q3",
-    "type": "earnings",
-    "region": "DE",
-    "holding": "bmw",
-    "note": "Presse- und Analystenkonferenz 08:30",
-    "confirmed": true,
-    "url": "https://ariva.de/news/wochenvorschau-termine-bis-16-november-2026-12191814"
-   },
-   {
-    "date": "2026-11-04",
-    "time": "11:00",
-    "title": "Eurozone Inflation Schnellschätzung Oktober",
-    "type": "makro",
-    "region": "EU",
-    "holding": null,
-    "note": "Termin laut Eurostat Mitteilung vom 16.10., im September lag die Rate bei 3,8 Prozent.",
-    "confirmed": true,
-    "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-16102026-ap"
-   },
    {
     "date": "2026-11-04",
     "time": "14:15",
@@ -2870,6 +2881,17 @@
     "note": "",
     "confirmed": true,
     "url": "https://www.ariva.de/news/wochenvorschau-termine-bis-17-november-2026-12193648"
+   },
+   {
+    "date": "2026-11-17",
+    "time": "15:15",
+    "title": "US Industrieproduktion Oktober",
+    "type": "makro",
+    "region": "US",
+    "holding": null,
+    "note": "",
+    "confirmed": true,
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70026359-wochenvorschau-termine-bis-17-november-2026-016.htm"
    },
    {
     "date": "2026-11-19",
