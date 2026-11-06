@@ -1,7 +1,7 @@
 {
  "app": "mein-portfolio-feed",
  "version": 1,
- "generated_at": "2026-11-06T11:27:30+00:00",
+ "generated_at": "2026-11-06T12:24:02+00:00",
  "quotes_at": "2026-11-06T11:27:17+00:00",
  "web_at": "2026-11-06T11:27:17+00:00",
  "live_at": "2026-11-06T11:26:45+00:00",
@@ -1797,8 +1797,56 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-06T07:21:00+01:00",
+  "generated_at": "2026-11-06T13:25:00+01:00",
   "market": [
+   {
+    "headline": "Globaler Tech-Ausverkauf drückt Dax unter 26.000 Punkte",
+    "summary": "Der weltweite Abverkauf bei Technologiewerten zieht auch den Dax nach unten, der Leitindex fällt unter die Marke von 26.000 Punkten.",
+    "source": "dpa-AFX via finanznachrichten.de",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70058425-aktien-frankfurt-globaler-tech-ausverkauf-drueckt-dax-unter-26-000-punkte-016.htm",
+    "published_at": "2026-11-06T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Dax rutscht am Mittag trotz positiver Konjunkturimpulse weiter ab",
+    "summary": "Auch freundlichere Konjunkturdaten können den Dax am Freitagmittag nicht stützen, die Verluste weiten sich aus.",
+    "source": "finanznachrichten.de",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70058792-dax-rutscht-trotz-positiver-konjunkturimpulse-am-mittag-weiter-ab-003.htm",
+    "published_at": "2026-11-06T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Ölpreise steigen weiter, Brent knapp unter 100 Dollar",
+    "summary": "Die Ölpreise setzen ihren Anstieg fort; die Nordseesorte Brent nähert sich der Marke von 100 US-Dollar je Barrel.",
+    "source": "dpa-AFX via ARIVA.DE",
+    "url": "https://www.ariva.de/news/oelpreise-legen-weiter-zu-brent-knapp-unter-100-us-dollar-12197549",
+    "published_at": "2026-11-06T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Asiens Börsen folgen dem schwächsten Nasdaq-Tag seit 2020",
+    "summary": "Nach dem stärksten Tagesverlust der Nasdaq seit 2020 geraten auch die asiatischen Börsen unter Druck, der Dax startet mit Verlusten.",
+    "source": "onvista",
+    "url": "https://www.onvista.de/news/2026/11-06-dax-faellt-asien-folgt-schlechtestem-nasdaq-tag-seit-2020-41121301-19-26573305",
+    "published_at": "2026-11-06T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
    {
     "headline": "Dax vor Gewinnmitnahmen nach Tech-Einbruch in den USA",
     "summary": "Nach dem Rekordhoch vom Donnerstag deutet sich für den Dax ein schwächerer Start an. Belastend wirkt der heftige Ausverkauf bei US-Technologiewerten.",
@@ -1891,56 +1939,6 @@
     "source": "Moneycab via finanznachrichten.de",
     "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70031702-europa-verlauf-gewinne-nach-quartalszahlen-und-zwischenwahl-bankaktien-gefragt-095.htm",
     "published_at": "2026-11-04T13:09:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Dax springt nach US-Zwischenwahlen über 26.000 Punkte",
-    "summary": "Der Dax stieg bis zum Mittag um 1,45 Prozent auf rund 26.241 Punkte, die Unsicherheit vor den Wahlen ist verflogen. Heidelberg Materials und Continental führten nach Zahlen bzw. Prognoseanhebung die Gewinnerliste an, BMW legte trotz Gewinnwarnung leicht zu.",
-    "source": "dpa-AFX via finanznachrichten.de",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70031010-aktien-frankfurt-dax-mit-neuem-schwung-nach-us-zwischenwahlen-016.htm",
-    "published_at": "2026-11-04T12:17:00+01:00",
-    "kind": "news",
-    "tickers": [
-     "BMW"
-    ],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Goldpreis nach US-Zwischenwahlen wieder über 4.000 Dollar",
-    "summary": "Gold hat sich nach dem Ausgang der US-Zwischenwahlen kräftig erholt und die Marke von 4.000 US-Dollar je Feinunze zurückerobert.",
-    "source": "finanzen.net",
-    "url": "https://www.finanzen.net/nachricht/rohstoffe/goldpreis-und-oelpreis-goldpreis-starkes-comeback-ueber-4-000-dollar-nach-us-zwischenwahlen-16027388",
-    "published_at": "2026-11-04T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Dax vor Verlusten nach US-Zwischenwahlen",
-    "summary": "Der Dax wird rund ein halbes Prozent tiefer bei etwa 25.730 Punkten erwartet; Hochrechnungen deuten auf einen von Demokraten dominierten Kongress und mögliche politische Blockade hin. Der Nikkei fiel zeitweise auf den tiefsten Stand seit Mai.",
-    "source": "dpa-AFX (finanznachrichten.de)",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70026598-dax-flash-verluste-politische-unsicherheit-nach-us-zwischenwahlen-016.htm",
-    "published_at": "2026-11-04T06:42:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Wall Street: Nasdaq erholt sich dank Chipwerten",
-    "summary": "Der Nasdaq 100 stieg um 0,68 Prozent und beendete eine dreitägige Verlustserie, getragen von Nvidia, AMD und Broadcom; der Dow gab 0,38 Prozent nach. Schwache Ausblicke von Apple und Palantir bremsten.",
-    "source": "dpa-AFX (ariva.de)",
-    "url": "https://www.ariva.de/news/roundup-aktien-new-york-schluss-nasdaq-erholt-sich-dank-12193437",
-    "published_at": "2026-11-03T22:30:00+01:00",
     "kind": "news",
     "tickers": [],
     "peer": null,
@@ -2217,6 +2215,14 @@
     "id": "spacex",
     "items": [
      {
+      "headline": "SpaceX holt Qualcomm als Partner für Starlink-Mobilfunk",
+      "summary": "SpaceX arbeitet beim geplanten Mobilfunkangebot über Starlink mit dem Chipkonzern Qualcomm zusammen, was den Druck auf die US-Mobilfunkanbieter erhöht.",
+      "source": "finanznachrichten.de",
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70042725-qualcomm-landet-mega-deal-wichtiger-partner-fuer-elon-musks-angriff-auf-die-mobilfunkriesen-013.htm",
+      "published_at": "2026-11-05T12:00:00+01:00",
+      "kind": "news"
+     },
+     {
       "headline": "SpaceX fällt um 9 Prozent wegen Regulierungssorgen nach Zwischenwahlen",
       "summary": "Die SpaceX-Aktie verlor am Donnerstag rund 9 Prozent. Anleger fürchten nach den US-Zwischenwahlen eine strengere Regulierung.",
       "source": "Gotrade",
@@ -2246,14 +2252,6 @@
       "source": "heygotrade",
       "url": "https://www.heygotrade.com/en/news/spacex-spcx-stock-news-november-4-2026/",
       "published_at": "2026-11-03T12:00:00+01:00",
-      "kind": "news"
-     },
-     {
-      "headline": "Sharedeals hält Kursziel für 2027 für realistisch",
-      "summary": "Der Beitrag sieht im KI-Geschäft und im Satelliteninternet die wichtigsten Treiber für weiteres Kurspotenzial von SpaceX.",
-      "source": "sharedeals.de via finanznachrichten.de",
-      "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70016682-spacex-aktie-dieses-kursziel-fuer-2027-ist-realistisch-486.htm",
-      "published_at": "2026-11-03T11:10:00+01:00",
       "kind": "news"
      },
      {
@@ -2629,28 +2627,6 @@
  },
  "calendar": {
   "events": [
-   {
-    "date": "2026-11-06",
-    "time": "08:00",
-    "title": "DE Industrieproduktion September",
-    "type": "makro",
-    "region": "DE",
-    "holding": null,
-    "note": "",
-    "confirmed": true,
-    "url": "https://www.ariva.de/news/wochenvorschau-termine-bis-13-november-2026-12190165"
-   },
-   {
-    "date": "2026-11-06",
-    "time": "11:00",
-    "title": "Eurozone Einzelhandelsumsatz September",
-    "type": "makro",
-    "region": "EU",
-    "holding": null,
-    "note": "",
-    "confirmed": true,
-    "url": "https://ariva.de/news/wochenvorschau-termine-bis-16-november-2026-12191814"
-   },
    {
     "date": "2026-11-06",
     "time": "14:30",
