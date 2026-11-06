@@ -1,7 +1,7 @@
 {
  "app": "mein-portfolio-feed",
  "version": 1,
- "generated_at": "2026-11-05T21:26:44+00:00",
+ "generated_at": "2026-11-06T06:23:08+00:00",
  "quotes_at": "2026-11-05T21:26:27+00:00",
  "web_at": "2026-11-05T21:26:27+00:00",
  "live_at": "2026-11-05T20:57:23+00:00",
@@ -1795,8 +1795,94 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T13:30:00+01:00",
+  "generated_at": "2026-11-06T07:21:00+01:00",
   "market": [
+   {
+    "headline": "Dax vor Gewinnmitnahmen nach Tech-Einbruch in den USA",
+    "summary": "Nach dem Rekordhoch vom Donnerstag deutet sich für den Dax ein schwächerer Start an. Belastend wirkt der heftige Ausverkauf bei US-Technologiewerten.",
+    "source": "dpa-AFX via ARIVA.DE",
+    "url": "https://www.ariva.de/news/wdh-dax-flash-tech-einbruch-in-den-usa-bringt-12197521",
+    "published_at": "2026-11-06T07:21:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Bank of England hebt Leitzins auf 4,0 Prozent",
+    "summary": "Die britische Notenbank hat ihren Leitzins wie erwartet auf 4,0 Prozent angehoben – die erste Erhöhung seit 2023. Weitere Schritte schließt sie nicht aus.",
+    "source": "dpa-AFX via ARIVA.DE",
+    "url": "https://www.ariva.de/news/roundup-britische-notenbank-hebt-leitzins-wie-erwartet-auf-12196504",
+    "published_at": "2026-11-05T13:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Wall Street: Anleger flüchten aus Techwerten aus Angst vor KI-Regulierung",
+    "summary": "Technologiewerte brachen in New York ein, der Nasdaq verlor laut dpa-AFX 6,4 Prozent. Auslöser war die Furcht vor einer strengeren Regulierung von Künstlicher Intelligenz.",
+    "source": "dpa-AFX via onvista",
+    "url": "https://www.onvista.de/news/2026/11-05-aktien-new-york-schluss-flucht-aus-techwerten-furcht-vor-ki-regulierung-0-10-26573184",
+    "published_at": "2026-11-05T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [
+     "Amazon"
+    ],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Dax-Rally endet am Rekordhoch wegen US-Turbulenzen",
+    "summary": "Der Dax erreichte am Donnerstag ein Rekordhoch, die Rally geriet aber durch die Turbulenzen an den US-Börsen ins Stocken.",
+    "source": "dpa-AFX via finanznachrichten.de",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70049441-aktien-frankfurt-schluss-dax-rally-endet-am-rekordhoch-wegen-us-turbulenzen-016.htm",
+    "published_at": "2026-11-05T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Goldpreis unter Druck, Zentralbanken kaufen weiter",
+    "summary": "Der Goldpreis gab nach. Notenbanken stocken ihre Bestände dennoch weiter auf.",
+    "source": "ARIVA.DE",
+    "url": "https://www.ariva.de/news/goldpreis-unter-druck-zentralbanken-kaufen-weiter-zu-12195798",
+    "published_at": "2026-11-05T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Euro gibt Vortagsgewinne zum Dollar größtenteils ab",
+    "summary": "Der Euro verlor gegenüber dem US-Dollar wieder an Wert und machte die Gewinne vom Vortag weitgehend zunichte.",
+    "source": "dpa-AFX via ARIVA.DE",
+    "url": "https://ariva.de/news/devisen-eurokurs-gibt-vortagsgewinne-zum-us-dollar-12196968",
+    "published_at": "2026-11-05T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Europas Industriewerte uneinheitlich, Zinsentscheide und Rohstoffe im Fokus",
+    "summary": "Europäische Industrieaktien entwickelten sich gemischt. Im Blick der Anleger standen Zinsentscheide und eine Erholung bei Rohstoffen.",
+    "source": "finanznachrichten.de",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70046921-boerse-aktuell-europaeische-industrie-uneinheitlich-zinsentscheide-und-rohstoff-rebound-im-fokus-232.htm",
+    "published_at": "2026-11-05T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
    {
     "headline": "Europas Börsen legen nach Quartalszahlen und Zwischenwahl zu",
     "summary": "Die großen europäischen Märkte in Paris, London und Zürich gewannen deutlich, Bankaktien waren gefragt. Überzeugende Quartalszahlen gaben Anlegern laut CMC Markets neue Zuversicht.",
@@ -1853,92 +1939,6 @@
     "source": "dpa-AFX (ariva.de)",
     "url": "https://www.ariva.de/news/roundup-aktien-new-york-schluss-nasdaq-erholt-sich-dank-12193437",
     "published_at": "2026-11-03T22:30:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Dax schließt am US-Wahltag 0,45 Prozent tiefer",
-    "summary": "Der Dax fiel auf 25.864 Punkte und scheiterte erneut an der Marke von 26.000; Berichte über neue US-Angriffe im Iran trieben den Ölpreis. Bayer legte zu, Zalando und MTU verloren deutlich.",
-    "source": "dpa-AFX (ariva.de)",
-    "url": "https://www.ariva.de/news/roundup-aktien-frankfurt-schluss-dax-zur-us-wahl-unter-12193235",
-    "published_at": "2026-11-03T18:13:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Europas Börsen leicht im Minus, Technologiewerte schwächeln",
-    "summary": "Der EuroStoxx 50 lag mittags rund 0,5 Prozent tiefer bei gut 6.140 Punkten. Apples enttäuschender Ausblick, steigende Ölpreise und Vorsicht vor den US-Zwischenwahlen bremsen.",
-    "source": "dpa-AFX via ARIVA.DE",
-    "url": "https://www.ariva.de/news/aktien-europa-leichte-verluste-technologiewerte-12192516",
-    "published_at": "2026-11-03T12:10:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Dax am Mittag 0,6 Prozent tiefer, Ölpreis und Tech-Schwäche belasten",
-    "summary": "Der Dax fiel auf rund 25.830 Punkte, nachdem Berichte über neue US-Angriffe auf Ziele im Iran die Ölpreise steigen ließen und Apples Ausblick Techwerte drückte. TeamViewer brach nach einer Prognosesenkung um etwa ein Viertel ein.",
-    "source": "dpa-AFX via finanznachrichten.de",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70017281-aktien-frankfurt-dax-etwas-schwaecher-oelpreis-tech-schwaeche-quartalszahlen-016.htm",
-    "published_at": "2026-11-03T11:41:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Dax vor Rückschlag nach erneuter Tech-Schwäche in USA und Asien",
-    "summary": "Der Dax wird vorbörslich rund 0,8 Prozent tiefer bei etwa 25.780 Punkten erwartet. Halbleiterwerte belasten nach enttäuschenden KI-Signalen von Alphabet, Amazon und Intel, auch Japan und Südkorea geben nach.",
-    "source": "dpa-AFX/finanznachrichten.de",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70013506-dax-flash-rueckschlag-nach-neuerlicher-schwaeche-in-den-usa-und-asien-016.htm",
-    "published_at": "2026-11-03T06:52:00+01:00",
-    "kind": "news",
-    "tickers": [
-     "Amazon"
-    ],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Wall Street: Nasdaq-Erholung scheitert vor Apple-Zahlen und Wahlen",
-    "summary": "Der Nasdaq 100 fiel um 1,4 Prozent auf den tiefsten Stand seit Ende Juli, der Dow legte dagegen 0,4 Prozent zu. Oracle brach nach Plänen für eine große Kapitalerhöhung ein.",
-    "source": "dpa-AFX/ariva.de",
-    "url": "https://www.ariva.de/news/roundup-aktien-new-york-schluss-nasdaq-erholung-scheitert-12191682",
-    "published_at": "2026-11-02T22:43:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Dax schließt 0,6 Prozent fester vor Apple-Zahlen und US-Zwischenwahlen",
-    "summary": "Sinkende Ölpreise und Berichte über diplomatische Bemühungen im Iran-Konflikt stützten den Dax, der bei rund 25.981 Punkten schloss. Rheinmetall verlor nach einem Bericht über eine verzögerte Boxer-Bestellung 3,6 Prozent.",
-    "source": "dpa-AFX/finanznachrichten.de",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70010044-roundup-aktien-frankfurt-schluss-dax-legt-zu-vor-apple-und-zwischenwahlen-016.htm",
-    "published_at": "2026-11-02T18:03:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Dax legt zum Monatsanfang leicht zu, Ölpreise geben nach",
-    "summary": "Der Dax stand am Mittag rund 0,4 Prozent höher bei gut 25.900 Punkten; sinkende Ölpreise nach Berichten über diplomatische Bemühungen im US-Iran-Konflikt stützten. Vor den US-Zwischenwahlen und den Apple-Zahlen bleiben Anleger vorsichtig.",
-    "source": "dpa-AFX via finanznachrichten.de",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70004948-aktien-frankfurt-dax-legt-zum-monatsanfang-im-unsicheren-umfeld-etwas-zu-016.htm",
-    "published_at": "2026-11-02T11:43:00+01:00",
     "kind": "news",
     "tickers": [],
     "peer": null,
@@ -2101,6 +2101,16 @@
       "kind": "news"
      },
      {
+      "headline": "Deutsche Bank Research: bestätigt",
+      "summary": "Deutsche Bank Research bleibt nach den Quartalszahlen bei der Kaufempfehlung für BMW.",
+      "source": "finanznachrichten.de",
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70044324-deutsche-bank-research-stuft-bmw-auf-buy-322.htm",
+      "published_at": "2026-11-05T12:00:00+01:00",
+      "kind": "analyst",
+      "rating": "Buy",
+      "target": null
+     },
+     {
       "headline": "JPMorgan: Ziel gesenkt",
       "summary": "JPMorgan senkt nach den Quartalszahlen das Kursziel für BMW auf 68 Euro und bleibt bei Overweight.",
       "source": "dpa-AFX via finanzen.net",
@@ -2147,14 +2157,6 @@
       "source": "nokiamob.net",
       "url": "https://nokiamob.net/2026/11/01/nokia-q3-2026-strong-ai-growth-but-shares-tumble/",
       "published_at": "2026-11-01T18:29:00+01:00",
-      "kind": "news"
-     },
-     {
-      "headline": "Nokia baut Gewinnserie auf vier Tage aus",
-      "summary": "Nokia stieg um 3,41 Prozent, während Cisco und Ericsson leicht nachgaben. Einen klaren Auslöser gab es nicht, Deutsche Bank Research senkte das Kursziel bei bestätigter Kaufempfehlung auf 10 Euro.",
-      "source": "wallstreet-online",
-      "url": "https://www.wallstreet-online.de/nachricht/21597942-bewegt-anleger-nokia-kursplus-verlaengert-gewinnserie-tage",
-      "published_at": "2026-10-28T21:21:00+01:00",
       "kind": "news"
      },
      {
@@ -2213,6 +2215,22 @@
     "id": "spacex",
     "items": [
      {
+      "headline": "SpaceX fällt um 9 Prozent wegen Regulierungssorgen nach Zwischenwahlen",
+      "summary": "Die SpaceX-Aktie verlor am Donnerstag rund 9 Prozent. Anleger fürchten nach den US-Zwischenwahlen eine strengere Regulierung.",
+      "source": "Gotrade",
+      "url": "https://www.heygotrade.com/en/news/spacex-spcx-stock-news-november-6-2026/",
+      "published_at": "2026-11-05T12:00:00+01:00",
+      "kind": "news"
+     },
+     {
+      "headline": "SpaceX unter Druck durch verschärfte Prüfung nach der Wahl",
+      "summary": "Die Aktie fiel laut FX Leaders auf 135,92 Dollar, weil SpaceX nach den Wahlen stärker unter Beobachtung steht.",
+      "source": "FX Leaders",
+      "url": "https://www.fxleaders.com/news/2026/11/05/spcx-stock-falls-spacex-post-election-scrutiny/",
+      "published_at": "2026-11-05T12:00:00+01:00",
+      "kind": "news"
+     },
+     {
       "headline": "SpaceX und Raumfahrtwerte nach US-Zwischenwahlen schwächer",
       "summary": "Nach Gewinnen der Demokraten fürchten Anleger stärkere politische Kontrolle von Musks Geschäften mit der Regierung; SpaceX, AST SpaceMobile und Rocket Lab gaben nach.",
       "source": "Yahoo Finance",
@@ -2237,22 +2255,6 @@
       "kind": "news"
      },
      {
-      "headline": "SpaceX steigt um rund 4 Prozent nach Berichten über Boost-Mobile-Gespräche",
-      "summary": "SpaceX soll mit EchoStar über einen Kauf von Boost Mobile oder Netzzugang verhandeln, um als Mobilfunkanbieter anzutreten. Die Aktie legte deutlich zu, während AST SpaceMobile nachgab.",
-      "source": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/11/02/spacex-climbs-4-on-reported-boost-mobile-talks-ast-spacemobile-falls-4-rocket-lab-dips/",
-      "published_at": "2026-11-02T12:00:00+01:00",
-      "kind": "news"
-     },
-     {
-      "headline": "SpaceX schließt knapp unter dem Ausgabepreis",
-      "summary": "Die Aktie beendete den Freitag bei 134,72 Dollar und damit knapp unter dem IPO-Preis von 135 Dollar, rund 36 Prozent unter dem Rekordhoch. Als Gründe gelten das Ende der Haltefrist für viele Insider-Aktien und die Tech-Schwäche.",
-      "source": "FourWeekMBA",
-      "url": "https://fourweekmba.com/ai-spacex-shares-close-below-135-ipo-price-36-off-peak",
-      "published_at": "2026-11-02T12:00:00+01:00",
-      "kind": "news"
-     },
-     {
       "headline": "Bank of America: Ziel angehoben",
       "summary": "Bank of America hebt das Kursziel von 235 auf 275 Dollar und nimmt SpaceX in die US-1-Liste auf.",
       "source": "Der Aktionär",
@@ -2266,6 +2268,17 @@
    }
   ],
   "sell_side": [
+   {
+    "stock": "bmw",
+    "broker": "Deutsche Bank Research",
+    "action": "bestätigt",
+    "rating": "Buy",
+    "target": null,
+    "summary": "Deutsche Bank Research bleibt nach den Quartalszahlen bei der Kaufempfehlung für BMW.",
+    "source": "finanznachrichten.de",
+    "published_at": "2026-11-05T12:00:00+01:00",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70044324-deutsche-bank-research-stuft-bmw-auf-buy-322.htm"
+   },
    {
     "stock": "bmw",
     "broker": "JPMorgan",
@@ -2487,6 +2500,20 @@
   ],
   "sector": [
    {
+    "headline": "Rheinmetall kassiert Jahresziele, Aktie bricht ein",
+    "summary": "Der Rüstungskonzern hat seine Prognosen wegen Verzögerungen gesenkt, die Aktie stürzte daraufhin ab. Das belastete auch die Stimmung für Rüstungswerte.",
+    "source": "dpa-AFX via ARIVA.DE",
+    "url": "https://www.ariva.de/news/aktie-im-fokus-2-rheinmetall-gewinnwarnung-schockt-anleger-12195921",
+    "published_at": "2026-11-05T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [
+     "Babcock"
+    ],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
     "headline": "Rüstungswert Hensoldt am Mittwoch schwächer",
     "summary": "Die Aktie des Rüstungselektronik-Herstellers Hensoldt gab im Mittwochshandel nach.",
     "source": "finanzen.ch",
@@ -2536,20 +2563,6 @@
     "published_at": "2026-11-02T18:03:00+01:00",
     "kind": "news",
     "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Rüstungswerte geben vor Friedensgesprächen nach",
-    "summary": "Rheinmetall, Renk, Hensoldt und TKMS verloren am Freitag zwischen 0,3 und 2,3 Prozent. Belastend wirkten geplante Friedensgespräche zwischen Russland, der Ukraine und den USA im November sowie die anstehenden Quartalszahlen.",
-    "source": "finanzen.net",
-    "url": "https://www.finanzen.net/nachricht/aktien/ruestungswerte-unter-druck-aktien-von-rheinmetall-renk-hensoldt-tkms-geben-nach-was-anlegern-aktuell-sorgen-bereitet-16022706",
-    "published_at": "2026-10-30T19:26:00+01:00",
-    "kind": "news",
-    "tickers": [
-     "Babcock"
-    ],
     "peer": null,
     "popularity": null,
     "label": null
@@ -2609,80 +2622,11 @@
     "peer": "Rocket Lab",
     "popularity": null,
     "label": null
-   },
-   {
-    "headline": "Volkswagen mit Milliardenverlust im dritten Quartal, Aktie dreht ins Plus",
-    "summary": "VW verbuchte vor allem wegen einer Abschreibung auf Porsche rund 5,8 Milliarden Euro Verlust. Schwache Geschäfte in China und geringere Margen bei Elektroautos belasten, die Aktie stieg dennoch.",
-    "source": "dpa-AFX via ARIVA.DE",
-    "url": "https://www.ariva.de/news/roundup-3-die-gruende-fuer-den-milliardenverlust-bei-12187204",
-    "published_at": "2026-10-29T15:01:00+01:00",
-    "kind": "news",
-    "tickers": [
-     "BMW"
-    ],
-    "peer": "Volkswagen",
-    "popularity": null,
-    "label": null
    }
   ]
  },
  "calendar": {
   "events": [
-   {
-    "date": "2026-11-05",
-    "time": "08:00",
-    "title": "DE Auftragseingang Industrie September",
-    "type": "makro",
-    "region": "DE",
-    "holding": null,
-    "note": "",
-    "confirmed": true,
-    "url": "https://www.ariva.de/news/wochenvorschau-termine-bis-13-november-2026-12190165"
-   },
-   {
-    "date": "2026-11-05",
-    "time": "13:00",
-    "title": "Bank of England Zinsentscheid",
-    "type": "zins",
-    "region": "UK",
-    "holding": null,
-    "note": "Mit neuem Monetary Policy Report, die Bank of England führt den Termin als vorläufig.",
-    "confirmed": true,
-    "url": "https://www.ariva.de/news/wochenvorschau-termine-bis-13-november-2026-12190165"
-   },
-   {
-    "date": "2026-11-05",
-    "time": "14:30",
-    "title": "US BIP Q3 erste Schätzung",
-    "type": "makro",
-    "region": "US",
-    "holding": null,
-    "note": "",
-    "confirmed": true,
-    "url": "https://www.ariva.de/news/wochenvorschau-termine-bis-13-november-2026-12190165"
-   },
-   {
-    "date": "2026-11-05",
-    "time": "16:00",
-    "title": "US ISM-Index Dienstleistungen Oktober",
-    "type": "makro",
-    "region": "US",
-    "holding": null,
-    "note": "",
-    "confirmed": true,
-    "url": "https://www.ariva.de/news/wochenvorschau-termine-bis-13-november-2026-12190165"
-   },
-   {
-    "date": "2026-11-05",
-    "time": null,
-    "title": "Nokia Dividendenzahlung",
-    "type": "ir",
-    "region": "EU",
-    "holding": "nokia",
-    "note": "Auszahlung der Quartalsdividende von 0,03 EUR je Aktie.",
-    "confirmed": true,
-    "url": "https://www.investing.com/news/company-news/nokia-reports-9-q3-sales-growth-raises-restructuring-costs-93CH-4964614"
-   },
    {
     "date": "2026-11-06",
     "time": "08:00",
