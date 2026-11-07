@@ -1,6 +1,6 @@
 /* Service Worker: App offline startbar machen. Eigene Dateien zuerst aus dem Netz, sonst aus dem Speicher. */
-const CACHE = 'mein-portfolio-v9';
-const ASSETS = ['./', './index.html', './app.js?v=2.0.0', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png'];
+const CACHE = 'mein-portfolio-v10';
+const ASSETS = ['./', './index.html', './app.js?v=2.0.1', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png'];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(ASSETS)));

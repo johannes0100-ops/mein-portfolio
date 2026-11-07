@@ -3,7 +3,7 @@
    Stück, Kaufpreise, Chat und API-Schlüssel bleiben nur auf diesem Gerät (localStorage). */
 (function () {
   'use strict';
-  const APP_VERSION = '2.0.0';
+  const APP_VERSION = '2.0.1';
   const FEED_URL = 'data/feed.json'; // vom Claude-Dashboard veröffentlicht
   // Live-Kurse (Tradegate-Geldkurs) per GitHub Action. Direkt aus dem Repository, damit sie nicht auf den Seiten-Neubau warten.
   const LIVE_URLS = ['https://raw.githubusercontent.com/johannes0100-ops/mein-portfolio/main/data/live.json', 'data/live.json'];
@@ -18,7 +18,7 @@
   };
   const SEARCH_USD = 0.01; // 10 $ je 1.000 Suchen
   const K_DATA = 'pf.data.v1', K_KEY = 'pf.key', K_UI = 'pf.ui';
-  const NEWS_IN_APP = ['08:40', '13:40']; // wann neue News vom Dashboard in der App ankommen (Dashboard-Läufe 7:20 und 13:20)
+  const NEWS_IN_APP = ['07:40', '13:40']; // wann neue News in der App ankommen (News-Läufe täglich 7:20 und 13:20, auch am Wochenende)
 
   // ---------- Hilfen ----------
   const $ = (id) => document.getElementById(id);
@@ -30,6 +30,7 @@
   const tone = (v) => (v > 0 ? 'up' : v < 0 ? 'down' : '');
   const TZ = { timeZone: 'Europe/Berlin' };
   const fmtTime = (iso) => { if (!iso) return ''; const d = new Date(iso); return isNaN(d) ? '' : d.toLocaleString('de-DE', { ...TZ, day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' }); };
+  const fmtStamp = (iso) => { if (!iso) return ''; const d = new Date(iso); return isNaN(d) ? '' : d.toLocaleString('de-DE', { ...TZ, weekday: 'short', day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' }); };
   const fmtClock = (d) => new Date(d).toLocaleTimeString('de-DE', { ...TZ, hour: '2-digit', minute: '2-digit' });
   const nfEur = (v) => nf2.format(v) + ' €';
   const signEur = (v) => (v > 0 ? '+' : '') + nfEur(v);
@@ -44,18 +45,27 @@
   const short = (n) => (n || '').replace('Bayerische Motoren Werke AG', 'BMW').replace('Space Exploration Technologies Corp.', 'SpaceX').replace(/^Vanguard FTSE /, 'Vanguard ').replace(/ (Inc\.|Oyj|AG|PLC|Group|International|UCITS).*$/, '').replace('.com', '');
   const ISIN_RE = /^[A-Z]{2}[A-Z0-9]{9}[0-9]$/;
 
-  function nextSlot(times) {
+  function nextSlot(times, weekend) {
     const now = new Date();
     const wdOf = (d) => new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Berlin', weekday: 'short' }).format(d);
     const hmNow = new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Berlin', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).format(now);
     for (let add = 0; add < 8; add++) {
       const d = new Date(now.getTime() + add * 864e5);
-      if (['Sat', 'Sun'].includes(wdOf(d))) continue;
+      if (!weekend && ['Sat', 'Sun'].includes(wdOf(d))) continue;
       const t = [...times].sort().find((x) => add > 0 || x > hmNow);
       if (!t) continue;
       const day = add === 0 ? '' : add === 1 ? 'morgen ' : new Intl.DateTimeFormat('de-DE', { timeZone: 'Europe/Berlin', weekday: 'short' }).format(d) + ' ';
       return day + t.replace(/^0/, '') + ' Uhr';
     }
+    return null;
+  }
+  // Börsenzeit Tradegate (8 bis 22 Uhr, Mo bis Fr). Außerhalb gibt es keine neueren Kurse.
+  function marketState() {
+    const p = {}; new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Berlin', weekday: 'short', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).formatToParts(new Date()).forEach((x) => { p[x.type] = x.value; });
+    const hm = p.hour + ':' + p.minute;
+    if (p.weekday === 'Sat' || p.weekday === 'Sun' || (p.weekday === 'Fri' && hm >= '22:00')) return { note: 'Wochenende, Börse zu', next: 'Mo ab 8 Uhr' };
+    if (hm < '08:00') return { note: 'Börse öffnet um 8 Uhr', next: 'ab 8 Uhr' };
+    if (hm >= '22:00') return { note: 'Börse zu bis 8 Uhr', next: 'morgen ab 8 Uhr' };
     return null;
   }
 
@@ -140,10 +150,11 @@
   function renderStatus() {
     const busyTxt = { feed: 'lade neuesten Stand', quotes: 'Claude sucht Kurse', news: 'Claude sucht News', chat: 'Claude antwortet' }[busy];
     $('st-dot').className = 'dot' + (busy ? ' run' : data.quotes_at ? ' live' : '');
-    let t = data.quotes_at ? 'Kurse ' + fmtTime(data.quotes_at) : 'Noch keine Kurse';
-    if (data.news?.generated_at) t += ' · News ' + fmtTime(data.news.generated_at);
+    const ms = marketState();
+    let t = data.quotes_at ? 'Kurse ' + fmtStamp(data.quotes_at) + (ms ? ' (' + ms.note + ')' : '') : 'Noch keine Kurse';
+    if (data.news?.generated_at) t += ' · News ' + fmtStamp(data.news.generated_at);
     if (busyTxt) t += ' · ' + busyTxt + ' …';
-    else { const nx = nextSlot(NEWS_IN_APP); t += ' · Kurse alle 15 Minuten' + (nx ? ', neue News ab ' + nx : ''); }
+    else { const nx = nextSlot(NEWS_IN_APP, true); t += ' · ' + (ms ? 'neue Kurse ' + ms.next : 'Kurse alle 15 Minuten') + (nx ? ', neue News ab ' + nx : ''); }
     $('st-text').textContent = t;
     const rb = $('btn-refresh'); rb.disabled = !!busy; rb.textContent = busy === 'feed' ? 'Lädt …' : 'Kurse aktualisieren';
     const nb = $('btn-news'); nb.disabled = !!busy;
