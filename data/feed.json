@@ -1,7 +1,7 @@
 {
  "app": "mein-portfolio-feed",
  "version": 1,
- "generated_at": "2026-11-07T06:22:42+00:00",
+ "generated_at": "2026-11-07T12:22:26+00:00",
  "quotes_at": "2026-11-06T21:26:15+00:00",
  "web_at": "2026-11-06T21:26:15+00:00",
  "live_at": "2026-11-06T21:13:01+00:00",
@@ -1798,7 +1798,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-07T07:35:00+01:00",
+  "generated_at": "2026-11-07T13:35:00+01:00",
   "market": [
    {
     "headline": "Ausblick: US-Inflationsdaten bestimmen die kommende Woche",
@@ -1806,6 +1806,33 @@
     "source": "FXStreet",
     "url": "https://www.fxstreet.com/analysis/forecasting-the-upcoming-week-when-it-comes-to-us-inflation-size-matters-202611061844",
     "published_at": "2026-11-06T19:44:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Wall Street uneinheitlich: Starke Jobdaten nähren Zinssorgen",
+    "summary": "Die robusten US-Arbeitsmarktdaten ließen Anleger an der Wall Street über mögliche weitere Zinserhöhungen nachdenken; die Indizes zeigten sich uneinheitlich.",
+    "source": "Dow Jones via finanzen.at",
+    "url": "https://www.finanzen.at/nachrichten/aktien/maerkte-usa-uneinheitlich-payrolls-nahren-zinserhoehungssorgen-1036729915",
+    "published_at": "2026-11-06T16:00:00+01:00",
+    "kind": "news",
+    "tickers": [
+     "Amazon",
+     "SpaceX"
+    ],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "US-Arbeitsmarkt im Oktober deutlich stärker als erwartet",
+    "summary": "Die US-Wirtschaft hat im Oktober mehr Stellen geschaffen als Volkswirte erwartet hatten. Das stützt den Dollar, schürt aber Sorgen vor weiter hohen Zinsen.",
+    "source": "dpa-AFX via ariva.de",
+    "url": "https://www.ariva.de/news/roundup-us-arbeitsmarkt-entwickelt-sich-deutlich-staerker-12198368",
+    "published_at": "2026-11-06T15:30:00+01:00",
     "kind": "news",
     "tickers": [],
     "peer": null,
@@ -1921,38 +1948,20 @@
     "peer": null,
     "popularity": null,
     "label": null
-   },
-   {
-    "headline": "Wall Street: Anleger flüchten aus Techwerten aus Angst vor KI-Regulierung",
-    "summary": "Technologiewerte brachen in New York ein, der Nasdaq verlor laut dpa-AFX 6,4 Prozent. Auslöser war die Furcht vor einer strengeren Regulierung von Künstlicher Intelligenz.",
-    "source": "dpa-AFX via onvista",
-    "url": "https://www.onvista.de/news/2026/11-05-aktien-new-york-schluss-flucht-aus-techwerten-furcht-vor-ki-regulierung-0-10-26573184",
-    "published_at": "2026-11-05T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [
-     "Amazon"
-    ],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Dax-Rally endet am Rekordhoch wegen US-Turbulenzen",
-    "summary": "Der Dax erreichte am Donnerstag ein Rekordhoch, die Rally geriet aber durch die Turbulenzen an den US-Börsen ins Stocken.",
-    "source": "dpa-AFX via finanznachrichten.de",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70049441-aktien-frankfurt-schluss-dax-rally-endet-am-rekordhoch-wegen-us-turbulenzen-016.htm",
-    "published_at": "2026-11-05T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
    }
   ],
   "positions": [
    {
     "id": "amzn",
     "items": [
+     {
+      "headline": "Amazon-Chef Jassy macht wichtige Ankündigung für Aktionäre",
+      "summary": "Laut The Motley Fool hat CEO Andy Jassy Neuigkeiten verkündet, die für Amazon-Anleger bedeutend sein sollen. Der Beitrag ordnet die Folgen für die Aktie ein.",
+      "source": "The Motley Fool",
+      "url": "https://www.fool.com/investing/2026/11/06/amazons-ceo-andy-jassy-just-announced-huge-news/",
+      "published_at": "2026-11-06T12:00:00+01:00",
+      "kind": "news"
+     },
      {
       "headline": "Amazon-Aktie fällt mit Tech-Werten um 2,2 Prozent",
       "summary": "Im breiten Abverkauf von Technologieaktien verlor Amazon am 5. November rund 2,2 Prozent.",
@@ -1982,14 +1991,6 @@
       "summary": "Nach dem Kursrutsch infolge der Quartalszahlen erholte sich die Amazon-Aktie zum Wochenstart etwas.",
       "source": "finanzen.net",
       "url": "https://finanzen.net/nachricht/aktien/amazon-aktie-kursbewegung-02-11-2026-11202036",
-      "published_at": "2026-11-02T12:00:00+01:00",
-      "kind": "news"
-     },
-     {
-      "headline": "Analysten sehen Amazons Full-Stack-Ansatz bei KI als Vorteil",
-      "summary": "Analysten heben Amazons modellunabhängigen KI-Ansatz und die eigenen Kapazitäten über die ganze Technik-Kette als Wettbewerbsvorteil hervor.",
-      "source": "finanznachrichten.de",
-      "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70008640-amazon-im-analysten-fokus-modellunabhaengiger-ansatz-und-full-stack-kapazitaeten-als-starker-wettbewerbsvorteil-046.htm",
       "published_at": "2026-11-02T12:00:00+01:00",
       "kind": "news"
      },
@@ -2234,6 +2235,14 @@
     "id": "spacex",
     "items": [
      {
+      "headline": "Texas' neue Gouverneurin gilt als gute Nachricht für SpaceX",
+      "summary": "Nach Einschätzung von The Motley Fool ist der Wahlsieg von Gina Hinojosa in Texas positiv für SpaceX-Anleger; die Aktie legte am Freitag zu.",
+      "source": "The Motley Fool",
+      "url": "https://www.fool.com/investing/2026/11/06/texas-gov-elect-gina-hinojosa-just-delivered-fanta/",
+      "published_at": "2026-11-06T12:00:00+01:00",
+      "kind": "news"
+     },
+     {
       "headline": "SpaceX-Aktie springt um rund 8 Prozent",
       "summary": "Nach dem Einbruch am Vortag erholte sich die SpaceX-Aktie am Freitag mit einem Plus von etwa 8 Prozent.",
       "source": "TipRanks",
@@ -2263,14 +2272,6 @@
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/markets/stocks/articles/midterm-election-impact-spcx-asts-065043362.html",
       "published_at": "2026-11-04T07:50:00+01:00",
-      "kind": "news"
-     },
-     {
-      "headline": "SpaceX steigt nach Berichten über EchoStar-Gespräche",
-      "summary": "Die SpaceX-Aktie legte am Dienstag um rund 3,6 Prozent zu, nachdem über Gespräche mit EchoStar berichtet wurde.",
-      "source": "heygotrade",
-      "url": "https://www.heygotrade.com/en/news/spacex-spcx-stock-news-november-4-2026/",
-      "published_at": "2026-11-03T12:00:00+01:00",
       "kind": "news"
      },
      {
