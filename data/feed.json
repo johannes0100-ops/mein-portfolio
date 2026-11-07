@@ -1,7 +1,7 @@
 {
  "app": "mein-portfolio-feed",
  "version": 1,
- "generated_at": "2026-11-06T21:26:32+00:00",
+ "generated_at": "2026-11-07T06:22:42+00:00",
  "quotes_at": "2026-11-06T21:26:15+00:00",
  "web_at": "2026-11-06T21:26:15+00:00",
  "live_at": "2026-11-06T21:13:01+00:00",
@@ -1798,8 +1798,20 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-06T13:25:00+01:00",
+  "generated_at": "2026-11-07T07:35:00+01:00",
   "market": [
+   {
+    "headline": "Ausblick: US-Inflationsdaten bestimmen die kommende Woche",
+    "summary": "Im Mittelpunkt der neuen Woche stehen die US-Verbraucherpreise, deren Höhe die Zinserwartungen an die Fed prägen dürfte.",
+    "source": "FXStreet",
+    "url": "https://www.fxstreet.com/analysis/forecasting-the-upcoming-week-when-it-comes-to-us-inflation-size-matters-202611061844",
+    "published_at": "2026-11-06T19:44:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
    {
     "headline": "Globaler Tech-Ausverkauf drückt Dax unter 26.000 Punkte",
     "summary": "Der weltweite Abverkauf bei Technologiewerten zieht auch den Dax nach unten, der Leitindex fällt unter die Marke von 26.000 Punkten.",
@@ -1841,6 +1853,44 @@
     "summary": "Nach dem stärksten Tagesverlust der Nasdaq seit 2020 geraten auch die asiatischen Börsen unter Druck, der Dax startet mit Verlusten.",
     "source": "onvista",
     "url": "https://www.onvista.de/news/2026/11-06-dax-faellt-asien-folgt-schlechtestem-nasdaq-tag-seit-2020-41121301-19-26573305",
+    "published_at": "2026-11-06T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Wochenausblick: Dax sucht Richtung zwischen KI-Sorgen und Iran-Hoffnung",
+    "summary": "Nach dem Tech-Ausverkauf dürfte der Dax in der neuen Woche zwischen Sorgen um KI-Bewertungen und Hoffnungen auf Entspannung im Iran-Konflikt schwanken.",
+    "source": "dpa-AFX via ARIVA.DE",
+    "url": "https://www.ariva.de/news/wochenausblick-dax-zwischen-ki-sorgen-und-iran-hoffnung-auf-12198353",
+    "published_at": "2026-11-06T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Wall Street: Tech-Sektor erholt sich etwas vom Ausverkauf",
+    "summary": "Zum Wochenschluss haben sich Technologiewerte in New York nach dem jüngsten Ausverkauf teilweise erholt.",
+    "source": "dpa-AFX via ARIVA.DE",
+    "url": "https://www.ariva.de/news/roundup-aktien-new-york-schluss-tech-sektor-erholt-sich-12198681",
+    "published_at": "2026-11-06T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [
+     "Amazon"
+    ],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Gold gibt vor US-Arbeitsmarktdaten nach, steuert aber auf starke Woche zu",
+    "summary": "Steigende Ölpreise belasteten den Goldpreis vor dem US-Jobbericht; auf Wochensicht zeichnete sich dennoch das stärkste Plus seit über zwei Monaten ab.",
+    "source": "MarketScreener",
+    "url": "https://de.marketscreener.com/boerse-nachrichten/goldpreis-faellt-wegen-hoeherer-oelpreise-um-mehr-als-1-us-arbeitsmarktdaten-im-fokus-ce785fdddf8ef027",
     "published_at": "2026-11-06T12:00:00+01:00",
     "kind": "news",
     "tickers": [],
@@ -1897,60 +1947,20 @@
     "peer": null,
     "popularity": null,
     "label": null
-   },
-   {
-    "headline": "Goldpreis unter Druck, Zentralbanken kaufen weiter",
-    "summary": "Der Goldpreis gab nach. Notenbanken stocken ihre Bestände dennoch weiter auf.",
-    "source": "ARIVA.DE",
-    "url": "https://www.ariva.de/news/goldpreis-unter-druck-zentralbanken-kaufen-weiter-zu-12195798",
-    "published_at": "2026-11-05T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Euro gibt Vortagsgewinne zum Dollar größtenteils ab",
-    "summary": "Der Euro verlor gegenüber dem US-Dollar wieder an Wert und machte die Gewinne vom Vortag weitgehend zunichte.",
-    "source": "dpa-AFX via ARIVA.DE",
-    "url": "https://ariva.de/news/devisen-eurokurs-gibt-vortagsgewinne-zum-us-dollar-12196968",
-    "published_at": "2026-11-05T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Europas Industriewerte uneinheitlich, Zinsentscheide und Rohstoffe im Fokus",
-    "summary": "Europäische Industrieaktien entwickelten sich gemischt. Im Blick der Anleger standen Zinsentscheide und eine Erholung bei Rohstoffen.",
-    "source": "finanznachrichten.de",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70046921-boerse-aktuell-europaeische-industrie-uneinheitlich-zinsentscheide-und-rohstoff-rebound-im-fokus-232.htm",
-    "published_at": "2026-11-05T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Europas Börsen legen nach Quartalszahlen und Zwischenwahl zu",
-    "summary": "Die großen europäischen Märkte in Paris, London und Zürich gewannen deutlich, Bankaktien waren gefragt. Überzeugende Quartalszahlen gaben Anlegern laut CMC Markets neue Zuversicht.",
-    "source": "Moneycab via finanznachrichten.de",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70031702-europa-verlauf-gewinne-nach-quartalszahlen-und-zwischenwahl-bankaktien-gefragt-095.htm",
-    "published_at": "2026-11-04T13:09:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
    }
   ],
   "positions": [
    {
     "id": "amzn",
     "items": [
+     {
+      "headline": "Amazon-Aktie fällt mit Tech-Werten um 2,2 Prozent",
+      "summary": "Im breiten Abverkauf von Technologieaktien verlor Amazon am 5. November rund 2,2 Prozent.",
+      "source": "Gotrade",
+      "url": "https://www.heygotrade.com/en/news/amazon-amzn-stock-news-november-6-2026/",
+      "published_at": "2026-11-06T12:00:00+01:00",
+      "kind": "news"
+     },
      {
       "headline": "Amazon-Aktie am Dienstagabend gefragt",
       "summary": "Die Amazon-Aktie legte im US-Handel am Dienstag zu.",
@@ -1981,14 +1991,6 @@
       "source": "finanznachrichten.de",
       "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70008640-amazon-im-analysten-fokus-modellunabhaengiger-ansatz-und-full-stack-kapazitaeten-als-starker-wettbewerbsvorteil-046.htm",
       "published_at": "2026-11-02T12:00:00+01:00",
-      "kind": "news"
-     },
-     {
-      "headline": "Amazon dämmt Tagesverlust ein, Aktie schließt rund 1,4 Prozent tiefer",
-      "summary": "Die Aktie fiel nach den Zahlen zeitweise um sechs Prozent auf den tiefsten Stand seit Ende Juli, erholte sich dann aber deutlich. UBS nannte enttäuschende Umsätze bei AWS als Grund, zudem belasten die hohen KI-Ausgaben.",
-      "source": "dpa-AFX via onvista",
-      "url": "https://www.onvista.de/news/2026/10-30-roundup-aktien-new-york-schluss-tech-ausverkauf-wegen-amazon-und-intel-0-10-26570604",
-      "published_at": "2026-10-30T20:27:00+01:00",
       "kind": "news"
      },
      {
@@ -2046,6 +2048,14 @@
    {
     "id": "babcock",
     "items": [
+     {
+      "headline": "Babcock-Aktie vor Halbjahreszahlen bei 12,16 Euro",
+      "summary": "Die Babcock-Aktie notiert vor der anstehenden Vorlage der Halbjahreszahlen bei rund 12,16 Euro.",
+      "source": "ad-hoc-news.de",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/babcock-stock-trades-at-12-16-euros-ahead-of-half-year-results/70471580",
+      "published_at": "2026-11-06T12:00:00+01:00",
+      "kind": "news"
+     },
      {
       "headline": "Goldman Sachs: Erststudie",
       "summary": "Goldman nimmt die Aktie mit Neutral und 1.000 Pence Kursziel in die Bewertung auf.",
@@ -2137,6 +2147,14 @@
     "id": "nokia",
     "items": [
      {
+      "headline": "Nokia: AI-RAN rückt näher an kommerzielle Netze",
+      "summary": "Nokias KI-gestützte Funknetztechnik (AI-RAN) nähert sich laut Bericht dem Einsatz in kommerziellen Mobilfunknetzen.",
+      "source": "ad-hoc-news.de",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/nokia-aktie-ai-ran-rueckt-naeher-an-kommerzielle-netze/70470753",
+      "published_at": "2026-11-06T12:00:00+01:00",
+      "kind": "news"
+     },
+     {
       "headline": "Nokia: KI-Wachstum stark, Cashflow-Ziel gesenkt",
       "summary": "Nokia hält am Gewinnziel für 2026 fest, erwartet aber eine geringere Umwandlung des Gewinns in freien Cashflow wegen Working Capital und Restrukturierung.",
       "source": "ad-hoc-news.de",
@@ -2216,6 +2234,14 @@
     "id": "spacex",
     "items": [
      {
+      "headline": "SpaceX-Aktie springt um rund 8 Prozent",
+      "summary": "Nach dem Einbruch am Vortag erholte sich die SpaceX-Aktie am Freitag mit einem Plus von etwa 8 Prozent.",
+      "source": "TipRanks",
+      "url": "https://www.tipranks.com/news/why-spacex-stock-spcx-jumped-8-today-november-6-2026",
+      "published_at": "2026-11-06T12:00:00+01:00",
+      "kind": "news"
+     },
+     {
       "headline": "SpaceX holt Qualcomm als Partner für Starlink-Mobilfunk",
       "summary": "SpaceX arbeitet beim geplanten Mobilfunkangebot über Starlink mit dem Chipkonzern Qualcomm zusammen, was den Druck auf die US-Mobilfunkanbieter erhöht.",
       "source": "finanznachrichten.de",
@@ -2228,14 +2254,6 @@
       "summary": "Die SpaceX-Aktie verlor am Donnerstag rund 9 Prozent. Anleger fürchten nach den US-Zwischenwahlen eine strengere Regulierung.",
       "source": "Gotrade",
       "url": "https://www.heygotrade.com/en/news/spacex-spcx-stock-news-november-6-2026/",
-      "published_at": "2026-11-05T12:00:00+01:00",
-      "kind": "news"
-     },
-     {
-      "headline": "SpaceX unter Druck durch verschärfte Prüfung nach der Wahl",
-      "summary": "Die Aktie fiel laut FX Leaders auf 135,92 Dollar, weil SpaceX nach den Wahlen stärker unter Beobachtung steht.",
-      "source": "FX Leaders",
-      "url": "https://www.fxleaders.com/news/2026/11/05/spcx-stock-falls-spacex-post-election-scrutiny/",
       "published_at": "2026-11-05T12:00:00+01:00",
       "kind": "news"
      },
@@ -2571,6 +2589,34 @@
   ],
   "peers": [
    {
+    "headline": "Rocket Lab fängt Kursrutsch am Freitag ab",
+    "summary": "Die Rocket-Lab-Aktie erholte sich am Freitag von zwischenzeitlich deutlichen Verlusten.",
+    "source": "Benzinga",
+    "url": "https://www.benzinga.com/trading-ideas/movers/26/11/62973089/rocket-lab-stock-pulls-out-of-a-nosedive-friday-whats-going-on",
+    "published_at": "2026-11-06T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [
+     "SpaceX"
+    ],
+    "peer": "Rocket Lab",
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Rocket Lab fällt auf Sechs-Monats-Tief",
+    "summary": "Die Aktie des SpaceX-Konkurrenten markierte ein neues Tief seit sechs Monaten.",
+    "source": "boerse.de",
+    "url": "https://www.boerse.de/nachrichten/Rocket-Lab-Aktie-mit-neuem-6-Monats-Tief/38706863",
+    "published_at": "2026-11-05T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [
+     "SpaceX"
+    ],
+    "peer": "Rocket Lab",
+    "popularity": null,
+    "label": null
+   },
+   {
     "headline": "VW-Vorzüge am Dienstagnachmittag im Minus",
     "summary": "Die Vorzugsaktie von Volkswagen gab im Handel am Dienstag nach.",
     "source": "finanzen.net",
@@ -2609,47 +2655,11 @@
     "peer": "Mercedes-Benz",
     "popularity": null,
     "label": null
-   },
-   {
-    "headline": "Rocket Lab: Charttechniker warnen vor weiterem Rückgang",
-    "summary": "Bei einem Fall unter 50 US-Dollar droht der Rocket-Lab-Aktie laut einer Chartanalyse ein weiteres Minus von rund 20 Prozent.",
-    "source": "finanznachrichten.de",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70010053-rocket-lab-aktie-weitere-20-drohen-unterhalb-von-50-us-dollar-486.htm",
-    "published_at": "2026-11-02T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [
-     "SpaceX"
-    ],
-    "peer": "Rocket Lab",
-    "popularity": null,
-    "label": null
    }
   ]
  },
  "calendar": {
   "events": [
-   {
-    "date": "2026-11-06",
-    "time": "14:30",
-    "title": "US Arbeitsmarktbericht Oktober",
-    "type": "makro",
-    "region": "US",
-    "holding": null,
-    "note": "Employment Situation, 8:30 Uhr ET.",
-    "confirmed": true,
-    "url": "https://www.bls.gov/schedule/2026/11_sched_list.htm"
-   },
-   {
-    "date": "2026-11-06",
-    "time": "16:00",
-    "title": "US Uni Michigan Verbrauchervertrauen November (vorläufig)",
-    "type": "makro",
-    "region": "US",
-    "holding": null,
-    "note": "",
-    "confirmed": true,
-    "url": "https://ariva.de/news/wochenvorschau-termine-bis-16-november-2026-12191814"
-   },
    {
     "date": "2026-11-09",
     "time": "08:00",
