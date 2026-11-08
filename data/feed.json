@@ -1,7 +1,7 @@
 {
  "app": "mein-portfolio-feed",
  "version": 1,
- "generated_at": "2026-11-08T06:22:53+00:00",
+ "generated_at": "2026-11-08T12:22:03+00:00",
  "quotes_at": "2026-11-06T21:26:15+00:00",
  "web_at": "2026-11-06T21:26:15+00:00",
  "live_at": "2026-11-06T21:13:01+00:00",
@@ -1798,8 +1798,20 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-08T07:35:00+01:00",
+  "generated_at": "2026-11-08T13:21:48+01:00",
   "market": [
+   {
+    "headline": "Wochenausblick: Quartalszahlen, Preisdaten und Konjunkturindikatoren prägen die Woche",
+    "summary": "Die neue Börsenwoche wird von einer Reihe von Unternehmenszahlen sowie Inflations- und Konjunkturdaten bestimmt. Im Mittelpunkt stehen vor allem die US-Verbraucherpreise.",
+    "source": "onvista (dpa-AFX)",
+    "url": "https://www.onvista.de/news/2026/11-08-wochenausblick-quartalszahlen-preisdaten-und-konjunkturindikatoren-praegen-die-woche-0-12-26573888",
+    "published_at": "2026-11-08T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
    {
     "headline": "Wochenrückblick: Börsenwoche zwischen Wahlrally und Tech-Ausverkauf",
     "summary": "Die vergangene Woche brachte zunächst eine Erholung nach den US-Zwischenwahlen, danach belastete ein kräftiger Ausverkauf bei Technologiewerten die Märkte.",
@@ -1880,18 +1892,6 @@
     "summary": "Die Ölpreise setzen ihren Anstieg fort; die Nordseesorte Brent nähert sich der Marke von 100 US-Dollar je Barrel.",
     "source": "dpa-AFX via ARIVA.DE",
     "url": "https://www.ariva.de/news/oelpreise-legen-weiter-zu-brent-knapp-unter-100-us-dollar-12197549",
-    "published_at": "2026-11-06T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Asiens Börsen folgen dem schwächsten Nasdaq-Tag seit 2020",
-    "summary": "Nach dem stärksten Tagesverlust der Nasdaq seit 2020 geraten auch die asiatischen Börsen unter Druck, der Dax startet mit Verlusten.",
-    "source": "onvista",
-    "url": "https://www.onvista.de/news/2026/11-06-dax-faellt-asien-folgt-schlechtestem-nasdaq-tag-seit-2020-41121301-19-26573305",
     "published_at": "2026-11-06T12:00:00+01:00",
     "kind": "news",
     "tickers": [],
@@ -2139,6 +2139,14 @@
    {
     "id": "nokia",
     "items": [
+     {
+      "headline": "Nokia nach Crash-Monat: Was der November bringen könnte",
+      "summary": "Ein Aktien-Check blickt auf den starken Kursrückgang von Nokia im Oktober und fragt, wie es im November weitergehen könnte.",
+      "source": "wallstreet-online",
+      "url": "https://wallstreet-online.de/nachricht/21658746-aktie-check-crash-monat-nokia-bedeutet-november-2026",
+      "published_at": "2026-11-08T12:00:00+01:00",
+      "kind": "news"
+     },
      {
       "headline": "Nokia: AI-RAN rückt näher an kommerzielle Netze",
       "summary": "Nokias KI-gestützte Funknetztechnik (AI-RAN) nähert sich laut Bericht dem Einsatz in kommerziellen Mobilfunknetzen.",
