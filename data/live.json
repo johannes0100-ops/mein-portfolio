@@ -3,21 +3,21 @@
  "version": 1,
  "source": "Tradegate",
  "price_field": "bid",
- "updated_at": "2026-11-09T18:18:56+00:00",
+ "updated_at": "2026-11-09T18:44:26+00:00",
  "quotes": {
   "amzn": {
-   "bid": 239.25,
-   "ask": 239.3,
-   "last": 239.25,
+   "bid": 239.1,
+   "ask": 239.15,
+   "last": 239.0,
    "prev_close": 232.8,
    "high": 245.55,
    "low": 231.0,
-   "delta_pct": 2.77,
-   "trades": 2278.0,
+   "delta_pct": 2.66,
+   "trades": 2307.0,
    "isin": "US0231351067",
-   "eur": 239.25,
+   "eur": 239.1,
    "eur_field": "bid",
-   "d1": 2.77
+   "d1": 2.66
   },
   "babcock": {
    "bid": 12.7,
@@ -34,60 +34,60 @@
    "d1": 3.38
   },
   "bmw": {
-   "bid": 58.92,
-   "ask": 59.0,
-   "last": 59.0,
+   "bid": 58.94,
+   "ask": 59.02,
+   "last": 59.02,
    "prev_close": 59.1,
    "high": 59.66,
    "low": 58.64,
-   "delta_pct": -0.17,
-   "trades": 703.0,
+   "delta_pct": -0.14,
+   "trades": 728.0,
    "isin": "DE0005190003",
-   "eur": 58.92,
+   "eur": 58.94,
    "eur_field": "bid",
-   "d1": -0.17
+   "d1": -0.14
   },
   "nokia": {
-   "bid": 7.346,
-   "ask": 7.386,
-   "last": 7.356,
+   "bid": 7.362,
+   "ask": 7.402,
+   "last": 7.402,
    "prev_close": 6.974,
    "high": 7.43,
    "low": 6.86,
-   "delta_pct": 5.48,
-   "trades": 415.0,
+   "delta_pct": 6.14,
+   "trades": 422.0,
    "isin": "FI0009000681",
-   "eur": 7.346,
+   "eur": 7.362,
    "eur_field": "bid",
-   "d1": 5.48
+   "d1": 6.14
   },
   "spacex": {
    "bid": 125.76,
    "ask": 125.86,
-   "last": 125.94,
+   "last": 125.86,
    "prev_close": 120.44,
    "high": 127.82,
    "low": 119.02,
-   "delta_pct": 4.57,
-   "trades": 2411.0,
+   "delta_pct": 4.5,
+   "trades": 2472.0,
    "isin": "US84615Q1031",
    "eur": 125.76,
    "eur_field": "bid",
-   "d1": 4.57
+   "d1": 4.5
   },
   "vanguard": {
    "bid": 126.22,
-   "ask": 126.36,
-   "last": 126.24,
+   "ask": 126.38,
+   "last": 126.2,
    "prev_close": 124.1,
    "high": 126.34,
    "low": 123.58,
-   "delta_pct": 1.72,
-   "trades": 148.0,
+   "delta_pct": 1.69,
+   "trades": 150.0,
    "isin": "IE00BKX55T58",
    "eur": 126.22,
    "eur_field": "bid",
-   "d1": 1.72
+   "d1": 1.69
   }
  },
  "errors": [
