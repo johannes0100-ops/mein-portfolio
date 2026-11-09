@@ -3,21 +3,21 @@
  "version": 1,
  "source": "Tradegate",
  "price_field": "bid",
- "updated_at": "2026-11-09T07:09:36+00:00",
+ "updated_at": "2026-11-09T07:23:53+00:00",
  "quotes": {
   "amzn": {
-   "bid": 233.5,
-   "ask": 234.45,
-   "last": 233.5,
+   "bid": 233.0,
+   "ask": 234.0,
+   "last": 233.0,
    "prev_close": 232.8,
    "high": 234.5,
-   "low": 233.05,
-   "delta_pct": 0.3,
-   "trades": 317.0,
+   "low": 233.0,
+   "delta_pct": 0.09,
+   "trades": 347.0,
    "isin": "US0231351067",
-   "eur": 233.5,
+   "eur": 233.0,
    "eur_field": "bid",
-   "d1": 0.3
+   "d1": 0.09
   },
   "babcock": {
    "bid": 12.08,
@@ -30,18 +30,18 @@
    "d1": 0.0
   },
   "bmw": {
-   "bid": 59.08,
+   "bid": 59.02,
    "ask": 59.28,
-   "last": 59.08,
+   "last": 59.02,
    "prev_close": 59.1,
    "high": 59.36,
    "low": 59.02,
-   "delta_pct": -0.03,
-   "trades": 99.0,
+   "delta_pct": -0.14,
+   "trades": 116.0,
    "isin": "DE0005190003",
-   "eur": 59.08,
+   "eur": 59.02,
    "eur_field": "bid",
-   "d1": -0.03
+   "d1": -0.14
   },
   "nokia": {
    "bid": 6.9,
@@ -51,29 +51,29 @@
    "high": 6.95,
    "low": 6.9,
    "delta_pct": -1.06,
-   "trades": 37.0,
+   "trades": 40.0,
    "isin": "FI0009000681",
    "eur": 6.9,
    "eur_field": "bid",
    "d1": -1.06
   },
   "spacex": {
-   "bid": 121.02,
-   "ask": 121.96,
-   "last": 121.98,
+   "bid": 120.6,
+   "ask": 121.32,
+   "last": 121.32,
    "prev_close": 120.44,
    "high": 122.0,
-   "low": 121.02,
-   "delta_pct": 1.28,
-   "trades": 311.0,
+   "low": 120.6,
+   "delta_pct": 0.73,
+   "trades": 377.0,
    "isin": "US84615Q1031",
-   "eur": 121.02,
+   "eur": 120.6,
    "eur_field": "bid",
-   "d1": 1.28
+   "d1": 0.73
   },
   "vanguard": {
-   "bid": 124.0,
-   "ask": 124.44,
+   "bid": 123.98,
+   "ask": 124.34,
    "last": 124.46,
    "prev_close": 124.1,
    "high": 124.7,
@@ -81,7 +81,7 @@
    "delta_pct": 0.29,
    "trades": 34.0,
    "isin": "IE00BKX55T58",
-   "eur": 124.0,
+   "eur": 123.98,
    "eur_field": "bid",
    "d1": 0.29
   }
