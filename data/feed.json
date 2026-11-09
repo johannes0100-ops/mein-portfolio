@@ -1,7 +1,7 @@
 {
  "app": "mein-portfolio-feed",
  "version": 1,
- "generated_at": "2026-11-08T12:22:03+00:00",
+ "generated_at": "2026-11-09T06:25:15+00:00",
  "quotes_at": "2026-11-06T21:26:15+00:00",
  "web_at": "2026-11-06T21:26:15+00:00",
  "live_at": "2026-11-06T21:13:01+00:00",
@@ -1798,8 +1798,56 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-08T13:21:48+01:00",
+  "generated_at": "2026-11-09T07:30:00+01:00",
   "market": [
+   {
+    "headline": "Tagesvorschau: Die Termine am Montag, 9. November",
+    "summary": "dpa-AFX listet die Unternehmens- und Konjunkturtermine zum Wochenstart, darunter deutsche Handelsdaten und den Sentix-Index.",
+    "source": "dpa-AFX via onvista",
+    "url": "https://www.onvista.de/news/2026/11-09-tagesvorschau-termine-am-9-november-2026-0-10-26573950",
+    "published_at": "2026-11-09T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Wochenvorschau: Termine bis 20. November",
+    "summary": "Überblick über Quartalszahlen und Konjunkturdaten der kommenden knapp zwei Wochen.",
+    "source": "dpa-AFX via ARIVA.DE",
+    "url": "https://www.ariva.de/news/wochenvorschau-termine-bis-20-november-2026-12199392",
+    "published_at": "2026-11-09T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "US-Futures erholen sich nach scharfem KI-Ausverkauf der Vorwoche",
+    "summary": "Die Terminkontrakte auf Dow, S&P 500 und Nasdaq ziehen zum Wochenstart an, nachdem Tech- und Chipwerte zuletzt stark verloren hatten.",
+    "source": "Yahoo Finance",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/dow-p-500-nasdaq-futures-034814953.html",
+    "published_at": "2026-11-09T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Wochenradar: Die wichtigsten Termine vom 9. bis 15. November",
+    "summary": "Der Aktionär stellt die Börsenwoche vor, in der vor allem US-Inflationsdaten und weitere Quartalszahlen im Fokus stehen.",
+    "source": "DER AKTIONÄR",
+    "url": "https://www.deraktionaer.de/artikel/maerkte-forex-zinsen/der-aktionaer-wochenradar-9-bis-15-november-2026-20435884.html",
+    "published_at": "2026-11-08T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
    {
     "headline": "Wochenausblick: Quartalszahlen, Preisdaten und Konjunkturindikatoren prägen die Woche",
     "summary": "Die neue Börsenwoche wird von einer Reihe von Unternehmenszahlen sowie Inflations- und Konjunkturdaten bestimmt. Im Mittelpunkt stehen vor allem die US-Verbraucherpreise.",
@@ -1893,56 +1941,6 @@
     "source": "dpa-AFX via ARIVA.DE",
     "url": "https://www.ariva.de/news/oelpreise-legen-weiter-zu-brent-knapp-unter-100-us-dollar-12197549",
     "published_at": "2026-11-06T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Wochenausblick: Dax sucht Richtung zwischen KI-Sorgen und Iran-Hoffnung",
-    "summary": "Nach dem Tech-Ausverkauf dürfte der Dax in der neuen Woche zwischen Sorgen um KI-Bewertungen und Hoffnungen auf Entspannung im Iran-Konflikt schwanken.",
-    "source": "dpa-AFX via ARIVA.DE",
-    "url": "https://www.ariva.de/news/wochenausblick-dax-zwischen-ki-sorgen-und-iran-hoffnung-auf-12198353",
-    "published_at": "2026-11-06T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Wall Street: Tech-Sektor erholt sich etwas vom Ausverkauf",
-    "summary": "Zum Wochenschluss haben sich Technologiewerte in New York nach dem jüngsten Ausverkauf teilweise erholt.",
-    "source": "dpa-AFX via ARIVA.DE",
-    "url": "https://www.ariva.de/news/roundup-aktien-new-york-schluss-tech-sektor-erholt-sich-12198681",
-    "published_at": "2026-11-06T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [
-     "Amazon"
-    ],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Gold gibt vor US-Arbeitsmarktdaten nach, steuert aber auf starke Woche zu",
-    "summary": "Steigende Ölpreise belasteten den Goldpreis vor dem US-Jobbericht; auf Wochensicht zeichnete sich dennoch das stärkste Plus seit über zwei Monaten ab.",
-    "source": "MarketScreener",
-    "url": "https://de.marketscreener.com/boerse-nachrichten/goldpreis-faellt-wegen-hoeherer-oelpreise-um-mehr-als-1-us-arbeitsmarktdaten-im-fokus-ce785fdddf8ef027",
-    "published_at": "2026-11-06T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Bank of England hebt Leitzins auf 4,0 Prozent",
-    "summary": "Die britische Notenbank hat ihren Leitzins wie erwartet auf 4,0 Prozent angehoben – die erste Erhöhung seit 2023. Weitere Schritte schließt sie nicht aus.",
-    "source": "dpa-AFX via ARIVA.DE",
-    "url": "https://www.ariva.de/news/roundup-britische-notenbank-hebt-leitzins-wie-erwartet-auf-12196504",
-    "published_at": "2026-11-05T13:00:00+01:00",
     "kind": "news",
     "tickers": [],
     "peer": null,
@@ -2156,27 +2154,19 @@
       "kind": "news"
      },
      {
+      "headline": "Moody's hebt Nokia auf Investment-Grade Baa3",
+      "summary": "Die Ratingagentur stuft die Kreditwürdigkeit von Nokia hoch, der Ausblick gilt als positiv.",
+      "source": "boerse-express",
+      "url": "https://www.boerse-express.com/news/articles/nokia-aktie-moodys-hebt-rating-auf-baa3-958991",
+      "published_at": "2026-11-03T12:00:00+01:00",
+      "kind": "news"
+     },
+     {
       "headline": "Nokia: KI-Wachstum stark, Cashflow-Ziel gesenkt",
       "summary": "Nokia hält am Gewinnziel für 2026 fest, erwartet aber eine geringere Umwandlung des Gewinns in freien Cashflow wegen Working Capital und Restrukturierung.",
       "source": "ad-hoc-news.de",
       "url": "https://ad-hoc-news.de/boerse/news/corporate-news/nokia-stock-balances-ai-growth-against-lower-cash-conversion/70444341",
       "published_at": "2026-11-02T09:58:00+01:00",
-      "kind": "news"
-     },
-     {
-      "headline": "Nokia fällt mit Tech-Ausverkauf um gut 5 Prozent",
-      "summary": "Die Aktie verlor im breiten Technologie-Abverkauf 5,4 Prozent. Belastend wirkt weiter das gesenkte Ziel für die Cashflow-Umwandlung bei unveränderter Gewinnprognose.",
-      "source": "boerse-express.com",
-      "url": "https://boerse-express.com/news/articles/nokia-tech-ausverkauf-drueckt-aktie-um-5-prozent-958215",
-      "published_at": "2026-11-01T21:20:00+01:00",
-      "kind": "news"
-     },
-     {
-      "headline": "Nokia: Starkes KI-Wachstum, aber Cashflow-Sorgen",
-      "summary": "Im dritten Quartal stieg der Umsatz um 10 Prozent auf 5,15 Mrd. Euro, das KI- und Cloud-Geschäft wuchs um 123 Prozent. Schwächere Cashflow-Aussichten und Restrukturierungskosten drückten die Aktie nach den Zahlen deutlich.",
-      "source": "nokiamob.net",
-      "url": "https://nokiamob.net/2026/11/01/nokia-q3-2026-strong-ai-growth-but-shares-tumble/",
-      "published_at": "2026-11-01T18:29:00+01:00",
       "kind": "news"
      },
      {
@@ -2235,6 +2225,22 @@
     "id": "spacex",
     "items": [
      {
+      "headline": "NASA setzt für Mondkommunikation 2028 auf Starship",
+      "summary": "SpaceX erhält laut Bericht den Zuschlag, Starship für eine Kommunikationsmission zum Mond im Jahr 2028 einzusetzen.",
+      "source": "TeslaNorth",
+      "url": "https://teslanorth.com/2026/11/08/nasa-spacex-starship-moon-communications-2028",
+      "published_at": "2026-11-08T12:00:00+01:00",
+      "kind": "news"
+     },
+     {
+      "headline": "SpaceX will Starlink Mobile zum großen Mobilfunkanbieter ausbauen",
+      "summary": "SpaceX plant, mit Starlink Mobile als eigenständiger Netzbetreiber aufzutreten.",
+      "source": "KeepTrack",
+      "url": "https://keeptrack.space/x-report/spacex-brief-2026-11-08",
+      "published_at": "2026-11-08T12:00:00+01:00",
+      "kind": "news"
+     },
+     {
       "headline": "SpaceX peilt 13. November für nächsten Starship-Testflug an",
       "summary": "SpaceX hat den 13. November als Zieltermin für Starship-Flug 15 genannt, der auf die volle Wiederverwendbarkeit abzielt; Musk spricht von einem entscheidenden Durchbruch.",
       "source": "BusinessToday",
@@ -2256,22 +2262,6 @@
       "source": "The Motley Fool",
       "url": "https://www.fool.com/investing/2026/11/06/texas-gov-elect-gina-hinojosa-just-delivered-fanta/",
       "published_at": "2026-11-06T12:00:00+01:00",
-      "kind": "news"
-     },
-     {
-      "headline": "SpaceX-Aktie springt um rund 8 Prozent",
-      "summary": "Nach dem Einbruch am Vortag erholte sich die SpaceX-Aktie am Freitag mit einem Plus von etwa 8 Prozent.",
-      "source": "TipRanks",
-      "url": "https://www.tipranks.com/news/why-spacex-stock-spcx-jumped-8-today-november-6-2026",
-      "published_at": "2026-11-06T12:00:00+01:00",
-      "kind": "news"
-     },
-     {
-      "headline": "SpaceX holt Qualcomm als Partner für Starlink-Mobilfunk",
-      "summary": "SpaceX arbeitet beim geplanten Mobilfunkangebot über Starlink mit dem Chipkonzern Qualcomm zusammen, was den Druck auf die US-Mobilfunkanbieter erhöht.",
-      "source": "finanznachrichten.de",
-      "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70042725-qualcomm-landet-mega-deal-wichtiger-partner-fuer-elon-musks-angriff-auf-die-mobilfunkriesen-013.htm",
-      "published_at": "2026-11-05T12:00:00+01:00",
       "kind": "news"
      },
      {
@@ -2590,6 +2580,20 @@
   ],
   "peers": [
    {
+    "headline": "BAE Systems stellt neue Marinegeschütz-Familie vor",
+    "summary": "Der britische Rüstungskonzern präsentiert eine modulare Geschützreihe mit vier Varianten für Marineschiffe.",
+    "source": "ad-hoc-news",
+    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/bae-systems-aktie-zeigt-neue-marinegeschuetzfamilie-mit-vier-varianten/70470678",
+    "published_at": "2026-11-06T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [
+     "Babcock"
+    ],
+    "peer": "BAE Systems",
+    "popularity": null,
+    "label": null
+   },
+   {
     "headline": "Rocket Lab fängt Kursrutsch am Freitag ab",
     "summary": "Die Rocket-Lab-Aktie erholte sich am Freitag von zwischenzeitlich deutlichen Verlusten.",
     "source": "Benzinga",
@@ -2642,18 +2646,6 @@
      "Babcock"
     ],
     "peer": "Rheinmetall",
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Mercedes-Benz verkauft europäisches Schnellladenetz",
-    "summary": "Mercedes-Benz trennt sich von seinem Schnellladenetzwerk in Europa; finanzen.net nennt Electra als Käufer.",
-    "source": "dpa-AFX via ARIVA.DE",
-    "url": "https://ariva.de/news/mercedes-benz-verkauft-sein-schnellladenetzwerk-in-europa-12192079",
-    "published_at": "2026-11-03T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": "Mercedes-Benz",
     "popularity": null,
     "label": null
    }
