@@ -1,7 +1,7 @@
 {
  "app": "mein-portfolio-feed",
  "version": 1,
- "generated_at": "2026-11-09T11:27:04+00:00",
+ "generated_at": "2026-11-09T12:27:18+00:00",
  "quotes_at": "2026-11-09T11:26:48+00:00",
  "web_at": "2026-11-09T11:26:48+00:00",
  "live_at": "2026-11-09T11:02:13+00:00",
@@ -1796,8 +1796,80 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-09T07:30:00+01:00",
+  "generated_at": "2026-11-09T13:30:00+01:00",
   "market": [
+   {
+    "headline": "Dax startet Erholungsversuch, KI-Sorgen bleiben",
+    "summary": "Nach der jüngsten Korrektur versucht sich der Dax zum Wochenstart an einer Erholung, die Skepsis gegenüber KI-Werten belastet aber weiter.",
+    "source": "dpa-AFX via onvista",
+    "url": "https://onvista.de/news/2026/11-09-dax-startet-erholungsversuch-ki-sorgen-bleiben-0-20-26574059",
+    "published_at": "2026-11-09T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Dax schiebt sich nach Korrektur wieder über 26.000 Punkte",
+    "summary": "Im Tagesverlauf kletterte der Leitindex zurück über die Marke von 26.000 Punkten.",
+    "source": "dpa-AFX via ARIVA.DE",
+    "url": "https://www.ariva.de/news/aktien-frankfurt-dax-lugt-nach-korrektur-wieder-ueber-26-000-12199919",
+    "published_at": "2026-11-09T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Börsentag auf einen Blick: Anleger bleiben vorsichtig",
+    "summary": "Der dpa-AFX-Tagesüberblick zeigt zurückhaltende Anleger zum Wochenauftakt, eine deutliche Erholung bleibt zunächst aus.",
+    "source": "dpa-AFX via onvista",
+    "url": "https://www.onvista.de/news/2026/11-09-dpa-afx-boersentag-auf-einen-blick-anleger-bleiben-vorsichtig-0-10-26573980",
+    "published_at": "2026-11-09T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Asiatische Chipwerte erholen sich, Brent bleibt unter 100 Dollar",
+    "summary": "Saxo berichtet von einer Erholung der Chipaktien in Asien, während sich der Brent-Ölpreis unter 100 US-Dollar hält.",
+    "source": "Saxo",
+    "url": "https://www.home.saxo/en-sg/content/articles/macro/market-quick-take---asian-chipmakers-rebound-and-brent-holds-below-usd-100---9-november-2026-09112026",
+    "published_at": "2026-11-09T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Ölpreis rutscht ab, Renditen sinken, Gold legt zu",
+    "summary": "Ein Ölpreisrückgang um 2,5 Prozent dämpft Inflationserwartungen; die Rendite zehnjähriger US-Anleihen fällt um 4 Basispunkte, Gold steigt um mehr als 1 Prozent.",
+    "source": "Gokhshtein Media",
+    "url": "https://gokhshtein.com/news/2026-11-09-gold-rises-over-1-as-softer-oil-prices-ease-inflation",
+    "published_at": "2026-11-09T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Tagesausblick: Märkte vor den US-Inflationsdaten",
+    "summary": "Tickmill gibt einen Überblick über die Lage an den Märkten zu Wochenbeginn vor den wichtigen US-Preisdaten.",
+    "source": "Tickmill",
+    "url": "https://tickmill.com/blog/daily-market-outlook-november-9-2026",
+    "published_at": "2026-11-09T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
    {
     "headline": "Tagesvorschau: Die Termine am Montag, 9. November",
     "summary": "dpa-AFX listet die Unternehmens- und Konjunkturtermine zum Wochenstart, darunter deutsche Handelsdaten und den Sentix-Index.",
@@ -1835,18 +1907,6 @@
     "label": null
    },
    {
-    "headline": "Wochenradar: Die wichtigsten Termine vom 9. bis 15. November",
-    "summary": "Der Aktionär stellt die Börsenwoche vor, in der vor allem US-Inflationsdaten und weitere Quartalszahlen im Fokus stehen.",
-    "source": "DER AKTIONÄR",
-    "url": "https://www.deraktionaer.de/artikel/maerkte-forex-zinsen/der-aktionaer-wochenradar-9-bis-15-november-2026-20435884.html",
-    "published_at": "2026-11-08T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
     "headline": "Wochenausblick: Quartalszahlen, Preisdaten und Konjunkturindikatoren prägen die Woche",
     "summary": "Die neue Börsenwoche wird von einer Reihe von Unternehmenszahlen sowie Inflations- und Konjunkturdaten bestimmt. Im Mittelpunkt stehen vor allem die US-Verbraucherpreise.",
     "source": "onvista (dpa-AFX)",
@@ -1854,57 +1914,6 @@
     "published_at": "2026-11-08T12:00:00+01:00",
     "kind": "news",
     "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Wochenrückblick: Börsenwoche zwischen Wahlrally und Tech-Ausverkauf",
-    "summary": "Die vergangene Woche brachte zunächst eine Erholung nach den US-Zwischenwahlen, danach belastete ein kräftiger Ausverkauf bei Technologiewerten die Märkte.",
-    "source": "onvista",
-    "url": "https://onvista.de/news/2026/11-07-wochenrueckblick-zwischen-wahlrally-und-tech-ausverkauf-0-12-26573764",
-    "published_at": "2026-11-07T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Ausblick: US-Inflationsdaten bestimmen die kommende Woche",
-    "summary": "Im Mittelpunkt der neuen Woche stehen die US-Verbraucherpreise, deren Höhe die Zinserwartungen an die Fed prägen dürfte.",
-    "source": "FXStreet",
-    "url": "https://www.fxstreet.com/analysis/forecasting-the-upcoming-week-when-it-comes-to-us-inflation-size-matters-202611061844",
-    "published_at": "2026-11-06T19:44:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Europas Börsen dämmen Verluste mit erholter Wall Street ein",
-    "summary": "Die europäischen Aktienmärkte schlossen am Freitag im Minus, konnten die Verluste aber dank der Erholung an den US-Börsen etwas begrenzen.",
-    "source": "dpa-AFX via onvista",
-    "url": "https://onvista.de/news/2026/11-06-roundup-aktien-europa-schluss-verluste-etwas-eingedaemmt-mit-erholten-us-boersen-0-10-26573592",
-    "published_at": "2026-11-06T18:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Wall Street uneinheitlich: Starke Jobdaten nähren Zinssorgen",
-    "summary": "Die robusten US-Arbeitsmarktdaten ließen Anleger an der Wall Street über mögliche weitere Zinserhöhungen nachdenken; die Indizes zeigten sich uneinheitlich.",
-    "source": "Dow Jones via finanzen.at",
-    "url": "https://www.finanzen.at/nachrichten/aktien/maerkte-usa-uneinheitlich-payrolls-nahren-zinserhoehungssorgen-1036729915",
-    "published_at": "2026-11-06T16:00:00+01:00",
-    "kind": "news",
-    "tickers": [
-     "Amazon",
-     "SpaceX"
-    ],
     "peer": null,
     "popularity": null,
     "label": null
@@ -1926,18 +1935,6 @@
     "summary": "Der weltweite Abverkauf bei Technologiewerten zieht auch den Dax nach unten, der Leitindex fällt unter die Marke von 26.000 Punkten.",
     "source": "dpa-AFX via finanznachrichten.de",
     "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70058425-aktien-frankfurt-globaler-tech-ausverkauf-drueckt-dax-unter-26-000-punkte-016.htm",
-    "published_at": "2026-11-06T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Ölpreise steigen weiter, Brent knapp unter 100 Dollar",
-    "summary": "Die Ölpreise setzen ihren Anstieg fort; die Nordseesorte Brent nähert sich der Marke von 100 US-Dollar je Barrel.",
-    "source": "dpa-AFX via ARIVA.DE",
-    "url": "https://www.ariva.de/news/oelpreise-legen-weiter-zu-brent-knapp-unter-100-us-dollar-12197549",
     "published_at": "2026-11-06T12:00:00+01:00",
     "kind": "news",
     "tickers": [],
@@ -2223,6 +2220,14 @@
     "id": "spacex",
     "items": [
      {
+      "headline": "Starship-Flug 15 soll beide Stufen einfangen",
+      "summary": "SpaceX will beim nächsten Testflug erstmals sowohl den Booster als auch das Starship-Oberteil mit dem Startturm auffangen.",
+      "source": "KeepTrack",
+      "url": "https://keeptrack.space/x-report/spacex-brief-2026-11-09",
+      "published_at": "2026-11-09T12:00:00+01:00",
+      "kind": "news"
+     },
+     {
       "headline": "NASA setzt für Mondkommunikation 2028 auf Starship",
       "summary": "SpaceX erhält laut Bericht den Zuschlag, Starship für eine Kommunikationsmission zum Mond im Jahr 2028 einzusetzen.",
       "source": "TeslaNorth",
@@ -2252,14 +2257,6 @@
       "source": "24/7 Wall St.",
       "url": "https://247wallst.com/investing/2026/11/07/musk-says-spacex-could-buy-a-legacy-telco-and-use-its-spectrum-10-times-better",
       "published_at": "2026-11-07T12:00:00+01:00",
-      "kind": "news"
-     },
-     {
-      "headline": "Texas' neue Gouverneurin gilt als gute Nachricht für SpaceX",
-      "summary": "Nach Einschätzung von The Motley Fool ist der Wahlsieg von Gina Hinojosa in Texas positiv für SpaceX-Anleger; die Aktie legte am Freitag zu.",
-      "source": "The Motley Fool",
-      "url": "https://www.fool.com/investing/2026/11/06/texas-gov-elect-gina-hinojosa-just-delivered-fanta/",
-      "published_at": "2026-11-06T12:00:00+01:00",
       "kind": "news"
      },
      {
