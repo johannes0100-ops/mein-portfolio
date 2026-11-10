@@ -3,21 +3,21 @@
  "version": 1,
  "source": "Tradegate",
  "price_field": "bid",
- "updated_at": "2026-11-10T20:57:39+00:00",
+ "updated_at": "2026-11-10T21:11:52+00:00",
  "quotes": {
   "amzn": {
-   "bid": 242.65,
-   "ask": 242.7,
-   "last": 242.85,
+   "bid": 242.7,
+   "ask": 242.75,
+   "last": 242.75,
    "prev_close": 238.15,
    "high": 244.0,
    "low": 236.55,
-   "delta_pct": 1.97,
-   "trades": 1621.0,
+   "delta_pct": 1.93,
+   "trades": 1628.0,
    "isin": "US0231351067",
-   "eur": 242.65,
+   "eur": 242.7,
    "eur_field": "bid",
-   "d1": 1.97
+   "d1": 1.93
   },
   "babcock": {
    "bid": 12.77,
@@ -34,22 +34,22 @@
    "d1": -1.24
   },
   "bmw": {
-   "bid": 58.28,
-   "ask": 58.54,
-   "last": 58.54,
+   "bid": 58.3,
+   "ask": 58.68,
+   "last": 58.56,
    "prev_close": 59.04,
    "high": 59.58,
    "low": 58.1,
-   "delta_pct": -0.85,
-   "trades": 731.0,
+   "delta_pct": -0.81,
+   "trades": 736.0,
    "isin": "DE0005190003",
-   "eur": 58.28,
+   "eur": 58.3,
    "eur_field": "bid",
-   "d1": -0.85
+   "d1": -0.81
   },
   "nokia": {
-   "bid": 7.422,
-   "ask": 7.462,
+   "bid": 7.408,
+   "ask": 7.448,
    "last": 7.472,
    "prev_close": 7.336,
    "high": 7.536,
@@ -57,27 +57,27 @@
    "delta_pct": 1.85,
    "trades": 298.0,
    "isin": "FI0009000681",
-   "eur": 7.422,
+   "eur": 7.408,
    "eur_field": "bid",
    "d1": 1.85
   },
   "spacex": {
-   "bid": 127.72,
-   "ask": 127.78,
-   "last": 127.72,
+   "bid": 128.06,
+   "ask": 128.16,
+   "last": 128.06,
    "prev_close": 126.76,
    "high": 129.58,
    "low": 122.5,
-   "delta_pct": 0.76,
-   "trades": 1589.0,
+   "delta_pct": 1.03,
+   "trades": 1594.0,
    "isin": "US84615Q1031",
-   "eur": 127.72,
+   "eur": 128.06,
    "eur_field": "bid",
-   "d1": 0.76
+   "d1": 1.03
   },
   "vanguard": {
-   "bid": 126.34,
-   "ask": 126.5,
+   "bid": 126.36,
+   "ask": 126.54,
    "last": 126.44,
    "prev_close": 126.3,
    "high": 126.64,
@@ -85,7 +85,7 @@
    "delta_pct": 0.11,
    "trades": 97.0,
    "isin": "IE00BKX55T58",
-   "eur": 126.34,
+   "eur": 126.36,
    "eur_field": "bid",
    "d1": 0.11
   }
