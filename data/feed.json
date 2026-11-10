@@ -1,7 +1,7 @@
 {
  "app": "mein-portfolio-feed",
  "version": 1,
- "generated_at": "2026-11-10T11:26:39+00:00",
+ "generated_at": "2026-11-10T12:24:39+00:00",
  "quotes_at": "2026-11-10T11:26:25+00:00",
  "web_at": "2026-11-10T11:26:25+00:00",
  "live_at": "2026-11-10T11:15:14+00:00",
@@ -1802,8 +1802,20 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-10T07:25:00+01:00",
+  "generated_at": "2026-11-10T13:30:00+01:00",
   "market": [
+   {
+    "headline": "Dax setzt Erholung fort und nähert sich dem Rekordhoch",
+    "summary": "Der deutsche Leitindex bleibt am Dienstag auf Erholungskurs und rückt näher an seine Bestmarke heran.",
+    "source": "dpa-AFX / ARIVA.DE",
+    "url": "https://ariva.de/news/aktien-frankfurt-weiter-auf-erholungskurs-dax-naehert-sich-12201395",
+    "published_at": "2026-11-10T12:30:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
    {
     "headline": "Dax-Flash: Rekordhoch wieder in Reichweite",
     "summary": "Sinkende Ölpreise und anstehende US-Inflationsdaten bestimmen den Handelsstart; der Dax nähert sich laut dpa-AFX wieder seinem Rekordhoch.",
@@ -1829,10 +1841,10 @@
     "label": null
    },
    {
-    "headline": "Asiens Aktien steigen, Öl gibt vor US-Inflationsdaten nach",
-    "summary": "Fallende Ölpreise stützen die Stimmung in Asien, Anleger warten auf die US-Verbraucherpreise am Nachmittag.",
-    "source": "rallies.ai",
-    "url": "https://rallies.ai/news/asian-stocks-climb-as-oil-prices-slide-ahead-of-us-cpi-a6842a8be87d3462",
+    "headline": "Börsentag auf einen Blick: Rekordhoch rückt wieder näher",
+    "summary": "Der dpa-AFX-Überblick zum Dienstag sieht den Dax nach der Erholung wieder in Reichweite seines Rekordhochs; im Blick stehen die US-Inflationsdaten.",
+    "source": "dpa-AFX / onvista",
+    "url": "https://www.onvista.de/news/2026/11-10-dpa-afx-boersentag-auf-einen-blick-rekordhoch-rueckt-wieder-naeher-0-10-26574408",
     "published_at": "2026-11-10T12:00:00+01:00",
     "kind": "news",
     "tickers": [],
@@ -1859,18 +1871,6 @@
     "summary": "US-Börsen schlossen am Montag im Plus, während Nvidia nach einer Untersuchung durch den eigenen Verwaltungsrat nachgab.",
     "source": "StockTitan",
     "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-9-2026",
-    "published_at": "2026-11-09T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Tagesvorschau: Die Termine am 10. November",
-    "summary": "dpa-AFX-Überblick über Unternehmenszahlen und Konjunkturdaten am Dienstag, darunter die US-Verbraucherpreise.",
-    "source": "finanzen.net (dpa-AFX)",
-    "url": "https://www.finanzen.net/nachricht/aktien/tagesvorschau-termine-am-10-november-2026-16050794",
     "published_at": "2026-11-09T12:00:00+01:00",
     "kind": "news",
     "tickers": [],
