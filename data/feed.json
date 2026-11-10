@@ -1,7 +1,7 @@
 {
  "app": "mein-portfolio-feed",
  "version": 1,
- "generated_at": "2026-11-09T21:26:40+00:00",
+ "generated_at": "2026-11-10T06:24:19+00:00",
  "quotes_at": "2026-11-09T21:26:25+00:00",
  "web_at": "2026-11-09T21:26:25+00:00",
  "live_at": "2026-11-09T21:03:49+00:00",
@@ -1796,8 +1796,94 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-09T13:30:00+01:00",
+  "generated_at": "2026-11-10T07:25:00+01:00",
   "market": [
+   {
+    "headline": "Dax-Flash: Rekordhoch wieder in Reichweite",
+    "summary": "Sinkende Ölpreise und anstehende US-Inflationsdaten bestimmen den Handelsstart; der Dax nähert sich laut dpa-AFX wieder seinem Rekordhoch.",
+    "source": "finanzen.net (dpa-AFX)",
+    "url": "https://www.finanzen.net/nachricht/aktien/dax-flash-rekordhoch-wieder-nahe-oelpreisrueckgang-inflationsdaten-16052138",
+    "published_at": "2026-11-10T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Erholung an Asiens Börsen setzt sich fort",
+    "summary": "Die Börsen in Asien bauen am Dienstag ihre Erholung aus, gestützt von den Vorgaben der Wall Street.",
+    "source": "finanzen.ch",
+    "url": "https://www.finanzen.ch/nachrichten/aktien/boerse-aktuell-10-11-2026-1036741020",
+    "published_at": "2026-11-10T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Asiens Aktien steigen, Öl gibt vor US-Inflationsdaten nach",
+    "summary": "Fallende Ölpreise stützen die Stimmung in Asien, Anleger warten auf die US-Verbraucherpreise am Nachmittag.",
+    "source": "rallies.ai",
+    "url": "https://rallies.ai/news/asian-stocks-climb-as-oil-prices-slide-ahead-of-us-cpi-a6842a8be87d3462",
+    "published_at": "2026-11-10T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Dow springt um über 1.100 Punkte, Nasdaq erholt sich",
+    "summary": "Der Ölpreisrutsch sorgte am Montag für eine breite Erholung an der Wall Street, der Dow Jones legte über 1.100 Punkte zu.",
+    "source": "Vistap Global",
+    "url": "https://vistapglobal.com/stock-market-today-november-9-2026-dow-jumps-1104-points-nasdaq-rallies-as-oils-slide-fuels-breadth-amwl-ant-eprx-googl-modd-nvda-ser-spcx/",
+    "published_at": "2026-11-09T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [
+     "SpaceX"
+    ],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Wall Street schließt höher, Nvidia schwächer wegen interner Untersuchung",
+    "summary": "US-Börsen schlossen am Montag im Plus, während Nvidia nach einer Untersuchung durch den eigenen Verwaltungsrat nachgab.",
+    "source": "StockTitan",
+    "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-9-2026",
+    "published_at": "2026-11-09T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Tagesvorschau: Die Termine am 10. November",
+    "summary": "dpa-AFX-Überblick über Unternehmenszahlen und Konjunkturdaten am Dienstag, darunter die US-Verbraucherpreise.",
+    "source": "finanzen.net (dpa-AFX)",
+    "url": "https://www.finanzen.net/nachricht/aktien/tagesvorschau-termine-am-10-november-2026-16050794",
+    "published_at": "2026-11-09T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Wochenvorschau: Termine bis 23. November",
+    "summary": "dpa-AFX-Terminübersicht der kommenden zwei Wochen mit Quartalszahlen und Konjunkturdaten.",
+    "source": "finanzen.at (dpa-AFX)",
+    "url": "https://www.finanzen.at/nachrichten/aktien/wochenvorschau-termine-bis-23-november-2026-1036740179",
+    "published_at": "2026-11-09T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
    {
     "headline": "Dax startet Erholungsversuch, KI-Sorgen bleiben",
     "summary": "Nach der jüngsten Korrektur versucht sich der Dax zum Wochenstart an einer Erholung, die Skepsis gegenüber KI-Werten belastet aber weiter.",
@@ -1835,18 +1921,6 @@
     "label": null
    },
    {
-    "headline": "Asiatische Chipwerte erholen sich, Brent bleibt unter 100 Dollar",
-    "summary": "Saxo berichtet von einer Erholung der Chipaktien in Asien, während sich der Brent-Ölpreis unter 100 US-Dollar hält.",
-    "source": "Saxo",
-    "url": "https://www.home.saxo/en-sg/content/articles/macro/market-quick-take---asian-chipmakers-rebound-and-brent-holds-below-usd-100---9-november-2026-09112026",
-    "published_at": "2026-11-09T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
     "headline": "Ölpreis rutscht ab, Renditen sinken, Gold legt zu",
     "summary": "Ein Ölpreisrückgang um 2,5 Prozent dämpft Inflationserwartungen; die Rendite zehnjähriger US-Anleihen fällt um 4 Basispunkte, Gold steigt um mehr als 1 Prozent.",
     "source": "Gokhshtein Media",
@@ -1859,83 +1933,11 @@
     "label": null
    },
    {
-    "headline": "Tagesausblick: Märkte vor den US-Inflationsdaten",
-    "summary": "Tickmill gibt einen Überblick über die Lage an den Märkten zu Wochenbeginn vor den wichtigen US-Preisdaten.",
-    "source": "Tickmill",
-    "url": "https://tickmill.com/blog/daily-market-outlook-november-9-2026",
-    "published_at": "2026-11-09T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Tagesvorschau: Die Termine am Montag, 9. November",
-    "summary": "dpa-AFX listet die Unternehmens- und Konjunkturtermine zum Wochenstart, darunter deutsche Handelsdaten und den Sentix-Index.",
-    "source": "dpa-AFX via onvista",
-    "url": "https://www.onvista.de/news/2026/11-09-tagesvorschau-termine-am-9-november-2026-0-10-26573950",
-    "published_at": "2026-11-09T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Wochenvorschau: Termine bis 20. November",
-    "summary": "Überblick über Quartalszahlen und Konjunkturdaten der kommenden knapp zwei Wochen.",
-    "source": "dpa-AFX via ARIVA.DE",
-    "url": "https://www.ariva.de/news/wochenvorschau-termine-bis-20-november-2026-12199392",
-    "published_at": "2026-11-09T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "US-Futures erholen sich nach scharfem KI-Ausverkauf der Vorwoche",
-    "summary": "Die Terminkontrakte auf Dow, S&P 500 und Nasdaq ziehen zum Wochenstart an, nachdem Tech- und Chipwerte zuletzt stark verloren hatten.",
-    "source": "Yahoo Finance",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/dow-p-500-nasdaq-futures-034814953.html",
-    "published_at": "2026-11-09T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Wochenausblick: Quartalszahlen, Preisdaten und Konjunkturindikatoren prägen die Woche",
-    "summary": "Die neue Börsenwoche wird von einer Reihe von Unternehmenszahlen sowie Inflations- und Konjunkturdaten bestimmt. Im Mittelpunkt stehen vor allem die US-Verbraucherpreise.",
-    "source": "onvista (dpa-AFX)",
-    "url": "https://www.onvista.de/news/2026/11-08-wochenausblick-quartalszahlen-preisdaten-und-konjunkturindikatoren-praegen-die-woche-0-12-26573888",
-    "published_at": "2026-11-08T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
     "headline": "US-Arbeitsmarkt im Oktober deutlich stärker als erwartet",
     "summary": "Die US-Wirtschaft hat im Oktober mehr Stellen geschaffen als Volkswirte erwartet hatten. Das stützt den Dollar, schürt aber Sorgen vor weiter hohen Zinsen.",
     "source": "dpa-AFX via ariva.de",
     "url": "https://www.ariva.de/news/roundup-us-arbeitsmarkt-entwickelt-sich-deutlich-staerker-12198368",
     "published_at": "2026-11-06T15:30:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Globaler Tech-Ausverkauf drückt Dax unter 26.000 Punkte",
-    "summary": "Der weltweite Abverkauf bei Technologiewerten zieht auch den Dax nach unten, der Leitindex fällt unter die Marke von 26.000 Punkten.",
-    "source": "dpa-AFX via finanznachrichten.de",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70058425-aktien-frankfurt-globaler-tech-ausverkauf-drueckt-dax-unter-26-000-punkte-016.htm",
-    "published_at": "2026-11-06T12:00:00+01:00",
     "kind": "news",
     "tickers": [],
     "peer": null,
@@ -2026,16 +2028,6 @@
       "kind": "analyst",
       "rating": "Outperform",
       "target": "330 USD"
-     },
-     {
-      "headline": "UBS: Ziel angehoben",
-      "summary": "UBS rechnet mit besseren Margen als erwartet, vor allem bei AWS, was die Schätzungen für 2027 heben dürfte.",
-      "source": "Investing.com",
-      "url": "https://www.investing.com/news/analyst-ratings/ubs-raises-amazon-stock-price-target-to-348-on-margin-outlook-93CH-4971942",
-      "published_at": "2026-10-26T11:26:00+01:00",
-      "kind": "analyst",
-      "rating": "Buy",
-      "target": "348 USD"
      }
     ]
    },
@@ -2082,22 +2074,6 @@
       "kind": "news"
      },
      {
-      "headline": "BMW-Aktie am Montagvormittag fester",
-      "summary": "Die BMW-Aktie legte zum Wochenstart vor den Quartalszahlen am Mittwoch zu.",
-      "source": "finanzen.net",
-      "url": "https://www.finanzen.net/nachricht/aktien/bmw-aktie-kursbewegung-02-11-2026-11210158",
-      "published_at": "2026-11-02T12:00:00+01:00",
-      "kind": "news"
-     },
-     {
-      "headline": "BMW: Worauf es bei den Quartalszahlen ankommt",
-      "summary": "Vor den Q3-Zahlen am 4. November richtet sich der Blick auf Margen und Ausblick des Autobauers.",
-      "source": "finanznachrichten.de",
-      "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70004360-bmw-aktie-im-fokus-worauf-es-bei-den-quartalszahlen-ankommt-618.htm",
-      "published_at": "2026-11-02T12:00:00+01:00",
-      "kind": "news"
-     },
-     {
       "headline": "Deutsche Bank Research: bestätigt",
       "summary": "Deutsche Bank Research bleibt nach den Quartalszahlen bei der Kaufempfehlung für BMW.",
       "source": "finanznachrichten.de",
@@ -2133,6 +2109,22 @@
     "id": "nokia",
     "items": [
      {
+      "headline": "Nokia-Aktie erholt sich um 6 Prozent, Widerstand bei 7,50 Euro",
+      "summary": "Nach dem Ausverkauf kehren Käufer zurück; die Aktie legte rund 6 Prozent zu, trifft aber laut Chartanalyse bei 7,50 Euro auf Widerstand.",
+      "source": "FX Leaders",
+      "url": "https://www.fxleaders.com/news/2026/11/09/nokia-stock-rebounds-6-but-faces-resistance-at-e7-50-as-buyers-return-after-sell-off/",
+      "published_at": "2026-11-09T12:00:00+01:00",
+      "kind": "news"
+     },
+     {
+      "headline": "Nokia meldet Veränderung bei eigenen Aktien",
+      "summary": "Nokia hat eine Börsenmitteilung zur Veränderung des Bestands eigener Aktien veröffentlicht.",
+      "source": "GlobeNewswire",
+      "url": "https://www.globenewswire.com/news-release/2026/11/09/3398745/0/en/changes-in-nokia-corporation-s-own-shares.html",
+      "published_at": "2026-11-09T12:00:00+01:00",
+      "kind": "news"
+     },
+     {
       "headline": "Nokia nach Crash-Monat: Was der November bringen könnte",
       "summary": "Ein Aktien-Check blickt auf den starken Kursrückgang von Nokia im Oktober und fragt, wie es im November weitergehen könnte.",
       "source": "wallstreet-online",
@@ -2154,14 +2146,6 @@
       "source": "boerse-express",
       "url": "https://www.boerse-express.com/news/articles/nokia-aktie-moodys-hebt-rating-auf-baa3-958991",
       "published_at": "2026-11-03T12:00:00+01:00",
-      "kind": "news"
-     },
-     {
-      "headline": "Nokia: KI-Wachstum stark, Cashflow-Ziel gesenkt",
-      "summary": "Nokia hält am Gewinnziel für 2026 fest, erwartet aber eine geringere Umwandlung des Gewinns in freien Cashflow wegen Working Capital und Restrukturierung.",
-      "source": "ad-hoc-news.de",
-      "url": "https://ad-hoc-news.de/boerse/news/corporate-news/nokia-stock-balances-ai-growth-against-lower-cash-conversion/70444341",
-      "published_at": "2026-11-02T09:58:00+01:00",
       "kind": "news"
      },
      {
@@ -2203,22 +2187,28 @@
       "kind": "analyst",
       "rating": "Buy",
       "target": null
-     },
-     {
-      "headline": "Inderes: Hochstufung",
-      "summary": "Nach einem operativen Ergebnis über den Erwartungen und starken Aufträgen von KI und Cloud Kunden hebt Inderes die Gewinnschätzungen an, sieht die Bewertung aber nun als angemessen.",
-      "source": "Investing.com",
-      "url": "https://www.investing.com/news/analyst-ratings/nokia-stock-rating-upgraded-to-reduce-by-inderes-on-strong-q3-results-93CH-4971302",
-      "published_at": "2026-10-26T00:20:00+01:00",
-      "kind": "analyst",
-      "rating": "Reduce",
-      "target": "7 EUR"
      }
     ]
    },
    {
     "id": "spacex",
     "items": [
+     {
+      "headline": "SpaceX-Aktie springt um 8,6 Prozent auf 134,27 Dollar",
+      "summary": "Die Aktie erholte sich kräftig, nachdem Musk Sorgen um Regierungsaufträge zerstreut hatte.",
+      "source": "FX Leaders",
+      "url": "https://www.fxleaders.com/news/2026/11/10/spcx-stock-rebounds-8-62-to-134-27-after-musk-eases-government-contract-fears/",
+      "published_at": "2026-11-10T12:00:00+01:00",
+      "kind": "news"
+     },
+     {
+      "headline": "SpaceX steigt nach NASA-Aufträgen für Mondbasis",
+      "summary": "Die NASA hat Aufträge für eine Mondbasis vergeben; die SpaceX-Aktie legte daraufhin am Montag 5,8 Prozent zu.",
+      "source": "Gotrade",
+      "url": "https://www.heygotrade.com/en/news/spacex-spcx-stock-news-november-10-2026/",
+      "published_at": "2026-11-09T12:00:00+01:00",
+      "kind": "news"
+     },
      {
       "headline": "Starship-Flug 15 soll beide Stufen einfangen",
       "summary": "SpaceX will beim nächsten Testflug erstmals sowohl den Booster als auch das Starship-Oberteil mit dem Startturm auffangen.",
@@ -2241,22 +2231,6 @@
       "source": "KeepTrack",
       "url": "https://keeptrack.space/x-report/spacex-brief-2026-11-08",
       "published_at": "2026-11-08T12:00:00+01:00",
-      "kind": "news"
-     },
-     {
-      "headline": "SpaceX peilt 13. November für nächsten Starship-Testflug an",
-      "summary": "SpaceX hat den 13. November als Zieltermin für Starship-Flug 15 genannt, der auf die volle Wiederverwendbarkeit abzielt; Musk spricht von einem entscheidenden Durchbruch.",
-      "source": "BusinessToday",
-      "url": "https://businesstoday.in/science/story/spacex-sets-november-13-target-for-historic-feat-musk-highlights-critical-breakthrough-566296-2026-11-07",
-      "published_at": "2026-11-07T12:00:00+01:00",
-      "kind": "news"
-     },
-     {
-      "headline": "Musk bringt Übernahme eines klassischen Telekomkonzerns ins Spiel",
-      "summary": "Elon Musk sagte, SpaceX könnte einen etablierten Mobilfunkanbieter kaufen und dessen Frequenzen deutlich effizienter nutzen.",
-      "source": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/11/07/musk-says-spacex-could-buy-a-legacy-telco-and-use-its-spectrum-10-times-better",
-      "published_at": "2026-11-07T12:00:00+01:00",
       "kind": "news"
      },
      {
@@ -2415,28 +2389,6 @@
     "source": "Investing.com",
     "published_at": "2026-10-27T12:04:00+01:00",
     "url": "https://www.investing.com/news/analyst-ratings/bofa-sees-starlink-buildout-as-positive-for-nokia-and-ericsson-shares-93CH-4975007"
-   },
-   {
-    "stock": "amzn",
-    "broker": "UBS",
-    "action": "Ziel angehoben",
-    "rating": "Buy",
-    "target": "348 USD",
-    "summary": "UBS rechnet mit besseren Margen als erwartet, vor allem bei AWS, was die Schätzungen für 2027 heben dürfte.",
-    "source": "Investing.com",
-    "published_at": "2026-10-26T11:26:00+01:00",
-    "url": "https://www.investing.com/news/analyst-ratings/ubs-raises-amazon-stock-price-target-to-348-on-margin-outlook-93CH-4971942"
-   },
-   {
-    "stock": "nokia",
-    "broker": "Inderes",
-    "action": "Hochstufung",
-    "rating": "Reduce",
-    "target": "7 EUR",
-    "summary": "Nach einem operativen Ergebnis über den Erwartungen und starken Aufträgen von KI und Cloud Kunden hebt Inderes die Gewinnschätzungen an, sieht die Bewertung aber nun als angemessen.",
-    "source": "Investing.com",
-    "published_at": "2026-10-26T00:20:00+01:00",
-    "url": "https://www.investing.com/news/analyst-ratings/nokia-stock-rating-upgraded-to-reduce-by-inderes-on-strong-q3-results-93CH-4971302"
    }
   ],
   "popular": [
@@ -2559,18 +2511,6 @@
     "peer": null,
     "popularity": null,
     "label": null
-   },
-   {
-    "headline": "Rheinmetall fällt nach Bericht über verzögerte Boxer-Bestellung",
-    "summary": "Rheinmetall rutschte zeitweise unter 1.000 Euro, nachdem ein Medienbericht über eine verzögerte Großbestellung des Radpanzers Boxer die Runde machte.",
-    "source": "dpa-AFX/finanznachrichten.de",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70010044-roundup-aktien-frankfurt-schluss-dax-legt-zu-vor-apple-und-zwischenwahlen-016.htm",
-    "published_at": "2026-11-02T18:03:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
    }
   ],
   "peers": [
@@ -2648,28 +2588,6 @@
  },
  "calendar": {
   "events": [
-   {
-    "date": "2026-11-09",
-    "time": "08:00",
-    "title": "DE Im- und Exporte September",
-    "type": "makro",
-    "region": "DE",
-    "holding": null,
-    "note": "",
-    "confirmed": true,
-    "url": "https://ariva.de/news/wochenvorschau-termine-bis-16-november-2026-12191814"
-   },
-   {
-    "date": "2026-11-09",
-    "time": "10:30",
-    "title": "Eurozone Sentix-Konjunkturindex November",
-    "type": "makro",
-    "region": "EU",
-    "holding": null,
-    "note": "",
-    "confirmed": true,
-    "url": "https://www.ariva.de/news/wochenvorschau-termine-bis-13-november-2026-12190165"
-   },
    {
     "date": "2026-11-10",
     "time": "14:30",
