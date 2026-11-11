@@ -1,7 +1,7 @@
 {
  "app": "mein-portfolio-feed",
  "version": 1,
- "generated_at": "2026-11-11T11:28:37+00:00",
+ "generated_at": "2026-11-11T12:23:39+00:00",
  "quotes_at": "2026-11-11T11:28:24+00:00",
  "web_at": "2026-11-11T11:28:24+00:00",
  "live_at": "2026-11-11T11:22:43+00:00",
@@ -1806,8 +1806,104 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-11T07:35:00+01:00",
+  "generated_at": "2026-11-11T13:24:00+01:00",
   "market": [
+   {
+    "headline": "Dax bleibt vorerst auf Erfolgskurs – Tech-Erholung stützt",
+    "summary": "Der Dax setzt seinen Aufwärtstrend am Mittwoch fort, gestützt von einer Erholung bei Technologiewerten.",
+    "source": "dpa-AFX via onvista",
+    "url": "https://www.onvista.de/news/2026/11-11-aktien-frankfurt-dax-bleibt-vorerst-auf-erfolgskurs-tech-erholung-stuetzt-0-10-26575061",
+    "published_at": "2026-11-11T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Dax flirtet mit Rekordhoch – KI-Fantasie stützt die Börsen",
+    "summary": "Hoffnungen rund um Künstliche Intelligenz geben den Börsen Auftrieb, der Dax nähert sich seinem Rekordhoch.",
+    "source": "onvista",
+    "url": "https://www.onvista.de/news/2026/11-11-dax-flirtet-mit-rekordhoch-ki-fantasie-stuetzt-boersen-0-20-26575078",
+    "published_at": "2026-11-11T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Eon und RWE uneinheitlich nach Zahlen und Ausblick",
+    "summary": "Die beiden Energiekonzerne legten Geschäftszahlen und Ausblick vor; die Aktien reagieren unterschiedlich.",
+    "source": "dpa-AFX via onvista",
+    "url": "https://www.onvista.de/news/2026/11-11-aktien-im-fokus-2-eon-und-rwe-uneinheitlich-nach-zahlen-und-ausblick-0-10-26575007",
+    "published_at": "2026-11-11T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Dax zum Start von Tech-Rally beflügelt",
+    "summary": "Zur Eröffnung legt der Dax zu, angetrieben von Kursgewinnen bei Technologiewerten und einer Rally bei Siemens Energy.",
+    "source": "dpa-AFX via onvista",
+    "url": "https://www.onvista.de/news/2026/11-11-roundup-aktien-frankfurt-eroeffnung-dax-von-tech-rally-befluegelt-0-10-26574991",
+    "published_at": "2026-11-11T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Deutsche Anleihen mit leichten Kursgewinnen",
+    "summary": "Bundesanleihen legen am Mittwoch leicht zu, die Renditen geben etwas nach.",
+    "source": "dpa-AFX via onvista",
+    "url": "https://www.onvista.de/news/2026/11-11-deutsche-anleihen-leichte-kursgewinne-0-10-26574987",
+    "published_at": "2026-11-11T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Ölpreise stabilisieren sich nach Kursrutsch",
+    "summary": "Nach dem jüngsten deutlichen Rückgang legen die Ölpreise wieder etwas zu.",
+    "source": "dpa-AFX via onvista",
+    "url": "https://www.onvista.de/news/2026/11-11-oelpreise-legen-etwas-zu-stabilisierung-nach-kursrutsch-0-10-26574976",
+    "published_at": "2026-11-11T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Börsentag auf einen Blick: Im Plus, Rekordhoch im Blick",
+    "summary": "Überblick am Morgen: Der Dax wird höher erwartet, das Rekordhoch rückt in Reichweite.",
+    "source": "dpa-AFX via onvista",
+    "url": "https://www.onvista.de/news/2026/11-11-dpa-afx-boersentag-auf-einen-blick-im-plus-rekordhoch-im-blick-0-10-26574899",
+    "published_at": "2026-11-11T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Dax höher erwartet – Inflation und Bilanzen im Blick",
+    "summary": "Vor Handelsstart deutet sich ein Plus an; Anleger achten auf Inflationsdaten und Quartalszahlen.",
+    "source": "onvista",
+    "url": "https://www.onvista.de/news/2026/11-11-dax-hoeher-erwartet-inflation-und-bilanzen-im-blick-0-20-26574884",
+    "published_at": "2026-11-11T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
    {
     "headline": "Wall Street: Aussicht auf steigende Zinsen drückt die Kurse",
     "summary": "Die US-Börsen schlossen am Dienstag im Minus, nachdem die Inflationsdaten Erwartungen an weitere Zinserhöhungen der Fed geschürt hatten.",
@@ -1852,104 +1948,6 @@
     "published_at": "2026-11-10T15:30:00+01:00",
     "kind": "news",
     "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "USA: Verbraucherpreise steigen stärker als erwartet",
-    "summary": "Die US-Teuerung fiel im Oktober höher aus als von Volkswirten prognostiziert; das stützt Spekulationen auf eine straffere Geldpolitik.",
-    "source": "dpa-AFX via Investing.com",
-    "url": "https://de.investing.com/news/economic-indicators/roundupusa-verbraucherpreise-steigen-starker-als-erwartet-3759800",
-    "published_at": "2026-11-10T15:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Dax setzt Erholung fort und nähert sich dem Rekordhoch",
-    "summary": "Der deutsche Leitindex bleibt am Dienstag auf Erholungskurs und rückt näher an seine Bestmarke heran.",
-    "source": "dpa-AFX / ARIVA.DE",
-    "url": "https://ariva.de/news/aktien-frankfurt-weiter-auf-erholungskurs-dax-naehert-sich-12201395",
-    "published_at": "2026-11-10T12:30:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Infineon setzt Rally nach Zahlen und Ausblick fort",
-    "summary": "Die Infineon-Aktie legte nach Quartalszahlen und Ausblick erneut zu und stützte den Dax.",
-    "source": "dpa-AFX via onvista",
-    "url": "https://onvista.de/news/2026/11-10-aktie-im-fokus-infineon-setzen-rally-nach-zahlen-und-ausblick-fort-0-10-26574458",
-    "published_at": "2026-11-10T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Wochenvorschau: Termine bis 24. November",
-    "summary": "Überblick über anstehende Unternehmenszahlen und Konjunkturdaten der kommenden Tage.",
-    "source": "dpa-AFX via ARIVA.DE",
-    "url": "https://www.ariva.de/news/wochenvorschau-termine-bis-24-november-2026-12202041",
-    "published_at": "2026-11-10T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Dax-Flash: Rekordhoch wieder in Reichweite",
-    "summary": "Sinkende Ölpreise und anstehende US-Inflationsdaten bestimmen den Handelsstart; der Dax nähert sich laut dpa-AFX wieder seinem Rekordhoch.",
-    "source": "finanzen.net (dpa-AFX)",
-    "url": "https://www.finanzen.net/nachricht/aktien/dax-flash-rekordhoch-wieder-nahe-oelpreisrueckgang-inflationsdaten-16052138",
-    "published_at": "2026-11-10T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Erholung an Asiens Börsen setzt sich fort",
-    "summary": "Die Börsen in Asien bauen am Dienstag ihre Erholung aus, gestützt von den Vorgaben der Wall Street.",
-    "source": "finanzen.ch",
-    "url": "https://www.finanzen.ch/nachrichten/aktien/boerse-aktuell-10-11-2026-1036741020",
-    "published_at": "2026-11-10T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Börsentag auf einen Blick: Rekordhoch rückt wieder näher",
-    "summary": "Der dpa-AFX-Überblick zum Dienstag sieht den Dax nach der Erholung wieder in Reichweite seines Rekordhochs; im Blick stehen die US-Inflationsdaten.",
-    "source": "dpa-AFX / onvista",
-    "url": "https://www.onvista.de/news/2026/11-10-dpa-afx-boersentag-auf-einen-blick-rekordhoch-rueckt-wieder-naeher-0-10-26574408",
-    "published_at": "2026-11-10T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Dow springt um über 1.100 Punkte, Nasdaq erholt sich",
-    "summary": "Der Ölpreisrutsch sorgte am Montag für eine breite Erholung an der Wall Street, der Dow Jones legte über 1.100 Punkte zu.",
-    "source": "Vistap Global",
-    "url": "https://vistapglobal.com/stock-market-today-november-9-2026-dow-jumps-1104-points-nasdaq-rallies-as-oils-slide-fuels-breadth-amwl-ant-eprx-googl-modd-nvda-ser-spcx/",
-    "published_at": "2026-11-09T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [
-     "SpaceX"
-    ],
     "peer": null,
     "popularity": null,
     "label": null
@@ -2024,6 +2022,14 @@
       "source": "ad-hoc-news.de",
       "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/babcock-stock-trades-at-12-16-euros-ahead-of-half-year-results/70471580",
       "published_at": "2026-11-06T12:00:00+01:00",
+      "kind": "news"
+     },
+     {
+      "headline": "Babcock kauft am 4. November weitere eigene Aktien zurück",
+      "summary": "Babcock hat im Rahmen seines Rückkaufprogramms 14.242 eigene Aktien zu durchschnittlich rund 1.029 Pence erworben.",
+      "source": "Kalkine",
+      "url": "https://kalkine.co.uk/news/announcements/babcock-international-group-bab-buys-back-14242-shares-at-average-102945p-on-4-november-2026",
+      "published_at": "2026-11-04T12:00:00+01:00",
       "kind": "news"
      }
     ]
@@ -2474,17 +2480,6 @@
  },
  "calendar": {
   "events": [
-   {
-    "date": "2026-11-11",
-    "time": "08:00",
-    "title": "DE Verbraucherpreise Oktober (endgültig)",
-    "type": "makro",
-    "region": "DE",
-    "holding": null,
-    "note": "",
-    "confirmed": true,
-    "url": "https://www.ariva.de/news/wochenvorschau-termine-bis-13-november-2026-12190165"
-   },
    {
     "date": "2026-11-12",
     "time": "08:00",
