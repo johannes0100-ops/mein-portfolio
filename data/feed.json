@@ -1,7 +1,7 @@
 {
  "app": "mein-portfolio-feed",
  "version": 1,
- "generated_at": "2026-11-10T17:26:40+00:00",
+ "generated_at": "2026-11-11T06:25:11+00:00",
  "quotes_at": "2026-11-10T17:26:25+00:00",
  "web_at": "2026-11-10T17:26:25+00:00",
  "live_at": "2026-11-10T17:22:54+00:00",
@@ -1804,14 +1804,98 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-10T13:30:00+01:00",
+  "generated_at": "2026-11-11T07:35:00+01:00",
   "market": [
+   {
+    "headline": "Wall Street: Aussicht auf steigende Zinsen drückt die Kurse",
+    "summary": "Die US-Börsen schlossen am Dienstag im Minus, nachdem die Inflationsdaten Erwartungen an weitere Zinserhöhungen der Fed geschürt hatten.",
+    "source": "dpa-AFX via onvista",
+    "url": "https://www.onvista.de/news/2026/11-10-aktien-new-york-schluss-aussicht-auf-steigende-zinsen-drueckt-kurse-0-10-26574801",
+    "published_at": "2026-11-10T22:30:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Nasdaq fällt nach Inflationsbericht – starker Wochenstart verpufft",
+    "summary": "Der Oktober-Inflationsbericht bremste die Erholung an der Wall Street, vor allem Technologiewerte gaben nach.",
+    "source": "TheStreet",
+    "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-10-2026",
+    "published_at": "2026-11-10T22:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "dpa-AFX Überblick: Konjunktur vom 10.11.2026",
+    "summary": "Zusammenfassung der wichtigsten Konjunkturmeldungen des Tages, darunter die US-Verbraucherpreise.",
+    "source": "dpa-AFX via onvista",
+    "url": "https://www.onvista.de/news/2026/11-10-dpa-afx-ueberblick-konjunktur-vom-10-11-2026-17-15-uhr-0-10-26574736",
+    "published_at": "2026-11-10T17:15:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Höhere US-Teuerung treibt die Renditen",
+    "summary": "Nach den überraschend hohen Inflationsdaten zogen die Renditen von US-Staatsanleihen an.",
+    "source": "Handelsblatt",
+    "url": "https://www.handelsblatt.com/finanzen/geldpolitik/inflation-preise-in-den-usa-steigen-im-oktober-staerker-als-erwartet/100268295.html",
+    "published_at": "2026-11-10T15:30:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "USA: Verbraucherpreise steigen stärker als erwartet",
+    "summary": "Die US-Teuerung fiel im Oktober höher aus als von Volkswirten prognostiziert; das stützt Spekulationen auf eine straffere Geldpolitik.",
+    "source": "dpa-AFX via Investing.com",
+    "url": "https://de.investing.com/news/economic-indicators/roundupusa-verbraucherpreise-steigen-starker-als-erwartet-3759800",
+    "published_at": "2026-11-10T15:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
    {
     "headline": "Dax setzt Erholung fort und nähert sich dem Rekordhoch",
     "summary": "Der deutsche Leitindex bleibt am Dienstag auf Erholungskurs und rückt näher an seine Bestmarke heran.",
     "source": "dpa-AFX / ARIVA.DE",
     "url": "https://ariva.de/news/aktien-frankfurt-weiter-auf-erholungskurs-dax-naehert-sich-12201395",
     "published_at": "2026-11-10T12:30:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Infineon setzt Rally nach Zahlen und Ausblick fort",
+    "summary": "Die Infineon-Aktie legte nach Quartalszahlen und Ausblick erneut zu und stützte den Dax.",
+    "source": "dpa-AFX via onvista",
+    "url": "https://onvista.de/news/2026/11-10-aktie-im-fokus-infineon-setzen-rally-nach-zahlen-und-ausblick-fort-0-10-26574458",
+    "published_at": "2026-11-10T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Wochenvorschau: Termine bis 24. November",
+    "summary": "Überblick über anstehende Unternehmenszahlen und Konjunkturdaten der kommenden Tage.",
+    "source": "dpa-AFX via ARIVA.DE",
+    "url": "https://www.ariva.de/news/wochenvorschau-termine-bis-24-november-2026-12202041",
+    "published_at": "2026-11-10T12:00:00+01:00",
     "kind": "news",
     "tickers": [],
     "peer": null,
@@ -1867,90 +1951,6 @@
     "peer": null,
     "popularity": null,
     "label": null
-   },
-   {
-    "headline": "Wall Street schließt höher, Nvidia schwächer wegen interner Untersuchung",
-    "summary": "US-Börsen schlossen am Montag im Plus, während Nvidia nach einer Untersuchung durch den eigenen Verwaltungsrat nachgab.",
-    "source": "StockTitan",
-    "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-9-2026",
-    "published_at": "2026-11-09T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Wochenvorschau: Termine bis 23. November",
-    "summary": "dpa-AFX-Terminübersicht der kommenden zwei Wochen mit Quartalszahlen und Konjunkturdaten.",
-    "source": "finanzen.at (dpa-AFX)",
-    "url": "https://www.finanzen.at/nachrichten/aktien/wochenvorschau-termine-bis-23-november-2026-1036740179",
-    "published_at": "2026-11-09T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Dax startet Erholungsversuch, KI-Sorgen bleiben",
-    "summary": "Nach der jüngsten Korrektur versucht sich der Dax zum Wochenstart an einer Erholung, die Skepsis gegenüber KI-Werten belastet aber weiter.",
-    "source": "dpa-AFX via onvista",
-    "url": "https://onvista.de/news/2026/11-09-dax-startet-erholungsversuch-ki-sorgen-bleiben-0-20-26574059",
-    "published_at": "2026-11-09T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Dax schiebt sich nach Korrektur wieder über 26.000 Punkte",
-    "summary": "Im Tagesverlauf kletterte der Leitindex zurück über die Marke von 26.000 Punkten.",
-    "source": "dpa-AFX via ARIVA.DE",
-    "url": "https://www.ariva.de/news/aktien-frankfurt-dax-lugt-nach-korrektur-wieder-ueber-26-000-12199919",
-    "published_at": "2026-11-09T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Börsentag auf einen Blick: Anleger bleiben vorsichtig",
-    "summary": "Der dpa-AFX-Tagesüberblick zeigt zurückhaltende Anleger zum Wochenauftakt, eine deutliche Erholung bleibt zunächst aus.",
-    "source": "dpa-AFX via onvista",
-    "url": "https://www.onvista.de/news/2026/11-09-dpa-afx-boersentag-auf-einen-blick-anleger-bleiben-vorsichtig-0-10-26573980",
-    "published_at": "2026-11-09T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Ölpreis rutscht ab, Renditen sinken, Gold legt zu",
-    "summary": "Ein Ölpreisrückgang um 2,5 Prozent dämpft Inflationserwartungen; die Rendite zehnjähriger US-Anleihen fällt um 4 Basispunkte, Gold steigt um mehr als 1 Prozent.",
-    "source": "Gokhshtein Media",
-    "url": "https://gokhshtein.com/news/2026-11-09-gold-rises-over-1-as-softer-oil-prices-ease-inflation",
-    "published_at": "2026-11-09T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "US-Arbeitsmarkt im Oktober deutlich stärker als erwartet",
-    "summary": "Die US-Wirtschaft hat im Oktober mehr Stellen geschaffen als Volkswirte erwartet hatten. Das stützt den Dollar, schürt aber Sorgen vor weiter hohen Zinsen.",
-    "source": "dpa-AFX via ariva.de",
-    "url": "https://www.ariva.de/news/roundup-us-arbeitsmarkt-entwickelt-sich-deutlich-staerker-12198368",
-    "published_at": "2026-11-06T15:30:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
    }
   ],
   "positions": [
@@ -1982,22 +1982,6 @@
       "kind": "news"
      },
      {
-      "headline": "Amazon-Aktie am Dienstagabend gefragt",
-      "summary": "Die Amazon-Aktie legte im US-Handel am Dienstag zu.",
-      "source": "finanzen.ch",
-      "url": "https://www.finanzen.ch/nachrichten/aktien/amazon-aktie-kursbewegung-03-11-2026-1035062828",
-      "published_at": "2026-11-03T12:00:00+01:00",
-      "kind": "news"
-     },
-     {
-      "headline": "Amazon: Wird AWS wieder zum Kurstreiber?",
-      "summary": "Ein Börsenbeitrag geht der Frage nach, ob das Cloudgeschäft AWS die Amazon-Aktie wieder nach oben ziehen kann.",
-      "source": "finanznachrichten.de",
-      "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70015061-amazon-aktie-wird-aws-wieder-zum-grossen-kurstreiber-486.htm",
-      "published_at": "2026-11-03T12:00:00+01:00",
-      "kind": "news"
-     },
-     {
       "headline": "TD Cowen: Ziel gesenkt",
       "summary": "TD Cowen senkt das Kursziel für Amazon nach den Quartalszahlen von 350 auf 340 Dollar.",
       "source": "rallies.ai",
@@ -2026,16 +2010,6 @@
       "kind": "analyst",
       "rating": "Outperform",
       "target": "330 USD"
-     },
-     {
-      "headline": "Mizuho: bestätigt",
-      "summary": "Mizuho erwartet, dass Zuwächse bei AWS mögliche Schwächen im Handelsgeschäft ausgleichen, und hält die Aktie für günstig.",
-      "source": "Investing.com",
-      "url": "https://www.investing.com/news/analyst-ratings/mizuho-reiterates-outperform-on-amazon-stock-keeps-330-target-93CH-4975171",
-      "published_at": "2026-10-27T12:40:00+01:00",
-      "kind": "analyst",
-      "rating": "Outperform",
-      "target": "330 USD"
      }
     ]
    },
@@ -2049,16 +2023,6 @@
       "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/babcock-stock-trades-at-12-16-euros-ahead-of-half-year-results/70471580",
       "published_at": "2026-11-06T12:00:00+01:00",
       "kind": "news"
-     },
-     {
-      "headline": "Goldman Sachs: Erststudie",
-      "summary": "Goldman nimmt die Aktie mit Neutral und 1.000 Pence Kursziel in die Bewertung auf.",
-      "source": "ad-hoc-news.de",
-      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/goldman-sachs-sets-1-000-pence-target-for-babcock-stock/70422576",
-      "published_at": "2026-10-27T18:53:00+01:00",
-      "kind": "analyst",
-      "rating": "Neutral",
-      "target": "1000 GBp"
      }
     ]
    },
@@ -2071,14 +2035,6 @@
       "source": "finanzen.ch",
       "url": "https://www.finanzen.ch/nachrichten/aktien/bmw-aktie-fallt-umsatz-und-gewinnrueckgang-im-dritten-quartal-margenziel-gesenkt-1036708718",
       "published_at": "2026-11-04T07:54:00+01:00",
-      "kind": "news"
-     },
-     {
-      "headline": "BMW senkt Jahresprognose erneut",
-      "summary": "BMW erwartet im Autogeschäft nur noch eine operative Marge von -0,5 bis +0,5 Prozent statt 1 bis 3 Prozent und 5 bis 10 Prozent weniger Auslieferungen; Grund sind erweiterte Struktur- und Portfoliomaßnahmen. Die Free-Cashflow-Prognose bleibt, die Aktie gab nachbörslich weiter nach.",
-      "source": "finanzen.net",
-      "url": "https://www.finanzen.net/nachricht/aktien/gewinnwarnung-gewinnprognose-erneut-kassiert-bmw-aktie-erlebt-den-naechsten-belastungstest-16033388",
-      "published_at": "2026-11-03T22:38:00+01:00",
       "kind": "news"
      },
      {
@@ -2149,14 +2105,6 @@
       "kind": "news"
      },
      {
-      "headline": "Moody's hebt Nokia auf Investment-Grade Baa3",
-      "summary": "Die Ratingagentur stuft die Kreditwürdigkeit von Nokia hoch, der Ausblick gilt als positiv.",
-      "source": "boerse-express",
-      "url": "https://www.boerse-express.com/news/articles/nokia-aktie-moodys-hebt-rating-auf-baa3-958991",
-      "published_at": "2026-11-03T12:00:00+01:00",
-      "kind": "news"
-     },
-     {
       "headline": "Jefferies: bestätigt",
       "summary": "Jefferies bleibt bei der Kaufempfehlung für Nokia.",
       "source": "finanzen.net",
@@ -2175,26 +2123,6 @@
       "kind": "analyst",
       "rating": "Buy",
       "target": "10,00 EUR"
-     },
-     {
-      "headline": "Goldman Sachs: Ziel angehoben",
-      "summary": "Goldman hebt das Ziel von 8,50 auf 8,80 Euro, verweist auf anhaltenden Schwung im KI-Geschäft, aber verhaltene Auftragseingänge im Quartal.",
-      "source": "ad-hoc-news.de",
-      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/nokia-aktie-goldman-sachs-hebt-ziel-fuer-die-nokia-aktie-von-8-50-auf-8-80-euro-an/70421485",
-      "published_at": "2026-10-27T16:30:00+01:00",
-      "kind": "analyst",
-      "rating": "Neutral",
-      "target": "8,80 EUR"
-     },
-     {
-      "headline": "Bank of America: bestätigt",
-      "summary": "Der Starlink-Ausbau dürfte die Ausgaben der US-Netzbetreiber für Funktechnik kaum schmälern.",
-      "source": "Investing.com",
-      "url": "https://www.investing.com/news/analyst-ratings/bofa-sees-starlink-buildout-as-positive-for-nokia-and-ericsson-shares-93CH-4975007",
-      "published_at": "2026-10-27T12:04:00+01:00",
-      "kind": "analyst",
-      "rating": "Buy",
-      "target": null
      }
     ]
    },
@@ -2353,50 +2281,6 @@
     "source": "Der Aktionär",
     "published_at": "2026-10-28T09:42:00+01:00",
     "url": "https://www.deraktionaer.de/artikel/medien-ittk-technologie/spacex-aktie-bank-of-america-sieht-jetzt-85-prozent-kurschance-20426578.html"
-   },
-   {
-    "stock": "babcock",
-    "broker": "Goldman Sachs",
-    "action": "Erststudie",
-    "rating": "Neutral",
-    "target": "1000 GBp",
-    "summary": "Goldman nimmt die Aktie mit Neutral und 1.000 Pence Kursziel in die Bewertung auf.",
-    "source": "ad-hoc-news.de",
-    "published_at": "2026-10-27T18:53:00+01:00",
-    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/goldman-sachs-sets-1-000-pence-target-for-babcock-stock/70422576"
-   },
-   {
-    "stock": "nokia",
-    "broker": "Goldman Sachs",
-    "action": "Ziel angehoben",
-    "rating": "Neutral",
-    "target": "8,80 EUR",
-    "summary": "Goldman hebt das Ziel von 8,50 auf 8,80 Euro, verweist auf anhaltenden Schwung im KI-Geschäft, aber verhaltene Auftragseingänge im Quartal.",
-    "source": "ad-hoc-news.de",
-    "published_at": "2026-10-27T16:30:00+01:00",
-    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/nokia-aktie-goldman-sachs-hebt-ziel-fuer-die-nokia-aktie-von-8-50-auf-8-80-euro-an/70421485"
-   },
-   {
-    "stock": "amzn",
-    "broker": "Mizuho",
-    "action": "bestätigt",
-    "rating": "Outperform",
-    "target": "330 USD",
-    "summary": "Mizuho erwartet, dass Zuwächse bei AWS mögliche Schwächen im Handelsgeschäft ausgleichen, und hält die Aktie für günstig.",
-    "source": "Investing.com",
-    "published_at": "2026-10-27T12:40:00+01:00",
-    "url": "https://www.investing.com/news/analyst-ratings/mizuho-reiterates-outperform-on-amazon-stock-keeps-330-target-93CH-4975171"
-   },
-   {
-    "stock": "nokia",
-    "broker": "Bank of America",
-    "action": "bestätigt",
-    "rating": "Buy",
-    "target": null,
-    "summary": "Der Starlink-Ausbau dürfte die Ausgaben der US-Netzbetreiber für Funktechnik kaum schmälern.",
-    "source": "Investing.com",
-    "published_at": "2026-10-27T12:04:00+01:00",
-    "url": "https://www.investing.com/news/analyst-ratings/bofa-sees-starlink-buildout-as-positive-for-nokia-and-ericsson-shares-93CH-4975007"
    }
   ],
   "popular": [
@@ -2465,6 +2349,18 @@
   ],
   "sector": [
    {
+    "headline": "Hensoldt will bis 2035 noch stärker wachsen – Aktie legt zu",
+    "summary": "Der Rüstungselektronik-Spezialist hob seine langfristigen Wachstumsziele an, die Aktie reagierte mit Gewinnen.",
+    "source": "dpa-AFX via boerse.de",
+    "url": "https://boerse.de/nachrichten/ROUNDUP-Hensoldt-will-bis-2035-noch-staerker-wachsen-Aktie-legt-zu/38714228",
+    "published_at": "2026-11-10T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
     "headline": "Rheinmetall kassiert Jahresziele, Aktie bricht ein",
     "summary": "Der Rüstungskonzern hat seine Prognosen wegen Verzögerungen gesenkt, die Aktie stürzte daraufhin ab. Das belastete auch die Stimmung für Rüstungswerte.",
     "source": "dpa-AFX via ARIVA.DE",
@@ -2505,23 +2401,45 @@
     "peer": null,
     "popularity": null,
     "label": null
-   },
-   {
-    "headline": "Handelsblatt: Deutsche Autobauer setzen auf den US-Markt",
-    "summary": "Laut Kommentar müssen BMW, Mercedes und VW ihre Modelle stärker auf US-Kunden zuschneiden, um verlorene Margen zurückzugewinnen; ein großer SUV sei ein guter Anfang.",
-    "source": "dpa-AFX via ARIVA.DE",
-    "url": "https://www.ariva.de/news/pressestimme-handelsblatt-zu-hoffnung-deutscher-12191798",
-    "published_at": "2026-11-03T05:35:00+01:00",
-    "kind": "news",
-    "tickers": [
-     "BMW"
-    ],
-    "peer": null,
-    "popularity": null,
-    "label": null
    }
   ],
   "peers": [
+   {
+    "headline": "Rheinmetall erholt sich weiter vom Tief",
+    "summary": "Die Rheinmetall-Aktie setzte am Dienstag ihre Erholung vom tiefsten Stand seit Februar 2025 fort.",
+    "source": "dpa-AFX via onvista",
+    "url": "https://onvista.de/news/2026/11-10-aktie-im-fokus-rheinmetall-weiter-erholt-von-tief-seit-februar-2025-0-10-26574611",
+    "published_at": "2026-11-10T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": "Rheinmetall",
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Volkswagen: Porsche SE fordert schnelle Reformen",
+    "summary": "Großaktionär Porsche SE drängt bei Volkswagen auf zügige Reformen.",
+    "source": "ad-hoc-news",
+    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/volkswagen-aktie-porsche-se-fordert-schnelle-reformen/70485532",
+    "published_at": "2026-11-10T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": "Volkswagen",
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Mercedes-Benz: Klimaplan setzt auf Wasserkraft und Lieferkette",
+    "summary": "Mercedes-Benz stellt seinen Klimaplan vor, der unter anderem auf Wasserkraft und die Lieferkette setzt.",
+    "source": "ad-hoc-news",
+    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/mercedes-aktie-klimaplan-setzt-auf-hydro-und-lieferkette/70486861",
+    "published_at": "2026-11-10T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": "Mercedes-Benz",
+    "popularity": null,
+    "label": null
+   },
    {
     "headline": "BAE Systems stellt neue Marinegeschütz-Familie vor",
     "summary": "Der britische Rüstungskonzern präsentiert eine modulare Geschützreihe mit vier Varianten für Marineschiffe.",
@@ -2549,64 +2467,11 @@
     "peer": "Rocket Lab",
     "popularity": null,
     "label": null
-   },
-   {
-    "headline": "Rocket Lab fällt auf Sechs-Monats-Tief",
-    "summary": "Die Aktie des SpaceX-Konkurrenten markierte ein neues Tief seit sechs Monaten.",
-    "source": "boerse.de",
-    "url": "https://www.boerse.de/nachrichten/Rocket-Lab-Aktie-mit-neuem-6-Monats-Tief/38706863",
-    "published_at": "2026-11-05T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [
-     "SpaceX"
-    ],
-    "peer": "Rocket Lab",
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "VW-Vorzüge am Dienstagnachmittag im Minus",
-    "summary": "Die Vorzugsaktie von Volkswagen gab im Handel am Dienstag nach.",
-    "source": "finanzen.net",
-    "url": "https://www.finanzen.net/nachricht/aktien/volkswagen_vz-aktie-kursbewegung-03-11-2026-11202050",
-    "published_at": "2026-11-03T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [
-     "BMW"
-    ],
-    "peer": "Volkswagen",
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Rheinmetall am Dienstagvormittag mit Verlusten",
-    "summary": "Die Rheinmetall-Aktie verlor am Dienstagvormittag an Wert, die Quartalszahlen folgen am Donnerstag.",
-    "source": "finanzen.net",
-    "url": "https://finanzen.net/nachricht/aktien/rheinmetall-aktie-kursbewegung-03-11-2026-11210138",
-    "published_at": "2026-11-03T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [
-     "Babcock"
-    ],
-    "peer": "Rheinmetall",
-    "popularity": null,
-    "label": null
    }
   ]
  },
  "calendar": {
   "events": [
-   {
-    "date": "2026-11-10",
-    "time": "14:30",
-    "title": "US Verbraucherpreise Oktober",
-    "type": "makro",
-    "region": "US",
-    "holding": null,
-    "note": "CPI und Real Earnings, 8:30 Uhr ET.",
-    "confirmed": true,
-    "url": "https://www.bls.gov/schedule/2026/11_sched_list.htm"
-   },
    {
     "date": "2026-11-11",
     "time": "08:00",
