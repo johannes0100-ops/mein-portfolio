@@ -1,7 +1,7 @@
 {
  "app": "mein-portfolio-feed",
  "version": 1,
- "generated_at": "2026-11-11T21:32:17+00:00",
+ "generated_at": "2026-11-12T06:22:24+00:00",
  "quotes_at": "2026-11-11T21:32:02+00:00",
  "web_at": "2026-11-11T21:32:02+00:00",
  "live_at": "2026-11-11T19:57:21+00:00",
@@ -1807,7 +1807,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-11T13:24:00+01:00",
+  "generated_at": "2026-11-12T07:25:00+01:00",
   "market": [
    {
     "headline": "Dax bleibt vorerst auf Erfolgskurs – Tech-Erholung stützt",
@@ -1846,18 +1846,6 @@
     "label": null
    },
    {
-    "headline": "Dax zum Start von Tech-Rally beflügelt",
-    "summary": "Zur Eröffnung legt der Dax zu, angetrieben von Kursgewinnen bei Technologiewerten und einer Rally bei Siemens Energy.",
-    "source": "dpa-AFX via onvista",
-    "url": "https://www.onvista.de/news/2026/11-11-roundup-aktien-frankfurt-eroeffnung-dax-von-tech-rally-befluegelt-0-10-26574991",
-    "published_at": "2026-11-11T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
     "headline": "Deutsche Anleihen mit leichten Kursgewinnen",
     "summary": "Bundesanleihen legen am Mittwoch leicht zu, die Renditen geben etwas nach.",
     "source": "dpa-AFX via onvista",
@@ -1882,10 +1870,10 @@
     "label": null
    },
    {
-    "headline": "Börsentag auf einen Blick: Im Plus, Rekordhoch im Blick",
-    "summary": "Überblick am Morgen: Der Dax wird höher erwartet, das Rekordhoch rückt in Reichweite.",
-    "source": "dpa-AFX via onvista",
-    "url": "https://www.onvista.de/news/2026/11-11-dpa-afx-boersentag-auf-einen-blick-im-plus-rekordhoch-im-blick-0-10-26574899",
+    "headline": "Dax schließt knapp unter Rekordhoch",
+    "summary": "Der Dax hat seine Erholung am Mittwoch fortgesetzt und den Handel nur knapp unter seinem Rekordhoch beendet.",
+    "source": "dpa-AFX via ARIVA.DE",
+    "url": "https://www.ariva.de/news/roundup-aktien-frankfurt-schluss-dax-weiter-erholt-und-12203752",
     "published_at": "2026-11-11T12:00:00+01:00",
     "kind": "news",
     "tickers": [],
@@ -1894,10 +1882,36 @@
     "label": null
    },
    {
-    "headline": "Dax höher erwartet – Inflation und Bilanzen im Blick",
-    "summary": "Vor Handelsstart deutet sich ein Plus an; Anleger achten auf Inflationsdaten und Quartalszahlen.",
-    "source": "onvista",
-    "url": "https://www.onvista.de/news/2026/11-11-dax-hoeher-erwartet-inflation-und-bilanzen-im-blick-0-20-26574884",
+    "headline": "Wall Street: Erholung an der Nasdaq beschleunigt sich",
+    "summary": "An der New Yorker Börse hat die Erholung der Technologiewerte am Mittwoch an Fahrt gewonnen, die Nasdaq schloss im Plus.",
+    "source": "dpa-AFX via onvista",
+    "url": "https://www.onvista.de/news/2026/11-11-aktien-new-york-schluss-erholung-an-der-nasdaq-beschleunigt-sich-0-10-26575289",
+    "published_at": "2026-11-11T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [
+     "Amazon"
+    ],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Ölpreise legen nach Kursrutsch zu",
+    "summary": "Die Ölpreise haben sich am Mittwoch nach dem vorangegangenen Kursrutsch weiter erholt.",
+    "source": "dpa-AFX via ARIVA.DE",
+    "url": "https://www.ariva.de/news/oelpreise-legen-nach-kursrutsch-zu-12203471",
+    "published_at": "2026-11-11T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Goldpreis erholt sich auf 4.064 Dollar",
+    "summary": "Der Goldpreis hat sich am Mittwoch auf 4.064 US-Dollar je Unze erholt, auch Silber legte zu.",
+    "source": "Goldreporter",
+    "url": "https://goldreporter.de/goldpreis-heute-11-11-2026-silber-steigt/marktbericht-gold/262994",
     "published_at": "2026-11-11T12:00:00+01:00",
     "kind": "news",
     "tickers": [],
@@ -1930,18 +1944,6 @@
     "label": null
    },
    {
-    "headline": "dpa-AFX Überblick: Konjunktur vom 10.11.2026",
-    "summary": "Zusammenfassung der wichtigsten Konjunkturmeldungen des Tages, darunter die US-Verbraucherpreise.",
-    "source": "dpa-AFX via onvista",
-    "url": "https://www.onvista.de/news/2026/11-10-dpa-afx-ueberblick-konjunktur-vom-10-11-2026-17-15-uhr-0-10-26574736",
-    "published_at": "2026-11-10T17:15:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
     "headline": "Höhere US-Teuerung treibt die Renditen",
     "summary": "Nach den überraschend hohen Inflationsdaten zogen die Renditen von US-Staatsanleihen an.",
     "source": "Handelsblatt",
@@ -1958,6 +1960,14 @@
    {
     "id": "amzn",
     "items": [
+     {
+      "headline": "Amazon-Aktie am Dienstagnachmittag fester",
+      "summary": "Die Amazon-Aktie hat am Dienstagnachmittag im Nasdaq-Handel zugelegt.",
+      "source": "finanzen.ch",
+      "url": "https://www.finanzen.ch/nachrichten/aktien/amazon-aktie-kursbewegung-10-11-2026-1031803624",
+      "published_at": "2026-11-10T12:00:00+01:00",
+      "kind": "news"
+     },
      {
       "headline": "Amazon: Formular 144 zu geplantem Insider-Aktienverkauf eingereicht",
       "summary": "Bei der US-Börsenaufsicht SEC wurde für Amazon ein Formular 144 eingereicht, mit dem ein geplanter Aktienverkauf durch einen Insider angezeigt wird.",
@@ -2024,28 +2034,12 @@
       "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/babcock-stock-trades-at-12-16-euros-ahead-of-half-year-results/70471580",
       "published_at": "2026-11-06T12:00:00+01:00",
       "kind": "news"
-     },
-     {
-      "headline": "Babcock kauft am 4. November weitere eigene Aktien zurück",
-      "summary": "Babcock hat im Rahmen seines Rückkaufprogramms 14.242 eigene Aktien zu durchschnittlich rund 1.029 Pence erworben.",
-      "source": "Kalkine",
-      "url": "https://kalkine.co.uk/news/announcements/babcock-international-group-bab-buys-back-14242-shares-at-average-102945p-on-4-november-2026",
-      "published_at": "2026-11-04T12:00:00+01:00",
-      "kind": "news"
      }
     ]
    },
    {
     "id": "bmw",
     "items": [
-     {
-      "headline": "BMW: Gewinn bricht im dritten Quartal ein, Margenziel gesenkt",
-      "summary": "Der Umsatz fiel um 5,8 Prozent auf 30,45 Mrd. Euro, das EBIT um fast 30 Prozent auf 1,59 Mrd. Euro; die Automarge lag mit 3,4 Prozent über den Erwartungen. Für 2026 erwartet BMW nur noch eine Automarge von -0,5 bis +0,5 Prozent.",
-      "source": "finanzen.ch",
-      "url": "https://www.finanzen.ch/nachrichten/aktien/bmw-aktie-fallt-umsatz-und-gewinnrueckgang-im-dritten-quartal-margenziel-gesenkt-1036708718",
-      "published_at": "2026-11-04T07:54:00+01:00",
-      "kind": "news"
-     },
      {
       "headline": "Deutsche Bank Research: bestätigt",
       "summary": "Deutsche Bank Research bleibt nach den Quartalszahlen bei der Kaufempfehlung für BMW.",
@@ -2122,22 +2116,28 @@
       "kind": "analyst",
       "rating": "Buy",
       "target": null
-     },
-     {
-      "headline": "Deutsche Bank Research: Ziel gesenkt",
-      "summary": "Trotz starker Zahlen sieht der Analyst kaum Änderungen an den Gewinnschätzungen und verweist auf Sorgen um Margenverwässerung im KI-Netzwerkgeschäft.",
-      "source": "dpa-AFX Analyser via wallstreet-online",
-      "url": "https://www.wallstreet-online.de/nachricht/21594288-deutsche-bank-research-stuft-nokia-buy",
-      "published_at": "2026-10-28T11:05:00+01:00",
-      "kind": "analyst",
-      "rating": "Buy",
-      "target": "10,00 EUR"
      }
     ]
    },
    {
     "id": "spacex",
     "items": [
+     {
+      "headline": "SpaceX-Aktie gibt vor Starship-Testflug nach",
+      "summary": "Die SpaceX-Aktie hat am Dienstag vor dem anstehenden Starship-Testflug nachgegeben, Anleger zeigen sich nervös.",
+      "source": "The Motley Fool",
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/11/11/stock-market-today-nov-11-spacex-shares-slip-amid-upcoming-starship-test-flight-jitters/",
+      "published_at": "2026-11-11T12:00:00+01:00",
+      "kind": "news"
+     },
+     {
+      "headline": "13. November könnte wichtiger Tag für SpaceX werden",
+      "summary": "Für den 13. November ist der nächste Starship-Testflug angesetzt, der für die Aktie richtungsweisend sein könnte.",
+      "source": "The Motley Fool",
+      "url": "https://www.fool.com/investing/2026/11/11/nov-13-could-be-a-huge-day-for-spacex-stock/",
+      "published_at": "2026-11-11T12:00:00+01:00",
+      "kind": "news"
+     },
      {
       "headline": "SpaceX-Aktie springt um 8,6 Prozent auf 134,27 Dollar",
       "summary": "Die Aktie erholte sich kräftig, nachdem Musk Sorgen um Regierungsaufträge zerstreut hatte.",
@@ -2161,32 +2161,6 @@
       "url": "https://keeptrack.space/x-report/spacex-brief-2026-11-09",
       "published_at": "2026-11-09T12:00:00+01:00",
       "kind": "news"
-     },
-     {
-      "headline": "NASA setzt für Mondkommunikation 2028 auf Starship",
-      "summary": "SpaceX erhält laut Bericht den Zuschlag, Starship für eine Kommunikationsmission zum Mond im Jahr 2028 einzusetzen.",
-      "source": "TeslaNorth",
-      "url": "https://teslanorth.com/2026/11/08/nasa-spacex-starship-moon-communications-2028",
-      "published_at": "2026-11-08T12:00:00+01:00",
-      "kind": "news"
-     },
-     {
-      "headline": "SpaceX will Starlink Mobile zum großen Mobilfunkanbieter ausbauen",
-      "summary": "SpaceX plant, mit Starlink Mobile als eigenständiger Netzbetreiber aufzutreten.",
-      "source": "KeepTrack",
-      "url": "https://keeptrack.space/x-report/spacex-brief-2026-11-08",
-      "published_at": "2026-11-08T12:00:00+01:00",
-      "kind": "news"
-     },
-     {
-      "headline": "Bank of America: Ziel angehoben",
-      "summary": "Bank of America hebt das Kursziel von 235 auf 275 Dollar und nimmt SpaceX in die US-1-Liste auf.",
-      "source": "Der Aktionär",
-      "url": "https://www.deraktionaer.de/artikel/medien-ittk-technologie/spacex-aktie-bank-of-america-sieht-jetzt-85-prozent-kurschance-20426578.html",
-      "published_at": "2026-10-28T09:42:00+01:00",
-      "kind": "analyst",
-      "rating": "Buy",
-      "target": "275 USD"
      }
     ]
    }
@@ -2268,94 +2242,9 @@
     "source": "dpa-AFX via finanznachrichten.de",
     "published_at": "2026-10-29T23:05:00+01:00",
     "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69981547-analyse-flash-rbc-belaesst-amazon-auf-outperform-ziel-330-dollar-016.htm"
-   },
-   {
-    "stock": "nokia",
-    "broker": "Deutsche Bank Research",
-    "action": "Ziel gesenkt",
-    "rating": "Buy",
-    "target": "10,00 EUR",
-    "summary": "Trotz starker Zahlen sieht der Analyst kaum Änderungen an den Gewinnschätzungen und verweist auf Sorgen um Margenverwässerung im KI-Netzwerkgeschäft.",
-    "source": "dpa-AFX Analyser via wallstreet-online",
-    "published_at": "2026-10-28T11:05:00+01:00",
-    "url": "https://www.wallstreet-online.de/nachricht/21594288-deutsche-bank-research-stuft-nokia-buy"
-   },
-   {
-    "stock": "spacex",
-    "broker": "Bank of America",
-    "action": "Ziel angehoben",
-    "rating": "Buy",
-    "target": "275 USD",
-    "summary": "Bank of America hebt das Kursziel von 235 auf 275 Dollar und nimmt SpaceX in die US-1-Liste auf.",
-    "source": "Der Aktionär",
-    "published_at": "2026-10-28T09:42:00+01:00",
-    "url": "https://www.deraktionaer.de/artikel/medien-ittk-technologie/spacex-aktie-bank-of-america-sieht-jetzt-85-prozent-kurschance-20426578.html"
    }
   ],
-  "popular": [
-   {
-    "headline": "Dax überrascht nach Trumps Wahlschlappe mit deutlichem Plus",
-    "summary": "Nach dem klaren Votum gegen die Regierung Trump bei den Zwischenwahlen verpufften Crash-Sorgen, der Dax startete deutlich im Plus.",
-    "source": "wallstreet-online via finanznachrichten.de",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70028977-trump-verliert-krachend-dax-ueberrascht-mit-deutlichem-plus-crash-sorgen-verpuffen-049.htm",
-    "published_at": "2026-11-04T09:53:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": "Meistgelesen auf finanznachrichten.de (Platz 12, 04.11.)",
-    "label": null
-   },
-   {
-    "headline": "NTT: Halbjahresgewinn sinkt, Umsatz steigt, Ausblick angepasst",
-    "summary": "Der japanische Telekomkonzern NTT meldete einen geringeren Halbjahresgewinn bei höheren Erlösen und überarbeitete seine Jahresprognose.",
-    "source": "AFX News via finanznachrichten.de",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70026437-ntt-h1-profit-drops-revenues-rise-revises-fy-outlook-020.htm",
-    "published_at": "2026-11-04T06:30:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": "Meistgelesen auf finanznachrichten.de (Platz 2, 04.11.)",
-    "label": null
-   },
-   {
-    "headline": "Goldman Sachs sieht bei einigen Europa-Aktien bis zu 250 Prozent Potenzial",
-    "summary": "Ein Bericht stellt europäische Aktien vor, bei denen Goldman Sachs sehr hohes Kurspotenzial sieht.",
-    "source": "wallstreet-online via finanznachrichten.de",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70026403-3-verdoppler-gefaellig-bis-zu-250-kurspotenzial-goldman-sachs-setzt-auf-diese-europaeischen-aktien-049.htm",
-    "published_at": "2026-11-04T06:23:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": "Meistgelesen auf finanznachrichten.de (Platz 3, 04.11.)",
-    "label": null
-   },
-   {
-    "headline": "Termine des Tages: Zahlen von Uber, Novo Nordisk, Qualcomm, McDonald's und BMW",
-    "summary": "Überblick über die wichtigsten Unternehmenszahlen des Mittwochs, darunter die BMW-Quartalsmitteilung.",
-    "source": "wallstreet-online via finanznachrichten.de",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70026090-ihre-wichtigsten-termine-frische-zahlen-von-uber-novo-nordisk-qualcomm-allstate-mcdonald-s-und-bmw-049.htm",
-    "published_at": "2026-11-04T04:53:00+01:00",
-    "kind": "news",
-    "tickers": [
-     "BMW"
-    ],
-    "peer": null,
-    "popularity": "Meistgelesen auf finanznachrichten.de (Platz 8, 04.11.)",
-    "label": null
-   },
-   {
-    "headline": "Block steigert Umsatz und Margen und hebt Jahresausblick an",
-    "summary": "Die Fintech-Plattform Block legte starke Quartalszahlen vor und erhöhte die Prognose für das Gesamtjahr.",
-    "source": "IT-Times via finanznachrichten.de",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70025642-block-zahlen-in-q1-fintech-plattform-steigert-umsatz-und-margen-jahresausblick-angehoben-046.htm",
-    "published_at": "2026-11-04T01:45:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": "Meistgelesen auf finanznachrichten.de (Platz 4, 04.11.)",
-    "label": null
-   }
-  ],
+  "popular": [],
   "sector": [
    {
     "headline": "Hensoldt will bis 2035 noch stärker wachsen – Aktie legt zu",
@@ -2382,37 +2271,37 @@
     "peer": null,
     "popularity": null,
     "label": null
-   },
+   }
+  ],
+  "peers": [
    {
-    "headline": "Rüstungswert Hensoldt am Mittwoch schwächer",
-    "summary": "Die Aktie des Rüstungselektronik-Herstellers Hensoldt gab im Mittwochshandel nach.",
-    "source": "finanzen.ch",
-    "url": "https://www.finanzen.ch/nachrichten/aktien/hensoldt-aktie-kursbewegung-04-11-2026-1035060946",
-    "published_at": "2026-11-04T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [
-     "Babcock"
-    ],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Kommentar: Autobauer in der Krise brauchen Maßhalten",
-    "summary": "Ein Pressekommentar fordert in der Autokrise auch von Beschäftigten Zurückhaltung und kritisiert hohe Boni und die 35-Stunden-Woche bei VW.",
-    "source": "dpa-AFX (finanzen.net)",
-    "url": "https://finanzen.net/nachricht/aktien/pressestimme-nordbayerischer-kurier-zu-autobauern-krise-16034060",
-    "published_at": "2026-11-04T05:34:00+01:00",
+    "headline": "Mercedes-Chef fordert Reformen für Industriestandort",
+    "summary": "Mercedes-Benz-Chef Källenius hat Reformen für den Industriestandort Deutschland angemahnt.",
+    "source": "dpa-AFX via ARIVA.DE",
+    "url": "https://www.ariva.de/news/mercedes-chef-dringt-auf-reformen-fuer-industriestandort-12203251",
+    "published_at": "2026-11-11T12:00:00+01:00",
     "kind": "news",
     "tickers": [
      "BMW"
     ],
-    "peer": null,
+    "peer": "Mercedes-Benz",
     "popularity": null,
     "label": null
-   }
-  ],
-  "peers": [
+   },
+   {
+    "headline": "Rocket Lab steigt nach Quartalszahlen",
+    "summary": "Die Rocket-Lab-Aktie legte nach den Quartalszahlen zu, gestützt von einem Auftragsbestand von 3,57 Milliarden Dollar und Preisangaben zur Neutron-Rakete.",
+    "source": "Vantage Markets",
+    "url": "https://www.vantagemarkets.com/market-analysis/why-rocket-lab-stock-climbed-q3-backlog-rklb-november-11-2026/",
+    "published_at": "2026-11-11T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [
+     "SpaceX"
+    ],
+    "peer": "Rocket Lab",
+    "popularity": null,
+    "label": null
+   },
    {
     "headline": "Rheinmetall erholt sich weiter vom Tief",
     "summary": "Die Rheinmetall-Aktie setzte am Dienstag ihre Erholung vom tiefsten Stand seit Februar 2025 fort.",
@@ -2446,34 +2335,6 @@
     "kind": "news",
     "tickers": [],
     "peer": "Mercedes-Benz",
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "BAE Systems stellt neue Marinegeschütz-Familie vor",
-    "summary": "Der britische Rüstungskonzern präsentiert eine modulare Geschützreihe mit vier Varianten für Marineschiffe.",
-    "source": "ad-hoc-news",
-    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/bae-systems-aktie-zeigt-neue-marinegeschuetzfamilie-mit-vier-varianten/70470678",
-    "published_at": "2026-11-06T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [
-     "Babcock"
-    ],
-    "peer": "BAE Systems",
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Rocket Lab fängt Kursrutsch am Freitag ab",
-    "summary": "Die Rocket-Lab-Aktie erholte sich am Freitag von zwischenzeitlich deutlichen Verlusten.",
-    "source": "Benzinga",
-    "url": "https://www.benzinga.com/trading-ideas/movers/26/11/62973089/rocket-lab-stock-pulls-out-of-a-nosedive-friday-whats-going-on",
-    "published_at": "2026-11-06T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [
-     "SpaceX"
-    ],
-    "peer": "Rocket Lab",
     "popularity": null,
     "label": null
    }
@@ -2601,6 +2462,17 @@
     "note": "",
     "confirmed": true,
     "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70026359-wochenvorschau-termine-bis-17-november-2026-016.htm"
+   },
+   {
+    "date": "2026-11-18",
+    "time": "08:00",
+    "title": "UK Verbraucherpreise Oktober",
+    "type": "makro",
+    "region": "UK",
+    "holding": null,
+    "note": "Veröffentlichung 7:00 Uhr Londoner Zeit.",
+    "confirmed": true,
+    "url": "https://www.ons.gov.uk/releases/consumerpriceinflationukoctober2026"
    },
    {
     "date": "2026-11-19",
