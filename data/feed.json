@@ -1,7 +1,7 @@
 {
  "app": "mein-portfolio-feed",
  "version": 1,
- "generated_at": "2026-11-12T11:26:57+00:00",
+ "generated_at": "2026-11-12T12:23:03+00:00",
  "quotes_at": "2026-11-12T11:26:40+00:00",
  "web_at": "2026-11-12T11:26:40+00:00",
  "live_at": "2026-11-12T10:58:33+00:00",
@@ -1809,14 +1809,14 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-12T07:25:00+01:00",
+  "generated_at": "2026-11-12T13:30:00+01:00",
   "market": [
    {
-    "headline": "Dax bleibt vorerst auf Erfolgskurs – Tech-Erholung stützt",
-    "summary": "Der Dax setzt seinen Aufwärtstrend am Mittwoch fort, gestützt von einer Erholung bei Technologiewerten.",
+    "headline": "Dax erstmals über 27.000 Punkte – Konjunkturhoffnung treibt",
+    "summary": "Hoffnungen auf eine anziehende Konjunktur haben den Dax am Donnerstag erstmals über die Marke von 27.000 Punkten gehoben.",
     "source": "dpa-AFX via onvista",
-    "url": "https://www.onvista.de/news/2026/11-11-aktien-frankfurt-dax-bleibt-vorerst-auf-erfolgskurs-tech-erholung-stuetzt-0-10-26575061",
-    "published_at": "2026-11-11T12:00:00+01:00",
+    "url": "https://www.onvista.de/news/2026/11-12-aktien-frankfurt-konjunkturhoffnung-treibt-dax-erstmals-ueber-27-000-punkte-0-10-26575630",
+    "published_at": "2026-11-12T12:00:00+01:00",
     "kind": "news",
     "tickers": [],
     "peer": null,
@@ -1824,11 +1824,35 @@
     "label": null
    },
    {
-    "headline": "Dax flirtet mit Rekordhoch – KI-Fantasie stützt die Börsen",
-    "summary": "Hoffnungen rund um Künstliche Intelligenz geben den Börsen Auftrieb, der Dax nähert sich seinem Rekordhoch.",
-    "source": "onvista",
-    "url": "https://www.onvista.de/news/2026/11-11-dax-flirtet-mit-rekordhoch-ki-fantasie-stuetzt-boersen-0-20-26575078",
-    "published_at": "2026-11-11T12:00:00+01:00",
+    "headline": "Siemens knapp unter Rekord nach starkem Jahr und höherer Prognose",
+    "summary": "Siemens legte Jahreszahlen vor und hob die Prognose an; die Aktie notiert knapp unter ihrem Rekordhoch.",
+    "source": "dpa-AFX via onvista",
+    "url": "https://www.onvista.de/news/2026/11-12-aktie-im-fokus-2-siemens-knapp-unter-rekord-starkes-jahr-und-hoehere-prognose-0-10-26575651",
+    "published_at": "2026-11-12T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Dax erklimmt zum Handelsstart Rekordhoch",
+    "summary": "Der deutsche Leitindex ist am Donnerstagmorgen auf ein neues Rekordhoch gestiegen.",
+    "source": "dpa-AFX via onvista",
+    "url": "https://www.onvista.de/news/2026/11-12-roundup-aktien-frankfurt-eroeffnung-dax-erklimmt-rekordhoch-0-10-26575572",
+    "published_at": "2026-11-12T09:30:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "US-Börsen: Nasdaq und S&P 500 legen nach CoreWeave-Zahlen zu, Apple auf Rekord",
+    "summary": "Starke Zahlen von CoreWeave stützten am Mittwoch Technologiewerte, Apple erreichte ein Rekordhoch.",
+    "source": "TheStreet",
+    "url": "https://thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-11-2026",
+    "published_at": "2026-11-11T22:00:00+01:00",
     "kind": "news",
     "tickers": [],
     "peer": null,
@@ -1852,18 +1876,6 @@
     "summary": "Bundesanleihen legen am Mittwoch leicht zu, die Renditen geben etwas nach.",
     "source": "dpa-AFX via onvista",
     "url": "https://www.onvista.de/news/2026/11-11-deutsche-anleihen-leichte-kursgewinne-0-10-26574987",
-    "published_at": "2026-11-11T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Ölpreise stabilisieren sich nach Kursrutsch",
-    "summary": "Nach dem jüngsten deutlichen Rückgang legen die Ölpreise wieder etwas zu.",
-    "source": "dpa-AFX via onvista",
-    "url": "https://www.onvista.de/news/2026/11-11-oelpreise-legen-etwas-zu-stabilisierung-nach-kursrutsch-0-10-26574976",
     "published_at": "2026-11-11T12:00:00+01:00",
     "kind": "news",
     "tickers": [],
@@ -1927,18 +1939,6 @@
     "source": "dpa-AFX via onvista",
     "url": "https://www.onvista.de/news/2026/11-10-aktien-new-york-schluss-aussicht-auf-steigende-zinsen-drueckt-kurse-0-10-26574801",
     "published_at": "2026-11-10T22:30:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Nasdaq fällt nach Inflationsbericht – starker Wochenstart verpufft",
-    "summary": "Der Oktober-Inflationsbericht bremste die Erholung an der Wall Street, vor allem Technologiewerte gaben nach.",
-    "source": "TheStreet",
-    "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-10-2026",
-    "published_at": "2026-11-10T22:00:00+01:00",
     "kind": "news",
     "tickers": [],
     "peer": null,
@@ -2078,6 +2078,14 @@
     "id": "nokia",
     "items": [
      {
+      "headline": "Nokias Erholung steht vor großer Bewährungsprobe bis Jahresende",
+      "summary": "Ein Beitrag von 24/7 Wall St. sieht die Kurserholung bei Nokia vor einem wichtigen Test bis Ende 2026.",
+      "source": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/11/11/nokias-rebound-faces-one-big-test-before-the-end-of-2026/",
+      "published_at": "2026-11-11T12:00:00+01:00",
+      "kind": "news"
+     },
+     {
       "headline": "Nokia-Aktie erholt sich um 6 Prozent, Widerstand bei 7,50 Euro",
       "summary": "Nach dem Ausverkauf kehren Käufer zurück; die Aktie legte rund 6 Prozent zu, trifft aber laut Chartanalyse bei 7,50 Euro auf Widerstand.",
       "source": "FX Leaders",
@@ -2125,6 +2133,14 @@
     "id": "spacex",
     "items": [
      {
+      "headline": "Ist die SpaceX-Aktie jetzt ein Kauf?",
+      "summary": "The Motley Fool wägt vor dem Starship-Testflug Chancen und Risiken eines Einstiegs bei SpaceX ab.",
+      "source": "The Motley Fool",
+      "url": "https://www.fool.com/investing/2026/11/11/is-spacex-stock-a-buy-right-now/",
+      "published_at": "2026-11-11T12:00:00+01:00",
+      "kind": "news"
+     },
+     {
       "headline": "SpaceX-Aktie gibt vor Starship-Testflug nach",
       "summary": "Die SpaceX-Aktie hat am Dienstag vor dem anstehenden Starship-Testflug nachgegeben, Anleger zeigen sich nervös.",
       "source": "The Motley Fool",
@@ -2153,14 +2169,6 @@
       "summary": "Die NASA hat Aufträge für eine Mondbasis vergeben; die SpaceX-Aktie legte daraufhin am Montag 5,8 Prozent zu.",
       "source": "Gotrade",
       "url": "https://www.heygotrade.com/en/news/spacex-spcx-stock-news-november-10-2026/",
-      "published_at": "2026-11-09T12:00:00+01:00",
-      "kind": "news"
-     },
-     {
-      "headline": "Starship-Flug 15 soll beide Stufen einfangen",
-      "summary": "SpaceX will beim nächsten Testflug erstmals sowohl den Booster als auch das Starship-Oberteil mit dem Startturm auffangen.",
-      "source": "KeepTrack",
-      "url": "https://keeptrack.space/x-report/spacex-brief-2026-11-09",
       "published_at": "2026-11-09T12:00:00+01:00",
       "kind": "news"
      }
@@ -2249,6 +2257,18 @@
   "popular": [],
   "sector": [
    {
+    "headline": "Secunet bricht um 13 Prozent ein – Quartalsgewinn eingebrochen",
+    "summary": "Der Sicherheitstechnik-Anbieter profitiert weiter vom Behördengeschäft, hohe Investitionen haben den Quartalsgewinn aber stark belastet.",
+    "source": "dpa-AFX via onvista",
+    "url": "https://www.onvista.de/news/2026/11-12-aktie-im-fokus-secunet-verlieren-13-prozent-quartalsgewinn-eingebrochen-0-10-26575633",
+    "published_at": "2026-11-12T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
     "headline": "Hensoldt will bis 2035 noch stärker wachsen – Aktie legt zu",
     "summary": "Der Rüstungselektronik-Spezialist hob seine langfristigen Wachstumsziele an, die Aktie reagierte mit Gewinnen.",
     "source": "dpa-AFX via boerse.de",
@@ -2276,6 +2296,20 @@
    }
   ],
   "peers": [
+   {
+    "headline": "OHB sacken nach Auftaktgewinnen ab – Ergebnis enttäuscht",
+    "summary": "Die Aktie des Raumfahrtkonzerns drehte nach anfänglichen Gewinnen ins Minus, weil das Ergebnis die Erwartungen verfehlte.",
+    "source": "dpa-AFX via onvista",
+    "url": "https://www.onvista.de/news/2026/11-12-aktie-im-fokus-ohb-sacken-nach-auftaktgewinnen-ab-ergebnis-enttaeuscht-0-10-26575576",
+    "published_at": "2026-11-12T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [
+     "SpaceX"
+    ],
+    "peer": "OHB",
+    "popularity": null,
+    "label": null
+   },
    {
     "headline": "Mercedes-Chef fordert Reformen für Industriestandort",
     "summary": "Mercedes-Benz-Chef Källenius hat Reformen für den Industriestandort Deutschland angemahnt.",
@@ -2327,45 +2361,11 @@
     "peer": "Volkswagen",
     "popularity": null,
     "label": null
-   },
-   {
-    "headline": "Mercedes-Benz: Klimaplan setzt auf Wasserkraft und Lieferkette",
-    "summary": "Mercedes-Benz stellt seinen Klimaplan vor, der unter anderem auf Wasserkraft und die Lieferkette setzt.",
-    "source": "ad-hoc-news",
-    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/mercedes-aktie-klimaplan-setzt-auf-hydro-und-lieferkette/70486861",
-    "published_at": "2026-11-10T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": "Mercedes-Benz",
-    "popularity": null,
-    "label": null
    }
   ]
  },
  "calendar": {
   "events": [
-   {
-    "date": "2026-11-12",
-    "time": "08:00",
-    "title": "UK BIP Q3 erste Schätzung",
-    "type": "makro",
-    "region": "UK",
-    "holding": null,
-    "note": "Veröffentlichung 7:00 Uhr Londoner Zeit.",
-    "confirmed": true,
-    "url": "https://www.ons.gov.uk/releases/gdpfirstquarterlyestimateukjulytoseptember2026"
-   },
-   {
-    "date": "2026-11-12",
-    "time": "08:00",
-    "title": "UK Industrieproduktion September",
-    "type": "makro",
-    "region": "UK",
-    "holding": null,
-    "note": "",
-    "confirmed": true,
-    "url": "https://www.ariva.de/news/wochenvorschau-termine-bis-17-november-2026-12193648"
-   },
    {
     "date": "2026-11-13",
     "time": "11:00",
