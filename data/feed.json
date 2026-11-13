@@ -1,7 +1,7 @@
 {
  "app": "mein-portfolio-feed",
  "version": 1,
- "generated_at": "2026-11-12T21:26:57+00:00",
+ "generated_at": "2026-11-13T06:22:22+00:00",
  "quotes_at": "2026-11-12T21:26:43+00:00",
  "web_at": "2026-11-12T21:26:43+00:00",
  "live_at": "2026-11-12T20:58:26+00:00",
@@ -1810,13 +1810,49 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-12T13:30:00+01:00",
+  "generated_at": "2026-11-13T07:30:00+01:00",
   "market": [
    {
-    "headline": "Dax erstmals über 27.000 Punkte – Konjunkturhoffnung treibt",
-    "summary": "Hoffnungen auf eine anziehende Konjunktur haben den Dax am Donnerstag erstmals über die Marke von 27.000 Punkten gehoben.",
+    "headline": "Dax zeitweise erstmals über 27.000 Punkten",
+    "summary": "Der Dax hat am Donnerstag vorübergehend erstmals die Marke von 27.000 Punkten überschritten. Die Gewinne schmolzen im Handelsverlauf jedoch wieder zusammen.",
     "source": "dpa-AFX via onvista",
-    "url": "https://www.onvista.de/news/2026/11-12-aktien-frankfurt-konjunkturhoffnung-treibt-dax-erstmals-ueber-27-000-punkte-0-10-26575630",
+    "url": "https://www.onvista.de/news/2026/11-12-roundup-aktien-frankfurt-schluss-dax-voruebergehend-erstmals-ueber-27-000-punkten-0-10-26575873",
+    "published_at": "2026-11-12T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Dax-Gewinn schmilzt nach Sprung über 27.000 Punkte",
+    "summary": "Nach dem Anstieg über 27.000 Punkte gab der Dax einen Teil seiner Gewinne im Tagesverlauf wieder ab.",
+    "source": "dpa-AFX via ARIVA.DE",
+    "url": "https://www.ariva.de/news/aktien-frankfurt-dax-gewinn-schmilzt-nach-anstieg-ueber-12205184",
+    "published_at": "2026-11-12T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Ölpreise etwas fester – Trump dämpft Hoffnung auf Iran-Einigung",
+    "summary": "Die Ölpreise legten leicht zu, nachdem US-Präsident Trump Erwartungen auf eine Einigung mit dem Iran gedämpft hatte.",
+    "source": "dpa-AFX via ARIVA.DE",
+    "url": "https://www.ariva.de/news/oelpreise-legen-etwas-zu-trump-daempft-erwartungen-auf-12205398",
+    "published_at": "2026-11-12T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Goldpreis fällt unter 4.000 Dollar",
+    "summary": "Die Aussicht auf höhere Zinsen belastet den Goldpreis, der unter die Marke von 4.000 US-Dollar je Unze gerutscht ist.",
+    "source": "dpa-AFX via onvista",
+    "url": "https://www.onvista.de/news/2026/11-12-goldpreis-sinkt-unter-4-000-us-dollar-aussicht-auf-hoehere-zinsen-belastet-0-10-26575533",
     "published_at": "2026-11-12T12:00:00+01:00",
     "kind": "news",
     "tickers": [],
@@ -1830,18 +1866,6 @@
     "source": "dpa-AFX via onvista",
     "url": "https://www.onvista.de/news/2026/11-12-aktie-im-fokus-2-siemens-knapp-unter-rekord-starkes-jahr-und-hoehere-prognose-0-10-26575651",
     "published_at": "2026-11-12T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Dax erklimmt zum Handelsstart Rekordhoch",
-    "summary": "Der deutsche Leitindex ist am Donnerstagmorgen auf ein neues Rekordhoch gestiegen.",
-    "source": "dpa-AFX via onvista",
-    "url": "https://www.onvista.de/news/2026/11-12-roundup-aktien-frankfurt-eroeffnung-dax-erklimmt-rekordhoch-0-10-26575572",
-    "published_at": "2026-11-12T09:30:00+01:00",
     "kind": "news",
     "tickers": [],
     "peer": null,
@@ -1906,30 +1930,6 @@
     "tickers": [
      "Amazon"
     ],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Ölpreise legen nach Kursrutsch zu",
-    "summary": "Die Ölpreise haben sich am Mittwoch nach dem vorangegangenen Kursrutsch weiter erholt.",
-    "source": "dpa-AFX via ARIVA.DE",
-    "url": "https://www.ariva.de/news/oelpreise-legen-nach-kursrutsch-zu-12203471",
-    "published_at": "2026-11-11T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Goldpreis erholt sich auf 4.064 Dollar",
-    "summary": "Der Goldpreis hat sich am Mittwoch auf 4.064 US-Dollar je Unze erholt, auch Silber legte zu.",
-    "source": "Goldreporter",
-    "url": "https://goldreporter.de/goldpreis-heute-11-11-2026-silber-steigt/marktbericht-gold/262994",
-    "published_at": "2026-11-11T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
     "peer": null,
     "popularity": null,
     "label": null
@@ -2014,16 +2014,6 @@
       "kind": "analyst",
       "rating": "Buy",
       "target": "370 USD"
-     },
-     {
-      "headline": "RBC: bestätigt",
-      "summary": "Analyst Brad Erickson sieht den Umsatz im Rahmen und das operative Ergebnis über den Erwartungen, der Ausblick für das vierte Quartal enttäuscht aber vor allem beim Gewinn.",
-      "source": "dpa-AFX via finanznachrichten.de",
-      "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69981547-analyse-flash-rbc-belaesst-amazon-auf-outperform-ziel-330-dollar-016.htm",
-      "published_at": "2026-10-29T23:05:00+01:00",
-      "kind": "analyst",
-      "rating": "Outperform",
-      "target": "330 USD"
      }
     ]
    },
@@ -2242,17 +2232,6 @@
     "source": "dpa-AFX via finanznachrichten.de",
     "published_at": "2026-10-30T08:50:00+01:00",
     "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69985131-analyse-flash-goldman-senkt-ziel-fuer-amazon-auf-370-dollar-buy-016.htm"
-   },
-   {
-    "stock": "amzn",
-    "broker": "RBC",
-    "action": "bestätigt",
-    "rating": "Outperform",
-    "target": "330 USD",
-    "summary": "Analyst Brad Erickson sieht den Umsatz im Rahmen und das operative Ergebnis über den Erwartungen, der Ausblick für das vierte Quartal enttäuscht aber vor allem beim Gewinn.",
-    "source": "dpa-AFX via finanznachrichten.de",
-    "published_at": "2026-10-29T23:05:00+01:00",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69981547-analyse-flash-rbc-belaesst-amazon-auf-outperform-ziel-330-dollar-016.htm"
    }
   ],
   "popular": [],
@@ -2280,23 +2259,37 @@
     "peer": null,
     "popularity": null,
     "label": null
-   },
-   {
-    "headline": "Rheinmetall kassiert Jahresziele, Aktie bricht ein",
-    "summary": "Der Rüstungskonzern hat seine Prognosen wegen Verzögerungen gesenkt, die Aktie stürzte daraufhin ab. Das belastete auch die Stimmung für Rüstungswerte.",
-    "source": "dpa-AFX via ARIVA.DE",
-    "url": "https://www.ariva.de/news/aktie-im-fokus-2-rheinmetall-gewinnwarnung-schockt-anleger-12195921",
-    "published_at": "2026-11-05T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [
-     "Babcock"
-    ],
-    "peer": null,
-    "popularity": null,
-    "label": null
    }
   ],
   "peers": [
+   {
+    "headline": "Mercedes prüft mögliche Werksschließungen in Deutschland",
+    "summary": "Mercedes-Benz prüft laut Bericht, ob Werke in Deutschland geschlossen werden könnten.",
+    "source": "dpa-AFX via ARIVA.DE",
+    "url": "https://ariva.de/news/mercedes-prueft-moegliche-werksschliessungen-in-deutschland-12205570",
+    "published_at": "2026-11-12T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [
+     "BMW"
+    ],
+    "peer": "Mercedes-Benz",
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Studie: VW verdient nur noch zwölf Euro je Auto",
+    "summary": "Laut einer Studie ist der Gewinn von Volkswagen je verkauftem Fahrzeug auf nur noch zwölf Euro gefallen.",
+    "source": "onvista",
+    "url": "https://onvista.de/news/2026/11-12-studie-vw-verdient-nur-noch-zwoelf-euro-je-verkauftem-auto-0-20-26575788",
+    "published_at": "2026-11-12T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [
+     "BMW"
+    ],
+    "peer": "Volkswagen",
+    "popularity": null,
+    "label": null
+   },
    {
     "headline": "OHB sacken nach Auftaktgewinnen ab – Ergebnis enttäuscht",
     "summary": "Die Aktie des Raumfahrtkonzerns drehte nach anfänglichen Gewinnen ins Minus, weil das Ergebnis die Erwartungen verfehlte.",
@@ -2336,30 +2329,6 @@
      "SpaceX"
     ],
     "peer": "Rocket Lab",
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Rheinmetall erholt sich weiter vom Tief",
-    "summary": "Die Rheinmetall-Aktie setzte am Dienstag ihre Erholung vom tiefsten Stand seit Februar 2025 fort.",
-    "source": "dpa-AFX via onvista",
-    "url": "https://onvista.de/news/2026/11-10-aktie-im-fokus-rheinmetall-weiter-erholt-von-tief-seit-februar-2025-0-10-26574611",
-    "published_at": "2026-11-10T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": "Rheinmetall",
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Volkswagen: Porsche SE fordert schnelle Reformen",
-    "summary": "Großaktionär Porsche SE drängt bei Volkswagen auf zügige Reformen.",
-    "source": "ad-hoc-news",
-    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/volkswagen-aktie-porsche-se-fordert-schnelle-reformen/70485532",
-    "published_at": "2026-11-10T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": "Volkswagen",
     "popularity": null,
     "label": null
    }
