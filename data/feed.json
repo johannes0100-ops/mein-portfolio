@@ -1,7 +1,7 @@
 {
  "app": "mein-portfolio-feed",
  "version": 1,
- "generated_at": "2026-11-13T11:26:47+00:00",
+ "generated_at": "2026-11-13T12:23:00+00:00",
  "quotes_at": "2026-11-13T11:26:35+00:00",
  "web_at": "2026-11-13T11:26:35+00:00",
  "live_at": "2026-11-13T11:24:10+00:00",
@@ -1812,14 +1812,14 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-13T07:30:00+01:00",
+  "generated_at": "2026-11-13T13:30:00+01:00",
   "market": [
    {
-    "headline": "Dax zeitweise erstmals über 27.000 Punkten",
-    "summary": "Der Dax hat am Donnerstag vorübergehend erstmals die Marke von 27.000 Punkten überschritten. Die Gewinne schmolzen im Handelsverlauf jedoch wieder zusammen.",
+    "headline": "Dax legt nach Rekordhoch eine Atempause ein",
+    "summary": "Nach dem Rekord vom Vortag tritt der Dax am Freitag auf der Stelle, Anleger halten sich zurück.",
     "source": "dpa-AFX via onvista",
-    "url": "https://www.onvista.de/news/2026/11-12-roundup-aktien-frankfurt-schluss-dax-voruebergehend-erstmals-ueber-27-000-punkten-0-10-26575873",
-    "published_at": "2026-11-12T12:00:00+01:00",
+    "url": "https://www.onvista.de/news/2026/11-13-aktien-frankfurt-atempause-nach-rekordhoch-beim-dax-0-10-26576087",
+    "published_at": "2026-11-13T12:00:00+01:00",
     "kind": "news",
     "tickers": [],
     "peer": null,
@@ -1827,10 +1827,48 @@
     "label": null
    },
    {
-    "headline": "Dax-Gewinn schmilzt nach Sprung über 27.000 Punkte",
-    "summary": "Nach dem Anstieg über 27.000 Punkte gab der Dax einen Teil seiner Gewinne im Tagesverlauf wieder ab.",
-    "source": "dpa-AFX via ARIVA.DE",
-    "url": "https://www.ariva.de/news/aktien-frankfurt-dax-gewinn-schmilzt-nach-anstieg-ueber-12205184",
+    "headline": "Commerzbank traut dem Dax 2027 weitere sechs bis acht Prozent zu",
+    "summary": "Die Commerzbank erwartet für den deutschen Leitindex im kommenden Jahr ein weiteres Plus von sechs bis acht Prozent.",
+    "source": "dpa-AFX via onvista",
+    "url": "https://www.onvista.de/news/2026/11-13-analyse-commerzbank-traut-dax-2027-weiteres-plus-von-sechs-bis-acht-prozent-zu-0-10-26576074",
+    "published_at": "2026-11-13T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Brent hält sich bei rund 96 Dollar – IEA sieht ersten Überschuss seit Iran-Krieg",
+    "summary": "Der Ölpreis der Sorte Brent bleibt nahe 96 Dollar, während die Internationale Energieagentur erstmals seit dem Iran-Krieg ein Überangebot erwartet.",
+    "source": "Invezz",
+    "url": "https://invezz.com/news/2026/11/13/oil-price-today-brent-holds-near-96-as-iea-sees-first-surplus-since-iran-war/",
+    "published_at": "2026-11-13T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Wall Street: Nvidia bricht nach Huangs Rücktritt ein, Dow robust",
+    "summary": "Die Nvidia-Aktie fiel nach dem angekündigten Rücktritt von Konzernchef Jensen Huang deutlich und belastete Technologiewerte, während sich der Dow stabil hielt.",
+    "source": "dpa-AFX via onvista",
+    "url": "https://www.onvista.de/news/2026/11-12-roundup-aktien-new-york-nvidia-bricht-nach-huangs-ruecktritt-ein-dow-robust-0-10-26575781",
+    "published_at": "2026-11-12T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [
+     "Amazon"
+    ],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Dax zeitweise erstmals über 27.000 Punkten",
+    "summary": "Der Dax hat am Donnerstag vorübergehend erstmals die Marke von 27.000 Punkten überschritten. Die Gewinne schmolzen im Handelsverlauf jedoch wieder zusammen.",
+    "source": "dpa-AFX via onvista",
+    "url": "https://www.onvista.de/news/2026/11-12-roundup-aktien-frankfurt-schluss-dax-voruebergehend-erstmals-ueber-27-000-punkten-0-10-26575873",
     "published_at": "2026-11-12T12:00:00+01:00",
     "kind": "news",
     "tickers": [],
@@ -1899,18 +1937,6 @@
     "label": null
    },
    {
-    "headline": "Deutsche Anleihen mit leichten Kursgewinnen",
-    "summary": "Bundesanleihen legen am Mittwoch leicht zu, die Renditen geben etwas nach.",
-    "source": "dpa-AFX via onvista",
-    "url": "https://www.onvista.de/news/2026/11-11-deutsche-anleihen-leichte-kursgewinne-0-10-26574987",
-    "published_at": "2026-11-11T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
     "headline": "Dax schließt knapp unter Rekordhoch",
     "summary": "Der Dax hat seine Erholung am Mittwoch fortgesetzt und den Handel nur knapp unter seinem Rekordhoch beendet.",
     "source": "dpa-AFX via ARIVA.DE",
@@ -1932,30 +1958,6 @@
     "tickers": [
      "Amazon"
     ],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Wall Street: Aussicht auf steigende Zinsen drückt die Kurse",
-    "summary": "Die US-Börsen schlossen am Dienstag im Minus, nachdem die Inflationsdaten Erwartungen an weitere Zinserhöhungen der Fed geschürt hatten.",
-    "source": "dpa-AFX via onvista",
-    "url": "https://www.onvista.de/news/2026/11-10-aktien-new-york-schluss-aussicht-auf-steigende-zinsen-drueckt-kurse-0-10-26574801",
-    "published_at": "2026-11-10T22:30:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Höhere US-Teuerung treibt die Renditen",
-    "summary": "Nach den überraschend hohen Inflationsdaten zogen die Renditen von US-Staatsanleihen an.",
-    "source": "Handelsblatt",
-    "url": "https://www.handelsblatt.com/finanzen/geldpolitik/inflation-preise-in-den-usa-steigen-im-oktober-staerker-als-erwartet/100268295.html",
-    "published_at": "2026-11-10T15:30:00+01:00",
-    "kind": "news",
-    "tickers": [],
     "peer": null,
     "popularity": null,
     "label": null
@@ -2022,6 +2024,14 @@
    {
     "id": "babcock",
     "items": [
+     {
+      "headline": "Babcock-Aktie fällt in London um 5,7 Prozent",
+      "summary": "Die Babcock-Aktie hat am Donnerstag an der Londoner Börse rund 5,7 Prozent verloren, eine Woche vor den Halbjahreszahlen.",
+      "source": "Daily Political",
+      "url": "https://www.dailypolitical.com/2026/11/12/babcock-international-group-lonbab-shares-down-5-7-heres-why.html",
+      "published_at": "2026-11-12T12:00:00+01:00",
+      "kind": "news"
+     },
      {
       "headline": "Babcock-Aktie vor Halbjahreszahlen bei 12,16 Euro",
       "summary": "Die Babcock-Aktie notiert vor der anstehenden Vorlage der Halbjahreszahlen bei rund 12,16 Euro.",
@@ -2338,17 +2348,6 @@
  },
  "calendar": {
   "events": [
-   {
-    "date": "2026-11-13",
-    "time": "11:00",
-    "title": "Eurozone BIP Q3 (2. Veröffentlichung) und Beschäftigung",
-    "type": "makro",
-    "region": "EU",
-    "holding": null,
-    "note": "Zweite Schätzung, Termin laut Eurostat Kalender vorläufig.",
-    "confirmed": true,
-    "url": "https://ariva.de/news/wochenvorschau-termine-bis-16-november-2026-12191814"
-   },
    {
     "date": "2026-11-13",
     "time": "14:30",
