@@ -1,7 +1,7 @@
 {
  "app": "mein-portfolio-feed",
  "version": 1,
- "generated_at": "2026-11-14T06:22:30+00:00",
+ "generated_at": "2026-11-14T12:22:11+00:00",
  "quotes_at": "2026-11-13T21:27:05+00:00",
  "web_at": "2026-11-13T21:27:05+00:00",
  "live_at": "2026-11-13T21:13:34+00:00",
@@ -1813,7 +1813,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-14T07:30:00+01:00",
+  "generated_at": "2026-11-14T13:30:00+01:00",
   "market": [
    {
     "headline": "Wall Street: Anleger trennen sich von Halbleiteraktien, Dow stabil",
@@ -2056,43 +2056,43 @@
     "id": "spacex",
     "items": [
      {
+      "headline": "Starship erreicht den Orbit – Booster explodiert",
+      "summary": "Beim 15. Starship-Testflug erreichte das Raumschiff vor der geplanten Rückkehr die Umlaufbahn, die Booster-Stufe explodierte jedoch.",
+      "source": "RTÉ",
+      "url": "https://www.rte.ie/news/world/2026/1114/1599196-starship-reaches-orbit/",
+      "published_at": "2026-11-14T12:00:00+01:00",
+      "kind": "news"
+     },
+     {
+      "headline": "SpaceX startet 15. Starship-Flug – erster Hin- und Rückflug angestrebt",
+      "summary": "SpaceX hat den 15. Starship-Testflug gestartet und will damit erstmals eine vollständige Hin- und Rückreise schaffen.",
+      "source": "The Spokesman-Review",
+      "url": "https://www.spokesman.com/stories/2026/nov/13/spacex-launches-15th-starship-flight-with-hopes-of/",
+      "published_at": "2026-11-13T12:00:00+01:00",
+      "kind": "news"
+     },
+     {
+      "headline": "SpaceX-Aktie gibt vor historischem Starship-Flug 15 nach",
+      "summary": "Invezz beleuchtet, warum die SpaceX-Aktie vor dem 15. Starship-Testflug unter Druck geriet.",
+      "source": "Invezz",
+      "url": "https://invezz.com/news/2026/11/13/why-spacex-shares-are-sliding-ahead-of-historic-starship-flight-15-launch/",
+      "published_at": "2026-11-13T12:00:00+01:00",
+      "kind": "news"
+     },
+     {
+      "headline": "Starship gelingt etwas erst zum zweiten Mal – nächster Schritt steht an",
+      "summary": "The Motley Fool ordnet einen Meilenstein des Starship-Programms ein und sieht einen noch wichtigeren Termin am Wochenende.",
+      "source": "The Motley Fool",
+      "url": "https://www.fool.com/investing/2026/11/13/spacex-s-starship-just-did-something-for-only-the-2nd-time-saturday-could-be-even-bigger/",
+      "published_at": "2026-11-13T12:00:00+01:00",
+      "kind": "news"
+     },
+     {
       "headline": "Ist die SpaceX-Aktie jetzt ein Kauf?",
       "summary": "The Motley Fool wägt vor dem Starship-Testflug Chancen und Risiken eines Einstiegs bei SpaceX ab.",
       "source": "The Motley Fool",
       "url": "https://www.fool.com/investing/2026/11/11/is-spacex-stock-a-buy-right-now/",
       "published_at": "2026-11-11T12:00:00+01:00",
-      "kind": "news"
-     },
-     {
-      "headline": "SpaceX-Aktie gibt vor Starship-Testflug nach",
-      "summary": "Die SpaceX-Aktie hat am Dienstag vor dem anstehenden Starship-Testflug nachgegeben, Anleger zeigen sich nervös.",
-      "source": "The Motley Fool",
-      "url": "https://www.fool.com/coverage/stock-market-today/2026/11/11/stock-market-today-nov-11-spacex-shares-slip-amid-upcoming-starship-test-flight-jitters/",
-      "published_at": "2026-11-11T12:00:00+01:00",
-      "kind": "news"
-     },
-     {
-      "headline": "13. November könnte wichtiger Tag für SpaceX werden",
-      "summary": "Für den 13. November ist der nächste Starship-Testflug angesetzt, der für die Aktie richtungsweisend sein könnte.",
-      "source": "The Motley Fool",
-      "url": "https://www.fool.com/investing/2026/11/11/nov-13-could-be-a-huge-day-for-spacex-stock/",
-      "published_at": "2026-11-11T12:00:00+01:00",
-      "kind": "news"
-     },
-     {
-      "headline": "SpaceX-Aktie springt um 8,6 Prozent auf 134,27 Dollar",
-      "summary": "Die Aktie erholte sich kräftig, nachdem Musk Sorgen um Regierungsaufträge zerstreut hatte.",
-      "source": "FX Leaders",
-      "url": "https://www.fxleaders.com/news/2026/11/10/spcx-stock-rebounds-8-62-to-134-27-after-musk-eases-government-contract-fears/",
-      "published_at": "2026-11-10T12:00:00+01:00",
-      "kind": "news"
-     },
-     {
-      "headline": "SpaceX steigt nach NASA-Aufträgen für Mondbasis",
-      "summary": "Die NASA hat Aufträge für eine Mondbasis vergeben; die SpaceX-Aktie legte daraufhin am Montag 5,8 Prozent zu.",
-      "source": "Gotrade",
-      "url": "https://www.heygotrade.com/en/news/spacex-spcx-stock-news-november-10-2026/",
-      "published_at": "2026-11-09T12:00:00+01:00",
       "kind": "news"
      }
     ]
