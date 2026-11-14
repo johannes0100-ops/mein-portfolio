@@ -1,7 +1,7 @@
 {
  "app": "mein-portfolio-feed",
  "version": 1,
- "generated_at": "2026-11-13T21:27:18+00:00",
+ "generated_at": "2026-11-14T06:22:30+00:00",
  "quotes_at": "2026-11-13T21:27:05+00:00",
  "web_at": "2026-11-13T21:27:05+00:00",
  "live_at": "2026-11-13T21:13:34+00:00",
@@ -1813,13 +1813,49 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-13T13:30:00+01:00",
+  "generated_at": "2026-11-14T07:30:00+01:00",
   "market": [
    {
-    "headline": "Dax legt nach Rekordhoch eine Atempause ein",
-    "summary": "Nach dem Rekord vom Vortag tritt der Dax am Freitag auf der Stelle, Anleger halten sich zurück.",
+    "headline": "Wall Street: Anleger trennen sich von Halbleiteraktien, Dow stabil",
+    "summary": "An der Wall Street standen zum Wochenschluss Chipwerte unter Verkaufsdruck, der Dow Jones hielt sich dagegen stabil.",
     "source": "dpa-AFX via onvista",
-    "url": "https://www.onvista.de/news/2026/11-13-aktien-frankfurt-atempause-nach-rekordhoch-beim-dax-0-10-26576087",
+    "url": "https://www.onvista.de/news/2026/11-13-aktien-new-york-schluss-anleger-trennen-sich-von-halbleiteraktien-dow-stabil-0-10-26576273",
+    "published_at": "2026-11-13T22:30:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Dax trotzt Nasdaq-Schwäche – Pause nach Rekord",
+    "summary": "Der Dax hat den Freitag nach seinem Rekordhoch nahezu stabil beendet, während an der Nasdaq erneut Tech-Werte verkauft wurden.",
+    "source": "dpa-AFX via onvista",
+    "url": "https://www.onvista.de/news/2026/11-13-roundup-aktien-frankfurt-schluss-dax-trotzt-nasdaq-schwaeche-pause-nach-rekord-0-10-26576248",
+    "published_at": "2026-11-13T18:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Anleihen: Inflationssorgen treiben die Renditen",
+    "summary": "Sorgen um die Inflation haben die Renditen am Anleihemarkt weiter steigen lassen.",
+    "source": "Deutsche Börse via onvista",
+    "url": "https://www.onvista.de/news/2026/11-13-deutsche-boerse-news-anleihen-inflationssorgen-treiben-renditen-0-10-26576178",
+    "published_at": "2026-11-13T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Wochenausblick: Nach Dax-Rekord warten Anleger auf Nvidia-Zahlen und Anthropic",
+    "summary": "In der neuen Woche stehen die Quartalszahlen von Nvidia und das Börsendebüt von Anthropic im Mittelpunkt.",
+    "source": "dpa-AFX via finanznachrichten.de",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70126231-wochenausblick-anleger-warten-nach-dax-rekord-auf-nvidia-zahlen-und-anthropic-016.htm",
     "published_at": "2026-11-13T12:00:00+01:00",
     "kind": "news",
     "tickers": [],
@@ -1845,6 +1881,18 @@
     "source": "Invezz",
     "url": "https://invezz.com/news/2026/11/13/oil-price-today-brent-holds-near-96-as-iea-sees-first-surplus-since-iran-war/",
     "published_at": "2026-11-13T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Deutsche Anleihen verlieren – steigende Ölpreise belasten",
+    "summary": "Höhere Ölpreise haben deutsche Staatsanleihen unter Druck gesetzt.",
+    "source": "dpa-AFX via onvista",
+    "url": "https://www.onvista.de/news/2026/11-12-deutsche-anleihen-kursverluste-steigende-oelpreise-belasten-0-10-26575836",
+    "published_at": "2026-11-12T12:00:00+01:00",
     "kind": "news",
     "tickers": [],
     "peer": null,
@@ -1902,63 +1950,13 @@
     "label": null
    },
    {
-    "headline": "Siemens knapp unter Rekord nach starkem Jahr und höherer Prognose",
-    "summary": "Siemens legte Jahreszahlen vor und hob die Prognose an; die Aktie notiert knapp unter ihrem Rekordhoch.",
+    "headline": "USA: Verbraucherpreise steigen stärker als erwartet",
+    "summary": "Die US-Inflation ist im Oktober stärker gestiegen als von Volkswirten erwartet.",
     "source": "dpa-AFX via onvista",
-    "url": "https://www.onvista.de/news/2026/11-12-aktie-im-fokus-2-siemens-knapp-unter-rekord-starkes-jahr-und-hoehere-prognose-0-10-26575651",
-    "published_at": "2026-11-12T12:00:00+01:00",
+    "url": "https://www.onvista.de/news/2026/11-10-roundup-usa-verbraucherpreise-steigen-staerker-als-erwartet-0-10-26574694",
+    "published_at": "2026-11-10T12:00:00+01:00",
     "kind": "news",
     "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "US-Börsen: Nasdaq und S&P 500 legen nach CoreWeave-Zahlen zu, Apple auf Rekord",
-    "summary": "Starke Zahlen von CoreWeave stützten am Mittwoch Technologiewerte, Apple erreichte ein Rekordhoch.",
-    "source": "TheStreet",
-    "url": "https://thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-11-2026",
-    "published_at": "2026-11-11T22:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Eon und RWE uneinheitlich nach Zahlen und Ausblick",
-    "summary": "Die beiden Energiekonzerne legten Geschäftszahlen und Ausblick vor; die Aktien reagieren unterschiedlich.",
-    "source": "dpa-AFX via onvista",
-    "url": "https://www.onvista.de/news/2026/11-11-aktien-im-fokus-2-eon-und-rwe-uneinheitlich-nach-zahlen-und-ausblick-0-10-26575007",
-    "published_at": "2026-11-11T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Dax schließt knapp unter Rekordhoch",
-    "summary": "Der Dax hat seine Erholung am Mittwoch fortgesetzt und den Handel nur knapp unter seinem Rekordhoch beendet.",
-    "source": "dpa-AFX via ARIVA.DE",
-    "url": "https://www.ariva.de/news/roundup-aktien-frankfurt-schluss-dax-weiter-erholt-und-12203752",
-    "published_at": "2026-11-11T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Wall Street: Erholung an der Nasdaq beschleunigt sich",
-    "summary": "An der New Yorker Börse hat die Erholung der Technologiewerte am Mittwoch an Fahrt gewonnen, die Nasdaq schloss im Plus.",
-    "source": "dpa-AFX via onvista",
-    "url": "https://www.onvista.de/news/2026/11-11-aktien-new-york-schluss-erholung-an-der-nasdaq-beschleunigt-sich-0-10-26575289",
-    "published_at": "2026-11-11T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [
-     "Amazon"
-    ],
     "peer": null,
     "popularity": null,
     "label": null
@@ -1968,6 +1966,14 @@
    {
     "id": "amzn",
     "items": [
+     {
+      "headline": "Amazon: Drei neue Kurstreiber – Midterms, Token-Verbrauch und Anthropic",
+      "summary": "Der Beitrag sieht neue Impulse für Amazon durch die US-Zwischenwahlen, stark steigenden KI-Token-Verbrauch und die Beteiligung an Anthropic.",
+      "source": "onvista",
+      "url": "https://www.onvista.de/news/2026/11-12-amazon-drei-neue-kurstreiber-midterms-17-facher-tokenverbrauch-und-der-anthropic-joker-0-0-26575605",
+      "published_at": "2026-11-12T12:00:00+01:00",
+      "kind": "news"
+     },
      {
       "headline": "Amazon-Aktie am Dienstagnachmittag fester",
       "summary": "Die Amazon-Aktie hat am Dienstagnachmittag im Nasdaq-Handel zugelegt.",
@@ -1983,42 +1989,6 @@
       "url": "https://ca.investing.com/news/stock-market-news/form-144-amazon-com-inc-for-7-november-93CH-4941220",
       "published_at": "2026-11-07T12:00:00+01:00",
       "kind": "news"
-     },
-     {
-      "headline": "Amazon-Chef Jassy macht wichtige Ankündigung für Aktionäre",
-      "summary": "Laut The Motley Fool hat CEO Andy Jassy Neuigkeiten verkündet, die für Amazon-Anleger bedeutend sein sollen. Der Beitrag ordnet die Folgen für die Aktie ein.",
-      "source": "The Motley Fool",
-      "url": "https://www.fool.com/investing/2026/11/06/amazons-ceo-andy-jassy-just-announced-huge-news/",
-      "published_at": "2026-11-06T12:00:00+01:00",
-      "kind": "news"
-     },
-     {
-      "headline": "Amazon-Aktie fällt mit Tech-Werten um 2,2 Prozent",
-      "summary": "Im breiten Abverkauf von Technologieaktien verlor Amazon am 5. November rund 2,2 Prozent.",
-      "source": "Gotrade",
-      "url": "https://www.heygotrade.com/en/news/amazon-amzn-stock-news-november-6-2026/",
-      "published_at": "2026-11-06T12:00:00+01:00",
-      "kind": "news"
-     },
-     {
-      "headline": "TD Cowen: Ziel gesenkt",
-      "summary": "TD Cowen senkt das Kursziel für Amazon nach den Quartalszahlen von 350 auf 340 Dollar.",
-      "source": "rallies.ai",
-      "url": "https://rallies.ai/news/amazon-td-cowen-cuts-target-price-to-340-from-350-f7baf87adc98f269",
-      "published_at": "2026-10-30T12:00:00+01:00",
-      "kind": "analyst",
-      "rating": null,
-      "target": "340 USD"
-     },
-     {
-      "headline": "Goldman Sachs: Ziel gesenkt",
-      "summary": "Analyst Eric Sheridan passt seine Schätzungen nach den Quartalszahlen leicht nach unten an, sieht bei Amazon aber weiter das beste Chance-Risiko-Verhältnis seiner Branche.",
-      "source": "dpa-AFX via finanznachrichten.de",
-      "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69985131-analyse-flash-goldman-senkt-ziel-fuer-amazon-auf-370-dollar-buy-016.htm",
-      "published_at": "2026-10-30T08:50:00+01:00",
-      "kind": "analyst",
-      "rating": "Buy",
-      "target": "370 USD"
      }
     ]
    },
@@ -2032,49 +2002,6 @@
       "url": "https://www.dailypolitical.com/2026/11/12/babcock-international-group-lonbab-shares-down-5-7-heres-why.html",
       "published_at": "2026-11-12T12:00:00+01:00",
       "kind": "news"
-     },
-     {
-      "headline": "Babcock-Aktie vor Halbjahreszahlen bei 12,16 Euro",
-      "summary": "Die Babcock-Aktie notiert vor der anstehenden Vorlage der Halbjahreszahlen bei rund 12,16 Euro.",
-      "source": "ad-hoc-news.de",
-      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/babcock-stock-trades-at-12-16-euros-ahead-of-half-year-results/70471580",
-      "published_at": "2026-11-06T12:00:00+01:00",
-      "kind": "news"
-     }
-    ]
-   },
-   {
-    "id": "bmw",
-    "items": [
-     {
-      "headline": "Deutsche Bank Research: bestätigt",
-      "summary": "Deutsche Bank Research bleibt nach den Quartalszahlen bei der Kaufempfehlung für BMW.",
-      "source": "finanznachrichten.de",
-      "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70044324-deutsche-bank-research-stuft-bmw-auf-buy-322.htm",
-      "published_at": "2026-11-05T12:00:00+01:00",
-      "kind": "analyst",
-      "rating": "Buy",
-      "target": null
-     },
-     {
-      "headline": "JPMorgan: Ziel gesenkt",
-      "summary": "JPMorgan senkt nach den Quartalszahlen das Kursziel für BMW auf 68 Euro und bleibt bei Overweight.",
-      "source": "dpa-AFX via finanzen.net",
-      "url": "https://www.finanzen.net/nachricht/aktien/analyse-flash-jpmorgan-senkt-ziel-fuer-bmw-auf-68-euro-overweight-16036089",
-      "published_at": "2026-11-04T12:00:00+01:00",
-      "kind": "analyst",
-      "rating": "Overweight",
-      "target": "68 EUR"
-     },
-     {
-      "headline": "JPMorgan: bestätigt",
-      "summary": "JPMorgan bleibt trotz gesenkter BMW-Ziele optimistisch, weil der Konzern Standorte, Plattform und Verwaltung überprüft und die Free-Cashflow-Prognose bestätigt hat.",
-      "source": "dpa-AFX (finanznachrichten.de)",
-      "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70024586-analyse-flash-jpmorgan-belaesst-bmw-auf-overweight-ziel-82-euro-016.htm",
-      "published_at": "2026-11-03T22:35:00+01:00",
-      "kind": "analyst",
-      "rating": "Overweight",
-      "target": "82 EUR"
      }
     ]
    },
@@ -2111,14 +2038,6 @@
       "source": "wallstreet-online",
       "url": "https://wallstreet-online.de/nachricht/21658746-aktie-check-crash-monat-nokia-bedeutet-november-2026",
       "published_at": "2026-11-08T12:00:00+01:00",
-      "kind": "news"
-     },
-     {
-      "headline": "Nokia: AI-RAN rückt näher an kommerzielle Netze",
-      "summary": "Nokias KI-gestützte Funknetztechnik (AI-RAN) nähert sich laut Bericht dem Einsatz in kommerziellen Mobilfunknetzen.",
-      "source": "ad-hoc-news.de",
-      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/nokia-aktie-ai-ran-rueckt-naeher-an-kommerzielle-netze/70470753",
-      "published_at": "2026-11-06T12:00:00+01:00",
       "kind": "news"
      },
      {
@@ -2177,6 +2096,41 @@
       "kind": "news"
      }
     ]
+   },
+   {
+    "id": "bmw",
+    "items": [
+     {
+      "headline": "Deutsche Bank Research: bestätigt",
+      "summary": "Deutsche Bank Research bleibt nach den Quartalszahlen bei der Kaufempfehlung für BMW.",
+      "source": "finanznachrichten.de",
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70044324-deutsche-bank-research-stuft-bmw-auf-buy-322.htm",
+      "published_at": "2026-11-05T12:00:00+01:00",
+      "kind": "analyst",
+      "rating": "Buy",
+      "target": null
+     },
+     {
+      "headline": "JPMorgan: Ziel gesenkt",
+      "summary": "JPMorgan senkt nach den Quartalszahlen das Kursziel für BMW auf 68 Euro und bleibt bei Overweight.",
+      "source": "dpa-AFX via finanzen.net",
+      "url": "https://www.finanzen.net/nachricht/aktien/analyse-flash-jpmorgan-senkt-ziel-fuer-bmw-auf-68-euro-overweight-16036089",
+      "published_at": "2026-11-04T12:00:00+01:00",
+      "kind": "analyst",
+      "rating": "Overweight",
+      "target": "68 EUR"
+     },
+     {
+      "headline": "JPMorgan: bestätigt",
+      "summary": "JPMorgan bleibt trotz gesenkter BMW-Ziele optimistisch, weil der Konzern Standorte, Plattform und Verwaltung überprüft und die Free-Cashflow-Prognose bestätigt hat.",
+      "source": "dpa-AFX (finanznachrichten.de)",
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70024586-analyse-flash-jpmorgan-belaesst-bmw-auf-overweight-ziel-82-euro-016.htm",
+      "published_at": "2026-11-03T22:35:00+01:00",
+      "kind": "analyst",
+      "rating": "Overweight",
+      "target": "82 EUR"
+     }
+    ]
    }
   ],
   "sell_side": [
@@ -2223,32 +2177,22 @@
     "source": "finanzen.net",
     "published_at": "2026-11-02T12:00:00+01:00",
     "url": "https://www.finanzen.net/analyse/nokia_buy-jefferies__company_inc__1116483"
-   },
-   {
-    "stock": "amzn",
-    "broker": "TD Cowen",
-    "action": "Ziel gesenkt",
-    "rating": null,
-    "target": "340 USD",
-    "summary": "TD Cowen senkt das Kursziel für Amazon nach den Quartalszahlen von 350 auf 340 Dollar.",
-    "source": "rallies.ai",
-    "published_at": "2026-10-30T12:00:00+01:00",
-    "url": "https://rallies.ai/news/amazon-td-cowen-cuts-target-price-to-340-from-350-f7baf87adc98f269"
-   },
-   {
-    "stock": "amzn",
-    "broker": "Goldman Sachs",
-    "action": "Ziel gesenkt",
-    "rating": "Buy",
-    "target": "370 USD",
-    "summary": "Analyst Eric Sheridan passt seine Schätzungen nach den Quartalszahlen leicht nach unten an, sieht bei Amazon aber weiter das beste Chance-Risiko-Verhältnis seiner Branche.",
-    "source": "dpa-AFX via finanznachrichten.de",
-    "published_at": "2026-10-30T08:50:00+01:00",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69985131-analyse-flash-goldman-senkt-ziel-fuer-amazon-auf-370-dollar-buy-016.htm"
    }
   ],
   "popular": [],
   "sector": [
+   {
+    "headline": "Rheinmetall fällt weiter – Bernstein sieht mögliche Verzögerung bei F127",
+    "summary": "Rheinmetall-Aktien gaben erneut nach, nachdem Bernstein auf eine mögliche Verzögerung beim Fregattenprojekt F127 hinwies.",
+    "source": "dpa-AFX via onvista",
+    "url": "https://www.onvista.de/news/2026/11-13-aktien-im-fokus-rheinmetall-faellt-weiter-bernstein-verzoegerung-fuer-f127-0-10-26576147",
+    "published_at": "2026-11-13T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
    {
     "headline": "Secunet bricht um 13 Prozent ein – Quartalsgewinn eingebrochen",
     "summary": "Der Sicherheitstechnik-Anbieter profitiert weiter vom Behördengeschäft, hohe Investitionen haben den Quartalsgewinn aber stark belastet.",
@@ -2266,6 +2210,18 @@
     "summary": "Der Rüstungselektronik-Spezialist hob seine langfristigen Wachstumsziele an, die Aktie reagierte mit Gewinnen.",
     "source": "dpa-AFX via boerse.de",
     "url": "https://boerse.de/nachrichten/ROUNDUP-Hensoldt-will-bis-2035-noch-staerker-wachsen-Aktie-legt-zu/38714228",
+    "published_at": "2026-11-10T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Berenberg senkt Kursziel für Rheinmetall auf 900 Euro",
+    "summary": "Berenberg hat das Kursziel für Rheinmetall auf 900 Euro gesenkt und die Einstufung 'Hold' bestätigt.",
+    "source": "dpa-AFX via onvista",
+    "url": "https://www.onvista.de/news/2026/11-10-analyse-flash-berenberg-senkt-ziel-fuer-rheinmetall-auf-900-euro-hold-0-10-26574435",
     "published_at": "2026-11-10T12:00:00+01:00",
     "kind": "news",
     "tickers": [],
@@ -2349,28 +2305,6 @@
  },
  "calendar": {
   "events": [
-   {
-    "date": "2026-11-13",
-    "time": "14:30",
-    "title": "US Erzeugerpreise Oktober",
-    "type": "makro",
-    "region": "US",
-    "holding": null,
-    "note": "Producer Price Index, 8:30 Uhr ET.",
-    "confirmed": true,
-    "url": "https://www.bls.gov/schedule/2026/11_sched_list.htm"
-   },
-   {
-    "date": "2026-11-13",
-    "time": null,
-    "title": "SpaceX Starship-Flug 15 (Zieltermin)",
-    "type": "ir",
-    "region": "US",
-    "holding": "spacex",
-    "note": "Von SpaceX genannter Zieltermin, Verschiebung möglich",
-    "confirmed": false,
-    "url": "https://businesstoday.in/science/story/spacex-sets-november-13-target-for-historic-feat-musk-highlights-critical-breakthrough-566296-2026-11-07"
-   },
    {
     "date": "2026-11-16",
     "time": "11:00",
