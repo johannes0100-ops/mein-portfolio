@@ -1,7 +1,7 @@
 {
  "app": "mein-portfolio-feed",
  "version": 1,
- "generated_at": "2026-11-14T12:22:11+00:00",
+ "generated_at": "2026-11-15T06:22:35+00:00",
  "quotes_at": "2026-11-13T21:27:05+00:00",
  "web_at": "2026-11-13T21:27:05+00:00",
  "live_at": "2026-11-13T21:13:34+00:00",
@@ -1813,8 +1813,32 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-14T13:30:00+01:00",
+  "generated_at": "2026-11-15T07:30:00+01:00",
   "market": [
+   {
+    "headline": "Wochenrückblick: Zwischen Wahlrally und Tech-Ausverkauf",
+    "summary": "Onvista blickt auf eine Börsenwoche zurück, die von einer Rally nach den US-Zwischenwahlen und einem Ausverkauf bei Technologiewerten geprägt war.",
+    "source": "onvista",
+    "url": "https://www.onvista.de/news/2026/11-14-wochenrueckblick-zwischen-wahlrally-und-tech-ausverkauf-0-12-26576356",
+    "published_at": "2026-11-14T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
+   {
+    "headline": "Nvidia-Aktie unter Druck: Welche Risiken Anleger jetzt fürchten",
+    "summary": "Nach dem Kurssturz bei Nvidia beleuchtet wallstreet-online die Risiken, die Anleger vor den anstehenden Quartalszahlen beunruhigen.",
+    "source": "wallstreet-online",
+    "url": "https://www.wallstreet-online.de/nachricht/21692157-anleger-fuerchten-verluste-nvidia-aktie-stuerzt-ab-risiken-anleger-bedraengnis",
+    "published_at": "2026-11-14T12:00:00+01:00",
+    "kind": "news",
+    "tickers": [],
+    "peer": null,
+    "popularity": null,
+    "label": null
+   },
    {
     "headline": "Wall Street: Anleger trennen sich von Halbleiteraktien, Dow stabil",
     "summary": "An der Wall Street standen zum Wochenschluss Chipwerte unter Verkaufsdruck, der Dow Jones hielt sich dagegen stabil.",
@@ -1888,18 +1912,6 @@
     "label": null
    },
    {
-    "headline": "Deutsche Anleihen verlieren – steigende Ölpreise belasten",
-    "summary": "Höhere Ölpreise haben deutsche Staatsanleihen unter Druck gesetzt.",
-    "source": "dpa-AFX via onvista",
-    "url": "https://www.onvista.de/news/2026/11-12-deutsche-anleihen-kursverluste-steigende-oelpreise-belasten-0-10-26575836",
-    "published_at": "2026-11-12T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
     "headline": "Wall Street: Nvidia bricht nach Huangs Rücktritt ein, Dow robust",
     "summary": "Die Nvidia-Aktie fiel nach dem angekündigten Rücktritt von Konzernchef Jensen Huang deutlich und belastete Technologiewerte, während sich der Dow stabil hielt.",
     "source": "dpa-AFX via onvista",
@@ -1918,18 +1930,6 @@
     "summary": "Der Dax hat am Donnerstag vorübergehend erstmals die Marke von 27.000 Punkten überschritten. Die Gewinne schmolzen im Handelsverlauf jedoch wieder zusammen.",
     "source": "dpa-AFX via onvista",
     "url": "https://www.onvista.de/news/2026/11-12-roundup-aktien-frankfurt-schluss-dax-voruebergehend-erstmals-ueber-27-000-punkten-0-10-26575873",
-    "published_at": "2026-11-12T12:00:00+01:00",
-    "kind": "news",
-    "tickers": [],
-    "peer": null,
-    "popularity": null,
-    "label": null
-   },
-   {
-    "headline": "Ölpreise etwas fester – Trump dämpft Hoffnung auf Iran-Einigung",
-    "summary": "Die Ölpreise legten leicht zu, nachdem US-Präsident Trump Erwartungen auf eine Einigung mit dem Iran gedämpft hatte.",
-    "source": "dpa-AFX via ARIVA.DE",
-    "url": "https://www.ariva.de/news/oelpreise-legen-etwas-zu-trump-daempft-erwartungen-auf-12205398",
     "published_at": "2026-11-12T12:00:00+01:00",
     "kind": "news",
     "tickers": [],
@@ -1967,6 +1967,22 @@
     "id": "amzn",
     "items": [
      {
+      "headline": "Ackman sieht große Diskrepanz bei Wall-Street-Erwartungen an Hyperscaler",
+      "summary": "Investor Bill Ackman hält die Markterwartungen an Amazon, Microsoft, Meta und Alphabet für deutlich verzerrt, berichtet The Motley Fool.",
+      "source": "The Motley Fool",
+      "url": "https://www.fool.com/investing/2026/11/14/bill-ackman-huge-disconnect-wall-street-expectations-for-hyperscalers/",
+      "published_at": "2026-11-14T12:00:00+01:00",
+      "kind": "news"
+     },
+     {
+      "headline": "Amazon als einzige 'Magnificent Seven'-Aktie zum Kauf empfohlen",
+      "summary": "Ein Motley-Fool-Autor würde unter den sieben großen US-Techwerten derzeit nur Amazon kaufen.",
+      "source": "The Motley Fool",
+      "url": "https://www.fool.com/investing/2026/11/13/amazon-is-the-only-magnificent-seven-stock-id-buy/",
+      "published_at": "2026-11-13T12:00:00+01:00",
+      "kind": "news"
+     },
+     {
       "headline": "Amazon: Drei neue Kurstreiber – Midterms, Token-Verbrauch und Anthropic",
       "summary": "Der Beitrag sieht neue Impulse für Amazon durch die US-Zwischenwahlen, stark steigenden KI-Token-Verbrauch und die Beteiligung an Anthropic.",
       "source": "onvista",
@@ -1981,20 +1997,20 @@
       "url": "https://www.finanzen.ch/nachrichten/aktien/amazon-aktie-kursbewegung-10-11-2026-1031803624",
       "published_at": "2026-11-10T12:00:00+01:00",
       "kind": "news"
-     },
-     {
-      "headline": "Amazon: Formular 144 zu geplantem Insider-Aktienverkauf eingereicht",
-      "summary": "Bei der US-Börsenaufsicht SEC wurde für Amazon ein Formular 144 eingereicht, mit dem ein geplanter Aktienverkauf durch einen Insider angezeigt wird.",
-      "source": "Investing.com",
-      "url": "https://ca.investing.com/news/stock-market-news/form-144-amazon-com-inc-for-7-november-93CH-4941220",
-      "published_at": "2026-11-07T12:00:00+01:00",
-      "kind": "news"
      }
     ]
    },
    {
     "id": "babcock",
     "items": [
+     {
+      "headline": "Babcock setzt Aktienrückkauf vor Halbjahreszahlen fort",
+      "summary": "Babcock kauft vor den am 19. November erwarteten Halbjahreszahlen weiter eigene Aktien zurück.",
+      "source": "ad-hoc-news.de",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/babcock-international-stock-buyback-continues-before-hy27-results/70506327",
+      "published_at": "2026-11-13T12:00:00+01:00",
+      "kind": "news"
+     },
      {
       "headline": "Babcock-Aktie fällt in London um 5,7 Prozent",
       "summary": "Die Babcock-Aktie hat am Donnerstag an der Londoner Börse rund 5,7 Prozent verloren, eine Woche vor den Halbjahreszahlen.",
@@ -2008,6 +2024,14 @@
    {
     "id": "nokia",
     "items": [
+     {
+      "headline": "Nokia Federal Solutions erhält RAPID-Auftrag",
+      "summary": "Die US-Behördensparte von Nokia hat einen Auftrag im Rahmen des RAPID-Programms erhalten.",
+      "source": "ad-hoc-news.de",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/nokia-aktie-federal-solutions-erhaelt-rapid-auftrag/70505353",
+      "published_at": "2026-11-13T12:00:00+01:00",
+      "kind": "news"
+     },
      {
       "headline": "Nokias Erholung steht vor großer Bewährungsprobe bis Jahresende",
       "summary": "Ein Beitrag von 24/7 Wall St. sieht die Kurserholung bei Nokia vor einem wichtigen Test bis Ende 2026.",
@@ -2064,6 +2088,14 @@
       "kind": "news"
      },
      {
+      "headline": "SpaceX fängt erstmals Starship-Oberstufe aus dem Orbit auf",
+      "summary": "Beim 15. Testflug gelang SpaceX laut CNBC erstmals der Fang der Starship-Oberstufe nach der Rückkehr aus dem Orbit.",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/11/14/spacex-plans-to-try-first-ever-catch-of-starship-rocket-from-orbit.html",
+      "published_at": "2026-11-14T12:00:00+01:00",
+      "kind": "news"
+     },
+     {
       "headline": "SpaceX startet 15. Starship-Flug – erster Hin- und Rückflug angestrebt",
       "summary": "SpaceX hat den 15. Starship-Testflug gestartet und will damit erstmals eine vollständige Hin- und Rückreise schaffen.",
       "source": "The Spokesman-Review",
@@ -2085,14 +2117,6 @@
       "source": "The Motley Fool",
       "url": "https://www.fool.com/investing/2026/11/13/spacex-s-starship-just-did-something-for-only-the-2nd-time-saturday-could-be-even-bigger/",
       "published_at": "2026-11-13T12:00:00+01:00",
-      "kind": "news"
-     },
-     {
-      "headline": "Ist die SpaceX-Aktie jetzt ein Kauf?",
-      "summary": "The Motley Fool wägt vor dem Starship-Testflug Chancen und Risiken eines Einstiegs bei SpaceX ab.",
-      "source": "The Motley Fool",
-      "url": "https://www.fool.com/investing/2026/11/11/is-spacex-stock-a-buy-right-now/",
-      "published_at": "2026-11-11T12:00:00+01:00",
       "kind": "news"
      }
     ]
