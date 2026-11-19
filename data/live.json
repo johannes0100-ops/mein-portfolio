@@ -3,21 +3,21 @@
  "version": 1,
  "source": "Tradegate",
  "price_field": "bid",
- "updated_at": "2026-11-19T20:09:32+00:00",
+ "updated_at": "2026-11-19T20:23:45+00:00",
  "quotes": {
   "amzn": {
-   "bid": 234.55,
-   "ask": 234.6,
-   "last": 234.55,
+   "bid": 234.6,
+   "ask": 234.65,
+   "last": 234.5,
    "prev_close": 244.05,
    "high": 249.65,
    "low": 233.9,
-   "delta_pct": -3.89,
-   "trades": 2548.0,
+   "delta_pct": -3.91,
+   "trades": 2584.0,
    "isin": "US0231351067",
-   "eur": 234.55,
+   "eur": 234.6,
    "eur_field": "bid",
-   "d1": -3.89
+   "d1": -3.91
   },
   "babcock": {
    "bid": 12.4,
@@ -35,7 +35,7 @@
   },
   "bmw": {
    "bid": 53.92,
-   "ask": 54.12,
+   "ask": 54.14,
    "last": 54.12,
    "prev_close": 55.02,
    "high": 55.42,
@@ -48,46 +48,46 @@
    "d1": -1.64
   },
   "nokia": {
-   "bid": 6.882,
-   "ask": 6.922,
-   "last": 6.928,
+   "bid": 6.872,
+   "ask": 6.912,
+   "last": 6.906,
    "prev_close": 6.964,
    "high": 7.188,
    "low": 6.866,
-   "delta_pct": -0.52,
-   "trades": 335.0,
+   "delta_pct": -0.83,
+   "trades": 339.0,
    "isin": "FI0009000681",
-   "eur": 6.882,
+   "eur": 6.872,
    "eur_field": "bid",
-   "d1": -0.52
+   "d1": -0.83
   },
   "spacex": {
-   "bid": 124.78,
-   "ask": 124.9,
-   "last": 124.96,
+   "bid": 124.52,
+   "ask": 124.6,
+   "last": 124.38,
    "prev_close": 130.6,
    "high": 134.08,
    "low": 123.48,
-   "delta_pct": -4.32,
-   "trades": 2518.0,
+   "delta_pct": -4.76,
+   "trades": 2545.0,
    "isin": "US84615Q1031",
-   "eur": 124.78,
+   "eur": 124.52,
    "eur_field": "bid",
-   "d1": -4.32
+   "d1": -4.76
   },
   "vanguard": {
-   "bid": 122.32,
-   "ask": 122.66,
-   "last": 122.58,
+   "bid": 122.4,
+   "ask": 122.74,
+   "last": 122.28,
    "prev_close": 124.6,
    "high": 125.96,
-   "low": 122.54,
-   "delta_pct": -1.62,
-   "trades": 128.0,
+   "low": 122.28,
+   "delta_pct": -1.86,
+   "trades": 130.0,
    "isin": "IE00BKX55T58",
-   "eur": 122.32,
+   "eur": 122.4,
    "eur_field": "bid",
-   "d1": -1.62
+   "d1": -1.86
   }
  },
  "errors": [
