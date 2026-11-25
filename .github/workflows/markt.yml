@@ -1,0 +1,47 @@
+name: Markt-Radar
+
+# Holt Kurse für Indizes, Aktien, Rohstoffe, Währungen und Krypto, analysiert sie
+# und schreibt data/market.json und data/market_series.json für markt.html.
+# Zeiten in UTC: werktags stündlich von 6 bis 22 Uhr UTC (Börsen Europa und USA),
+# am Wochenende zweimal am Tag (Krypto handelt durch).
+on:
+  schedule:
+    - cron: '41 6-22 * * 1-5'
+    - cron: '41 8,18 * * 0,6'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/market.py'
+      - '.github/workflows/markt.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: markt-radar
+  cancel-in-progress: false
+
+jobs:
+  markt:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Markt holen, analysieren und speichern
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python3 tools/market.py --out data --feed data/feed.json
+          if [ -z "$(git status --porcelain -- data/market.json data/market_series.json)" ]; then echo "Keine Änderung"; exit 0; fi
+          cp data/market.json /tmp/market.json; cp data/market_series.json /tmp/market_series.json
+          for i in 1 2 3 4; do
+            # Die Live-Kurse schreiben parallel in main: neuesten Stand holen und nur unsere Dateien darüberlegen
+            git fetch -q origin main && git reset -q --hard origin/main
+            cp /tmp/market.json /tmp/market_series.json data/
+            git add data/market.json data/market_series.json
+            git commit -q -m "Markt-Radar aktualisiert" || { echo "Nichts zu speichern"; exit 0; }
+            if git push -q origin HEAD:main; then echo "Gespeichert"; exit 0; fi
+            sleep $((i * 5))
+          done
+          echo "Speichern fehlgeschlagen"

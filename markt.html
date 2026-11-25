@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Markt-Radar</title>
+<meta name="description" content="Täglicher Marktüberblick mit automatischer Analyse in einfacher Sprache">
+<meta name="theme-color" content="#eef1f4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b0f14" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Markt">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root {
+  --bg: #eef1f4; --panel: #ffffff; --sub: #f6f8fa; --ink: #121820; --muted: #5f6b78; --faint: #8a95a1; --line: #dfe4e9;
+  --accent: #2457a6; --accent-soft: #e5edf8; --up: #0e7a4e; --down: #bf2b3b; --warn: #a06400; --chip: #edf0f3;
+  --up-bg: #dcf1e7; --down-bg: #f8dfe2; --warn-bg: #f7ecd6; --info: #2457a6;
+  --c1: #2457a6; --c2: #d0701f; --c3: #0d8a76; --c4: #a8407f; --c5: #7a5bd0;
+  --f-text: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  --f-num: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0b0f14; --panel: #121820; --sub: #18202a; --ink: #e4e9ee; --muted: #9aa6b2; --faint: #6f7b87; --line: #232d38;
+  --accent: #6f9fff; --accent-soft: #1a2740; --up: #3cc489; --down: #ff6f7d; --warn: #e3b04f; --chip: #1d2631;
+  --up-bg: #12301f; --down-bg: #3a1a20; --warn-bg: #33280f; --info: #6f9fff;
+  --c1: #6f9fff; --c2: #f0a15a; --c3: #43c9b0; --c4: #e27ab8; --c5: #a891f0; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #0b0f14; --panel: #121820; --sub: #18202a; --ink: #e4e9ee; --muted: #9aa6b2; --faint: #6f7b87; --line: #232d38;
+  --accent: #6f9fff; --accent-soft: #1a2740; --up: #3cc489; --down: #ff6f7d; --warn: #e3b04f; --chip: #1d2631;
+  --up-bg: #12301f; --down-bg: #3a1a20; --warn-bg: #33280f; --info: #6f9fff;
+  --c1: #6f9fff; --c2: #f0a15a; --c3: #43c9b0; --c4: #e27ab8; --c5: #a891f0; color-scheme: dark; }
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; }
+[hidden] { display: none !important; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-text); font-size: 14px; line-height: 1.5; -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; }
+.wrap { max-width: 1320px; margin-inline: auto; padding: max(12px, calc(env(safe-area-inset-top, 0px) + 8px)) max(16px, env(safe-area-inset-right, 0px)) max(40px, calc(env(safe-area-inset-bottom, 0px) + 24px)) max(16px, env(safe-area-inset-left, 0px)); display: grid; gap: 12px; }
+.num { font-family: var(--f-num); font-variant-numeric: tabular-nums; }
+.up { color: var(--up); } .down { color: var(--down); } .mut { color: var(--muted); } .faint { color: var(--faint); }
+button { font: inherit; cursor: pointer; color: inherit; }
+a { color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+h2, h3 { margin: 0; }
+
+/* Kopf */
+.bar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; }
+.bar h1 { margin: 0; font-size: 16px; font-weight: 600; display: flex; align-items: center; gap: 8px; }
+.bar h1 svg { width: 20px; height: 20px; color: var(--accent); }
+.status { display: flex; align-items: center; gap: 6px 14px; font-size: 12px; color: var(--muted); flex: 1 1 280px; flex-wrap: wrap; min-width: 0; }
+.mk { display: inline-flex; align-items: center; gap: 5px; white-space: nowrap; }
+.dot { width: 7px; height: 7px; border-radius: 50%; background: var(--faint); flex: none; display: inline-block; }
+.dot.on { background: var(--up); box-shadow: 0 0 0 3px color-mix(in srgb, var(--up) 25%, transparent); }
+.dot.run { background: var(--warn); animation: pulse 1.2s ease-in-out infinite; }
+@keyframes pulse { 50% { opacity: .3; } }
+@media (prefers-reduced-motion: reduce) { .dot.run { animation: none; } }
+.actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.btn { background: var(--accent); color: #fff; border: 0; border-radius: 7px; padding: 7px 12px; font-weight: 500; font-size: 13px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
+:root[data-theme="dark"] .btn:not(.ghost) { color: #0b0f14; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .btn:not(.ghost) { color: #0b0f14; } }
+.btn.ghost { background: transparent; color: var(--ink); border: 1px solid var(--line); }
+.btn.ghost:hover { background: var(--sub); }
+.btn.small { padding: 4px 9px; font-size: 12px; }
+.btn:disabled { opacity: .5; cursor: default; }
+.btn svg { width: 15px; height: 15px; }
+
+/* Reiter */
+.tabs { position: sticky; top: 0; z-index: 20; display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); padding: 6px 0; margin: -6px 0; }
+.tabs::-webkit-scrollbar { display: none; }
+.tab { border: 1px solid var(--line); background: var(--panel); border-radius: 999px; padding: 7px 14px; font-size: 13px; font-weight: 500; white-space: nowrap; color: var(--muted); }
+.tab[aria-selected="true"] { background: var(--ink); color: var(--panel); border-color: var(--ink); }
+.view { display: grid; gap: 12px; min-width: 0; }
+
+/* Panels */
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; min-width: 0; }
+.ph { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; padding: 11px 14px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+.ph h2 { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; display: flex; align-items: center; gap: 6px; }
+.ph .meta { font-size: 11.5px; color: var(--faint); }
+.pb { padding: 12px 14px; }
+.grid2 { display: grid; gap: 12px; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); align-items: start; }
+.grid3 { display: grid; gap: 12px; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: start; }
+@media (max-width: 1000px) { .grid2, .grid3 { grid-template-columns: minmax(0, 1fr); } }
+.help { border: 0; background: var(--chip); color: var(--muted); width: 18px; height: 18px; border-radius: 50%; font-size: 11px; font-weight: 600; line-height: 18px; padding: 0; text-align: center; flex: none; text-transform: none; letter-spacing: 0; }
+.help:hover { background: var(--accent-soft); color: var(--accent); }
+
+/* Hero */
+.hero { padding: 16px 18px; display: grid; gap: 10px; }
+.hero .kicker { font-size: 11.5px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 600; }
+.hero h2 { font-size: 20px; font-weight: 600; line-height: 1.3; }
+.hero ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; }
+.hero li { display: flex; gap: 10px; align-items: baseline; }
+.hero li::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); flex: none; transform: translateY(-2px); }
+.alertbar { border-radius: 10px; padding: 10px 14px; background: var(--warn-bg); border: 1px solid color-mix(in srgb, var(--warn) 40%, transparent); display: grid; gap: 4px; }
+.alertbar b { color: var(--warn); }
+
+/* Stimmung */
+.mood { display: grid; grid-template-columns: minmax(0, 220px) minmax(0, 1fr); gap: 14px; align-items: center; }
+@media (max-width: 560px) { .mood { grid-template-columns: minmax(0, 1fr); } }
+.gauge { width: 100%; max-width: 240px; margin-inline: auto; display: block; }
+.gauge-val { text-align: center; margin-top: -6px; }
+.gauge-val b { font-family: var(--f-num); font-size: 30px; font-weight: 500; display: block; line-height: 1.1; }
+.gauge-val span { font-weight: 600; }
+.comps { display: grid; gap: 8px; }
+.comp { display: grid; grid-template-columns: minmax(0, 130px) minmax(0, 1fr) 34px; gap: 8px; align-items: center; font-size: 12.5px; }
+.comp .lab { color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.meter { height: 8px; border-radius: 4px; background: var(--chip); position: relative; overflow: hidden; }
+.meter i { position: absolute; inset: 0 auto 0 0; border-radius: 4px; }
+.comp .v { font-family: var(--f-num); font-size: 12px; text-align: right; }
+
+/* Kacheln */
+.tiles { display: grid; gap: 1px; background: var(--line); grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr)); border-radius: 0 0 10px 10px; overflow: hidden; }
+.tile { background: var(--panel); padding: 11px 14px; border: 0; text-align: left; display: grid; gap: 2px; min-width: 0; }
+.tile:hover { background: var(--sub); }
+.tile .top { display: flex; justify-content: space-between; gap: 6px; align-items: baseline; }
+.tile .nm { font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tile .px { font-family: var(--f-num); font-size: 17px; font-weight: 500; }
+.tile .ch { font-family: var(--f-num); font-size: 13px; }
+.tile .tr { font-size: 11.5px; color: var(--muted); display: flex; align-items: center; gap: 6px; white-space: nowrap; overflow: hidden; }
+.tile svg.spark { width: 100%; height: 30px; display: block; margin-top: 4px; }
+.light { width: 9px; height: 9px; border-radius: 50%; display: inline-block; flex: none; }
+.light.green { background: var(--up); } .light.red { background: var(--down); } .light.yellow { background: var(--warn); } .light.blue { background: var(--info); }
+
+/* Heatmap */
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 7px; overflow: hidden; }
+.seg button { border: 0; background: transparent; padding: 4px 10px; font-size: 12px; color: var(--muted); }
+.seg button + button { border-left: 1px solid var(--line); }
+.seg button[aria-pressed="true"] { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+.heat { display: grid; gap: 4px; grid-template-columns: repeat(auto-fill, minmax(98px, 1fr)); padding: 12px 14px; }
+.hcell { border: 0; border-radius: 6px; padding: 8px 8px 7px; text-align: left; min-height: 58px; display: grid; align-content: space-between; color: var(--ink); }
+.hcell b { font-size: 12.5px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hcell span { font-family: var(--f-num); font-size: 12.5px; }
+.hcell.dep { box-shadow: inset 0 0 0 2px var(--accent); }
+.legend { display: flex; gap: 12px; flex-wrap: wrap; font-size: 11.5px; color: var(--muted); padding: 0 14px 12px; align-items: center; }
+.legend .sw { display: inline-block; width: 12px; height: 12px; border-radius: 3px; vertical-align: -2px; margin-right: 4px; }
+
+/* Balken */
+.bars { display: grid; gap: 6px; padding: 12px 14px; }
+.brow { display: grid; grid-template-columns: minmax(0, 120px) minmax(0, 1fr) 62px; gap: 8px; align-items: center; font-size: 12.5px; border: 0; background: none; padding: 2px 0; text-align: left; }
+.brow:hover .bn { color: var(--accent); }
+.brow .bn { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.btrack { height: 14px; position: relative; }
+.btrack::before { content: ""; position: absolute; left: 50%; top: -2px; bottom: -2px; width: 1px; background: var(--line); }
+.btrack i { position: absolute; top: 0; bottom: 0; border-radius: 3px; }
+.brow .bv { font-family: var(--f-num); text-align: right; }
+
+/* Listen */
+.list { display: grid; }
+.row { display: grid; grid-template-columns: 26px minmax(0, 1.6fr) 84px minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.4fr); gap: 10px; align-items: center; padding: 9px 14px; border: 0; border-top: 1px solid var(--line); background: none; text-align: left; width: 100%; }
+.row:first-child { border-top: 0; }
+.row:hover { background: var(--sub); }
+.row .nm b { display: block; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.row .nm span { display: block; font-size: 11.5px; color: var(--faint); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.row .px, .row .ch { font-family: var(--f-num); text-align: right; font-size: 13px; }
+.row .ch small { display: block; font-size: 11px; color: var(--faint); }
+.row .tr { font-size: 12.5px; display: flex; gap: 6px; align-items: center; min-width: 0; }
+.row .tr span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.row svg.spark { width: 84px; height: 28px; display: block; }
+.star { border: 0; background: none; padding: 2px; color: var(--faint); font-size: 16px; line-height: 1; }
+.star.on { color: #e0a100; }
+.lhead { display: grid; grid-template-columns: 26px minmax(0, 1.6fr) 84px minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.4fr); gap: 10px; padding: 8px 14px; font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; background: var(--sub); border-bottom: 1px solid var(--line); }
+.lhead > :nth-child(4), .lhead > :nth-child(5) { text-align: right; }
+@media (max-width: 720px) {
+  .row, .lhead { grid-template-columns: 22px minmax(0, 1.3fr) 80px minmax(0, 1fr); gap: 8px; padding-inline: 10px; }
+  .row > :nth-child(3), .lhead > :nth-child(3), .row > :nth-child(4), .lhead > :nth-child(4) { display: none !important; }
+  .row .tr { font-size: 12px; }
+}
+.badge { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 600; padding: 1px 7px; border-radius: 999px; background: var(--chip); color: var(--muted); white-space: nowrap; }
+.badge.hot { background: var(--down-bg); color: var(--down); } .badge.cold { background: var(--accent-soft); color: var(--accent); }
+.badge.pos { background: var(--up-bg); color: var(--up); } .badge.neg { background: var(--down-bg); color: var(--down); } .badge.warn { background: var(--warn-bg); color: var(--warn); }
+.badge.dep { background: var(--accent-soft); color: var(--accent); }
+
+/* Filter */
+.filters { display: grid; gap: 10px; padding: 12px 14px; border-bottom: 1px solid var(--line); }
+.chips { display: flex; gap: 6px; flex-wrap: wrap; }
+.chip { border: 1px solid var(--line); background: var(--panel); border-radius: 999px; padding: 4px 11px; font-size: 12.5px; color: var(--muted); }
+.chip[aria-pressed="true"] { background: var(--accent-soft); color: var(--accent); border-color: var(--accent); font-weight: 600; }
+.frow { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+input[type="search"], input[type="number"], input[type="text"], select, textarea { font: inherit; font-size: 14px; background: var(--sub); color: var(--ink); border: 1px solid var(--line); border-radius: 7px; padding: 7px 10px; min-width: 0; }
+input[type="search"] { flex: 1 1 220px; }
+textarea { width: 100%; resize: vertical; min-height: 70px; }
+
+/* Ereignisse */
+.events { display: grid; }
+.ev { display: grid; grid-template-columns: 10px minmax(0, 1fr); gap: 10px; padding: 9px 14px; border: 0; border-top: 1px solid var(--line); background: none; text-align: left; width: 100%; }
+.ev:first-child { border-top: 0; }
+.ev:hover { background: var(--sub); }
+.ev i { width: 8px; height: 8px; border-radius: 50%; margin-top: 6px; background: var(--faint); }
+.ev i.pos { background: var(--up); } .ev i.neg { background: var(--down); } .ev i.warn { background: var(--warn); } .ev i.info { background: var(--info); }
+.ev b { font-weight: 600; }
+.report p { margin: 0 0 12px; }
+.report h3 { font-size: 13.5px; font-weight: 600; margin-bottom: 2px; }
+.cal { display: grid; }
+.cal div { display: grid; grid-template-columns: 74px minmax(0, 1fr); gap: 8px; padding: 7px 14px; border-top: 1px solid var(--line); font-size: 13px; }
+.cal div:first-child { border-top: 0; }
+.cal .d { font-family: var(--f-num); font-size: 12px; color: var(--muted); }
+
+/* Detail */
+.sheet { position: fixed; inset: 0; z-index: 50; display: grid; place-items: start center; background: rgba(5, 8, 12, .55); overflow-y: auto; padding: max(10px, env(safe-area-inset-top, 0px)) 10px 30px; }
+.sheet-in { background: var(--bg); border-radius: 12px; width: min(1040px, 100%); display: grid; gap: 12px; padding: 12px; margin-top: 10px; }
+.dhead { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; flex-wrap: wrap; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
+.dhead h2 { font-size: 19px; font-weight: 600; }
+.dhead .sub { font-size: 12px; color: var(--muted); }
+.dprice { font-family: var(--f-num); font-size: 26px; font-weight: 500; }
+.verdict { display: grid; grid-template-columns: 42px minmax(0, 1fr); gap: 12px; align-items: center; padding: 14px 16px; }
+.amp { display: grid; gap: 3px; background: #1d232b; border-radius: 8px; padding: 5px; width: 30px; justify-items: center; }
+.amp i { width: 18px; height: 18px; border-radius: 50%; background: #3a424d; }
+.amp i.r.on { background: #ff4d5e; box-shadow: 0 0 10px #ff4d5e; } .amp i.y.on { background: #ffc13b; box-shadow: 0 0 10px #ffc13b; } .amp i.g.on { background: #34d17f; box-shadow: 0 0 10px #34d17f; }
+.amp.blue i.on { background: #6f9fff; box-shadow: 0 0 10px #6f9fff; }
+.verdict b { font-size: 16px; }
+.cbar { display: flex; gap: 8px; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 10px 14px 0; }
+.toggles { display: flex; gap: 6px; flex-wrap: wrap; }
+.toggles label { display: inline-flex; gap: 5px; align-items: center; font-size: 12px; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 3px 9px; cursor: pointer; }
+.toggles .sw { width: 14px; height: 3px; border-radius: 2px; display: inline-block; }
+.chart { position: relative; padding: 6px 4px 8px; touch-action: pan-y; }
+.chart svg { display: block; width: 100%; overflow: visible; }
+.tip { position: absolute; pointer-events: none; background: var(--panel); border: 1px solid var(--line); border-radius: 7px; padding: 6px 8px; font-size: 12px; box-shadow: 0 4px 16px rgba(0,0,0,.15); white-space: nowrap; z-index: 2; }
+.tip .num { font-size: 12px; }
+.metrics { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 180px), 1fr)); gap: 1px; background: var(--line); border-radius: 0 0 10px 10px; overflow: hidden; }
+.metric { background: var(--panel); padding: 10px 14px; display: grid; gap: 2px; }
+.metric .lab { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; display: flex; align-items: center; gap: 6px; justify-content: space-between; }
+.metric .val { font-family: var(--f-num); font-size: 16px; }
+.metric .ex { font-size: 11.5px; color: var(--faint); }
+.whatif { display: grid; gap: 10px; }
+.whatif .frow > * { flex: 1 1 120px; }
+.whatif .res { font-size: 15px; }
+.whatif .res b { font-family: var(--f-num); font-size: 22px; font-weight: 500; }
+.kirow { display: grid; gap: 8px; }
+.answer { background: var(--sub); border-radius: 8px; padding: 10px 12px; font-size: 13.5px; }
+.answer p { margin: 0 0 8px; } .answer p:last-child { margin: 0; }
+.answer ul { margin: 0 0 8px; padding-left: 18px; }
+.srcs { font-size: 11.5px; color: var(--faint); display: flex; flex-wrap: wrap; gap: 4px 10px; margin-top: 6px; }
+.empty { padding: 18px 14px; color: var(--muted); text-align: center; }
+
+/* Lexikon */
+details.lx { border-top: 1px solid var(--line); }
+details.lx:first-child { border-top: 0; }
+details.lx summary { padding: 11px 14px; cursor: pointer; font-weight: 600; list-style: none; display: flex; justify-content: space-between; gap: 8px; }
+details.lx summary::after { content: "+"; color: var(--faint); font-weight: 400; }
+details.lx[open] summary::after { content: "–"; }
+details.lx div { padding: 0 14px 12px; color: var(--ink); }
+details.lx div p { margin: 0 0 6px; }
+details.lx div .eg { color: var(--muted); font-size: 13px; }
+
+.toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: max(18px, env(safe-area-inset-bottom, 0px)); background: var(--ink); color: var(--panel); padding: 9px 14px; border-radius: 8px; font-size: 13px; z-index: 80; max-width: calc(100% - 32px); }
+.foot { font-size: 11.5px; color: var(--faint); text-align: center; padding: 4px 8px; }
+.pop { position: fixed; z-index: 90; max-width: min(340px, calc(100vw - 24px)); background: var(--panel); border: 1px solid var(--line); border-radius: 9px; padding: 11px 13px; box-shadow: 0 8px 28px rgba(0,0,0,.2); font-size: 13px; }
+.pop b { display: block; margin-bottom: 3px; }
+.pop p { margin: 0 0 5px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="bar">
+    <h1><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 6-7"/></svg>Markt-Radar</h1>
+    <div class="status" id="status"><span class="mk"><span class="dot run"></span>Lade Marktdaten …</span></div>
+    <div class="actions">
+      <button class="btn ghost small" id="btn-reload" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/></svg>Neu laden</button>
+      <a class="btn ghost small" href="index.html">Mein Depot</a>
+    </div>
+  </header>
+
+  <nav class="tabs" role="tablist" aria-label="Bereiche">
+    <button class="tab" role="tab" data-tab="heute" aria-selected="true">Heute</button>
+    <button class="tab" role="tab" data-tab="werte" aria-selected="false">Alle Werte</button>
+    <button class="tab" role="tab" data-tab="vergleich" aria-selected="false">Vergleichen</button>
+    <button class="tab" role="tab" data-tab="alarme" aria-selected="false">Kurs-Wecker</button>
+    <button class="tab" role="tab" data-tab="ki" aria-selected="false">KI fragen</button>
+    <button class="tab" role="tab" data-tab="lexikon" aria-selected="false">Lexikon</button>
+  </nav>
+
+  <div id="alerts-hit" hidden></div>
+
+  <!-- HEUTE -->
+  <section class="view" id="v-heute">
+    <div class="panel hero" id="hero"><div class="kicker">Der Markt in 30 Sekunden</div><h2>Lade …</h2></div>
+
+    <div class="grid2">
+      <div class="panel">
+        <div class="ph"><h2>Stimmungsbarometer <button class="help" data-help="mood" type="button" aria-label="Erklärung">?</button></h2><span class="meta">0 = Angst · 100 = Gier</span></div>
+        <div class="pb mood" id="mood"></div>
+        <div class="chart" id="mood-chart" aria-label="Verlauf der Stimmung"></div>
+      </div>
+      <div class="panel">
+        <div class="ph"><h2>Die großen Indizes <button class="help" data-help="index" type="button" aria-label="Erklärung">?</button></h2><span class="meta">Tippen für Details</span></div>
+        <div class="tiles" id="idx-tiles"></div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="ph"><h2>Aktien-Wärmekarte <button class="help" data-help="heat" type="button" aria-label="Erklärung">?</button></h2>
+        <div class="seg" id="heat-seg"><button data-p="d1" aria-pressed="true">Heute</button><button data-p="w1">Woche</button><button data-p="m1">Monat</button><button data-p="ytd">Seit 1.1.</button><button data-p="y1">Jahr</button></div></div>
+      <div class="heat" id="heat"></div>
+      <div class="legend" id="heat-legend"></div>
+    </div>
+
+    <div class="grid3">
+      <div class="panel"><div class="ph"><h2>Gewinner</h2><span class="meta" id="win-meta">heute</span></div><div class="events" id="winners"></div></div>
+      <div class="panel"><div class="ph"><h2>Verlierer</h2><span class="meta" id="los-meta">heute</span></div><div class="events" id="losers"></div></div>
+      <div class="panel"><div class="ph"><h2>Branchen <button class="help" data-help="sector" type="button" aria-label="Erklärung">?</button></h2><span class="meta" id="sec-meta">heute</span></div><div class="bars" id="sectors"></div></div>
+    </div>
+
+    <div class="panel">
+      <div class="ph"><h2>Gold, Öl, Krypto, Währungen, Zinsen</h2><span class="meta">Tippen für Details</span></div>
+      <div class="tiles" id="other-tiles"></div>
+    </div>
+
+    <div class="grid2">
+      <div class="panel">
+        <div class="ph"><h2>Tagesbericht</h2><span class="meta" id="rep-meta">automatisch erstellt</span></div>
+        <div class="pb report" id="report"></div>
+      </div>
+      <div class="col" style="display:grid;gap:12px;min-width:0">
+        <div class="panel">
+          <div class="ph"><h2>Auffälligkeiten <button class="help" data-help="signals" type="button" aria-label="Erklärung">?</button></h2><span class="meta" id="ev-meta"></span></div>
+          <div class="events" id="events"></div>
+        </div>
+        <div class="panel" id="cal-panel" hidden>
+          <div class="ph"><h2>Termine</h2><span class="meta">aus deinem Depot-Feed</span></div>
+          <div class="cal" id="cal"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALLE WERTE -->
+  <section class="view" id="v-werte" hidden>
+    <div class="panel">
+      <div class="filters">
+        <div class="frow">
+          <input type="search" id="q" placeholder="Suchen: z. B. Gold, SAP, Bitcoin …" aria-label="Suchen">
+          <select id="sort" aria-label="Sortieren">
+            <option value="group">Sortieren: nach Gruppe</option>
+            <option value="d1">Heute stärkste zuerst</option>
+            <option value="-d1">Heute schwächste zuerst</option>
+            <option value="m1">1 Monat stärkste</option>
+            <option value="ytd">Seit Jahresbeginn stärkste</option>
+            <option value="y1">1 Jahr stärkste</option>
+            <option value="score">Bester Trend zuerst</option>
+            <option value="-score">Schwächster Trend zuerst</option>
+            <option value="rsi">Am heißesten (RSI)</option>
+            <option value="-rsi">Am meisten ausverkauft (RSI)</option>
+            <option value="from_hi">Am nächsten am Jahreshoch</option>
+            <option value="vol20">Am wildesten</option>
+          </select>
+          <select id="col" aria-label="Zeitraum der Spalte">
+            <option value="w1">Spalte: 1 Woche</option>
+            <option value="m1" selected>Spalte: 1 Monat</option>
+            <option value="m3">Spalte: 3 Monate</option>
+            <option value="ytd">Spalte: seit 1.1.</option>
+            <option value="y1">Spalte: 1 Jahr</option>
+          </select>
+        </div>
+        <div class="chips" id="chips"></div>
+      </div>
+      <div class="lhead"><span></span><span>Name</span><span>Verlauf 3M</span><span>Kurs</span><span id="col-head">Heute / 1M</span><span>Trend</span></div>
+      <div class="list" id="list"></div>
+    </div>
+  </section>
+
+  <!-- VERGLEICH -->
+  <section class="view" id="v-vergleich" hidden>
+    <div class="panel">
+      <div class="ph"><h2>Werte vergleichen</h2><span class="meta">Alle starten bei 0 %, so siehst du, wer besser lief</span></div>
+      <div class="filters">
+        <div class="frow"><select id="cmp-add" aria-label="Wert hinzufügen"></select><button class="btn small" id="cmp-add-btn" type="button">Hinzufügen</button>
+          <div class="seg" id="cmp-range"><button data-r="21">1M</button><button data-r="63">3M</button><button data-r="126">6M</button><button data-r="252" aria-pressed="true">1J</button><button data-r="9999">2J</button></div></div>
+        <div class="chips" id="cmp-chips"></div>
+      </div>
+      <div class="chart" id="cmp-chart"></div>
+      <div class="scroll" style="overflow-x:auto"><table class="cmpt" id="cmp-table" style="width:100%;border-collapse:collapse;font-size:13px"></table></div>
+    </div>
+  </section>
+
+  <!-- ALARME -->
+  <section class="view" id="v-alarme" hidden>
+    <div class="panel">
+      <div class="ph"><h2>Kurs-Wecker</h2><span class="meta">Wird bei jedem Öffnen geprüft · nur auf diesem Gerät</span></div>
+      <div class="pb" style="display:grid;gap:10px">
+        <p class="mut" style="margin:0">Leg fest, bei welchem Kurs du Bescheid haben willst. Sobald der Kurs die Marke erreicht, erscheint oben ein Hinweis (und, wenn erlaubt, eine Mitteilung).</p>
+        <div class="frow">
+          <select id="al-sym" aria-label="Wert"></select>
+          <select id="al-dir" aria-label="Richtung"><option value="above">steigt über</option><option value="below">fällt unter</option></select>
+          <input type="number" id="al-price" step="any" placeholder="Kurs" aria-label="Kurs" style="width:130px">
+          <button class="btn" id="al-add" type="button">Wecker stellen</button>
+        </div>
+        <div class="frow"><button class="btn ghost small" id="al-notify" type="button">Mitteilungen erlauben</button><span class="faint" style="font-size:12px" id="al-notify-st"></span></div>
+      </div>
+      <div class="events" id="al-list"></div>
+    </div>
+  </section>
+
+  <!-- KI -->
+  <section class="view" id="v-ki" hidden>
+    <div class="panel">
+      <div class="ph"><h2>KI fragen</h2><span class="meta" id="ki-meta"></span></div>
+      <div class="pb kirow">
+        <p class="mut" style="margin:0">Claude bekommt die aktuellen Marktdaten und die Analyse dieser Seite und kann zusätzlich im Web nach Gründen suchen. Antworten kommen in einfacher Sprache.</p>
+        <div class="chips" id="ki-presets"></div>
+        <textarea id="ki-q" placeholder="Deine Frage, z. B. „Warum ist Nvidia heute so stark gefallen?“"></textarea>
+        <div class="frow"><button class="btn" id="ki-send" type="button">Fragen</button><span class="faint" id="ki-state" style="font-size:12px"></span></div>
+        <div id="ki-out" class="kirow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEXIKON -->
+  <section class="view" id="v-lexikon" hidden>
+    <div class="panel">
+      <div class="ph"><h2>Börsen-Lexikon</h2><span class="meta">Alle Begriffe dieser Seite, einfach erklärt</span></div>
+      <div class="frow" style="padding:12px 14px;border-bottom:1px solid var(--line)"><input type="search" id="lx-q" placeholder="Begriff suchen …" aria-label="Begriff suchen"></div>
+      <div id="lexikon"></div>
+    </div>
+  </section>
+
+  <p class="foot" id="foot">Daten: Yahoo Finance, automatisch abgerufen und ausgewertet. Kurse können verzögert sein. Alle Analysen sind automatische Beobachtungen und keine Anlageberatung.</p>
+</div>
+
+<div class="sheet" id="sheet" hidden role="dialog" aria-modal="true" aria-labelledby="d-title"><div class="sheet-in" id="sheet-in"></div></div>
+<div class="toast" id="toast" hidden></div>
+<script src="markt.js?v=1.0.0"></script>
+</body>
+</html>
